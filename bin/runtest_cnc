@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+cd .. && cd scripts
+./halclean 
+cd ..
+cd bin
+
+LD_LIBRARY_PATH=../lib ./cnc
+
+
+

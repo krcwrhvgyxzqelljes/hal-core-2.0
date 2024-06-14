@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/code_parser.dir/main.cpp.o CMakeFiles/code_parser.dir/__/__/vendor/std_functions/std_functions.cpp.o -o code_parser 
