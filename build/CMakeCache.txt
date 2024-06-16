@@ -323,24 +323,6 @@ cnc_IS_TOP_LEVEL:STATIC=OFF
 cnc_SOURCE_DIR:STATIC=/home/user/hal-core-2.0/projects/cnc
 
 //Value Computed by CMake
-code_parser_BINARY_DIR:STATIC=/home/user/hal-core-2.0/build/projects/code_parser
-
-//Value Computed by CMake
-code_parser_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-code_parser_SOURCE_DIR:STATIC=/home/user/hal-core-2.0/projects/code_parser
-
-//Value Computed by CMake
-gcode_parser_BINARY_DIR:STATIC=/home/user/hal-core-2.0/build/projects/gcode_parser
-
-//Value Computed by CMake
-gcode_parser_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-gcode_parser_SOURCE_DIR:STATIC=/home/user/hal-core-2.0/projects/gcode_parser
-
-//Value Computed by CMake
 hal_lib_BINARY_DIR:STATIC=/home/user/hal-core-2.0/build/src/hal/hallib
 
 //Value Computed by CMake
@@ -453,15 +435,6 @@ motion_SOURCE_DIR:STATIC=/home/user/hal-core-2.0/src/hal/components/motion
 
 //Path to a library.
 pkgcfg_lib_PC_GLUT_glut:FILEPATH=/usr/lib/x86_64-linux-gnu/libglut.so
-
-//Value Computed by CMake
-qt_lcnc_controller_BINARY_DIR:STATIC=/home/user/hal-core-2.0/build/projects/cnc_controller
-
-//Value Computed by CMake
-qt_lcnc_controller_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-qt_lcnc_controller_SOURCE_DIR:STATIC=/home/user/hal-core-2.0/projects/cnc_controller
 
 //Value Computed by CMake
 rtapi_app_BINARY_DIR:STATIC=/home/user/hal-core-2.0/build/src/rtapi
@@ -630,7 +603,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -1,0 +1,2011 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lin64/clang/libd/libTKBRep.so"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"OCCT_INCLUDE_CMAKE_FILE",
+			"install",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"adm/cmake/occt_toolkit.cmake",
+			"CMakeLists.txt",
+			"src/TKBRep/CMakeLists.txt",
+			"src/TKernel/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 232,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 245,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 3
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 8
+			},
+			{
+				"file" : 0,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 10
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 733,
+				"parent" : 12
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 737,
+				"parent" : 12
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++0x -DQT_QML_DEBUG -fexceptions -fPIC -Wall -Wextra -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "OCC_CONVERT_SIGNALS"
+				},
+				{
+					"define" : "TKBRep_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 13,
+					"path" : "/usr/include/tcl"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/usr/include/freetype2"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/user/hal-core-2.0/vendor/build-oce-upstream-V7_5_0beta-Desktop-Debug/include/opencascade"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "TKernel::@8d04b055e0ae6651ef3c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKMath::@3085715a8202f146bd2e"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKG2d::@20b7ad3d41ab2afe8017"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKG3d::@48aa1b6a2abc7d91727f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKGeomBase::@4beb524ea52e134832d7"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Modules/ModelingData"
+	},
+	"id" : "TKBRep::@9b45fb5581d6102f691c",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "lib${OCCT_INSTALL_BIN_LETTER}"
+			},
+			{
+				"backtrace" : 5,
+				"path" : "lib${OCCT_INSTALL_BIN_LETTER}"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wl,-s -lm",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/user/hal-core-2.0/vendor/build-oce-upstream-V7_5_0beta-Desktop-Debug/lin64/clang/libd:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKGeomBase.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKG3d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKG2d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKMath.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKernel.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-lstdc++",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "TKBRep",
+	"nameOnDisk" : "libTKBRep.so",
+	"paths" : 
+	{
+		"build" : "src/TKBRep",
+		"source" : "src/TKBRep"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\TopoDS",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"name" : "Source Files\\TopExp",
+			"sourceIndexes" : 
+			[
+				15,
+				16
+			]
+		},
+		{
+			"name" : "Source Files\\TopTools",
+			"sourceIndexes" : 
+			[
+				17,
+				18,
+				19,
+				20
+			]
+		},
+		{
+			"name" : "Source Files\\BRep",
+			"sourceIndexes" : 
+			[
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41
+			]
+		},
+		{
+			"name" : "Source Files\\BRepLProp",
+			"sourceIndexes" : 
+			[
+				42,
+				43,
+				44,
+				45,
+				46
+			]
+		},
+		{
+			"name" : "Source Files\\BRepAdaptor",
+			"sourceIndexes" : 
+			[
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54
+			]
+		},
+		{
+			"name" : "Source Files\\BRepTools",
+			"sourceIndexes" : 
+			[
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67
+			]
+		},
+		{
+			"name" : "Source Files\\BinTools",
+			"sourceIndexes" : 
+			[
+				68,
+				69,
+				70,
+				71,
+				72,
+				73
+			]
+		},
+		{
+			"name" : "Header Files\\TopoDS",
+			"sourceIndexes" : 
+			[
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122
+			]
+		},
+		{
+			"name" : "Header Files\\TopExp",
+			"sourceIndexes" : 
+			[
+				123,
+				124,
+				125,
+				126
+			]
+		},
+		{
+			"name" : "Header Files\\TopTools",
+			"sourceIndexes" : 
+			[
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177
+			]
+		},
+		{
+			"name" : "Header Files\\BRep",
+			"sourceIndexes" : 
+			[
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211
+			]
+		},
+		{
+			"name" : "Header Files\\BRepLProp",
+			"sourceIndexes" : 
+			[
+				212,
+				213,
+				214,
+				215,
+				216
+			]
+		},
+		{
+			"name" : "Header Files\\BRepAdaptor",
+			"sourceIndexes" : 
+			[
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227
+			]
+		},
+		{
+			"name" : "Header Files\\BRepTools",
+			"sourceIndexes" : 
+			[
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242
+			]
+		},
+		{
+			"name" : "Header Files\\BinTools",
+			"sourceIndexes" : 
+			[
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_AlertAttribute.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_Builder.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_HShape.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_Iterator.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_Shape.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_TCompound.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_TCompSolid.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_TEdge.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_TFace.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_TShape.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_TShell.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_TSolid.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_TVertex.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_TWire.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopoDS/TopoDS_AlertWithShape.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopExp/TopExp.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopExp/TopExp_Explorer.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopTools/TopTools.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopTools/TopTools_LocationSet.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopTools/TopTools_MutexForShapeProvider.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/TopTools/TopTools_ShapeSet.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_Builder.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_Curve3D.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_CurveOn2Surfaces.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_CurveOnClosedSurface.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_CurveOnSurface.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_CurveRepresentation.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_GCurve.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_PointOnCurve.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_PointOnCurveOnSurface.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_PointOnSurface.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_PointRepresentation.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_PointsOnSurface.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_Polygon3D.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_PolygonOnClosedSurface.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_PolygonOnClosedTriangulation.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_PolygonOnSurface.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_PolygonOnTriangulation.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_TEdge.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_TFace.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_Tool.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRep/BRep_TVertex.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLProp/BRepLProp.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLProp/BRepLProp_CLProps_0.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLProp/BRepLProp_CurveTool.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLProp/BRepLProp_SLProps_0.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLProp/BRepLProp_SurfaceTool.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepAdaptor/BRepAdaptor_CompCurve.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepAdaptor/BRepAdaptor_Curve.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepAdaptor/BRepAdaptor_Curve2d.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepAdaptor/BRepAdaptor_HCompCurve_0.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepAdaptor/BRepAdaptor_HCurve2d_0.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepAdaptor/BRepAdaptor_HCurve_0.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepAdaptor/BRepAdaptor_HSurface_0.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepAdaptor/BRepAdaptor_Surface.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools_Debug.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools_GTrsfModification.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools_History.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools_Modification.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools_Modifier.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools_NurbsConvertModification.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools_Quilt.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools_ReShape.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools_ShapeSet.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools_Substitution.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools_TrsfModification.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTools/BRepTools_WireExplorer.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BinTools/BinTools.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BinTools/BinTools_Curve2dSet.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BinTools/BinTools_CurveSet.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BinTools/BinTools_LocationSet.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BinTools/BinTools_ShapeSet.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BinTools/BinTools_SurfaceSet.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_AlertAttribute.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Builder.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Compound.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_CompSolid.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Edge.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Face.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_FrozenShape.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_HShape.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Iterator.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_ListIteratorOfListOfShape.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_ListOfShape.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_LockedShape.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Shape.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Shell.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Solid.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TCompound.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TCompSolid.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TEdge.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TFace.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TShape.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TShell.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TSolid.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TVertex.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TWire.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_UnCompatibleShapes.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Vertex.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Wire.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_AlertWithShape.hxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Builder.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Compound.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_CompSolid.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Edge.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Face.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_HShape.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Iterator.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Shell.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Solid.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TCompound.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TCompSolid.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TEdge.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TFace.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TShell.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TSolid.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TVertex.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_TWire.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Vertex.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopoDS/TopoDS_Wire.lxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopExp/TopExp.hxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopExp/TopExp_Explorer.hxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopExp/TopExp_Stack.hxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopExp/TopExp_Explorer.lxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_Array1OfListOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_Array1OfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_Array2OfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapIteratorOfDataMapOfIntegerListOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapIteratorOfDataMapOfIntegerShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapIteratorOfDataMapOfOrientedShapeInteger.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapIteratorOfDataMapOfOrientedShapeShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapIteratorOfDataMapOfShapeInteger.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapIteratorOfDataMapOfShapeListOfInteger.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapIteratorOfDataMapOfShapeListOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapIteratorOfDataMapOfShapeReal.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapIteratorOfDataMapOfShapeSequenceOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapIteratorOfDataMapOfShapeShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapOfIntegerListOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapOfIntegerShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapOfOrientedShapeInteger.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapOfOrientedShapeShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapOfShapeBox.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapOfShapeInteger.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapOfShapeListOfInteger.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapOfShapeListOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapOfShapeReal.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapOfShapeSequenceOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_DataMapOfShapeShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_HArray1OfListOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_HArray1OfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_HArray2OfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_HSequenceOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_IndexedDataMapOfShapeAddress.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_IndexedDataMapOfShapeListOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_IndexedDataMapOfShapeReal.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_IndexedDataMapOfShapeShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_IndexedMapOfOrientedShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_IndexedMapOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_ListIteratorOfListOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_ListOfListOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_ListOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_LocationSet.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_LocationSetPtr.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_MapIteratorOfMapOfOrientedShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_MapIteratorOfMapOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_MapOfOrientedShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_MapOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_MutexForShapeProvider.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_OrientedShapeMapHasher.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_SequenceOfShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_ShapeMapHasher.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_ShapeSet.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_OrientedShapeMapHasher.lxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/TopTools/TopTools_ShapeMapHasher.lxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_Builder.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_Curve3D.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_CurveOn2Surfaces.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_CurveOnClosedSurface.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_CurveOnSurface.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_CurveRepresentation.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_GCurve.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_ListIteratorOfListOfCurveRepresentation.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_ListIteratorOfListOfPointRepresentation.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_ListOfCurveRepresentation.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_ListOfPointRepresentation.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_PointOnCurve.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_PointOnCurveOnSurface.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_PointOnSurface.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_PointRepresentation.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_PointsOnSurface.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_Polygon3D.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_PolygonOnClosedSurface.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_PolygonOnClosedTriangulation.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_PolygonOnSurface.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_PolygonOnTriangulation.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_TEdge.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_TFace.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_Tool.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_TVertex.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_Builder.lxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_CurveOnClosedSurface.lxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_CurveOnSurface.lxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_CurveRepresentation.lxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_GCurve.lxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_PointRepresentation.lxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_TEdge.lxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_TFace.lxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRep/BRep_TVertex.lxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLProp/BRepLProp.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLProp/BRepLProp_CLProps.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLProp/BRepLProp_CurveTool.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLProp/BRepLProp_SLProps.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLProp/BRepLProp_SurfaceTool.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepAdaptor/BRepAdaptor_Array1OfCurve.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepAdaptor/BRepAdaptor_CompCurve.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepAdaptor/BRepAdaptor_Curve.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepAdaptor/BRepAdaptor_Curve2d.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepAdaptor/BRepAdaptor_HArray1OfCurve.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepAdaptor/BRepAdaptor_HCompCurve.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepAdaptor/BRepAdaptor_HCurve.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepAdaptor/BRepAdaptor_HCurve2d.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepAdaptor/BRepAdaptor_HSurface.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepAdaptor/BRepAdaptor_Surface.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepAdaptor/BRepAdaptor_Surface.lxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_DataMapIteratorOfMapOfVertexPnt2d.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_GTrsfModification.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_History.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_MapOfVertexPnt2d.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_Modification.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_Modifier.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_NurbsConvertModification.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_Quilt.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_ReShape.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_ShapeSet.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_Substitution.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_TrsfModification.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_WireExplorer.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTools/BRepTools_Modifier.lxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BinTools/BinTools.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BinTools/BinTools_Curve2dSet.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BinTools/BinTools_CurveSet.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BinTools/BinTools_LocationSet.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BinTools/BinTools_LocationSetPtr.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BinTools/BinTools_ShapeSet.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BinTools/BinTools_SurfaceSet.hxx",
+			"sourceGroupIndex" : 15
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

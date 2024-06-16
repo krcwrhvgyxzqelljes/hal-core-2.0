@@ -1,0 +1,3069 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lin64/clang/libd/libTKTopAlgo.so"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"OCCT_INCLUDE_CMAKE_FILE",
+			"install",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"adm/cmake/occt_toolkit.cmake",
+			"CMakeLists.txt",
+			"src/TKTopAlgo/CMakeLists.txt",
+			"src/TKernel/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 232,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 245,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 3
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 8
+			},
+			{
+				"file" : 0,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 10
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 733,
+				"parent" : 12
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 737,
+				"parent" : 12
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++0x -DQT_QML_DEBUG -fexceptions -fPIC -Wall -Wextra -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "OCC_CONVERT_SIGNALS"
+				},
+				{
+					"define" : "TKTopAlgo_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 13,
+					"path" : "/usr/include/tcl"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/usr/include/freetype2"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/user/hal-core-2.0/vendor/build-oce-upstream-V7_5_0beta-Desktop-Debug/include/opencascade"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "TKernel::@8d04b055e0ae6651ef3c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKMath::@3085715a8202f146bd2e"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKG2d::@20b7ad3d41ab2afe8017"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKG3d::@48aa1b6a2abc7d91727f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKGeomBase::@4beb524ea52e134832d7"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKBRep::@9b45fb5581d6102f691c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKGeomAlgo::@aae62178ad94a6f1a322"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Modules/ModelingAlgorithms"
+	},
+	"id" : "TKTopAlgo::@91c0148b6a2f9ec154c3",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "lib${OCCT_INSTALL_BIN_LETTER}"
+			},
+			{
+				"backtrace" : 5,
+				"path" : "lib${OCCT_INSTALL_BIN_LETTER}"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wl,-s -lm",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/user/hal-core-2.0/vendor/build-oce-upstream-V7_5_0beta-Desktop-Debug/lin64/clang/libd:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKGeomAlgo.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKBRep.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKGeomBase.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKG3d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKG2d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKMath.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKernel.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-lstdc++",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "TKTopAlgo",
+	"nameOnDisk" : "libTKTopAlgo.so",
+	"paths" : 
+	{
+		"build" : "src/TKTopAlgo",
+		"source" : "src/TKTopAlgo"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\IntCurvesFace",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Source Files\\MAT",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		},
+		{
+			"name" : "Source Files\\MAT2d",
+			"sourceIndexes" : 
+			[
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			]
+		},
+		{
+			"name" : "Source Files\\Bisector",
+			"sourceIndexes" : 
+			[
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30
+			]
+		},
+		{
+			"name" : "Source Files\\BRepMAT2d",
+			"sourceIndexes" : 
+			[
+				31,
+				32,
+				33
+			]
+		},
+		{
+			"name" : "Source Files\\BRepCheck",
+			"sourceIndexes" : 
+			[
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42
+			]
+		},
+		{
+			"name" : "Source Files\\BRepBndLib",
+			"sourceIndexes" : 
+			[
+				43,
+				44
+			]
+		},
+		{
+			"name" : "Source Files\\BRepExtrema",
+			"sourceIndexes" : 
+			[
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56
+			]
+		},
+		{
+			"name" : "Source Files\\BRepClass",
+			"sourceIndexes" : 
+			[
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63
+			]
+		},
+		{
+			"name" : "Source Files\\BRepClass3d",
+			"sourceIndexes" : 
+			[
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70
+			]
+		},
+		{
+			"name" : "Source Files\\BRepLib",
+			"sourceIndexes" : 
+			[
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86
+			]
+		},
+		{
+			"name" : "Source Files\\BRepGProp",
+			"sourceIndexes" : 
+			[
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99
+			]
+		},
+		{
+			"name" : "Source Files\\BRepIntCurveSurface",
+			"sourceIndexes" : 
+			[
+				100
+			]
+		},
+		{
+			"name" : "Source Files\\BRepTopAdaptor",
+			"sourceIndexes" : 
+			[
+				101,
+				102,
+				103,
+				104
+			]
+		},
+		{
+			"name" : "Source Files\\BRepBuilderAPI",
+			"sourceIndexes" : 
+			[
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124
+			]
+		},
+		{
+			"name" : "Source Files\\BRepApprox",
+			"sourceIndexes" : 
+			[
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149
+			]
+		},
+		{
+			"name" : "Header Files\\IntCurvesFace",
+			"sourceIndexes" : 
+			[
+				150,
+				151,
+				152,
+				153
+			]
+		},
+		{
+			"name" : "Header Files\\MAT",
+			"sourceIndexes" : 
+			[
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177
+			]
+		},
+		{
+			"name" : "Header Files\\MAT2d",
+			"sourceIndexes" : 
+			[
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204
+			]
+		},
+		{
+			"name" : "Header Files\\Bisector",
+			"sourceIndexes" : 
+			[
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215
+			]
+		},
+		{
+			"name" : "Header Files\\BRepMAT2d",
+			"sourceIndexes" : 
+			[
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222
+			]
+		},
+		{
+			"name" : "Header Files\\BRepCheck",
+			"sourceIndexes" : 
+			[
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240
+			]
+		},
+		{
+			"name" : "Header Files\\BRepBndLib",
+			"sourceIndexes" : 
+			[
+				241
+			]
+		},
+		{
+			"name" : "Header Files\\BRepExtrema",
+			"sourceIndexes" : 
+			[
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259
+			]
+		},
+		{
+			"name" : "Header Files\\BRepClass",
+			"sourceIndexes" : 
+			[
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268
+			]
+		},
+		{
+			"name" : "Header Files\\BRepClass3d",
+			"sourceIndexes" : 
+			[
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278
+			]
+		},
+		{
+			"name" : "Header Files\\BRepLib",
+			"sourceIndexes" : 
+			[
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297
+			]
+		},
+		{
+			"name" : "Header Files\\BRepGProp",
+			"sourceIndexes" : 
+			[
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314
+			]
+		},
+		{
+			"name" : "Header Files\\BRepIntCurveSurface",
+			"sourceIndexes" : 
+			[
+				315
+			]
+		},
+		{
+			"name" : "Header Files\\BRepTopAdaptor",
+			"sourceIndexes" : 
+			[
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323
+			]
+		},
+		{
+			"name" : "Header Files\\BRepBuilderAPI",
+			"sourceIndexes" : 
+			[
+				324,
+				325,
+				326,
+				327,
+				328,
+				329,
+				330,
+				331,
+				332,
+				333,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354
+			]
+		},
+		{
+			"name" : "Header Files\\BRepApprox",
+			"sourceIndexes" : 
+			[
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IntCurvesFace/IntCurvesFace_Intersector.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IntCurvesFace/IntCurvesFace_ShapeIntersector.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT/MAT_Arc.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT/MAT_BasicElt.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT/MAT_Bisector.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT/MAT_Edge.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT/MAT_Graph.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT/MAT_ListOfBisector_0.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT/MAT_ListOfEdge_0.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT/MAT_Node.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT/MAT_TListNodeOfListOfBisector_0.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT/MAT_TListNodeOfListOfEdge_0.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT/MAT_Zone.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT2d/MAT2d_BiInt.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT2d/MAT2d_Circuit.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT2d/MAT2d_Connexion.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT2d/MAT2d_CutCurve.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT2d/MAT2d_Mat2d.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT2d/MAT2d_MiniPath.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/MAT2d/MAT2d_Tool2d.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Bisector/Bisector.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Bisector/Bisector_Bisec.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Bisector/Bisector_BisecAna.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Bisector/Bisector_BisecCC.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Bisector/Bisector_BisecPC.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Bisector/Bisector_Curve.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Bisector/Bisector_FunctionH.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Bisector/Bisector_FunctionInter.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Bisector/Bisector_Inter.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Bisector/Bisector_PointOnBis.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Bisector/Bisector_PolyBis.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMAT2d/BRepMAT2d_BisectingLocus.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMAT2d/BRepMAT2d_Explorer.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMAT2d/BRepMAT2d_LinkTopoBilo.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepCheck/BRepCheck.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepCheck/BRepCheck_Analyzer.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepCheck/BRepCheck_Edge.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepCheck/BRepCheck_Face.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepCheck/BRepCheck_Result.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepCheck/BRepCheck_Shell.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepCheck/BRepCheck_Solid.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepCheck/BRepCheck_Vertex.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepCheck/BRepCheck_Wire.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBndLib/BRepBndLib.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBndLib/BRepBndLib_1.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepExtrema/BRepExtrema_DistanceSS.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepExtrema/BRepExtrema_DistShapeShape.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepExtrema/BRepExtrema_ExtCC.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepExtrema/BRepExtrema_ExtCF.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepExtrema/BRepExtrema_ExtFF.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepExtrema/BRepExtrema_ExtPC.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepExtrema/BRepExtrema_ExtPF.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepExtrema/BRepExtrema_OverlapTool.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepExtrema/BRepExtrema_Poly.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepExtrema/BRepExtrema_SelfIntersection.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepExtrema/BRepExtrema_ShapeProximity.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepExtrema/BRepExtrema_TriangleSet.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass/BRepClass_Edge.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass/BRepClass_FaceClassifier.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass/BRepClass_FaceExplorer.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass/BRepClass_FacePassiveClassifier_0.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass/BRepClass_FClass2dOfFClassifier_0.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass/BRepClass_FClassifier_0.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass/BRepClass_Intersector.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass3d/BRepClass3d.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass3d/BRepClass3d_BndBoxTree.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass3d/BRepClass3d_Intersector3d.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass3d/BRepClass3d_SClassifier.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass3d/BRepClass3d_SolidClassifier.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass3d/BRepClass3d_SolidExplorer.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepClass3d/BRepClass3d_SolidPassiveClassifier_0.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_1.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_CheckCurveOnSurface.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_Command.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_FindSurface.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_FuseEdges.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_MakeEdge.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_MakeEdge2d.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_MakeFace.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_MakePolygon.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_MakeShape.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_MakeShell.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_MakeSolid.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_MakeVertex.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_MakeWire.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepLib/BRepLib_MakeWire_1.cxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp_Cinert.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp_Domain.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp_EdgeTool.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp_Face.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp_Gauss.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp_Sinert.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp_TFunction.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp_UFunction.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp_Vinert.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp_VinertGK.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp_MeshCinert.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepGProp/BRepGProp_MeshProps.cxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepIntCurveSurface/BRepIntCurveSurface_Inter.cxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTopAdaptor/BRepTopAdaptor_FClass2d.cxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTopAdaptor/BRepTopAdaptor_HVertex.cxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTopAdaptor/BRepTopAdaptor_Tool.cxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepTopAdaptor/BRepTopAdaptor_TopolTool.cxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_Collect.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_Command.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_Copy.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_FastSewing.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_FindPlane.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_GTransform.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeEdge.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeEdge2d.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeFace.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakePolygon.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeShape.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeShell.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeSolid.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeVertex.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeWire.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_ModifyShape.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_NurbsConvert.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_Sewing.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_Transform.cxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_Approx_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_ApproxLine.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_BSpGradient_BFGSOfMyBSplGradientOfTheComputeLineOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_Gradient_BFGSOfMyGradientbisOfTheComputeLineOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_Gradient_BFGSOfMyGradientOfTheComputeLineBezierOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_MyGradientbisOfTheComputeLineOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_SurfaceTool.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_TheComputeLineBezierOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_TheComputeLineOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_TheImpPrmSvSurfacesOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_TheMultiLineOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_ThePrmPrmSvSurfacesOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepApprox/BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_0.cxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IntCurvesFace/IntCurvesFace_Intersector.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IntCurvesFace/IntCurvesFace_ShapeIntersector.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IntCurvesFace/IntCurvesFace_Intersector.lxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IntCurvesFace/IntCurvesFace_ShapeIntersector.lxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_Arc.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_BasicElt.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_Bisector.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_DataMapIteratorOfDataMapOfIntegerArc.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_DataMapIteratorOfDataMapOfIntegerBasicElt.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_DataMapIteratorOfDataMapOfIntegerBisector.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_DataMapIteratorOfDataMapOfIntegerNode.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_DataMapOfIntegerArc.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_DataMapOfIntegerBasicElt.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_DataMapOfIntegerBisector.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_DataMapOfIntegerNode.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_Edge.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_Graph.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_ListOfBisector.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_ListOfEdge.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_Node.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_SequenceOfArc.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_SequenceOfBasicElt.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_Side.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_TListNodeOfListOfBisector.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_TListNodeOfListOfEdge.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_Zone.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_TList.lxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT/MAT_TListNode.lxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_Array2OfConnexion.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_BiInt.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_Circuit.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_Connexion.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_CutCurve.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapIteratorOfDataMapOfBiIntInteger.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapIteratorOfDataMapOfBiIntSequenceOfInteger.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapIteratorOfDataMapOfIntegerBisec.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapIteratorOfDataMapOfIntegerConnexion.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapIteratorOfDataMapOfIntegerPnt2d.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapIteratorOfDataMapOfIntegerSequenceOfConnexion.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapIteratorOfDataMapOfIntegerVec2d.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapOfBiIntInteger.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapOfBiIntSequenceOfInteger.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapOfIntegerBisec.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapOfIntegerConnexion.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapOfIntegerPnt2d.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapOfIntegerSequenceOfConnexion.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_DataMapOfIntegerVec2d.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_MapBiIntHasher.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_Mat2d.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_MiniPath.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_SequenceOfConnexion.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_SequenceOfSequenceOfCurve.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_SequenceOfSequenceOfGeometry.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_Tool2d.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/MAT2d/MAT2d_MapBiIntHasher.lxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Bisector/Bisector.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Bisector/Bisector_Bisec.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Bisector/Bisector_BisecAna.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Bisector/Bisector_BisecCC.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Bisector/Bisector_BisecPC.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Bisector/Bisector_Curve.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Bisector/Bisector_FunctionH.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Bisector/Bisector_FunctionInter.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Bisector/Bisector_Inter.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Bisector/Bisector_PointOnBis.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Bisector/Bisector_PolyBis.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMAT2d/BRepMAT2d_BisectingLocus.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMAT2d/BRepMAT2d_DataMapIteratorOfDataMapOfBasicEltShape.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMAT2d/BRepMAT2d_DataMapIteratorOfDataMapOfShapeSequenceOfBasicElt.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMAT2d/BRepMAT2d_DataMapOfBasicEltShape.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMAT2d/BRepMAT2d_DataMapOfShapeSequenceOfBasicElt.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMAT2d/BRepMAT2d_Explorer.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMAT2d/BRepMAT2d_LinkTopoBilo.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_Analyzer.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_DataMapIteratorOfDataMapOfShapeListOfStatus.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_DataMapIteratorOfDataMapOfShapeResult.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_DataMapOfShapeListOfStatus.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_DataMapOfShapeResult.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_Edge.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_Face.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_ListIteratorOfListOfStatus.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_ListOfStatus.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_Result.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_Shell.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_Solid.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_Status.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_Vertex.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_Wire.hxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_Analyzer.lxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepCheck/BRepCheck_Result.lxx",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBndLib/BRepBndLib.hxx",
+			"sourceGroupIndex" : 22
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_DistanceSS.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_DistShapeShape.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_ElementFilter.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_ExtCC.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_ExtCF.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_ExtFF.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_ExtPC.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_ExtPF.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_MapOfIntegerPackedMapOfInteger.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_OverlapTool.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_Poly.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_SelfIntersection.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_SeqOfSolution.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_ShapeProximity.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_SolutionElem.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_SupportType.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_TriangleSet.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepExtrema/BRepExtrema_UnCompatibleShape.hxx",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass/BRepClass_Edge.hxx",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass/BRepClass_FaceClassifier.hxx",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass/BRepClass_FaceExplorer.hxx",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass/BRepClass_FacePassiveClassifier.hxx",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass/BRepClass_FClass2dOfFClassifier.hxx",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass/BRepClass_FClassifier.hxx",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass/BRepClass_Intersector.hxx",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass/BRepClass_Edge.lxx",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass/BRepClass_FaceExplorer.lxx",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass3d/BRepClass3d.hxx",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass3d/BRepClass3d_BndBoxTree.hxx",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass3d/BRepClass3d_DataMapIteratorOfMapOfInter.hxx",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass3d/BRepClass3d_Intersector3d.hxx",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass3d/BRepClass3d_MapOfInter.hxx",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass3d/BRepClass3d_SClassifier.hxx",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass3d/BRepClass3d_SolidClassifier.hxx",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass3d/BRepClass3d_SolidExplorer.hxx",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass3d/BRepClass3d_SolidPassiveClassifier.hxx",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepClass3d/BRepClass3d_Intersector3d.lxx",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_CheckCurveOnSurface.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_Command.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_EdgeError.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_FaceError.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_FindSurface.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_FuseEdges.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_MakeEdge.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_MakeEdge2d.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_MakeFace.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_MakePolygon.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_MakeShape.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_MakeShell.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_MakeSolid.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_MakeVertex.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_MakeWire.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_ShapeModification.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_ShellError.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepLib/BRepLib_WireError.hxx",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_Cinert.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_Domain.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_EdgeTool.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_Face.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_Gauss.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_Sinert.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_TFunction.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_UFunction.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_Vinert.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_VinertGK.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_MeshCinert.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_MeshProps.hxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_Domain.lxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_Face.lxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_TFunction.lxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepGProp/BRepGProp_UFunction.lxx",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepIntCurveSurface/BRepIntCurveSurface_Inter.hxx",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTopAdaptor/BRepTopAdaptor_DataMapIteratorOfMapOfShapeTool.hxx",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTopAdaptor/BRepTopAdaptor_FClass2d.hxx",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTopAdaptor/BRepTopAdaptor_HVertex.hxx",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTopAdaptor/BRepTopAdaptor_MapOfShapeTool.hxx",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTopAdaptor/BRepTopAdaptor_SeqOfPtr.hxx",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTopAdaptor/BRepTopAdaptor_Tool.hxx",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTopAdaptor/BRepTopAdaptor_TopolTool.hxx",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepTopAdaptor/BRepTopAdaptor_HVertex.lxx",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_BndBoxTreeSelector.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_CellFilter.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_Collect.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_Command.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_Copy.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_EdgeError.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_FaceError.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_FastSewing.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_FindPlane.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_GTransform.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeEdge.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeEdge2d.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeFace.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakePolygon.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeShape.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeShell.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeSolid.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeVertex.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_MakeWire.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_ModifyShape.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_NurbsConvert.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_PipeError.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_Sewing.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_ShapeModification.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_ShellError.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_Transform.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_TransitionMode.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_VertexInspector.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_WireError.hxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepBuilderAPI/BRepBuilderAPI_Sewing.lxx",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_Approx.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_ApproxLine.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_BSpGradient_BFGSOfMyBSplGradientOfTheComputeLineOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_Gradient_BFGSOfMyGradientbisOfTheComputeLineOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_Gradient_BFGSOfMyGradientOfTheComputeLineBezierOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_MyBSplGradientOfTheComputeLineOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_MyGradientbisOfTheComputeLineOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_MyGradientOfTheComputeLineBezierOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_SurfaceTool.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_TheComputeLineBezierOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_TheComputeLineOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_TheImpPrmSvSurfacesOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_TheMultiLineOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_TheMultiLineToolOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_ThePrmPrmSvSurfacesOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox.hxx",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepApprox/BRepApprox_SurfaceTool.lxx",
+			"sourceGroupIndex" : 31
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

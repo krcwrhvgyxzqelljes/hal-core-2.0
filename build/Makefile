@@ -344,32 +344,6 @@ hm2_eth/fast:
 .PHONY : hm2_eth/fast
 
 #=============================================================================
-# Target rules for targets named code_parser
-
-# Build rule for target.
-code_parser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 code_parser
-.PHONY : code_parser
-
-# fast build rule for target.
-code_parser/fast:
-	$(MAKE) $(MAKESILENT) -f projects/code_parser/CMakeFiles/code_parser.dir/build.make projects/code_parser/CMakeFiles/code_parser.dir/build
-.PHONY : code_parser/fast
-
-#=============================================================================
-# Target rules for targets named gcode_parser
-
-# Build rule for target.
-gcode_parser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gcode_parser
-.PHONY : gcode_parser
-
-# fast build rule for target.
-gcode_parser/fast:
-	$(MAKE) $(MAKESILENT) -f projects/gcode_parser/CMakeFiles/gcode_parser.dir/build.make projects/gcode_parser/CMakeFiles/gcode_parser.dir/build
-.PHONY : gcode_parser/fast
-
-#=============================================================================
 # Target rules for targets named cnc
 
 # Build rule for target.
@@ -409,8 +383,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... cnc_autogen"
 	@echo "... cnc"
-	@echo "... code_parser"
-	@echo "... gcode_parser"
 	@echo "... hal_lib"
 	@echo "... hal_parport"
 	@echo "... halcmd"

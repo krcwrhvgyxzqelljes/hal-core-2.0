@@ -382,10 +382,24 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.s: 
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.s"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/hal-core-2.0/vendor/std_functions/std_functions.cpp -o CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.s
 
+projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
+projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o: /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.cpp
+projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o"
+	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o -MF CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o.d -o CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o -c /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.cpp
+
+projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.i"
+	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.cpp > CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.i
+
+projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.s"
+	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.cpp -o CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.s
+
 projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
 projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o: projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp
 projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o -MF CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o.d -o CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o -c /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp
 
 projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.i: cmake_force
@@ -408,6 +422,7 @@ cnc_OBJECTS = \
 "CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o" \
 "CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o" \
 "CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o" \
+"CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o" \
 "CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o"
 
 # External object files for target cnc
@@ -423,6 +438,7 @@ projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o
+projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/build.make
 projects/cnc/cnc: /usr/local/lib/libTKXSDRAW.so.7.5.0
@@ -438,7 +454,6 @@ projects/cnc/cnc: /opt/qt-creator/5.15.1/gcc_64/lib/libQt5OpenGL.so.5.15.1
 projects/cnc/cnc: /usr/lib/x86_64-linux-gnu/libGL.so
 projects/cnc/cnc: /usr/lib/x86_64-linux-gnu/libGLU.so
 projects/cnc/cnc: projects/cnc/../../../lib/libhalcore.so
-projects/cnc/cnc: projects/cnc/../../../lib/libgcode_parser.so
 projects/cnc/cnc: /usr/local/lib/libTKDCAF.so.7.5.0
 projects/cnc/cnc: /usr/local/lib/libTKViewerTest.so.7.5.0
 projects/cnc/cnc: /usr/local/lib/libTKOpenGl.so.7.5.0
@@ -488,7 +503,7 @@ projects/cnc/cnc: /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Widgets.so.5.15.1
 projects/cnc/cnc: /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Gui.so.5.15.1
 projects/cnc/cnc: /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Core.so.5.15.1
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable cnc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable cnc"
 	cd /home/user/hal-core-2.0/build/projects/cnc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cnc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

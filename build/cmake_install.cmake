@@ -57,8 +57,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/user/hal-core-2.0/build/src/hal/components/motion/cmake_install.cmake")
   include("/home/user/hal-core-2.0/build/src/hal/components/ethercat/cmake_install.cmake")
   include("/home/user/hal-core-2.0/build/src/hal/components/hm2_eth/cmake_install.cmake")
-  include("/home/user/hal-core-2.0/build/projects/code_parser/cmake_install.cmake")
-  include("/home/user/hal-core-2.0/build/projects/gcode_parser/cmake_install.cmake")
   include("/home/user/hal-core-2.0/build/projects/cnc/cmake_install.cmake")
 
 endif()

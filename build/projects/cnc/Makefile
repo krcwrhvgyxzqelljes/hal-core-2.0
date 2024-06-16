@@ -261,6 +261,30 @@ QGCodeSyntaxHighlighter.cpp.s:
 	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.s
 .PHONY : QGCodeSyntaxHighlighter.cpp.s
 
+__/__/vendor/gcode_parser/gcode_parser.o: __/__/vendor/gcode_parser/gcode_parser.cpp.o
+.PHONY : __/__/vendor/gcode_parser/gcode_parser.o
+
+# target to build an object file
+__/__/vendor/gcode_parser/gcode_parser.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o
+.PHONY : __/__/vendor/gcode_parser/gcode_parser.cpp.o
+
+__/__/vendor/gcode_parser/gcode_parser.i: __/__/vendor/gcode_parser/gcode_parser.cpp.i
+.PHONY : __/__/vendor/gcode_parser/gcode_parser.i
+
+# target to preprocess a source file
+__/__/vendor/gcode_parser/gcode_parser.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.i
+.PHONY : __/__/vendor/gcode_parser/gcode_parser.cpp.i
+
+__/__/vendor/gcode_parser/gcode_parser.s: __/__/vendor/gcode_parser/gcode_parser.cpp.s
+.PHONY : __/__/vendor/gcode_parser/gcode_parser.s
+
+# target to generate assembly for a file
+__/__/vendor/gcode_parser/gcode_parser.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.s
+.PHONY : __/__/vendor/gcode_parser/gcode_parser.cpp.s
+
 __/__/vendor/occ_draw/draw_primitives.o: __/__/vendor/occ_draw/draw_primitives.cpp.o
 .PHONY : __/__/vendor/occ_draw/draw_primitives.o
 
@@ -476,6 +500,9 @@ help:
 	@echo "... QGCodeSyntaxHighlighter.o"
 	@echo "... QGCodeSyntaxHighlighter.i"
 	@echo "... QGCodeSyntaxHighlighter.s"
+	@echo "... __/__/vendor/gcode_parser/gcode_parser.o"
+	@echo "... __/__/vendor/gcode_parser/gcode_parser.i"
+	@echo "... __/__/vendor/gcode_parser/gcode_parser.s"
 	@echo "... __/__/vendor/occ_draw/draw_primitives.o"
 	@echo "... __/__/vendor/occ_draw/draw_primitives.i"
 	@echo "... __/__/vendor/occ_draw/draw_primitives.s"

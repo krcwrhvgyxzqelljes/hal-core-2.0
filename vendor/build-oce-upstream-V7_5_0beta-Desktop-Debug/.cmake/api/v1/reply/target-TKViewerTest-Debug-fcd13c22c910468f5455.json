@@ -1,0 +1,717 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lin64/clang/libd/libTKViewerTest.so"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"OCCT_INCLUDE_CMAKE_FILE",
+			"install",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"adm/cmake/occt_toolkit.cmake",
+			"CMakeLists.txt",
+			"src/TKViewerTest/CMakeLists.txt",
+			"src/TKTopTest/CMakeLists.txt",
+			"src/TKFillet/CMakeLists.txt",
+			"src/TKernel/CMakeLists.txt",
+			"src/TKService/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 232,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 245,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 3
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 8
+			},
+			{
+				"file" : 0,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 10
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 3,
+				"parent" : 12
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 13
+			},
+			{
+				"file" : 0,
+				"parent" : 14
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 15
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 3,
+				"parent" : 17
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 18
+			},
+			{
+				"file" : 0,
+				"parent" : 19
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 20
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 3,
+				"parent" : 22
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 23
+			},
+			{
+				"file" : 0,
+				"parent" : 24
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 25
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 733,
+				"parent" : 27
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 737,
+				"parent" : 27
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++0x -DQT_QML_DEBUG -fexceptions -fPIC -Wall -Wextra -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "OCC_CONVERT_SIGNALS"
+				},
+				{
+					"define" : "TKViewerTest_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 28,
+					"path" : "/usr/include/tcl"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/usr/include/freetype2"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "/home/user/hal-core-2.0/vendor/build-oce-upstream-V7_5_0beta-Desktop-Debug/include/opencascade"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "TKernel::@8d04b055e0ae6651ef3c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKMath::@3085715a8202f146bd2e"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKG2d::@20b7ad3d41ab2afe8017"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKG3d::@48aa1b6a2abc7d91727f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKGeomBase::@4beb524ea52e134832d7"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKBRep::@9b45fb5581d6102f691c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKGeomAlgo::@aae62178ad94a6f1a322"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKTopAlgo::@91c0148b6a2f9ec154c3"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKPrim::@5fa60d69ff083536bcc4"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKBO::@10bda84caabb50aa1383"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKShHealing::@e53d334fe0be8ac1b63c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKBool::@2e95e6336d2acfd0d9f4"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKHLR::@b6bc9c8351665e8f26cf"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKFillet::@7c6ad014db1ce7d88e31"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKOffset::@d22e9344cc71aec412f3"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKFeat::@ac0878a952355c761afd"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKMesh::@8f53663783f6a9c05f92"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKService::@f26723ecfdeb5f7697af"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKV3d::@96ee934280ab0a37e909"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKOpenGl::@8ce10aaacf3a23f86f60"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKDraw::@f3deb978c536a1a11b47"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKTopTest::@7965adb77ca6c4b0f64c"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Modules/Draw"
+	},
+	"id" : "TKViewerTest::@3cc958522ba02cb6179c",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "lib${OCCT_INSTALL_BIN_LETTER}"
+			},
+			{
+				"backtrace" : 5,
+				"path" : "lib${OCCT_INSTALL_BIN_LETTER}"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wl,-s -lm",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/user/hal-core-2.0/vendor/build-oce-upstream-V7_5_0beta-Desktop-Debug/lin64/clang/libd:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKTopTest.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKOffset.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKV3d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKDraw.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKOpenGl.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltcl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltk",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lX11",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lXext",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lXmu",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lXi",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lGL",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lfreetype",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKFillet.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKHLR.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKMesh.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "../../lin64/clang/libd/libTKFeat.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKBool.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "../../lin64/clang/libd/libTKBO.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKShHealing.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKPrim.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKTopAlgo.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKGeomAlgo.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKBRep.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKGeomBase.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKG3d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKG2d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKService.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKMath.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKernel.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "-lstdc++",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "-lfontconfig",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lX11",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lXext",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lXmu",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lXi",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lGL",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lfreetype",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "TKViewerTest",
+	"nameOnDisk" : "libTKViewerTest.so",
+	"paths" : 
+	{
+		"build" : "src/TKViewerTest",
+		"source" : "src/TKViewerTest"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\ViewerTest",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		},
+		{
+			"name" : "Header Files\\ViewerTest",
+			"sourceIndexes" : 
+			[
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ViewerTest/ViewerTest.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ViewerTest/ViewerTest_AutoUpdater.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ViewerTest/ViewerTest_CmdParser.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ViewerTest/ViewerTest_ContinuousRedrawer.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ViewerTest/ViewerTest_EventManager.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ViewerTest/ViewerTest_FilletCommands.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ViewerTest/ViewerTest_ObjectCommands.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ViewerTest/ViewerTest_OpenGlCommands.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ViewerTest/ViewerTest_RelationCommands.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ViewerTest/ViewerTest_ViewerCommands.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ViewerTest/ViewerTest_V3dView.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ViewerTest/ViewerTest.hxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ViewerTest/ViewerTest_AutoUpdater.hxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ViewerTest/ViewerTest_CmdParser.hxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ViewerTest/ViewerTest_ContinuousRedrawer.hxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ViewerTest/ViewerTest_DoubleMapIteratorOfDoubleMapOfInteractiveAndName.hxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ViewerTest/ViewerTest_DoubleMapOfInteractiveAndName.hxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ViewerTest/ViewerTest_EventManager.hxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ViewerTest/ViewerTest_V3dView.hxx",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

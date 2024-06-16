@@ -60,9 +60,7 @@ public:
     ~MainWindow();
 
     void update();
-    int digits(int nr);
     void hal_connection();
-    int get_jog_axis();
 
 private slots:
 
@@ -86,63 +84,9 @@ private slots:
 
     void on_toolButton_zoom_plus_pressed();
 
-    void on_toolButton_stop_pressed();
-
-    void on_toolButton_pause_toggled(bool checked);
-
-    void on_toolButton_run_pressed();
-
     void on_toolButton_file_open_pressed();
 
-    void on_toolButton_reload_pressed();
-
-    void on_toolButton_emergency_pressed();
-
-    void on_toolButton_machine_on_pressed();
-
-    void on_horizontalSlider_max_velocity_sliderMoved(int position);
-
-    void on_horizontalSlider_max_velocity_sliderReleased();
-
-    void on_horizontalSlider_feed_override_sliderMoved(int position);
-
-    void on_horizontalSlider_feed_override_sliderReleased();
-
-    void on_horizontalSlider_rapid_override_sliderMoved(int position);
-
-    void on_horizontalSlider_rapid_override_sliderReleased();
-
-    void on_horizontalSlider_spindle_override_sliderMoved(int position);
-
-    void on_horizontalSlider_spindle_override_sliderReleased();
-
-    void on_pushButton_jog_min_pressed();
-
-    void on_pushButton_jog_min_released();
-
-    void on_pushButton_jog_plus_pressed();
-
-    void on_pushButton_jog_plus_released();
-
-    void on_checkBox_mist_clicked(bool checked);
-
-    void on_checkBox_flood_clicked(bool checked);
-
-    void on_toolButton_spindle_stop_pressed();
-
-    void on_toolButton_spindle_ccw_pressed();
-
-    void on_toolButton_spindle_cw_pressed();
-
-    void on_pushButton_spindle_plus_pressed();
-
-    void on_pushButton_spindle_min_pressed();
-
-    void on_toolButton_mdi_command_exec_pressed();
-
-    void on_tabWidget_currentChanged(int index);
-
-    void on_pushButton_home_all_pressed();
+    void on_pushButton_open_pressed();
 
 private:
     Ui::MainWindow *ui;

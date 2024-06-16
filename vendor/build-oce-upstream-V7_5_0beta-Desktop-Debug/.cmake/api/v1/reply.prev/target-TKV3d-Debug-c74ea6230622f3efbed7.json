@@ -1,0 +1,4268 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lin64/clang/libd/libTKV3d.so"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"OCCT_INCLUDE_CMAKE_FILE",
+			"install",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"adm/cmake/occt_toolkit.cmake",
+			"CMakeLists.txt",
+			"src/TKV3d/CMakeLists.txt",
+			"src/TKService/CMakeLists.txt",
+			"src/TKernel/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 232,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 245,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 3
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 8
+			},
+			{
+				"file" : 0,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 10
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 3,
+				"parent" : 12
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 13
+			},
+			{
+				"file" : 0,
+				"parent" : 14
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 15
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 733,
+				"parent" : 17
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 737,
+				"parent" : 17
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++0x -DQT_QML_DEBUG -fexceptions -fPIC -Wall -Wextra -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "OCC_CONVERT_SIGNALS"
+				},
+				{
+					"define" : "TKV3d_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 18,
+					"path" : "/usr/include/tcl"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/usr/include/freetype2"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/user/hal-core-2.0/vendor/build-oce-upstream-V7_5_0beta-Desktop-Debug/include/opencascade"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "TKernel::@8d04b055e0ae6651ef3c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKMath::@3085715a8202f146bd2e"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKG2d::@20b7ad3d41ab2afe8017"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKG3d::@48aa1b6a2abc7d91727f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKGeomBase::@4beb524ea52e134832d7"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKBRep::@9b45fb5581d6102f691c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKGeomAlgo::@aae62178ad94a6f1a322"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKTopAlgo::@91c0148b6a2f9ec154c3"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKShHealing::@e53d334fe0be8ac1b63c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKHLR::@b6bc9c8351665e8f26cf"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKMesh::@8f53663783f6a9c05f92"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKService::@f26723ecfdeb5f7697af"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Modules/Visualization"
+	},
+	"id" : "TKV3d::@96ee934280ab0a37e909",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "lib${OCCT_INSTALL_BIN_LETTER}"
+			},
+			{
+				"backtrace" : 5,
+				"path" : "lib${OCCT_INSTALL_BIN_LETTER}"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wl,-s -lm",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/user/hal-core-2.0/vendor/build-oce-upstream-V7_5_0beta-Desktop-Debug/lin64/clang/libd:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKService.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKMesh.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKHLR.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lGL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lX11",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lXext",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lXmu",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lXi",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lfreetype",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-lfontconfig",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lfreetype",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKShHealing.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKTopAlgo.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKGeomAlgo.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKBRep.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKGeomBase.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKG3d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKG2d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKMath.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKernel.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "-lstdc++",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "TKV3d",
+	"nameOnDisk" : "libTKV3d.so",
+	"paths" : 
+	{
+		"build" : "src/TKV3d",
+		"source" : "src/TKV3d"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\V3d",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			]
+		},
+		{
+			"name" : "Source Files\\Select3D",
+			"sourceIndexes" : 
+			[
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30
+			]
+		},
+		{
+			"name" : "Source Files\\Prs3d",
+			"sourceIndexes" : 
+			[
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52
+			]
+		},
+		{
+			"name" : "Source Files\\StdPrs",
+			"sourceIndexes" : 
+			[
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76
+			]
+		},
+		{
+			"name" : "Source Files\\SelectMgr",
+			"sourceIndexes" : 
+			[
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101
+			]
+		},
+		{
+			"name" : "Source Files\\PrsMgr",
+			"sourceIndexes" : 
+			[
+				102,
+				103,
+				104
+			]
+		},
+		{
+			"name" : "Source Files\\AIS",
+			"sourceIndexes" : 
+			[
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146
+			]
+		},
+		{
+			"name" : "Source Files\\StdSelect",
+			"sourceIndexes" : 
+			[
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153
+			]
+		},
+		{
+			"name" : "Source Files\\DsgPrs",
+			"sourceIndexes" : 
+			[
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178
+			]
+		},
+		{
+			"name" : "Source Files\\PrsDim",
+			"sourceIndexes" : 
+			[
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202
+			]
+		},
+		{
+			"name" : "Header Files\\V3d",
+			"sourceIndexes" : 
+			[
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235
+			]
+		},
+		{
+			"name" : "Header Files\\Select3D",
+			"sourceIndexes" : 
+			[
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258
+			]
+		},
+		{
+			"name" : "Header Files\\Prs3d",
+			"sourceIndexes" : 
+			[
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299
+			]
+		},
+		{
+			"name" : "Header Files\\StdPrs",
+			"sourceIndexes" : 
+			[
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327
+			]
+		},
+		{
+			"name" : "Header Files\\SelectBasics",
+			"sourceIndexes" : 
+			[
+				328,
+				329,
+				330,
+				331,
+				332
+			]
+		},
+		{
+			"name" : "Header Files\\SelectMgr",
+			"sourceIndexes" : 
+			[
+				333,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375
+			]
+		},
+		{
+			"name" : "Header Files\\PrsMgr",
+			"sourceIndexes" : 
+			[
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384
+			]
+		},
+		{
+			"name" : "Header Files\\AIS",
+			"sourceIndexes" : 
+			[
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391,
+				392,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400,
+				401,
+				402,
+				403,
+				404,
+				405,
+				406,
+				407,
+				408,
+				409,
+				410,
+				411,
+				412,
+				413,
+				414,
+				415,
+				416,
+				417,
+				418,
+				419,
+				420,
+				421,
+				422,
+				423,
+				424,
+				425,
+				426,
+				427,
+				428,
+				429,
+				430,
+				431,
+				432,
+				433,
+				434,
+				435,
+				436,
+				437,
+				438,
+				439,
+				440,
+				441,
+				442,
+				443,
+				444,
+				445,
+				446,
+				447,
+				448,
+				449,
+				450,
+				451,
+				452,
+				453,
+				454,
+				455,
+				456,
+				457,
+				458,
+				459,
+				460,
+				461,
+				462,
+				463,
+				464,
+				465,
+				466,
+				467,
+				468,
+				469,
+				470,
+				471,
+				472,
+				473,
+				474,
+				475,
+				476,
+				477,
+				478,
+				479,
+				480,
+				481,
+				482,
+				483,
+				484,
+				485,
+				486,
+				487
+			]
+		},
+		{
+			"name" : "Header Files\\StdSelect",
+			"sourceIndexes" : 
+			[
+				488,
+				489,
+				490,
+				491,
+				492,
+				493,
+				494,
+				495,
+				496,
+				497,
+				498
+			]
+		},
+		{
+			"name" : "Header Files\\DsgPrs",
+			"sourceIndexes" : 
+			[
+				499,
+				500,
+				501,
+				502,
+				503,
+				504,
+				505,
+				506,
+				507,
+				508,
+				509,
+				510,
+				511,
+				512,
+				513,
+				514,
+				515,
+				516,
+				517,
+				518,
+				519,
+				520,
+				521,
+				522,
+				523,
+				524
+			]
+		},
+		{
+			"name" : "Header Files\\PrsDim",
+			"sourceIndexes" : 
+			[
+				525,
+				526,
+				527,
+				528,
+				529,
+				530,
+				531,
+				532,
+				533,
+				534,
+				535,
+				536,
+				537,
+				538,
+				539,
+				540,
+				541,
+				542,
+				543,
+				544,
+				545,
+				546,
+				547,
+				548,
+				549,
+				550,
+				551,
+				552,
+				553,
+				554,
+				555,
+				556
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_AmbientLight.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_CircularGrid.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_DirectionalLight.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_Plane.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_PositionalLight.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_PositionLight.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_RectangularGrid.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_SpotLight.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_Trihedron.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_View.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_View_2.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_View_3.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_View_4.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_Viewer.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/V3d/V3d_Viewer_4.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_InteriorSensitivePointSet.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitiveBox.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitiveCircle.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitiveCurve.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitiveEntity.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitiveFace.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitiveGroup.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitivePoint.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitivePoly.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitivePrimitiveArray.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitiveSegment.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitiveSet.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitiveTriangle.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitiveTriangulation.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Select3D/Select3D_SensitiveWire.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_Arrow.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_ArrowAspect.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_BasicAspect.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_BndBox.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_DatumAspect.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_DimensionAspect.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_Drawer.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_IsoAspect.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_LineAspect.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_PlaneAspect.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_PointAspect.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_PresentationShadow.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_ShadingAspect.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_Text.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_TextAspect.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_ToolDisk.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_ToolCylinder.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_ToolQuadric.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_ToolSector.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_ToolSphere.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Prs3d/Prs3d_ToolTorus.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_BRepFont.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_BRepTextBuilder.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_Curve.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_DeflectionCurve.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_HLRPolyShape.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_HLRShape.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_HLRShapeI.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_HLRToolShape.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_Isolines.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_Plane.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_PoleCurve.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_ShadedShape.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_ShadedSurface.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_ShapeTool.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_ToolPoint.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_ToolRFace.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_ToolTriangulatedShape.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_ToolVertex.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_WFDeflectionRestrictedFace.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_WFDeflectionSurface.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_WFPoleSurface.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_WFRestrictedFace.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_WFShape.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdPrs/StdPrs_WFSurface.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_AndFilter.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_AndOrFilter.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_BaseFrustum.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_BVHThreadPool.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_CompositionFilter.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_EntityOwner.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_Filter.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_FrustumBuilder.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_OrFilter.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_RectangularFrustum.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_SelectableObject.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_SelectableObjectSet.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_SelectingVolumeManager.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_Selection.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_SelectionImageFiller.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_SelectionManager.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_SensitiveEntity.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_SensitiveEntitySet.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_ToleranceMap.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_TriangularFrustum.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_TriangularFrustumSet.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_ViewClipRange.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_ViewerSelector.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/SelectMgr/SelectMgr_ViewerSelector3d.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsMgr/PrsMgr_PresentableObject.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsMgr/PrsMgr_Presentation.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsMgr/PrsMgr_PresentationManager.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_Animation.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_AnimationCamera.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_AnimationObject.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_AttributeFilter.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_Axis.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_BadEdgeFilter.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_C0RegularityFilter.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_CameraFrustum.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_Circle.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_ColoredShape.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_ColorScale.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_ConnectedInteractive.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_ExclusionFilter.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_GlobalStatus.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_GraphicTool.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_InteractiveContext.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_InteractiveContext_1.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_InteractiveContext_2.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_InteractiveContext_3.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_InteractiveObject.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_Line.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_Manipulator.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_ManipulatorOwner.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_MediaPlayer.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_MultipleConnectedInteractive.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_Plane.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_PlaneTrihedron.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_Point.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_PointCloud.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_RubberBand.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_Selection.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_Shape.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_SignatureFilter.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_TextLabel.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_TexturedShape.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_Triangulation.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_Trihedron.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_TrihedronOwner.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_TypeFilter.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_ViewController.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_ViewCube.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIS/AIS_XRTrackedDevice.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdSelect/StdSelect.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdSelect/StdSelect_BRepOwner.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdSelect/StdSelect_BRepSelectionTool.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdSelect/StdSelect_EdgeFilter.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdSelect/StdSelect_FaceFilter.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdSelect/StdSelect_Shape.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/StdSelect/StdSelect_ShapeTypeFilter.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_AnglePresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_Chamf2dPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_ConcentricPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_DatumPrs.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_DiameterPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_EllipseRadiusPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_EqualDistancePresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_EqualRadiusPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_FilletRadiusPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_FixPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_IdenticPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_LengthPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_MidPointPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_OffsetPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_ParalPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_PerpenPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_RadiusPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_ShadedPlanePresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_ShapeDirPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_SymbPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_SymmetricPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_TangentPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_XYZAxisPresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/DsgPrs/DsgPrs_XYZPlanePresentation.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_AngleDimension.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_Chamf2dDimension.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_Chamf3dDimension.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_ConcentricRelation.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_DiameterDimension.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_Dimension.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_DimensionOwner.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_EllipseRadiusDimension.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_EqualDistanceRelation.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_EqualRadiusRelation.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_FixRelation.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_IdenticRelation.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_LengthDimension.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_MaxRadiusDimension.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_MidPointRelation.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_MinRadiusDimension.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_OffsetDimension.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_ParallelRelation.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_PerpendicularRelation.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_RadiusDimension.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_Relation.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_SymmetricRelation.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/PrsDim/PrsDim_TangentRelation.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_AmbientLight.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_BadValue.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_CircularGrid.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_Coordinate.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_DirectionalLight.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_ImageDumpOptions.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_Light.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_ListOfLight.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_ListOfView.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_Parameter.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_Plane.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_PositionalLight.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_PositionLight.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_RectangularGrid.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_SpotLight.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_StereoDumpOptions.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_Trihedron.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_TypeOfAxe.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_TypeOfBackfacingModel.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_TypeOfLight.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_TypeOfOrientation.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_TypeOfPickCamera.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_TypeOfPickLight.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_TypeOfRepresentation.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_TypeOfShadingModel.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_TypeOfView.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_TypeOfVisualization.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_UnMapped.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_View.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_Viewer.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_ViewerPointer.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/V3d/V3d_ViewPointer.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_BndBox3d.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_BVHBuilder3d.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_BVHIndexBuffer.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_EntitySequence.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_IndexedMapOfEntity.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_InteriorSensitivePointSet.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_Pnt.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_PointData.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitiveBox.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitiveCircle.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitiveCurve.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitiveEntity.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitiveFace.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitiveGroup.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitivePoint.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitivePoly.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitivePrimitiveArray.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitiveSegment.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitiveSet.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitiveTriangle.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitiveTriangulation.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_SensitiveWire.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Select3D/Select3D_TypeOfSensitivity.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_Arrow.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_ArrowAspect.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_BasicAspect.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_BndBox.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_DatumAspect.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_DatumAttribute.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_DatumAxes.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_DatumMode.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_DatumParts.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_DimensionArrowOrientation.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_DimensionAspect.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_DimensionTextHorizontalPosition.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_DimensionTextVerticalPosition.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_DimensionUnits.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_Drawer.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_InvalidAngle.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_IsoAspect.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_LineAspect.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_NListIteratorOfListOfSequenceOfPnt.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_NListOfSequenceOfPnt.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_PlaneAspect.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_Point.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_PointAspect.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_Presentation.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_PresentationShadow.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_Root.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_ShadingAspect.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_ShapeTool.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_Text.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_TextAspect.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_ToolDisk.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_ToolCylinder.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_ToolQuadric.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_ToolSector.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_ToolSphere.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_ToolTorus.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_TypeOfHighlight.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_TypeOfHLR.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_TypeOfLinePicking.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Prs3d/Prs3d_VertexDrawMode.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_BRepFont.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_BRepTextBuilder.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_BndBox.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_Curve.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_DeflectionCurve.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_HLRPolyShape.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_HLRShape.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_HLRShapeI.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_HLRToolShape.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_Isolines.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_Plane.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_Point.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_PoleCurve.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_ShadedShape.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_ShadedSurface.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_ShapeTool.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_ToolPoint.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_ToolRFace.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_ToolTriangulatedShape.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_ToolVertex.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_Vertex.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_Volume.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_WFDeflectionRestrictedFace.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_WFDeflectionSurface.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_WFPoleSurface.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_WFRestrictedFace.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_WFShape.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdPrs/StdPrs_WFSurface.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectBasics/SelectBasics.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectBasics/SelectBasics_EntityOwner.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectBasics/SelectBasics_PickResult.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectBasics/SelectBasics_SelectingVolumeManager.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectBasics/SelectBasics_SensitiveEntity.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_AndFilter.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_AndOrFilter.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_BaseFrustum.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_BVHThreadPool.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_CompositionFilter.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_EntityOwner.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_Filter.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_FilterType.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_Frustum.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_FrustumBuilder.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_IndexedDataMapOfOwnerCriterion.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_IndexedMapOfOwner.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_ListIteratorOfListOfFilter.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_ListOfFilter.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_OrFilter.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_PickingStrategy.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_RectangularFrustum.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_SelectableObject.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_SelectableObjectSet.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_SelectingVolumeManager.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_Selection.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_SelectionImageFiller.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_SelectionManager.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_SensitiveEntity.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_SensitiveEntitySet.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_SequenceOfFilter.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_SequenceOfOwner.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_SequenceOfSelection.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_SortCriterion.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_StateOfSelection.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_ToleranceMap.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_TriangularFrustum.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_TriangularFrustumSet.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_TypeOfBVHUpdate.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_TypeOfDepthTolerance.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_TypeOfUpdate.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_VectorTypes.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_ViewClipRange.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_ViewerSelector.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_ViewerSelector3d.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_CompositionFilter.lxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/SelectMgr/SelectMgr_Frustum.lxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsMgr/PrsMgr_ListOfPresentableObjects.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsMgr/PrsMgr_ListOfPresentations.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsMgr/PrsMgr_PresentableObject.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsMgr/PrsMgr_Presentation.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsMgr/PrsMgr_Presentation3d.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsMgr/PrsMgr_PresentationManager.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsMgr/PrsMgr_PresentationManager3d.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsMgr/PrsMgr_Presentations.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsMgr/PrsMgr_TypeOfPresentation3d.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Animation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_AnimationTimer.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_AnimationCamera.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_AnimationObject.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_AttributeFilter.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Axis.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_BadEdgeFilter.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_C0RegularityFilter.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_CameraFrustum.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Circle.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ClearMode.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ColoredDrawer.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ColoredShape.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_DataMapOfShapeDrawer.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ColorScale.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ConnectedInteractive.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ConnectStatus.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_DataMapIteratorOfDataMapofIntegerListOfinteractive.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_DataMapIteratorOfDataMapOfIOStatus.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_DataMapIteratorOfDataMapOfSelStat.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_DataMapofIntegerListOfinteractive.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_DataMapOfIOStatus.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_DataMapOfSelStat.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_DisplayMode.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_DisplayStatus.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_DragAction.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ExclusionFilter.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_GlobalStatus.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_GraphicTool.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_IndexedDataMapOfOwnerPrs.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_InteractiveContext.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_InteractiveObject.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_KindOfInteractive.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Line.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ListIteratorOfListOfInteractive.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ListOfInteractive.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Manipulator.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ManipulatorMode.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ManipulatorOwner.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_MapIteratorOfMapOfInteractive.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_MapOfInteractive.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_MediaPlayer.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_MouseGesture.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_MultipleConnectedInteractive.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_NavigationMode.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_NListOfEntityOwner.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Plane.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_PlaneTrihedron.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Point.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_PointCloud.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_RotationMode.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_RubberBand.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Selection.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_SelectStatus.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_SelectionModesConcurrency.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_SequenceOfInteractive.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Shape.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_SignatureFilter.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_StatusOfDetection.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_StatusOfPick.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_TextLabel.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_TexturedShape.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Triangulation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Trihedron.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_TrihedronOwner.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_TrihedronSelectionMode.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_TypeFilter.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_TypeOfAttribute.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_TypeOfAxis.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_TypeOfIso.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_TypeOfPlane.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ViewController.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ViewInputBuffer.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ViewCube.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_WalkDelta.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_AngleDimension.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Chamf2dDimension.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Chamf3dDimension.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ConcentricRelation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_DiameterDimension.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Dimension.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_DimensionOwner.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_EllipseRadiusDimension.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_EqualDistanceRelation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_EqualRadiusRelation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_FixRelation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_IdenticRelation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_LengthDimension.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_MaxRadiusDimension.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_MidPointRelation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_MinRadiusDimension.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_OffsetDimension.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ParallelRelation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_PerpendicularRelation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_RadiusDimension.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_Relation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_SymmetricRelation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_TangentRelation.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_XRTrackedDevice.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_AttributeFilter.lxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_ExclusionFilter.lxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/AIS/AIS_MultipleConnectedInteractive.lxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdSelect/StdSelect.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdSelect/StdSelect_BRepOwner.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdSelect/StdSelect_BRepSelectionTool.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdSelect/StdSelect_EdgeFilter.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdSelect/StdSelect_FaceFilter.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdSelect/StdSelect_Shape.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdSelect/StdSelect_ShapeTypeFilter.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdSelect/StdSelect_TypeOfEdge.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdSelect/StdSelect_TypeOfFace.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdSelect/StdSelect_TypeOfSelectionImage.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/StdSelect/StdSelect_ViewerSelector3d.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_AnglePresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_ArrowSide.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_Chamf2dPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_ConcentricPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_DatumPrs.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_DiameterPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_EllipseRadiusPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_EqualDistancePresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_EqualRadiusPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_FilletRadiusPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_FixPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_IdenticPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_LengthPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_MidPointPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_OffsetPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_ParalPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_PerpenPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_RadiusPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_ShadedPlanePresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_ShapeDirPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_SymbPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_SymmetricPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_TangentPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_XYZAxisPresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/DsgPrs/DsgPrs_XYZPlanePresentation.hxx",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_AngleDimension.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_Chamf2dDimension.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_Chamf3dDimension.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_ConcentricRelation.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_DiameterDimension.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_Dimension.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_DimensionOwner.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_EllipseRadiusDimension.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_EqualDistanceRelation.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_EqualRadiusRelation.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_FixRelation.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_IdenticRelation.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_LengthDimension.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_MaxRadiusDimension.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_MidPointRelation.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_MinRadiusDimension.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_OffsetDimension.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_ParallelRelation.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_PerpendicularRelation.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_RadiusDimension.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_Relation.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_SymmetricRelation.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_TangentRelation.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_DimensionSelectionMode.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_DisplaySpecialSymbol.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_KindOfDimension.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_KindOfRelation.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_KindOfSurface.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_TypeOfAngle.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_TypeOfAngleArrowVisibility.hxx",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/PrsDim/PrsDim_TypeOfDist.hxx",
+			"sourceGroupIndex" : 20
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

@@ -2188,7 +2188,7 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../src/rtapi/rtapi_stdint.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/qt_functions/qt_functions.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/std_functions/std_functions.h \
- /home/user/hal-core-2.0/include/gcode_parser.h \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/gcode_parser/gcode_parser.h \
  /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/include/./ui_mainwindow.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QVariant \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qvariant.h \
@@ -2200,9 +2200,6 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qeventloop.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qguiapplication.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qinputmethod.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QCheckBox \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qcheckbox.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractbutton.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QFrame \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qframe.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QGridLayout \
@@ -2211,34 +2208,18 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlayoutitem.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qgridlayout.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QHBoxLayout \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QLabel \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlabel.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QLineEdit \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlineedit.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QMainWindow \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QMenuBar \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qmenubar.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qmenu.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QPlainTextEdit \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QPushButton \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qpushbutton.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QRadioButton \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qradiobutton.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSlider \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qslider.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractslider.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractbutton.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSpacerItem \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlayoutitem.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSpinBox \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qspinbox.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qvalidator.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qregularexpression.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QStatusBar \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qstatusbar.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QTabWidget \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtabwidget.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSplitter \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qsplitter.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QStackedWidget \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qstackedwidget.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QToolButton \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtoolbutton.h
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtoolbutton.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QVBoxLayout \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h

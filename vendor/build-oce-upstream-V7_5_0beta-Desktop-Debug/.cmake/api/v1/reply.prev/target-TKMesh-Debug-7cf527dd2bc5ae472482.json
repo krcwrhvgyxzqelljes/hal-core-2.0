@@ -1,0 +1,1395 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lin64/clang/libd/libTKMesh.so"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"OCCT_INCLUDE_CMAKE_FILE",
+			"install",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"adm/cmake/occt_toolkit.cmake",
+			"CMakeLists.txt",
+			"src/TKMesh/CMakeLists.txt",
+			"src/TKTopAlgo/CMakeLists.txt",
+			"src/TKernel/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 232,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 245,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 3
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 8
+			},
+			{
+				"file" : 0,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 10
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 3,
+				"parent" : 12
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 13
+			},
+			{
+				"file" : 0,
+				"parent" : 14
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 15
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 733,
+				"parent" : 17
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 737,
+				"parent" : 17
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++0x -DQT_QML_DEBUG -fexceptions -fPIC -Wall -Wextra -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "OCC_CONVERT_SIGNALS"
+				},
+				{
+					"define" : "TKMesh_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 18,
+					"path" : "/usr/include/tcl"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/usr/include/freetype2"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/user/hal-core-2.0/vendor/build-oce-upstream-V7_5_0beta-Desktop-Debug/include/opencascade"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "TKernel::@8d04b055e0ae6651ef3c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKMath::@3085715a8202f146bd2e"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKG2d::@20b7ad3d41ab2afe8017"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKG3d::@48aa1b6a2abc7d91727f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKGeomBase::@4beb524ea52e134832d7"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKBRep::@9b45fb5581d6102f691c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKGeomAlgo::@aae62178ad94a6f1a322"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKTopAlgo::@91c0148b6a2f9ec154c3"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKShHealing::@e53d334fe0be8ac1b63c"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Modules/ModelingAlgorithms"
+	},
+	"id" : "TKMesh::@8f53663783f6a9c05f92",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "lib${OCCT_INSTALL_BIN_LETTER}"
+			},
+			{
+				"backtrace" : 5,
+				"path" : "lib${OCCT_INSTALL_BIN_LETTER}"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wl,-s -lm",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/user/hal-core-2.0/vendor/build-oce-upstream-V7_5_0beta-Desktop-Debug/lin64/clang/libd:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKShHealing.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKTopAlgo.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "../../lin64/clang/libd/libTKGeomAlgo.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKBRep.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKGeomBase.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKG3d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKG2d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKMath.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKernel.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "-lstdc++",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "TKMesh",
+	"nameOnDisk" : "libTKMesh.so",
+	"paths" : 
+	{
+		"build" : "src/TKMesh",
+		"source" : "src/TKMesh"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\IMeshData",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			]
+		},
+		{
+			"name" : "Source Files\\IMeshTools",
+			"sourceIndexes" : 
+			[
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17
+			]
+		},
+		{
+			"name" : "Source Files\\BRepMeshData",
+			"sourceIndexes" : 
+			[
+				18,
+				19,
+				20,
+				21,
+				22,
+				23
+			]
+		},
+		{
+			"name" : "Source Files\\BRepMesh",
+			"sourceIndexes" : 
+			[
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61
+			]
+		},
+		{
+			"name" : "Header Files\\IMeshData",
+			"sourceIndexes" : 
+			[
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74
+			]
+		},
+		{
+			"name" : "Header Files\\IMeshTools",
+			"sourceIndexes" : 
+			[
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85
+			]
+		},
+		{
+			"name" : "Header Files\\BRepMeshData",
+			"sourceIndexes" : 
+			[
+				86,
+				87,
+				88,
+				89,
+				90,
+				91
+			]
+		},
+		{
+			"name" : "Header Files\\BRepMesh",
+			"sourceIndexes" : 
+			[
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshData/IMeshData_Curve.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshData/IMeshData_Edge.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshData/IMeshData_Face.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshData/IMeshData_Model.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshData/IMeshData_ParametersList.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshData/IMeshData_PCurve.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshData/IMeshData_Shape.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshData/IMeshData_TessellatedShape.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshData/IMeshData_Wire.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshTools/IMeshTools_Context.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshTools/IMeshTools_CurveTessellator.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshTools/IMeshTools_MeshAlgo.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshTools/IMeshTools_MeshAlgoFactory.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshTools/IMeshTools_MeshBuilder.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshTools/IMeshTools_ModelAlgo.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshTools/IMeshTools_ModelBuilder.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshTools/IMeshTools_ShapeExplorer.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/IMeshTools/IMeshTools_ShapeVisitor.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMeshData/BRepMeshData_Curve.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMeshData/BRepMeshData_Edge.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMeshData/BRepMeshData_Face.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMeshData/BRepMeshData_Model.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMeshData/BRepMeshData_PCurve.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMeshData/BRepMeshData_Wire.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_BaseMeshAlgo.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_ConstrainedBaseMeshAlgo.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_CircleTool.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_Classifier.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_ConeRangeSplitter.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_Context.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_CurveTessellator.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_CylinderRangeSplitter.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_DataStructureOfDelaun.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_DefaultRangeSplitter.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_Deflection.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_Delaun.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_DelaunayBaseMeshAlgo.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_DiscretFactory.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_DiscretRoot.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_EdgeDiscret.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_EdgeTessellationExtractor.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_FaceChecker.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_FaceDiscret.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_GeomTool.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_IncrementalMesh.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_MeshAlgoFactory.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_MeshTool.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_ModelBuilder.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_ModelHealer.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_ModelPostProcessor.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_ModelPreProcessor.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_NURBSRangeSplitter.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_SelectorOfDataStructureOfDelaun.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_ShapeTool.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_ShapeVisitor.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_SphereRangeSplitter.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_TorusRangeSplitter.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_VertexTool.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_CustomBaseMeshAlgo.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/delabella.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_DelabellaBaseMeshAlgo.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/BRepMesh/BRepMesh_DelabellaMeshAlgoFactory.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_Curve.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_Edge.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_Face.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_Model.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_ParametersList.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_ParametersListArrayAdaptor.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_PCurve.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_Shape.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_Status.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_StatusOwner.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_TessellatedShape.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_Types.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshData/IMeshData_Wire.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshTools/IMeshTools_Context.hxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshTools/IMeshTools_CurveTessellator.hxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshTools/IMeshTools_MeshAlgo.hxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshTools/IMeshTools_MeshAlgoFactory.hxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshTools/IMeshTools_MeshAlgoType.hxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshTools/IMeshTools_MeshBuilder.hxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshTools/IMeshTools_ModelAlgo.hxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshTools/IMeshTools_ModelBuilder.hxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshTools/IMeshTools_Parameters.hxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshTools/IMeshTools_ShapeExplorer.hxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/IMeshTools/IMeshTools_ShapeVisitor.hxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMeshData/BRepMeshData_Curve.hxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMeshData/BRepMeshData_Edge.hxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMeshData/BRepMeshData_Face.hxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMeshData/BRepMeshData_Model.hxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMeshData/BRepMeshData_PCurve.hxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMeshData/BRepMeshData_Wire.hxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_BaseMeshAlgo.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_ConstrainedBaseMeshAlgo.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_BoundaryParamsRangeSplitter.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_Circle.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_CircleInspector.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_CircleTool.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_Classifier.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_ConeRangeSplitter.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_Context.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_CurveTessellator.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_CylinderRangeSplitter.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_DataStructureOfDelaun.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_DefaultRangeSplitter.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_Deflection.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_DegreeOfFreedom.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_Delaun.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_DelaunayBaseMeshAlgo.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_DelaunayDeflectionControlMeshAlgo.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_DelaunayNodeInsertionMeshAlgo.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_DiscretFactory.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_DiscretRoot.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_Edge.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_EdgeDiscret.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_EdgeParameterProvider.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_EdgeTessellationExtractor.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_FaceChecker.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_FaceDiscret.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_FactoryError.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_FastDiscret.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_GeomTool.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_IncrementalMesh.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_MeshAlgoFactory.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_MeshTool.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_ModelBuilder.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_ModelHealer.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_ModelPostProcessor.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_ModelPreProcessor.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_NURBSRangeSplitter.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_NodeInsertionMeshAlgo.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_OrientedEdge.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_PairOfIndex.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_PluginEntryType.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_PluginMacro.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_SelectorOfDataStructureOfDelaun.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_ShapeTool.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_ShapeVisitor.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_SphereRangeSplitter.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_TorusRangeSplitter.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_Triangle.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_UVParamRangeSplitter.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_Vertex.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_VertexInspector.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_VertexTool.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_CustomBaseMeshAlgo.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_CustomDelaunayBaseMeshAlgo.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_DelabellaBaseMeshAlgo.hxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/BRepMesh/BRepMesh_DelabellaMeshAlgoFactory.hxx",
+			"sourceGroupIndex" : 7
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

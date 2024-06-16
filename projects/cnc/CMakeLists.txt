@@ -11,7 +11,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Set variables.
@@ -27,6 +27,7 @@ include_directories(${SRC_DIR}/../../vendor/icons)
 include_directories(${SRC_DIR}/../../vendor/oce-upstream-V7_5_0beta/inc)
 include_directories(${SRC_DIR}/../../vendor/Clothoids/lib/include)
 include_directories(${SRC_DIR}/../../vendor/Clothoids/lib3rd/include)
+include_directories(${SRC_DIR}/../../vendor/gcode_parser)
 include_directories(${SRC_DIR}/../../src/hal)
 include_directories(${SRC_DIR}/../../src/rtapi)
 include_directories(${SRC_DIR}/../../include)
@@ -47,13 +48,6 @@ add_library(halcore_ SHARED IMPORTED) # or STATIC instead of SHARED
 set_target_properties(halcore_ PROPERTIES
     IMPORTED_LOCATION ${BUILD_DIR}/../../../lib/libhalcore.so
     INTERFACE_INCLUDE_DIRECTORIES ${SRC_DIR}/../../src/hal
-)
-
-# Set include paths for libraries to link.
-add_library(gcpde_parser_ SHARED IMPORTED) # or STATIC instead of SHARED
-set_target_properties(gcpde_parser_ PROPERTIES
-    IMPORTED_LOCATION ${BUILD_DIR}/../../../lib/libgcode_parser.so
-    INTERFACE_INCLUDE_DIRECTORIES ${SRC_DIR}/../../include
 )
 
 # Opencascade
@@ -119,7 +113,8 @@ set(PROJECT_SOURCES
     ${SRC_DIR}/../../vendor/qt_functions/qt_functions.cpp
     ${SRC_DIR}/../../vendor/std_functions/std_functions.h
     ${SRC_DIR}/../../vendor/std_functions/std_functions.cpp
-    ${SRC_DIR}/../../projects/gcode_parser/gcode_parser.h
+    ${SRC_DIR}/../../vendor/gcode_parser/gcode_parser.h
+    ${SRC_DIR}/../../vendor/gcode_parser/gcode_parser.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -147,7 +142,7 @@ endif ()
 # Link.
 target_link_libraries(${PROJECT_NAME} PRIVATE
     ${OpenCASCADE_LIBS} Qt5::Widgets Qt5::OpenGL ${OPENGL_LIBRARIES} ${GLUT_LIBRARY}
-    -I../lib -L../lib  halcore_ gcpde_parser_
+    -I../lib -L../lib  halcore_
 )
 
 # Make install

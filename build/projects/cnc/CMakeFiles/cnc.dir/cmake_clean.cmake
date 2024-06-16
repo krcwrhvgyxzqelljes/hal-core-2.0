@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cnc.dir/QGCodeEditor.cpp.o.d"
   "CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.o"
   "CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.o.d"
+  "CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o"
+  "CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o.d"
   "CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o"
   "CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o.d"
   "CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o"

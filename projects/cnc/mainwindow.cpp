@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     editor = new QGCodeEditor();
     ui->gridLayout_gcode->addWidget(editor);
-    editor->setStyleSheet("background-color: rgb(255, 255, 255);\ncolor: rgb(0, 0, 0);");
+    editor->setStyleSheet("background-color: rgb(75, 75, 75);");
 
     //! This activates a screen update when robot is moving and screen needs to be updated automaticly.
     connect(timer, &QTimer::timeout, this, &MainWindow::update);
@@ -32,7 +32,31 @@ MainWindow::MainWindow(QWidget *parent)
 
     hal_connection();
 
-    std::remove("out.ngc");
+
+    // std::string file=qt_functions().open_file_dialog_get_filename(this);
+    // std::string gcode= std_functions().read_file_to_string(file);
+
+    //    std::string file="/home/user/hal-core-2.0/nc_files/nc_files_grotius/G9_test.ngc";
+
+    //    std::string gcode= std_functions().read_file_to_string(file);
+
+    //    editor->appendPlainText(QString::fromStdString(gcode));
+    //    std::vector<gcode_line> gvec;
+    //    gcode_parser().tokenize(file,gvec);
+
+    //    for (const auto& i : gvec) {
+    //        std::cout<<"newline:"<<std::endl;
+    //        gcode_parser().print_line(i);
+    //    }
+
+    //    std::vector<shape> svec;
+    //    gcode_parser().tokens_to_shapes(gvec,svec);
+    //    for (const auto& i : svec) {
+    //        occ->add_shapevec(i.aShape);
+    //    }
+    //    occ->redraw();
+
+
 }
 
 MainWindow::~MainWindow()
@@ -53,17 +77,6 @@ void MainWindow::hal_connection(){
     hal_malloc(200);
     // int sigml= hal_signal_new("xxx", HAL_FLOAT );
     hal_ready(comp_id);
-}
-
-int MainWindow::digits(int nr)
-{
-    int digits = 0;
-    if (nr < 0) digits = 1; // remove this line if '-' counts as a digit
-    while (nr) {
-        nr /= 10;
-        digits++;
-    }
-    return digits;
 }
 
 void MainWindow::on_toolButton_fit_all_pressed()
@@ -116,180 +129,39 @@ void MainWindow::on_toolButton_zoom_plus_pressed()
     occ->zoom_plus();
 }
 
-void MainWindow::on_toolButton_stop_pressed()
-{
-
-}
-
-void MainWindow::on_toolButton_pause_toggled(bool checked)
-{
-
-}
-
-void MainWindow::on_toolButton_run_pressed()
-{
-
-}
-
 void MainWindow::on_toolButton_file_open_pressed()
 {
+
+}
+
+void MainWindow::on_pushButton_open_pressed()
+{
+    occ->clear_shapevec();
+    editor->clear();
+
     std::string filename=qt_functions().open_file_dialog_get_filename(this);
 
-    // 1. Run a sub program to parse raw c c++ gcode style into normal gcode.
-    std::string command;
-    command+="./code_parser ";
-    if(DEBUG){
-        command+="--debug ";
-    };
-    command+=filename;
-    std::system(command.c_str()); // Will create out.ngc in ~/bin*/
-
-
-    // 2. Display gcode in program's textview.
-    QString gcode=QString::fromStdString( std_functions().read_file_to_string("out.ngc"));
+    QString gcode=QString::fromStdString(std_functions().read_file_to_string(filename));
     editor->appendPlainText(gcode);
 
-    // 3. Process gcode into memory.
+
+
     std::vector<gcode_line> gvec;
-    gcode_parser().parse_to_memory("out.ngc",gvec,1);
-}
+    gcode_parser().tokenize(filename,gvec,1);
 
-void MainWindow::on_toolButton_reload_pressed()
-{
 
-}
-
-void MainWindow::on_toolButton_machine_on_pressed()
-{
-
-}
-
-void MainWindow::on_toolButton_emergency_pressed()
-{
-
-}
-
-void MainWindow::on_horizontalSlider_max_velocity_sliderMoved(int position)
-{
-
-}
-
-void MainWindow::on_horizontalSlider_max_velocity_sliderReleased()
-{
-
-}
-
-void MainWindow::on_horizontalSlider_feed_override_sliderMoved(int position)
-{
-
-}
-
-void MainWindow::on_horizontalSlider_feed_override_sliderReleased()
-{
-
-}
-
-void MainWindow::on_horizontalSlider_rapid_override_sliderMoved(int position)
-{
-
-}
-
-void MainWindow::on_horizontalSlider_rapid_override_sliderReleased()
-{
-
-}
-
-void MainWindow::on_horizontalSlider_spindle_override_sliderMoved(int position)
-{
-
-}
-
-void MainWindow::on_horizontalSlider_spindle_override_sliderReleased()
-{
-
-}
-
-int MainWindow::get_jog_axis(){
-    int jog_axis=0;
-    if(ui->radioButton_x->isChecked()){
-        jog_axis=0;
+    std::vector<shape> svec;
+    gcode_parser().tokens_to_shapes(gvec,svec);
+    for (const auto& i : svec) {
+        occ->add_shapevec(i.aShape);
     }
-    if(ui->radioButton_y->isChecked()){
-        jog_axis=1;
-    }
-    if(ui->radioButton_z->isChecked()){
-        jog_axis=2;
-    }
-    return jog_axis;
+    occ->redraw();
 }
 
-void MainWindow::on_pushButton_jog_min_pressed()
-{
 
-}
 
-void MainWindow::on_pushButton_jog_min_released()
-{
 
-}
 
-void MainWindow::on_pushButton_jog_plus_pressed()
-{
 
-}
 
-void MainWindow::on_pushButton_jog_plus_released()
-{
-
-}
-
-void MainWindow::on_checkBox_mist_clicked(bool checked)
-{
-
-}
-
-void MainWindow::on_checkBox_flood_clicked(bool checked)
-{
-
-}
-
-void MainWindow::on_toolButton_spindle_stop_pressed()
-{
-
-}
-
-void MainWindow::on_toolButton_spindle_ccw_pressed()
-{
-
-}
-
-void MainWindow::on_toolButton_spindle_cw_pressed()
-{
-
-}
-
-void MainWindow::on_pushButton_spindle_plus_pressed()
-{
-
-}
-
-void MainWindow::on_pushButton_spindle_min_pressed()
-{
-
-}
-
-void MainWindow::on_toolButton_mdi_command_exec_pressed()
-{
-
-}
-
-void MainWindow::on_tabWidget_currentChanged(int index)
-{
-
-}
-
-void MainWindow::on_pushButton_home_all_pressed()
-{
-
-}
 

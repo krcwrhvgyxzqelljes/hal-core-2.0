@@ -51,10 +51,10 @@ add_subdirectory(src/hal/components/ethercat)
 add_subdirectory(src/hal/components/hm2_eth)
 
 # Parse c c++ style gcode into a out.ngc file
-add_subdirectory(projects/code_parser)
+# add_subdirectory(vendor/code_parser)
 
 # Parse gcode into gcode list
-add_subdirectory(projects/gcode_parser)
+# add_subdirectory(vendor/gcode_parser)
 
 # Projects
 add_subdirectory(projects/cnc)

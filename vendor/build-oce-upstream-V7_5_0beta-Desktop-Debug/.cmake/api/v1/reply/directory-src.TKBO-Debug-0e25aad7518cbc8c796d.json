@@ -1,0 +1,80 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"include",
+			"OCCT_INCLUDE_CMAKE_FILE"
+		],
+		"files" : 
+		[
+			"adm/cmake/occt_toolkit.cmake",
+			"CMakeLists.txt",
+			"src/TKBO/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 245,
+				"parent" : 3
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib${OCCT_INSTALL_BIN_LETTER}",
+			"paths" : 
+			[
+				"lin64/clang/libd/libTKBO.so.7.5.0",
+				"lin64/clang/libd/libTKBO.so.7"
+			],
+			"targetId" : "TKBO::@10bda84caabb50aa1383",
+			"targetIndex" : 2,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib${OCCT_INSTALL_BIN_LETTER}",
+			"paths" : 
+			[
+				"lin64/clang/libd/libTKBO.so"
+			],
+			"targetId" : "TKBO::@10bda84caabb50aa1383",
+			"targetIndex" : 2,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/TKBO",
+		"source" : "src/TKBO"
+	}
+}

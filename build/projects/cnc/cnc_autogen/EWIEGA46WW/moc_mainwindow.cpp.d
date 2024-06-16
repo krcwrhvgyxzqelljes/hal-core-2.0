@@ -1,6 +1,5 @@
 /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/user/hal-core-2.0/projects/cnc/mainwindow.h \
   /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/moc_predefs.h \
-  /home/user/hal-core-2.0/include/gcode_parser.h \
   /home/user/hal-core-2.0/projects/cnc/OcctQtViewer.h \
   /home/user/hal-core-2.0/projects/cnc/QGCodeEditor.h \
   /home/user/hal-core-2.0/projects/cnc/form.h \
@@ -52,6 +51,7 @@
   /home/user/hal-core-2.0/vendor/Clothoids/lib3rd/include/Utils/fmt/std.h \
   /home/user/hal-core-2.0/vendor/Clothoids/lib3rd/include/Utils/rang.hxx \
   /home/user/hal-core-2.0/vendor/Clothoids/lib3rd/include/Utils_AABB_tree.hh \
+  /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.h \
   /home/user/hal-core-2.0/vendor/occ_draw/draw_clothoids.h \
   /home/user/hal-core-2.0/vendor/occ_draw/draw_primitives.h \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/AIS_ClearMode.hxx \

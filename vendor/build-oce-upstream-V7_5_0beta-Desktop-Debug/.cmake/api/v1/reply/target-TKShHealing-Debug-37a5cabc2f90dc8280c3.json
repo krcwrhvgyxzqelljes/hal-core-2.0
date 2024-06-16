@@ -1,0 +1,2232 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lin64/clang/libd/libTKShHealing.so"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"OCCT_INCLUDE_CMAKE_FILE",
+			"install",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"adm/cmake/occt_toolkit.cmake",
+			"CMakeLists.txt",
+			"src/TKShHealing/CMakeLists.txt",
+			"src/TKernel/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 232,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 245,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 3
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 8
+			},
+			{
+				"file" : 0,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 10
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 733,
+				"parent" : 12
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 737,
+				"parent" : 12
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++0x -DQT_QML_DEBUG -fexceptions -fPIC -Wall -Wextra -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "OCC_CONVERT_SIGNALS"
+				},
+				{
+					"define" : "TKShHealing_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 13,
+					"path" : "/usr/include/tcl"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/usr/include/freetype2"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/user/hal-core-2.0/vendor/build-oce-upstream-V7_5_0beta-Desktop-Debug/include/opencascade"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "TKernel::@8d04b055e0ae6651ef3c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKMath::@3085715a8202f146bd2e"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKG2d::@20b7ad3d41ab2afe8017"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKG3d::@48aa1b6a2abc7d91727f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKGeomBase::@4beb524ea52e134832d7"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKBRep::@9b45fb5581d6102f691c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKGeomAlgo::@aae62178ad94a6f1a322"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "TKTopAlgo::@91c0148b6a2f9ec154c3"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Modules/ModelingAlgorithms"
+	},
+	"id" : "TKShHealing::@e53d334fe0be8ac1b63c",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "lib${OCCT_INSTALL_BIN_LETTER}"
+			},
+			{
+				"backtrace" : 5,
+				"path" : "lib${OCCT_INSTALL_BIN_LETTER}"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wl,-s -lm",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/user/hal-core-2.0/vendor/build-oce-upstream-V7_5_0beta-Desktop-Debug/lin64/clang/libd:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKTopAlgo.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKGeomAlgo.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKBRep.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKGeomBase.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKG3d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKG2d.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKMath.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../lin64/clang/libd/libTKernel.so.7.5.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-lstdc++",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "TKShHealing",
+	"nameOnDisk" : "libTKShHealing.so",
+	"paths" : 
+	{
+		"build" : "src/TKShHealing",
+		"source" : "src/TKShHealing"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\ShapeBuild",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		},
+		{
+			"name" : "Source Files\\ShapeExtend",
+			"sourceIndexes" : 
+			[
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		},
+		{
+			"name" : "Source Files\\ShapeConstruct",
+			"sourceIndexes" : 
+			[
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"name" : "Source Files\\ShapeCustom",
+			"sourceIndexes" : 
+			[
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26
+			]
+		},
+		{
+			"name" : "Source Files\\ShapeAnalysis",
+			"sourceIndexes" : 
+			[
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44
+			]
+		},
+		{
+			"name" : "Source Files\\ShapeFix",
+			"sourceIndexes" : 
+			[
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67
+			]
+		},
+		{
+			"name" : "Source Files\\ShapeUpgrade",
+			"sourceIndexes" : 
+			[
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100
+			]
+		},
+		{
+			"name" : "Source Files\\ShapeAlgo",
+			"sourceIndexes" : 
+			[
+				101,
+				102,
+				103
+			]
+		},
+		{
+			"name" : "Source Files\\ShapeProcess",
+			"sourceIndexes" : 
+			[
+				104,
+				105,
+				106,
+				107,
+				108,
+				109
+			]
+		},
+		{
+			"name" : "Source Files\\ShapeProcessAPI",
+			"sourceIndexes" : 
+			[
+				110
+			]
+		},
+		{
+			"name" : "Header Files\\ShapeBuild",
+			"sourceIndexes" : 
+			[
+				111,
+				112,
+				113,
+				114
+			]
+		},
+		{
+			"name" : "Header Files\\ShapeExtend",
+			"sourceIndexes" : 
+			[
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129
+			]
+		},
+		{
+			"name" : "Header Files\\ShapeConstruct",
+			"sourceIndexes" : 
+			[
+				130,
+				131,
+				132,
+				133
+			]
+		},
+		{
+			"name" : "Header Files\\ShapeCustom",
+			"sourceIndexes" : 
+			[
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148
+			]
+		},
+		{
+			"name" : "Header Files\\ShapeAnalysis",
+			"sourceIndexes" : 
+			[
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177
+			]
+		},
+		{
+			"name" : "Header Files\\ShapeFix",
+			"sourceIndexes" : 
+			[
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210
+			]
+		},
+		{
+			"name" : "Header Files\\ShapeUpgrade",
+			"sourceIndexes" : 
+			[
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253
+			]
+		},
+		{
+			"name" : "Header Files\\ShapeAlgo",
+			"sourceIndexes" : 
+			[
+				254,
+				255,
+				256,
+				257
+			]
+		},
+		{
+			"name" : "Header Files\\ShapeProcess",
+			"sourceIndexes" : 
+			[
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264
+			]
+		},
+		{
+			"name" : "Header Files\\ShapeProcessAPI",
+			"sourceIndexes" : 
+			[
+				265
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeBuild/ShapeBuild.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeBuild/ShapeBuild_Edge.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeBuild/ShapeBuild_ReShape.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeBuild/ShapeBuild_Vertex.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeExtend/ShapeExtend.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeExtend/ShapeExtend_BasicMsgRegistrator.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeExtend/ShapeExtend_ComplexCurve.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeExtend/ShapeExtend_CompositeSurface.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeExtend/ShapeExtend_Explorer.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeExtend/ShapeExtend_MsgRegistrator.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeExtend/ShapeExtend_WireData.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeConstruct/ShapeConstruct.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeConstruct/ShapeConstruct_Curve.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeConstruct/ShapeConstruct_MakeTriangulation.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeConstruct/ShapeConstruct_ProjectCurveOnSurface.cxx",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeCustom/ShapeCustom.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeCustom/ShapeCustom_BSplineRestriction.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeCustom/ShapeCustom_ConvertToBSpline.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeCustom/ShapeCustom_ConvertToRevolution.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeCustom/ShapeCustom_Curve.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeCustom/ShapeCustom_Curve2d.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeCustom/ShapeCustom_DirectModification.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeCustom/ShapeCustom_Modification.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeCustom/ShapeCustom_RestrictionParameters.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeCustom/ShapeCustom_Surface.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeCustom/ShapeCustom_SweptToElementary.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeCustom/ShapeCustom_TrsfModification.cxx",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_BoxBndTree.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_CheckSmallFace.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Curve.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Edge.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_FreeBoundData.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_FreeBounds.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_FreeBoundsProperties.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Geom.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_ShapeContents.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_ShapeTolerance.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Shell.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Surface.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_TransferParameters.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_TransferParametersProj.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Wire.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_WireOrder.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_WireVertex.cxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_ComposeShell.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_Edge.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_EdgeConnect.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_EdgeProjAux.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_Face.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_FaceConnect.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_FixSmallFace.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_FixSmallSolid.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_FreeBounds.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_IntersectionTool.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_Root.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_Shape.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_ShapeTolerance.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_Shell.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_Solid.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_SplitCommonVertex.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_SplitTool.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_Wire.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_Wire_1.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_Wireframe.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_WireSegment.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeFix/ShapeFix_WireVertex.cxx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ClosedEdgeDivide.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ClosedFaceDivide.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ConvertCurve2dToBezier.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ConvertCurve3dToBezier.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ConvertSurfaceToBezierBasis.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_EdgeDivide.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_FaceDivide.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_FaceDivideArea.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_FixSmallBezierCurves.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_FixSmallCurves.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_RemoveInternalWires.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_RemoveLocations.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeConvertToBezier.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivide.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivideAngle.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivideArea.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivideClosed.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivideClosedEdges.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivideContinuity.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShellSewing.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitCurve.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitCurve2d.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitCurve2dContinuity.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitCurve3d.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitCurve3dContinuity.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitSurface.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitSurfaceAngle.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitSurfaceArea.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitSurfaceContinuity.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_Tool.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_UnifySameDomain.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_WireDivide.cxx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAlgo/ShapeAlgo.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAlgo/ShapeAlgo_AlgoContainer.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeAlgo/ShapeAlgo_ToolContainer.cxx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeProcess/ShapeProcess.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeProcess/ShapeProcess_Context.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeProcess/ShapeProcess_Operator.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeProcess/ShapeProcess_OperLibrary.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeProcess/ShapeProcess_ShapeContext.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeProcess/ShapeProcess_UOperator.cxx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/ShapeProcessAPI/ShapeProcessAPI_ApplySequence.cxx",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeBuild/ShapeBuild.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeBuild/ShapeBuild_Edge.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeBuild/ShapeBuild_ReShape.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeBuild/ShapeBuild_Vertex.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_BasicMsgRegistrator.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_ComplexCurve.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_CompositeSurface.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_DataMapIteratorOfDataMapOfShapeListOfMsg.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_DataMapIteratorOfDataMapOfTransientListOfMsg.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_DataMapOfShapeListOfMsg.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_DataMapOfTransientListOfMsg.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_Explorer.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_MsgRegistrator.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_Parametrisation.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_Status.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_WireData.hxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_ComplexCurve.lxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeExtend/ShapeExtend_MsgRegistrator.lxx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeConstruct/ShapeConstruct.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeConstruct/ShapeConstruct_Curve.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeConstruct/ShapeConstruct_MakeTriangulation.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeConstruct/ShapeConstruct_ProjectCurveOnSurface.hxx",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_BSplineRestriction.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_ConvertToBSpline.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_ConvertToRevolution.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_Curve.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_Curve2d.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_DirectModification.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_Modification.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_RestrictionParameters.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_Surface.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_SweptToElementary.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_TrsfModification.hxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_BSplineRestriction.lxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_RestrictionParameters.lxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeCustom/ShapeCustom_Surface.lxx",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_BoxBndTree.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_CheckSmallFace.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Curve.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_DataMapIteratorOfDataMapOfShapeListOfReal.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_DataMapOfShapeListOfReal.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Edge.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_FreeBoundData.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_FreeBounds.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_FreeBoundsProperties.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Geom.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_HSequenceOfFreeBounds.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_SequenceOfFreeBounds.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_ShapeContents.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_ShapeTolerance.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Shell.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Surface.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_TransferParameters.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_TransferParametersProj.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Wire.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_WireOrder.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_WireVertex.hxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_CheckSmallFace.lxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_FreeBoundData.lxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_FreeBounds.lxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_FreeBoundsProperties.lxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_ShapeContents.lxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Surface.lxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAnalysis/ShapeAnalysis_Wire.lxx",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_ComposeShell.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_DataMapIteratorOfDataMapOfShapeBox2d.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_DataMapOfShapeBox2d.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Edge.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_EdgeConnect.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_EdgeProjAux.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Face.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_FaceConnect.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_FixSmallFace.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_FixSmallSolid.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_FreeBounds.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_IntersectionTool.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Root.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_SequenceOfWireSegment.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Shape.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_ShapeTolerance.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Shell.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Solid.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_SplitCommonVertex.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_SplitTool.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Wire.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Wireframe.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_WireSegment.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_WireVertex.hxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Face.lxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_FreeBounds.lxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_IntersectionTool.lxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Root.lxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Shape.lxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Shell.lxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Wire.lxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeFix/ShapeFix_Wireframe.lxx",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ClosedEdgeDivide.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ClosedFaceDivide.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ConvertCurve2dToBezier.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ConvertCurve3dToBezier.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ConvertSurfaceToBezierBasis.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_EdgeDivide.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_FaceDivide.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_FaceDivideArea.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_FixSmallBezierCurves.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_FixSmallCurves.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_RemoveInternalWires.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_RemoveLocations.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeConvertToBezier.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivide.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivideAngle.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivideArea.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivideClosed.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivideClosedEdges.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivideContinuity.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShellSewing.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitCurve.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitCurve2d.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitCurve2dContinuity.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitCurve3d.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitCurve3dContinuity.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitSurface.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitSurfaceAngle.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitSurfaceArea.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitSurfaceContinuity.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_Tool.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_UnifySameDomain.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_WireDivide.hxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ConvertCurve3dToBezier.lxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ConvertSurfaceToBezierBasis.lxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_EdgeDivide.lxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_FaceDivideArea.lxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_RemoveInternalWires.lxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_RemoveLocations.lxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeConvertToBezier.lxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_ShapeDivideArea.lxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_SplitSurfaceArea.lxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeUpgrade/ShapeUpgrade_Tool.lxx",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAlgo/ShapeAlgo.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAlgo/ShapeAlgo_AlgoContainer.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAlgo/ShapeAlgo_ToolContainer.hxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeAlgo/ShapeAlgo_AlgoContainer.lxx",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeProcess/ShapeProcess.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeProcess/ShapeProcess_Context.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeProcess/ShapeProcess_Operator.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeProcess/ShapeProcess_OperFunc.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeProcess/ShapeProcess_OperLibrary.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeProcess/ShapeProcess_ShapeContext.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeProcess/ShapeProcess_UOperator.hxx",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/ShapeProcessAPI/ShapeProcessAPI_ApplySequence.hxx",
+			"sourceGroupIndex" : 19
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

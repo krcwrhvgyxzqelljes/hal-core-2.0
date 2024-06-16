@@ -128,9 +128,9 @@
 			null
 		],
 		[
-			"/home/user/hal-core-2.0/projects/gcode_parser/gcode_parser.h",
+			"/home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.h",
 			"MU",
-			"G2DS6ISKQU/moc_gcode_parser.cpp",
+			"WS7IHTATIA/moc_gcode_parser.cpp",
 			null
 		],
 		[
@@ -182,13 +182,14 @@
 		"/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc",
 		"/home/user/hal-core-2.0/vendor/Clothoids/lib/include",
 		"/home/user/hal-core-2.0/vendor/Clothoids/lib3rd/include",
+		"/home/user/hal-core-2.0/vendor/gcode_parser",
 		"/home/user/hal-core-2.0/src/rtapi",
+		"/home/user/hal-core-2.0/include",
 		"/home/user/hal-core-2.0/projects/cnc/usr/include",
 		"/home/user/hal-core-2.0/projects/cnc/usr/local/lib",
 		"/home/user/hal-core-2.0/projects/cnc/usr/local/include",
 		"/usr/include/eigen3",
 		"/home/user/hal-core-2.0/src/hal",
-		"/home/user/hal-core-2.0/include",
 		"/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets",
 		"/opt/qt-creator/5.15.1/gcc_64/include/QtGui",
 		"/opt/qt-creator/5.15.1/gcc_64/include",
@@ -237,6 +238,11 @@
 		[ "/home/user/hal-core-2.0/projects/cnc/form.cpp", "MU", null ],
 		[ "/home/user/hal-core-2.0/projects/cnc/main.cpp", "MU", null ],
 		[ "/home/user/hal-core-2.0/projects/cnc/mainwindow.cpp", "MU", null ],
+		[
+			"/home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/user/hal-core-2.0/vendor/occ_draw/draw_primitives.cpp",
 			"MU",

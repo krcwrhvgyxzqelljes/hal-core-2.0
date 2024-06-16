@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/user/hal-core-2.0/projects/cnc/OcctQtViewer.cpp" "projects/cnc/CMakeFiles/cnc.dir/OcctQtViewer.cpp.o" "gcc" "projects/cnc/CMakeFiles/cnc.dir/OcctQtViewer.cpp.o.d"
   "/home/user/hal-core-2.0/projects/cnc/QGCodeEditor.cpp" "projects/cnc/CMakeFiles/cnc.dir/QGCodeEditor.cpp.o" "gcc" "projects/cnc/CMakeFiles/cnc.dir/QGCodeEditor.cpp.o.d"
   "/home/user/hal-core-2.0/projects/cnc/QGCodeSyntaxHighlighter.cpp" "projects/cnc/CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.o" "gcc" "projects/cnc/CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.o.d"
+  "/home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.cpp" "projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o" "gcc" "projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o.d"
   "/home/user/hal-core-2.0/vendor/occ_draw/draw_primitives.cpp" "projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o" "gcc" "projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o.d"
   "/home/user/hal-core-2.0/vendor/qt_functions/qt_functions.cpp" "projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o" "gcc" "projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o.d"
   "/home/user/hal-core-2.0/vendor/std_functions/std_functions.cpp" "projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o" "gcc" "projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o.d"

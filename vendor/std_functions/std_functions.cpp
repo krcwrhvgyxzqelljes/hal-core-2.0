@@ -2,10 +2,106 @@
 #include <fstream>
 #include <string>
 #include <iostream>
+#include <algorithm>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cstdlib>  // For std::strtod
 
 std_functions::std_functions()
 {
 
+}
+
+
+// Function to parse key-value pairs from the input string
+std::vector<std::pair<std::string, double>> std_functions::parse_string_to_key_and_value(const std::string& input, int debug) {
+    std::vector<std::pair<std::string, double>> result;
+    std::string key;
+    std::string valueStr;
+    const double dummyValue = 0.0; // Dummy value for newline key
+
+    // Iterate through each character in the input string
+    for (size_t i = 0; i < input.size(); ++i) {
+        // Check if current character is an alphabet character (key identifier) or newline
+        if (isalpha(input[i]) || input[i] == '\n') {
+            // If we have accumulated a key and a value, store them
+            if (!key.empty() && !valueStr.empty()) {
+                // Convert valueStr to double
+                double value = std::strtod(valueStr.c_str(), nullptr);
+                result.emplace_back(key, value);
+                key.clear();
+                valueStr.clear();
+            }
+
+            // Special handling for newline character
+            if (input[i] == '\n') {
+                key = "newline"; // Set key to a meaningful name
+                valueStr = std::to_string(dummyValue);
+            } else {
+                // Start new key
+                key = input[i];
+            }
+        } else if (isdigit(input[i]) || input[i] == '-' || input[i] == '+' || input[i] == '.') {
+            // Accumulate digits, sign character, or decimal point to form value string
+            valueStr += input[i];
+        } else {
+            // Skip any other characters
+            continue;
+        }
+    }
+
+    // If there's a key and valueStr left to be stored after the loop
+    if (!key.empty() && !valueStr.empty()) {
+        // Convert valueStr to double
+        double value = std::strtod(valueStr.c_str(), nullptr);
+        result.emplace_back(key, value);
+    }
+
+    if (debug) {
+        // Print out the parsed key-value pairs
+        for (const auto& pair : result) {
+            std::cout << "Key: " << pair.first << ", Value: " << pair.second << std::endl;
+        }
+    }
+
+    return result;
+}
+
+// Function to remove spaces and newline characters from a string
+std::string std_functions::remove_spaces(const std::string& input){
+    std::string result;
+
+    // Iterate through each character in the input string
+    for (char c : input) {
+        // Exclude spaces and newline characters
+        if (c != ' ') {
+            result += c;
+        }
+    }
+    return result;
+}
+
+// Function to remove spaces and newline characters from a string
+std::string std_functions::remove_spaces_and_newlines(const std::string& input){
+    std::string result;
+
+    // Iterate through each character in the input string
+    for (char c : input) {
+        // Exclude spaces and newline characters
+        if (c != ' ' && c != '\n') {
+            result += c;
+        }
+    }
+
+    return result;
+}
+
+std::string std_functions::string_to_lower(const std::string& input){
+    std::string result = input;
+    std::transform(result.begin(), result.end(), result.begin(),
+                   [](unsigned char c) { return std::tolower(c); });
+    return result;
 }
 
 // Function to read text from a file into a string
@@ -49,3 +145,16 @@ std::string std_functions::remove_first_newline(const std::string& str) {
     }
     return str; // Return original string if it doesn't start with \n
 }
+
+
+int std_functions::digits(double value)
+{
+    int digits = 0;
+    if (value < 0) digits = 1; // remove this line if '-' counts as a digit
+    while (value) {
+        value /= 10;
+        digits++;
+    }
+    return digits;
+}
+
