@@ -28,6 +28,8 @@ include_directories(${SRC_DIR}/../../vendor/oce-upstream-V7_5_0beta/inc)
 include_directories(${SRC_DIR}/../../vendor/Clothoids/lib/include)
 include_directories(${SRC_DIR}/../../vendor/Clothoids/lib3rd/include)
 include_directories(${SRC_DIR}/../../vendor/gcode_parser)
+include_directories(${SRC_DIR}/../../vendor/rs274ngc)
+
 include_directories(${SRC_DIR}/../../src/hal)
 include_directories(${SRC_DIR}/../../src/rtapi)
 include_directories(${SRC_DIR}/../../include)
@@ -109,12 +111,27 @@ set(PROJECT_SOURCES
     ${SRC_DIR}/QGCodeSyntaxHighlighter.h
     ${SRC_DIR}/../../vendor/occ_draw/draw_primitives.h
     ${SRC_DIR}/../../vendor/occ_draw/draw_primitives.cpp
+    # ${SRC_DIR}/../../vendor/occ_draw/draw_clothoids.h
+    # ${SRC_DIR}/../../vendor/occ_draw/draw_clothoids.cpp
+    ${SRC_DIR}/../../vendor/occ_draw/draw_rs274ngc_shapes.h
+    ${SRC_DIR}/../../vendor/occ_draw/draw_rs274ngc_shapes.cpp
     ${SRC_DIR}/../../vendor/qt_functions/qt_functions.h
     ${SRC_DIR}/../../vendor/qt_functions/qt_functions.cpp
     ${SRC_DIR}/../../vendor/std_functions/std_functions.h
     ${SRC_DIR}/../../vendor/std_functions/std_functions.cpp
     ${SRC_DIR}/../../vendor/gcode_parser/gcode_parser.h
     ${SRC_DIR}/../../vendor/gcode_parser/gcode_parser.cpp
+
+
+    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_intf.cpp
+    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_intf.h
+    ${SRC_DIR}/../../vendor/rs274ngc/canon.h
+    ${SRC_DIR}/../../vendor/rs274ngc/canon.cpp
+    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc.h
+    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_errors.h
+    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_pre.cpp
+    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_return.h
+    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_data.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -147,3 +164,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 
 # Make install
 install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../bin)
+
+# Copy files during build.
+configure_file(${SRC_DIR}/../../vendor/rs274ngc/rs274ngc.var ${BUILD_DIR}/../../../bin COPYONLY)
+configure_file(${SRC_DIR}/../../vendor/rs274ngc/rs274ngc.tool_default ${BUILD_DIR}/../../../bin COPYONLY)

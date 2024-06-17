@@ -56,6 +56,9 @@ add_subdirectory(src/hal/components/hm2_eth)
 # Parse gcode into gcode list
 # add_subdirectory(vendor/gcode_parser)
 
+# Gcode interpreter
+# add_subdirectory(vendor/rs274ngc)
+
 # Projects
 add_subdirectory(projects/cnc)
 

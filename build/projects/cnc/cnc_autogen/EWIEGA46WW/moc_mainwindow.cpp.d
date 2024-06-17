@@ -54,6 +54,7 @@
   /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.h \
   /home/user/hal-core-2.0/vendor/occ_draw/draw_clothoids.h \
   /home/user/hal-core-2.0/vendor/occ_draw/draw_primitives.h \
+  /home/user/hal-core-2.0/vendor/occ_draw/draw_rs274ngc_shapes.h \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/AIS_ClearMode.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/AIS_ColoredDrawer.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/AIS_ColoredShape.hxx \
@@ -1570,6 +1571,8 @@
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/math/math_Function.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/math/math_FunctionWithDerivative.hxx \
   /home/user/hal-core-2.0/vendor/qt_functions/qt_functions.h \
+  /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_data.h \
+  /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_intf.h \
   /home/user/hal-core-2.0/vendor/scurve/scurve_engine/tp_scurve.h \
   /home/user/hal-core-2.0/vendor/std_functions/std_functions.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QDebug \

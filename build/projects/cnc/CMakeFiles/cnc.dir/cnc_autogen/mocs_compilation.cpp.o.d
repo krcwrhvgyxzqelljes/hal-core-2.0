@@ -2188,6 +2188,8 @@ projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/mocs_compilation.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/Clothoids/lib/include/Clothoids/ClothoidList.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/Clothoids/lib/include/Clothoids/ClothoidAsyPlot.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/Clothoids/lib/include/Clothoids/Dubins.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/occ_draw/draw_rs274ngc_shapes.h \
+ /home/user/hal-core-2.0/projects/cnc/../../include/../vendor/rs274ngc/rs274ngc_data.h \
  /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/EWIEGA46WW/../../../../../projects/cnc/OcctQtViewer.h \
  /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/EWIEGA46WW/../../../../../projects/cnc/../../vendor/scurve/scurve_engine/tp_scurve.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h \
@@ -2201,4 +2203,6 @@ projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/mocs_compilation.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../src/rtapi/rtapi_stdint.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/qt_functions/qt_functions.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/std_functions/std_functions.h \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/gcode_parser/gcode_parser.h
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/gcode_parser/gcode_parser.h \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_intf.h \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_data.h

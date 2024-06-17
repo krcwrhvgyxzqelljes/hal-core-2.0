@@ -20,13 +20,14 @@
 #define toRadians M_PI/180.0
 #define toDegrees (180.0/M_PI)
 
-#ifdef Success
-#undef Success
-#endif
+//#ifdef Success
+//#undef Success
+//#endif
 
 // Opencascade occ.
 #include "draw_primitives.h"
 #include "draw_clothoids.h"
+#include "draw_rs274ngc_shapes.h"
 #include "OcctQtViewer.h"
 
 // Scurve planner primitive struct.
@@ -46,6 +47,8 @@
 #include "std_functions.h"
 #include "gcode_parser.h"
 
+// Interpreter
+#include "rs274ngc_intf.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -87,6 +90,8 @@ private slots:
     void on_toolButton_file_open_pressed();
 
     void on_pushButton_open_pressed();
+
+    void on_pushButton_pressed();
 
 private:
     Ui::MainWindow *ui;

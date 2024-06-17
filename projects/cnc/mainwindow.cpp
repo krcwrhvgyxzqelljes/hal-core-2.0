@@ -144,8 +144,6 @@ void MainWindow::on_pushButton_open_pressed()
     QString gcode=QString::fromStdString(std_functions().read_file_to_string(filename));
     editor->appendPlainText(gcode);
 
-
-
     std::vector<gcode_line> gvec;
     gcode_parser().tokenize(filename,gvec,1);
 
@@ -156,6 +154,27 @@ void MainWindow::on_pushButton_open_pressed()
         occ->add_shapevec(i.aShape);
     }
     occ->redraw();
+}
+
+
+
+void MainWindow::on_pushButton_pressed()
+{
+    std::vector<rs274ngc_data> datavec;
+    std::string filename=qt_functions().open_file_dialog_get_filename(this);
+    rs274ngc_intf().load_file(filename,"out.txt",datavec);
+
+    std::vector<Handle(AIS_Shape)> shapevec;
+    draw_rs274ngc_shapes().get_shapes(datavec,shapevec);
+
+    for(auto i:shapevec){
+        occ->add_shapevec(i);
+    }
+    occ->redraw();
+
+    editor->clear();
+    QString gcode=QString::fromStdString(std_functions().read_file_to_string(filename));
+    editor->appendPlainText(gcode);
 }
 
 

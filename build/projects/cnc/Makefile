@@ -309,6 +309,30 @@ __/__/vendor/occ_draw/draw_primitives.cpp.s:
 	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.s
 .PHONY : __/__/vendor/occ_draw/draw_primitives.cpp.s
 
+__/__/vendor/occ_draw/draw_rs274ngc_shapes.o: __/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o
+.PHONY : __/__/vendor/occ_draw/draw_rs274ngc_shapes.o
+
+# target to build an object file
+__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o
+.PHONY : __/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o
+
+__/__/vendor/occ_draw/draw_rs274ngc_shapes.i: __/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.i
+.PHONY : __/__/vendor/occ_draw/draw_rs274ngc_shapes.i
+
+# target to preprocess a source file
+__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.i
+.PHONY : __/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.i
+
+__/__/vendor/occ_draw/draw_rs274ngc_shapes.s: __/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.s
+.PHONY : __/__/vendor/occ_draw/draw_rs274ngc_shapes.s
+
+# target to generate assembly for a file
+__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.s
+.PHONY : __/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.s
+
 __/__/vendor/qt_functions/qt_functions.o: __/__/vendor/qt_functions/qt_functions.cpp.o
 .PHONY : __/__/vendor/qt_functions/qt_functions.o
 
@@ -332,6 +356,78 @@ __/__/vendor/qt_functions/qt_functions.s: __/__/vendor/qt_functions/qt_functions
 __/__/vendor/qt_functions/qt_functions.cpp.s:
 	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.s
 .PHONY : __/__/vendor/qt_functions/qt_functions.cpp.s
+
+__/__/vendor/rs274ngc/canon.o: __/__/vendor/rs274ngc/canon.cpp.o
+.PHONY : __/__/vendor/rs274ngc/canon.o
+
+# target to build an object file
+__/__/vendor/rs274ngc/canon.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.o
+.PHONY : __/__/vendor/rs274ngc/canon.cpp.o
+
+__/__/vendor/rs274ngc/canon.i: __/__/vendor/rs274ngc/canon.cpp.i
+.PHONY : __/__/vendor/rs274ngc/canon.i
+
+# target to preprocess a source file
+__/__/vendor/rs274ngc/canon.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.i
+.PHONY : __/__/vendor/rs274ngc/canon.cpp.i
+
+__/__/vendor/rs274ngc/canon.s: __/__/vendor/rs274ngc/canon.cpp.s
+.PHONY : __/__/vendor/rs274ngc/canon.s
+
+# target to generate assembly for a file
+__/__/vendor/rs274ngc/canon.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.s
+.PHONY : __/__/vendor/rs274ngc/canon.cpp.s
+
+__/__/vendor/rs274ngc/rs274ngc_intf.o: __/__/vendor/rs274ngc/rs274ngc_intf.cpp.o
+.PHONY : __/__/vendor/rs274ngc/rs274ngc_intf.o
+
+# target to build an object file
+__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o
+.PHONY : __/__/vendor/rs274ngc/rs274ngc_intf.cpp.o
+
+__/__/vendor/rs274ngc/rs274ngc_intf.i: __/__/vendor/rs274ngc/rs274ngc_intf.cpp.i
+.PHONY : __/__/vendor/rs274ngc/rs274ngc_intf.i
+
+# target to preprocess a source file
+__/__/vendor/rs274ngc/rs274ngc_intf.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.i
+.PHONY : __/__/vendor/rs274ngc/rs274ngc_intf.cpp.i
+
+__/__/vendor/rs274ngc/rs274ngc_intf.s: __/__/vendor/rs274ngc/rs274ngc_intf.cpp.s
+.PHONY : __/__/vendor/rs274ngc/rs274ngc_intf.s
+
+# target to generate assembly for a file
+__/__/vendor/rs274ngc/rs274ngc_intf.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.s
+.PHONY : __/__/vendor/rs274ngc/rs274ngc_intf.cpp.s
+
+__/__/vendor/rs274ngc/rs274ngc_pre.o: __/__/vendor/rs274ngc/rs274ngc_pre.cpp.o
+.PHONY : __/__/vendor/rs274ngc/rs274ngc_pre.o
+
+# target to build an object file
+__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o
+.PHONY : __/__/vendor/rs274ngc/rs274ngc_pre.cpp.o
+
+__/__/vendor/rs274ngc/rs274ngc_pre.i: __/__/vendor/rs274ngc/rs274ngc_pre.cpp.i
+.PHONY : __/__/vendor/rs274ngc/rs274ngc_pre.i
+
+# target to preprocess a source file
+__/__/vendor/rs274ngc/rs274ngc_pre.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.i
+.PHONY : __/__/vendor/rs274ngc/rs274ngc_pre.cpp.i
+
+__/__/vendor/rs274ngc/rs274ngc_pre.s: __/__/vendor/rs274ngc/rs274ngc_pre.cpp.s
+.PHONY : __/__/vendor/rs274ngc/rs274ngc_pre.s
+
+# target to generate assembly for a file
+__/__/vendor/rs274ngc/rs274ngc_pre.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.s
+.PHONY : __/__/vendor/rs274ngc/rs274ngc_pre.cpp.s
 
 __/__/vendor/std_functions/std_functions.o: __/__/vendor/std_functions/std_functions.cpp.o
 .PHONY : __/__/vendor/std_functions/std_functions.o
@@ -506,9 +602,21 @@ help:
 	@echo "... __/__/vendor/occ_draw/draw_primitives.o"
 	@echo "... __/__/vendor/occ_draw/draw_primitives.i"
 	@echo "... __/__/vendor/occ_draw/draw_primitives.s"
+	@echo "... __/__/vendor/occ_draw/draw_rs274ngc_shapes.o"
+	@echo "... __/__/vendor/occ_draw/draw_rs274ngc_shapes.i"
+	@echo "... __/__/vendor/occ_draw/draw_rs274ngc_shapes.s"
 	@echo "... __/__/vendor/qt_functions/qt_functions.o"
 	@echo "... __/__/vendor/qt_functions/qt_functions.i"
 	@echo "... __/__/vendor/qt_functions/qt_functions.s"
+	@echo "... __/__/vendor/rs274ngc/canon.o"
+	@echo "... __/__/vendor/rs274ngc/canon.i"
+	@echo "... __/__/vendor/rs274ngc/canon.s"
+	@echo "... __/__/vendor/rs274ngc/rs274ngc_intf.o"
+	@echo "... __/__/vendor/rs274ngc/rs274ngc_intf.i"
+	@echo "... __/__/vendor/rs274ngc/rs274ngc_intf.s"
+	@echo "... __/__/vendor/rs274ngc/rs274ngc_pre.o"
+	@echo "... __/__/vendor/rs274ngc/rs274ngc_pre.i"
+	@echo "... __/__/vendor/rs274ngc/rs274ngc_pre.s"
 	@echo "... __/__/vendor/std_functions/std_functions.o"
 	@echo "... __/__/vendor/std_functions/std_functions.i"
 	@echo "... __/__/vendor/std_functions/std_functions.s"

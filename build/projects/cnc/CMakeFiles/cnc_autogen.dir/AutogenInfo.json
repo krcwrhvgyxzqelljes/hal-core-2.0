@@ -90,6 +90,8 @@
 		"/usr/share/cmake-3.25/Modules/CMakeParseArguments.cmake",
 		"/opt/qt-creator/5.15.1/gcc_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake",
 		"/opt/qt-creator/5.15.1/gcc_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake",
+		"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc.var",
+		"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc.tool_default",
 		"/home/user/hal-core-2.0/projects/cnc/icons.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/user/hal-core-2.0",
@@ -140,9 +142,51 @@
 			null
 		],
 		[
+			"/home/user/hal-core-2.0/vendor/occ_draw/draw_rs274ngc_shapes.h",
+			"MU",
+			"BR346FHSYD/moc_draw_rs274ngc_shapes.cpp",
+			null
+		],
+		[
 			"/home/user/hal-core-2.0/vendor/qt_functions/qt_functions.h",
 			"MU",
 			"35FGJ4OWTM/moc_qt_functions.cpp",
+			null
+		],
+		[
+			"/home/user/hal-core-2.0/vendor/rs274ngc/canon.h",
+			"MU",
+			"ZITRRGVZRW/moc_canon.cpp",
+			null
+		],
+		[
+			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc.h",
+			"MU",
+			"ZITRRGVZRW/moc_rs274ngc.cpp",
+			null
+		],
+		[
+			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_data.h",
+			"MU",
+			"ZITRRGVZRW/moc_rs274ngc_data.cpp",
+			null
+		],
+		[
+			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_errors.h",
+			"MU",
+			"ZITRRGVZRW/moc_rs274ngc_errors.cpp",
+			null
+		],
+		[
+			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_intf.h",
+			"MU",
+			"ZITRRGVZRW/moc_rs274ngc_intf.cpp",
+			null
+		],
+		[
+			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_return.h",
+			"MU",
+			"ZITRRGVZRW/moc_rs274ngc_return.cpp",
 			null
 		],
 		[
@@ -183,6 +227,7 @@
 		"/home/user/hal-core-2.0/vendor/Clothoids/lib/include",
 		"/home/user/hal-core-2.0/vendor/Clothoids/lib3rd/include",
 		"/home/user/hal-core-2.0/vendor/gcode_parser",
+		"/home/user/hal-core-2.0/vendor/rs274ngc",
 		"/home/user/hal-core-2.0/src/rtapi",
 		"/home/user/hal-core-2.0/include",
 		"/home/user/hal-core-2.0/projects/cnc/usr/include",
@@ -249,7 +294,23 @@
 			null
 		],
 		[
+			"/home/user/hal-core-2.0/vendor/occ_draw/draw_rs274ngc_shapes.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/user/hal-core-2.0/vendor/qt_functions/qt_functions.cpp",
+			"MU",
+			null
+		],
+		[ "/home/user/hal-core-2.0/vendor/rs274ngc/canon.cpp", "MU", null ],
+		[
+			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_intf.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_pre.cpp",
 			"MU",
 			null
 		],

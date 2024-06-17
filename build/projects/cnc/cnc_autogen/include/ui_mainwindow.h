@@ -53,6 +53,7 @@ public:
     QWidget *page_9;
     QVBoxLayout *verticalLayout;
     QPushButton *pushButton_open;
+    QPushButton *pushButton;
     QSpacerItem *verticalSpacer;
     QWidget *page_10;
     QStackedWidget *stackedWidget_2;
@@ -214,6 +215,11 @@ public:
         pushButton_open->setObjectName(QString::fromUtf8("pushButton_open"));
 
         verticalLayout->addWidget(pushButton_open);
+
+        pushButton = new QPushButton(page_9);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+
+        verticalLayout->addWidget(pushButton);
 
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -424,6 +430,7 @@ public:
         toolButton_pause->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
         toolButton_reload->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
         pushButton_open->setText(QCoreApplication::translate("MainWindow", "open", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         toolButton_view_front->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
         toolButton_view_back->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
         toolButton_zoom_min->setText(QCoreApplication::translate("MainWindow", "...", nullptr));

@@ -2061,6 +2061,8 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/Clothoids/lib/include/Clothoids/ClothoidList.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/Clothoids/lib/include/Clothoids/ClothoidAsyPlot.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/Clothoids/lib/include/Clothoids/Dubins.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/occ_draw/draw_rs274ngc_shapes.h \
+ /home/user/hal-core-2.0/projects/cnc/../../include/../vendor/rs274ngc/rs274ngc_data.h \
  /home/user/hal-core-2.0/projects/cnc/OcctQtViewer.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/Standard_WarningsDisable.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/Standard/Standard_WarningsDisable.hxx \
@@ -2189,6 +2191,8 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/qt_functions/qt_functions.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/std_functions/std_functions.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/gcode_parser/gcode_parser.h \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_intf.h \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_data.h \
  /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/include/./ui_mainwindow.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QVariant \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qvariant.h \
