@@ -673,13 +673,16 @@ void OcctQtViewer::clear_shapevec(){
 }
 
 void OcctQtViewer::create_tp_cone(){
-    tp_cone=draw_primitives::draw_3d_cone({0,0,0},0.0,10.0,30.0);
+    tp_cone=draw_primitives::draw_3d_cone({0,0,0},0.0,5.0,15.0);
     tp_cone->Attributes()->SetFaceBoundaryDraw(true);
     tp_cone->Attributes()->SetFaceBoundaryAspect(new Prs3d_LineAspect(Quantity_NOC_BLACK, Aspect_TOL_SOLID, 1.));
     tp_cone->Attributes()->SetIsoOnTriangulation(true);
     tp_cone->Attributes()->SetDisplayMode(AIS_Shaded);
     tp_cone->SetTransparency(0.7);
-    myContext->Display(tp_cone,false);
+
+    translate_tp_cone(0,0,0,0,-0.5*M_PI,0);
+
+     myContext->Display(tp_cone,false);
 }
 
 void OcctQtViewer::translate_tp_cone(double x, double y, double z, double eulz, double euly, double eulx){

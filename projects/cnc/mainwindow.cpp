@@ -4,6 +4,8 @@
 
 #define DEBUG 0
 
+#include "BRepBuilderAPI_MakeEdge.hxx"
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -22,6 +24,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->gridLayout_occ->addWidget(occ);
     occ->create_tp_cone();
 
+
+
     editor = new QGCodeEditor();
     ui->gridLayout_gcode->addWidget(editor);
     editor->setStyleSheet("background-color: rgb(75, 75, 75);");
@@ -31,6 +35,8 @@ MainWindow::MainWindow(QWidget *parent)
     timer->start(50);
 
     hal_connection();
+
+
 
 
     // std::string file=qt_functions().open_file_dialog_get_filename(this);
@@ -160,27 +166,60 @@ void MainWindow::on_pushButton_open_pressed()
 
 void MainWindow::on_pushButton_pressed()
 {
-    std::vector<rs274ngc_data> datavec;
-    std::string filename=qt_functions().open_file_dialog_get_filename(this);
-    rs274ngc_intf().load_file(filename,"out.txt",datavec);
+    //    std::vector<rs274ngc_data> datavec;
+    //    std::string filename=qt_functions().open_file_dialog_get_filename(this);
+    //    rs274ngc_intf().load_file(filename,"out.txt",datavec);
 
-    std::vector<Handle(AIS_Shape)> shapevec;
-    draw_rs274ngc_shapes().get_shapes(datavec,shapevec);
+    //    std::vector<Handle(AIS_Shape)> shapevec;
+    //    draw_rs274ngc_shapes().get_shapes(datavec,shapevec);
 
-    for(auto i:shapevec){
-        occ->add_shapevec(i);
-    }
-    occ->redraw();
 
-    editor->clear();
-    QString gcode=QString::fromStdString(std_functions().read_file_to_string(filename));
-    editor->appendPlainText(gcode);
+    //    for(auto i:shapevec){
+    //        occ->add_shapevec(i);
+    //    }
+    //    occ->redraw();
+
+    //    editor->clear();
+    //    QString gcode=QString::fromStdString(std_functions().read_file_to_string(filename));
+    //    editor->appendPlainText(gcode);
+}
+
+double a=1,b=1,c=10;
+
+void MainWindow::helix(){
+
+    occ->clear_shapevec();
+
+    gp_Pnt p0={0,0,0};
+    double i=0;
+    double j=5;
+    double k=0;
+    gp_Pnt p1={2,10,2};
+    int plane=2; //
+    int turns=0; // Turns.
+
+   occ->add_shapevec( draw_primitives::draw_3d_point(p0));
+   occ->add_shapevec( draw_primitives::draw_2d_gcode_G3_helix(p0,p1,plane,i,j,k,turns) );
+
+}
+
+void MainWindow::on_doubleSpinBox_valueChanged(double arg1)
+{
+    a=arg1;
+    helix();
 }
 
 
+void MainWindow::on_doubleSpinBox_2_valueChanged(double arg1)
+{
+    b=arg1;
+    helix();
+}
 
 
-
-
-
+void MainWindow::on_doubleSpinBox_3_valueChanged(double arg1)
+{
+    c=arg1;
+    helix();
+}
 

@@ -1202,6 +1202,16 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/Geom/Geom_CartesianPoint.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/Geom_Point.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/Geom/Geom_Point.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/Geom_BSplineCurve.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/Geom/Geom_BSplineCurve.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TColStd/TColStd_HArray1OfReal.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/GeomAPI_PointsToBSpline.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/GeomAPI/GeomAPI_PointsToBSpline.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/Approx/Approx_ParametrizationType.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/GC_MakeArcOfCircle.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/GC/GC_MakeArcOfCircle.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/GC_Root.hxx \
@@ -1378,8 +1388,6 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TDataStd/TDataStd_NamedData.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/TColStd_DataMapOfStringInteger.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TColStd/TColStd_DataMapOfStringInteger.hxx \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TColStd/TColStd_HArray1OfReal.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringReal.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TDataStd/TDataStd_DataMapOfStringReal.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringString.hxx \
@@ -1557,8 +1565,6 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BSplCLib/BSplCLib_KnotDistribution.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_MultDistribution.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BSplCLib/BSplCLib_MultDistribution.hxx \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_EvaluatorFunction.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BSplCLib/BSplCLib_EvaluatorFunction.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BSplCLib.lxx \
@@ -1899,8 +1905,6 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TopTools/TopTools_DataMapOfShapeListOfInteger.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/TopTools_DataMapOfShapeInteger.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TopTools/TopTools_DataMapOfShapeInteger.hxx \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/Approx/Approx_ParametrizationType.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/TopTools_Array1OfShape.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TopTools/TopTools_Array1OfShape.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_MakeWire.hxx \

@@ -455,32 +455,32 @@ int adjust_error_handling(
 
 int rs274ngc_intf::load_file(std::string file_in, std::string file_out, std::vector<rs274ngc_data> &datavec){
 
+    _datavec.clear();
+
     int status;
     int do_next;                                  /* 0=continue, 1=mdi, 2=stop */
     int block_delete;
-    char buffer[80];
+    char buffer[256];
     int gees[RS274NGC_ACTIVE_G_CODES];
     int ems[RS274NGC_ACTIVE_M_CODES];
     double sets[RS274NGC_ACTIVE_SETTINGS];
-    std::string default_name = "rs274ngc.var";
     int print_stack;
-    _datavec.clear();
 
     do_next = 2;                             /* 2=stop */
     block_delete = OFF;
     print_stack = OFF;
-    _parameter_file_name=default_name;
-    // _outfile = stdout; // Print to terminal instead of textfile.
+    _parameter_file_name="rs274ngc.var";
+    _outfile = stdout; // Print to terminal instead of textfile.
 
-    _outfile = fopen(file_out.c_str(), "w");
-    if(_outfile == NULL){
-        std::cout<<"could not open output file."<<std::endl;
-        return 1;
-    }
+    //_outfile = fopen(file_out.c_str(), "w");
+    //if(_outfile == NULL){
+    //    std::cout<<"could not open output file."<<std::endl;
+    //    return 1;
+    //}
 
     if(rs274ngc_init()!=0){
-        std::cout<<"missing files in exec folder, copy to exec folder : rs274ngc.var, rs274ngc.tool_default."<<std::endl;
-        return 1;
+       std::cout<<"missing files in exec folder, copy to exec folder : rs274ngc.var, rs274ngc.tool_default."<<std::endl;
+       return 1;
     }
 
     status = rs274ngc_open(file_in.c_str());
@@ -492,8 +492,7 @@ int rs274ngc_intf::load_file(std::string file_in, std::string file_out, std::vec
     }
 
     status = interpret_from_file(do_next, block_delete, print_stack);
-    rs274ngc_file_name(buffer, 5);            /* called to exercise the function */
-    rs274ngc_file_name(buffer, 79);           /* called to exercise the function */
+    rs274ngc_file_name(buffer, 256);           /* called to exercise the function */
     rs274ngc_close();
 
     rs274ngc_line_length();                       /* called to exercise the function */

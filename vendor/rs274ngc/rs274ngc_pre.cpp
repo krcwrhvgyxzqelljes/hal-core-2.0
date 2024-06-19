@@ -127,6 +127,7 @@
 #include "rs274ngc.h"
 #include "rs274ngc_return.h"
 #include "rs274ngc_errors.h"
+#include <iostream>
 
 #define DEBUG_EMC
 
@@ -1212,6 +1213,8 @@ static int check_g_codes(                     /* ARGUMENTS                      
                                               block_pointer block,                          /* pointer to a block to be checked */
                                               setup_pointer settings)                       /* pointer to machine settings      */
 {
+    std::cout<<"check_g_codes"<<std::endl;
+
     static char name[] = "check_g_codes";
     int mode0;
     int p_int;
@@ -1236,6 +1239,9 @@ static int check_g_codes(                     /* ARGUMENTS                      
     {}
     else if (mode0 == G_30)
     {}
+    else if (mode0 == G_64){ // Added grotius
+        std::cout<<"g_64 found."<<std::endl;
+    }
     else if (mode0 == G_53)
     {
         CHK(((block->motion_to_be != G_0) && (block->motion_to_be != G_1)),
@@ -1287,6 +1293,8 @@ static int check_items(                       /* ARGUMENTS                      
                                               block_pointer block,                          /* pointer to a block to be checked */
                                               setup_pointer settings)                       /* pointer to machine settings      */
 {
+    std::cout<<"check_items"<<std::endl;
+
     static char name[] = "check_items";
     int status;
 
@@ -1319,6 +1327,7 @@ static int check_items(                       /* ARGUMENTS                      
 static int check_m_codes(                     /* ARGUMENTS                        */
                                               block_pointer block)                          /* pointer to a block to be checked */
 {
+    std::cout<<"check_m_codes"<<std::endl;
     static char name[] = "check_m_codes";
 
     CHK((block->m_count > MAX_EMS), NCE_TOO_MANY_M_CODES_ON_LINE);
@@ -1372,6 +1381,7 @@ static int check_m_codes(                     /* ARGUMENTS                      
 static int check_other_codes(                 /* ARGUMENTS                               */
                                               block_pointer block)                          /* pointer to a block of RS274/NGC instructions */
 {
+    std::cout<<"check_other_codes"<<std::endl;
     static char name[] = "check_other_codes";
     int motion;
 
@@ -1436,6 +1446,12 @@ static int check_other_codes(                 /* ARGUMENTS                      
     {
         CHK(((block->g_modes[0] != G_10) &&
             (block->g_modes[0] != G_4) &&
+
+                // Added grotius, group 13 = {g61,g61.1,g64} - control mode
+                // ~/rs274ngc/rs274ngc_pre.cpp Line 583
+                // Enables input like: G64 P0.01
+                (block->g_modes[13] != G_64) &&
+
                 (motion != G_82) && (motion != G_86) &&
                 (motion != G_88) && (motion != G_89)),
                 NCE_P_WORD_WITH_NO_G4_G10_G82_G86_G88_G89);
@@ -1443,7 +1459,14 @@ static int check_other_codes(                 /* ARGUMENTS                      
 
     if (block->q_number != -1.0)
     {
-        CHK((motion != G_83), NCE_Q_WORD_WITH_NO_G83);
+        CHK((motion != G_83 &&
+
+                // Added grotius, group 13 = {g61,g61.1,g64} - control mode
+                // ~/rs274ngc/rs274ngc_pre.cpp Line 583
+                // Enables input like: G64 P0.01
+                (block->g_modes[13] != G_64))
+
+                , NCE_Q_WORD_WITH_NO_G83);
     }
 
     if (block->r_flag == ON)
@@ -9750,6 +9773,7 @@ static int read_p(                            /* ARGUMENTS                      
     CHP(read_real_value(line, counter, &value, parameters));
     CHK((value < 0.0), NCE_NEGATIVE_P_WORD_USED);
     block->p_number = value;
+    std::cout<<"read p:"<<value<<std::endl;
     return RS274NGC_OK;
 }
 
@@ -11333,8 +11357,8 @@ int rs274ngc_exit()                           /* NO ARGUMENTS */
 
     GET_EXTERNAL_PARAMETER_FILE_NAME(file_name, (RS274NGC_TEXT_SIZE - 1));
     rs274ngc_save_parameters
-            (((file_name[0] == 0) ? RS274NGC_PARAMETER_FILE_NAME_DEFAULT : file_name),
-            _setup.parameters);
+        (((file_name[0] == 0) ? RS274NGC_PARAMETER_FILE_NAME_DEFAULT : file_name),
+        _setup.parameters);
     rs274ngc_reset();
 
     return RS274NGC_OK;
@@ -11881,82 +11905,82 @@ int rs274ngc_restore_parameters(              /* ARGUMENTS                      
 
    */
 int rs274ngc_save_parameters(                 /* ARGUMENTS             */
-                                              const char * filename,                        /* name of file to write */
-                                              const double parameters[])                    /* parameters to save    */
-{
-    static char name[] = "rs274ngc_save_parameters";
-    FILE * infile;
-    FILE * outfile;
-    char line[256];
-    int variable;
-    double value;
-    int required;                             // number of next required parameter
-    int index;                                // index into _required_parameters
-    int k;
+   const char * filename,                        /* name of file to write */
+   const double parameters[])                    /* parameters to save    */
+   {
+       static char name[] = "rs274ngc_save_parameters";
+       FILE * infile;
+       FILE * outfile;
+       char line[256];
+       int variable;
+       double value;
+       int required;                             // number of next required parameter
+       int index;                                // index into _required_parameters
+       int k;
 
-    // rename as .bak
-    strcpy(line, filename);
-    strcat(line, RS274NGC_PARAMETER_FILE_BACKUP_SUFFIX);
-    CHK((rename(filename, line) != 0), NCE_CANNOT_CREATE_BACKUP_FILE);
+  // rename as .bak
+       strcpy(line, filename);
+       strcat(line, RS274NGC_PARAMETER_FILE_BACKUP_SUFFIX);
+       CHK((rename(filename, line) != 0), NCE_CANNOT_CREATE_BACKUP_FILE);
 
-    // open backup for reading
-    infile = fopen(line, "r");
-    CHK((infile == NULL), NCE_CANNOT_OPEN_BACKUP_FILE);
+  // open backup for reading
+       infile = fopen(line, "r");
+       CHK((infile == NULL), NCE_CANNOT_OPEN_BACKUP_FILE);
 
-    // open original for writing
-    outfile = fopen(filename, "w");
-    CHK((outfile == NULL), NCE_CANNOT_OPEN_VARIABLE_FILE);
+  // open original for writing
+       outfile = fopen(filename, "w");
+       CHK((outfile == NULL), NCE_CANNOT_OPEN_VARIABLE_FILE);
 
-    k = 0;
-    index = 0;
-    required = _required_parameters[index++];
-    while (feof(infile) == 0)
-    {
-        if (fgets(line, 256, infile) == NULL)
-        {
-            break;
-        }
-        // try for a variable-value match
-        if (sscanf(line, "%d %lf", &variable, &value) == 2)
-        {
-            CHK(((variable <= 0) || (variable >= RS274NGC_MAX_PARAMETERS)),
-                NCE_PARAMETER_NUMBER_OUT_OF_RANGE);
-            for (; k < RS274NGC_MAX_PARAMETERS; k++)
-            {
-                if (k > variable)
-                    ERM(NCE_PARAMETER_FILE_OUT_OF_ORDER);
-                else if (k == variable)
-                {
-                    sprintf(line, "%d\t%f\n", k, parameters[k]);
-                    fputs(line, outfile);
-                    if (k == required)
-                        required = _required_parameters[index++];
-                    k++;
-                    break;
-                }
-                else if (k == required)       // know (k < variable)
-                {
-                    sprintf(line, "%d\t%f\n", k, parameters[k]);
-                    fputs(line, outfile);
-                    required = _required_parameters[index++];
-                }
-            }
-        }
-    }
-    fclose(infile);
-    for (; k < RS274NGC_MAX_PARAMETERS; k++)
-    {
-        if (k == required)
-        {
-            sprintf(line, "%d\t%f\n", k, parameters[k]);
-            fputs(line, outfile);
-            required = _required_parameters[index++];
-        }
-    }
-    fclose(outfile);
+       k = 0;
+       index = 0;
+       required = _required_parameters[index++];
+       while (feof(infile) == 0)
+       {
+           if (fgets(line, 256, infile) == NULL)
+           {
+               break;
+           }
+  // try for a variable-value match
+           if (sscanf(line, "%d %lf", &variable, &value) == 2)
+           {
+               CHK(((variable <= 0) || (variable >= RS274NGC_MAX_PARAMETERS)),
+                   NCE_PARAMETER_NUMBER_OUT_OF_RANGE);
+               for (; k < RS274NGC_MAX_PARAMETERS; k++)
+               {
+                   if (k > variable)
+                       ERM(NCE_PARAMETER_FILE_OUT_OF_ORDER);
+                   else if (k == variable)
+                   {
+                       sprintf(line, "%d\t%f\n", k, parameters[k]);
+                       fputs(line, outfile);
+                       if (k == required)
+                           required = _required_parameters[index++];
+                       k++;
+                       break;
+                   }
+                   else if (k == required)       // know (k < variable)
+                   {
+                       sprintf(line, "%d\t%f\n", k, parameters[k]);
+                       fputs(line, outfile);
+                       required = _required_parameters[index++];
+                   }
+               }
+           }
+       }
+       fclose(infile);
+       for (; k < RS274NGC_MAX_PARAMETERS; k++)
+       {
+           if (k == required)
+           {
+               sprintf(line, "%d\t%f\n", k, parameters[k]);
+               fputs(line, outfile);
+               required = _required_parameters[index++];
+           }
+       }
+       fclose(outfile);
 
-    return RS274NGC_OK;
-}
+       return RS274NGC_OK;
+   }
 
 /***********************************************************************/
 

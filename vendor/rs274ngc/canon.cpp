@@ -109,6 +109,8 @@ static CANON_DIRECTION   _spindle_turning;
 int                      _tool_max = 68;          /*Not static. Driver reads  */
 CANON_TOOL_TABLE         _tools[CANON_TOOL_MAX];  /*Not static. Driver writes */
 static double            _traverse_rate;
+static double            _tollerance_P = 0; // G64 P
+static double            _tollerance_Q = 0; // G64 Q
 
 /************************************************************************/
 

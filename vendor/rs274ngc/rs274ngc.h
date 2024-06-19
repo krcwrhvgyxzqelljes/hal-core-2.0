@@ -57,8 +57,8 @@
 #define RS274NGC_TEXT_SIZE 256
 
    /* numerical constants */
-#define TOLERANCE_INCH 0.0001
-#define TOLERANCE_MM 0.001
+#define TOLERANCE_INCH 0.0002
+#define TOLERANCE_MM 0.002
 #define TOLERANCE_CONCAVE_CORNER 0.01
    /* angle threshold for concavity for
                         cutter compensation, in radians */

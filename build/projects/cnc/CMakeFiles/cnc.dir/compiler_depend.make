@@ -1550,6 +1550,16 @@ projects/cnc/CMakeFiles/cnc.dir/OcctQtViewer.cpp.o: /home/user/hal-core-2.0/proj
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_CartesianPoint.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_Point.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_Point.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAPI/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Approx/Approx_ParametrizationType.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GC/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_Root.hxx \
@@ -1726,8 +1736,6 @@ projects/cnc/CMakeFiles/cnc.dir/OcctQtViewer.cpp.o: /home/user/hal-core-2.0/proj
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_NamedData.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_DataMapOfStringInteger.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_DataMapOfStringInteger.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringString.hxx \
@@ -1905,8 +1913,6 @@ projects/cnc/CMakeFiles/cnc.dir/OcctQtViewer.cpp.o: /home/user/hal-core-2.0/proj
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_KnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_MultDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_MultDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib.lxx \
@@ -4691,6 +4697,16 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o: /h
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_CartesianPoint.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_Point.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_Point.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAPI/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Approx/Approx_ParametrizationType.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GC/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_Root.hxx \
@@ -4867,8 +4883,6 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o: /h
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_NamedData.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_DataMapOfStringInteger.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_DataMapOfStringInteger.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringString.hxx \
@@ -5046,8 +5060,6 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o: /h
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_KnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_MultDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_MultDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib.lxx \
@@ -6623,6 +6635,16 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o: /ho
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_CartesianPoint.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_Point.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_Point.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAPI/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Approx/Approx_ParametrizationType.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GC/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_Root.hxx \
@@ -6799,8 +6821,6 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o: /ho
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_NamedData.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_DataMapOfStringInteger.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_DataMapOfStringInteger.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringString.hxx \
@@ -6978,8 +6998,6 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o: /ho
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_KnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_MultDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_MultDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib.lxx \
@@ -7330,8 +7348,6 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o: /ho
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TopTools/TopTools_DataMapOfShapeListOfInteger.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TopTools_DataMapOfShapeInteger.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TopTools/TopTools_DataMapOfShapeInteger.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Approx/Approx_ParametrizationType.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TopTools_Array1OfShape.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TopTools/TopTools_Array1OfShape.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_MakeWire.hxx \
@@ -8873,6 +8889,16 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_CartesianPoint.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_Point.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_Point.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAPI/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Approx/Approx_ParametrizationType.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GC/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_Root.hxx \
@@ -9049,8 +9075,6 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_NamedData.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_DataMapOfStringInteger.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_DataMapOfStringInteger.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringString.hxx \
@@ -9228,8 +9252,6 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_KnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_MultDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_MultDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib.lxx \
@@ -10958,7 +10980,54 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o: /home/
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_return.h \
-  /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_errors.h
+  /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_errors.h \
+  /usr/include/c++/12/iostream \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/exception \
+  /usr/include/c++/12/bits/exception_ptr.h \
+  /usr/include/c++/12/bits/cxxabi_init_exception.h \
+  /usr/include/c++/12/typeinfo \
+  /usr/include/c++/12/bits/nested_exception.h \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/bits/istream.tcc
 
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o: /home/user/hal-core-2.0/vendor/std_functions/std_functions.cpp \
   /usr/include/stdc-predef.h \
@@ -12632,6 +12701,16 @@ projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/mocs_compilation.cpp.o: projects/cnc
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_CartesianPoint.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_Point.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_Point.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAPI/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Approx/Approx_ParametrizationType.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GC/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_Root.hxx \
@@ -12808,8 +12887,6 @@ projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/mocs_compilation.cpp.o: projects/cnc
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_NamedData.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_DataMapOfStringInteger.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_DataMapOfStringInteger.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringString.hxx \
@@ -12987,8 +13064,6 @@ projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/mocs_compilation.cpp.o: projects/cnc
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_KnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_MultDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_MultDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib.lxx \
@@ -15217,6 +15292,16 @@ projects/cnc/CMakeFiles/cnc.dir/main.cpp.o: /home/user/hal-core-2.0/projects/cnc
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_CartesianPoint.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_Point.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_Point.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAPI/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Approx/Approx_ParametrizationType.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GC/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_Root.hxx \
@@ -15393,8 +15478,6 @@ projects/cnc/CMakeFiles/cnc.dir/main.cpp.o: /home/user/hal-core-2.0/projects/cnc
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_NamedData.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_DataMapOfStringInteger.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_DataMapOfStringInteger.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringString.hxx \
@@ -15572,8 +15655,6 @@ projects/cnc/CMakeFiles/cnc.dir/main.cpp.o: /home/user/hal-core-2.0/projects/cnc
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_KnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_MultDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_MultDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib.lxx \
@@ -17490,6 +17571,16 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_CartesianPoint.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_Point.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_Point.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_BSplineCurve.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAPI/GeomAPI_PointsToBSpline.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Approx/Approx_ParametrizationType.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GC/GC_MakeArcOfCircle.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_Root.hxx \
@@ -17666,8 +17757,6 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_NamedData.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_DataMapOfStringInteger.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_DataMapOfStringInteger.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_DataMapOfStringReal.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringString.hxx \
@@ -17845,8 +17934,6 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_KnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_MultDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_MultDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
-  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_EvaluatorFunction.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib.lxx \
@@ -18357,6 +18444,11 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qeventloop.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qguiapplication.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qinputmethod.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDoubleSpinBox \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qspinbox.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qvalidator.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qregularexpression.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QFrame \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qframe.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QGridLayout \
@@ -18379,7 +18471,25 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QToolButton \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtoolbutton.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QVBoxLayout \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_MakeEdge.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRepBuilderAPI/BRepBuilderAPI_MakeEdge.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepLib_MakeEdge.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRepLib/BRepLib_MakeEdge.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepLib_EdgeError.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRepLib/BRepLib_EdgeError.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepLib_MakeShape.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRepLib/BRepLib_MakeShape.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepLib_Command.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRepLib/BRepLib_Command.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepLib_ShapeModification.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRepLib/BRepLib_ShapeModification.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_MakeShape.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRepBuilderAPI/BRepBuilderAPI_MakeShape.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_Command.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRepBuilderAPI/BRepBuilderAPI_Command.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_EdgeError.hxx \
+  /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRepBuilderAPI/BRepBuilderAPI_EdgeError.hxx
 
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtoolbutton.h:
@@ -18393,6 +18503,12 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qsplitter.h:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSplitter:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractspinbox.h:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qspinbox.h:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDoubleSpinBox:
 
 /home/user/hal-core-2.0/projects/cnc/main.cpp:
 
@@ -18878,8 +18994,6 @@ projects/cnc/cnc_autogen/mocs_compilation.cpp:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_MakeWire.hxx:
 
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Approx/Approx_ParametrizationType.hxx:
-
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRepOffset/BRepOffset_Interval.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TopTools/TopTools_DataMapOfShapeListOfInteger.hxx:
@@ -19120,6 +19234,14 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /usr/include/c++/12/random:
 
+/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qqueue.h:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qvariantanimation.h:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qprocess.h:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qpointer.h:
+
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Graphic3d_PBRMaterial.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepSweep_Builder.lxx:
@@ -19279,10 +19401,6 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/PrsMgr/PrsMgr_Presentations.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Graphic3d/Graphic3d_ViewAffinity.hxx:
-
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx:
-
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Graphic3d_SequenceOfGroup.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TopoDS_CompSolid.hxx:
 
@@ -19542,6 +19660,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BVH/BVH_Constants.hxx:
 
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAPI/GeomAPI_PointsToBSpline.hxx:
+
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BVH_Constants.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BVH_Box.hxx:
@@ -19703,8 +19823,6 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/gp/gp_Hypr2d.lxx:
-
-/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qprocess.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/gp/gp_Pln.lxx:
 
@@ -20405,6 +20523,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TCollection_HAsciiString.lxx:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_BSplineCurve.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/CPnts/CPnts_MyRootFunction.hxx:
 
@@ -21468,10 +21588,6 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TopoDS/TopoDS_CompSolid.lxx:
 
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Select3D/Select3D_BndBox3d.hxx:
-
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Graphic3d_DiagnosticInfo.hxx:
-
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Graphic3d/Graphic3d_Texture2Dmanual.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/SelectMgr_ListOfFilter.hxx:
@@ -21519,6 +21635,10 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/NCollection/NCollection_BaseList.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TopTools_MapOfShape.hxx:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qpropertyanimation.h:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TopExp.hxx:
 
 /home/user/hal-core-2.0/vendor/Clothoids/lib3rd/include/Utils/fmt/format.h:
 
@@ -22552,6 +22672,10 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/V3d_StereoDumpOptions.hxx:
 
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Graphic3d_SequenceOfGroup.hxx:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx:
+
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/V3d_Trihedron.hxx:
 
 /usr/include/c++/12/pstl/execution_defs.h:
@@ -23020,6 +23144,42 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_Point.hxx:
 
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Select3D/Select3D_BndBox3d.hxx:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Graphic3d_DiagnosticInfo.hxx:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_BSplineCurve.hxx:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/SelectMgr/SelectMgr_SensitiveEntity.hxx:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Graphic3d/Graphic3d_TypeOfLimit.hxx:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TopTools/TopTools_ShapeMapHasher.lxx:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BOPAlgo_PPaveFiller.hxx:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib.hxx:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom2dEvaluator/Geom2dEvaluator_Curve.hxx:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Adaptor2d/Adaptor2d_HCurve2d.hxx:
+
+/usr/include/c++/12/math.h:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAPI_PointsToBSpline.hxx:
+
+/usr/include/eigen3/Eigen/src/Core/MapBase.h:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qeasingcurve.h:
+
+/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Approx/Approx_ParametrizationType.hxx:
+
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GC_MakeArcOfCircle.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GC/GC_Root.hxx:
@@ -23212,6 +23372,12 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_Name.hxx:
 
+/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qpluginloader.h:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h:
+
+/usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
+
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TDataStd/TDataStd_Name.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/gp_Elips2d.lxx:
@@ -23396,8 +23562,6 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_EvaluatorFunction.hxx:
 
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_HArray1OfReal.hxx:
-
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDF_AttributeIndexedMap.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringReal.hxx:
@@ -23449,8 +23613,6 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Standard_Condition.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/XCAFDoc_VisMaterial.hxx:
-
-/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qqueue.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/XCAFDoc/XCAFDoc_VisMaterial.hxx:
 
@@ -23612,8 +23774,6 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRep/BRep_TVertex.lxx:
 
-/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qpointer.h:
-
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TColStd/TColStd_SequenceOfInteger.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Poly_Polygon2D.hxx:
@@ -23677,26 +23837,6 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_CacheParams.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/OpenGl/OpenGl_VertexBuffer.lxx:
-
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BOPAlgo_PPaveFiller.hxx:
-
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BSplCLib.hxx:
-
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/SelectMgr/SelectMgr_SensitiveEntity.hxx:
-
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Graphic3d/Graphic3d_TypeOfLimit.hxx:
-
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TopTools/TopTools_ShapeMapHasher.lxx:
-
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx:
-
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom2dEvaluator/Geom2dEvaluator_Curve.hxx:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Adaptor2d/Adaptor2d_HCurve2d.hxx:
-
-/usr/include/c++/12/math.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BSplCLib/BSplCLib_KnotDistribution.hxx:
 
@@ -23929,10 +24069,6 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:
 
 /usr/include/eigen3/Eigen/src/Core/Dot.h:
-
-/usr/include/eigen3/Eigen/src/Core/MapBase.h:
-
-/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qeasingcurve.h:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qoffscreensurface.h:
 
@@ -24249,15 +24385,3 @@ projects/cnc/cnc_autogen/EWIEGA46WW/moc_form.cpp:
 /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qoperatingsystemversion.h:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qparallelanimationgroup.h:
-
-/usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h:
-
-/usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
-
-/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qpluginloader.h:
-
-/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TopExp.hxx:
-
-/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qpropertyanimation.h:
-
-/opt/qt-creator/5.15.1/gcc_64/include/QtCore/qvariantanimation.h:

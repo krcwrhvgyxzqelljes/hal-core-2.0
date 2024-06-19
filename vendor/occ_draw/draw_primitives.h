@@ -27,6 +27,8 @@
 #include <Geom_Circle.hxx>
 #include <Geom_TrimmedCurve.hxx>
 #include <Geom_CartesianPoint.hxx>
+#include <Geom_BSplineCurve.hxx>
+#include <GeomAPI_PointsToBSpline.hxx>
 #include <GC_MakeArcOfCircle.hxx>
 #include <GC_MakeArcOfEllipse.hxx>
 #include <GC_MakeCircle.hxx>
@@ -111,7 +113,8 @@ public:
         line = 2,
         arc = 3,
         circle = 4,
-        unknown = 5
+        helix = 6,
+        unknown = 7
     };
 
     static int get_shape_type(const Handle(AIS_Shape)& shape);
@@ -134,13 +137,26 @@ public:
     static Handle(AIS_Shape) draw_2d_ellipse(gp_Pnt center, gp_Pnt secpoint, double alpha_start, double alpha_end, double ratio);
     static Handle(AIS_Shape) draw_2d_text(std::string str, int textheight, gp_Pnt point, double rot_deg);
 
+    static double calculate_2d_angle_rad(const double& x0, const double& y0, const double& x1, const double& y1);
+    static Handle(AIS_Shape) draw_2d_gcode_G2_xy_helix(const gp_Pnt& p0, const gp_Pnt& p1, const gp_Pnt& pc, const int& turns);
+    static Handle(AIS_Shape) draw_2d_gcode_G3_xy_helix(const gp_Pnt& p0, const gp_Pnt& p1, const gp_Pnt& pc, const int& turns);
+    static Handle(AIS_Shape) draw_2d_gcode_G2_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,
+                                                 const double& i, const double& j, const double& k ,const int& turns);
+    static Handle(AIS_Shape) draw_2d_gcode_G3_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,
+                                                 const double& i, const double& j, const double& k ,const int& turns);
+    static Handle(AIS_Shape) draw_2d_gcode_G2_G3_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,const int& gcode,
+                                                 const double& i, const double& j, const double& k ,const int& turns);
+
     // Draw 3d primitives:
     static Handle(AIS_Shape) draw_3d_point(gp_Pnt point);
     static Handle(AIS_Shape) draw_3d_line(const gp_Pnt &p0, const gp_Pnt &p1);
+    static Handle(AIS_Shape) draw_3d_gcode_line(gp_Pnt p0, gp_Pnt p1, int gcode, gp_Pnt &pw);
     static Handle(AIS_Shape) draw_3d_line_wire(std::vector<gp_Pnt> pvec);
     static Handle(AIS_Shape) draw_3p_3d_arc(const gp_Pnt &p0, const gp_Pnt &pw, const gp_Pnt &p1);
     static Handle(AIS_Shape) draw_3d_acad_arc(gp_Pnt center, double radius, double alpha1, double alpha2, gp_Dir dir);
     static Handle(AIS_Shape) draw_3d_pc_arc_closest(gp_Pnt point1,gp_Pnt point2,gp_Pnt center,gp_Dir dir ,gp_Pnt closest);
+    static Handle(AIS_Shape) draw_3d_gcode_arc_circle_helix(const gp_Pnt& p0, const gp_Pnt& p1,const int& plane,const int& gcode,
+                                                             const double& i, const double& j, const double& k, const int& turns, gp_Pnt &pw);
     static Handle(AIS_Shape) draw_3d_pc_arc(gp_Pnt point1, gp_Pnt point2, gp_Pnt center, double dir_Xv, double dir_Yv, double dir_Zv, gp_Pnt &pw);
     static Handle(AIS_Shape) draw_3d_pc_arc(gp_Pnt point1,gp_Pnt point2,gp_Pnt center, double dir_Xv, double dir_Yv, double dir_Zv);
     static Handle(AIS_Shape) draw_3p_3d_circle(gp_Pnt point1,gp_Pnt point2,gp_Pnt point3);

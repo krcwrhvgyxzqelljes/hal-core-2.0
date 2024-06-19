@@ -1349,6 +1349,16 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/Geom/Geom_CartesianPoint.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/Geom_Point.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/Geom/Geom_Point.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/Geom_BSplineCurve.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/Geom/Geom_BSplineCurve.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TColStd/TColStd_HArray1OfReal.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/GeomAPI_PointsToBSpline.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/GeomAPI/GeomAPI_PointsToBSpline.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/Approx/Approx_ParametrizationType.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/GC_MakeArcOfCircle.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/GC/GC_MakeArcOfCircle.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/GC_Root.hxx \
@@ -1525,8 +1535,6 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TDataStd/TDataStd_NamedData.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/TColStd_DataMapOfStringInteger.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TColStd/TColStd_DataMapOfStringInteger.hxx \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/TColStd_HArray1OfReal.hxx \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TColStd/TColStd_HArray1OfReal.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringReal.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/TDataStd/TDataStd_DataMapOfStringReal.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/TDataStd_DataMapOfStringString.hxx \
@@ -1704,8 +1712,6 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BSplCLib/BSplCLib_KnotDistribution.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_MultDistribution.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BSplCLib/BSplCLib_MultDistribution.hxx \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BSplCLib_EvaluatorFunction.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BSplCLib/BSplCLib_EvaluatorFunction.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BSplCLib.lxx \
@@ -2204,6 +2210,11 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qeventloop.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qguiapplication.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qinputmethod.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDoubleSpinBox \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qspinbox.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qvalidator.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qregularexpression.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QFrame \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qframe.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QGridLayout \
@@ -2226,4 +2237,22 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QToolButton \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtoolbutton.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QVBoxLayout \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_MakeEdge.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BRepBuilderAPI/BRepBuilderAPI_MakeEdge.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BRepLib_MakeEdge.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BRepLib/BRepLib_MakeEdge.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BRepLib_EdgeError.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BRepLib/BRepLib_EdgeError.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BRepLib_MakeShape.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BRepLib/BRepLib_MakeShape.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BRepLib_Command.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BRepLib/BRepLib_Command.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BRepLib_ShapeModification.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BRepLib/BRepLib_ShapeModification.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_MakeShape.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BRepBuilderAPI/BRepBuilderAPI_MakeShape.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_Command.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BRepBuilderAPI/BRepBuilderAPI_Command.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_EdgeError.hxx \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BRepBuilderAPI/BRepBuilderAPI_EdgeError.hxx

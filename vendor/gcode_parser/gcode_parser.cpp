@@ -21,7 +21,8 @@ void gcode_parser::tokenize(const std::string &filename, std::vector<gcode_line>
     gcode = std_functions().string_to_lower(gcode);
     gcode = std_functions().remove_spaces(gcode);
 
-    std::vector<std::pair<std::string, double>> pairvec = std_functions().parse_string_to_key_and_value(gcode, 1);
+
+    std::vector<std::pair<std::string, double>> pairvec = std_functions().parse_string_to_key_and_value(gcode, 0);
 
     gcode_line gc;
     for(auto pair:pairvec){
@@ -37,6 +38,13 @@ void gcode_parser::tokenize(const std::string &filename, std::vector<gcode_line>
         }
         if(pair.first=="g"){
             gc.g=pair.second;
+
+            if(gc.g==17 || gc.g==18 || gc.g==19 || gc.g==20 || gc.g==21){
+                gvec.push_back(gc);
+            }
+        }
+        if(pair.first=="p"){ // Used for spirals nr of turns..
+            gc.p=pair.second;
         }
         if(pair.first=="x"){
             gc.x=pair.second;
@@ -62,7 +70,7 @@ void gcode_parser::tokenize(const std::string &filename, std::vector<gcode_line>
 
     if(debug){
         for(auto line:gvec){
-            std::cout<<"n:"<<line.n<<" g:"<<line.g<<"x: "<<line.x<<" y:"<<line.y<<" z:"<<line.z<<" i:"<<line.i<<" j:"<<line.j<<" k:"<<line.k<<std::endl;
+            std::cout<<"n:"<<line.n<<" g:"<<line.g<<" x: "<<line.x<<" y:"<<line.y<<" z:"<<line.z<<" i:"<<line.i<<" j:"<<line.j<<" k:"<<line.k<<std::endl;
         }
     }
 }
@@ -79,6 +87,7 @@ void gcode_parser::tokens_to_shapes(const std::vector<gcode_line> &gvec, std::ve
 #define mm_to_inch 0.03937008;
 #define inch_to_mm 25.4;
     int plane=0;
+    int turns=0; // For spirals, they use the P word for nr of turns.
     int to_inches=0;
 
     for(auto g:gvec){
@@ -135,94 +144,24 @@ void gcode_parser::tokens_to_shapes(const std::vector<gcode_line> &gvec, std::ve
         }
         if(svec.back().g_id==0){
             svec.back().feed=INFINITY;
-            svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_line(svec.back().p0,svec.back().p1),Quantity_NOC_GRAY15,0);
         }
         if(svec.back().g_id==1){
             svec.back().feed=g.f;
-            svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_line(svec.back().p0,svec.back().p1),Quantity_NOC_GRAY50,0);
         }
 
-        // Arc G2 // G17 (Z-axis, XY-plane)
-        if(svec.back().g_id==2 && plane==0){
+        if(svec.back().g_id==0 || svec.back().g_id==1){ // Draw rapid or line feed.
             svec.back().p0=p;
-            svec.back().pc={p.X()+g.i, p.Y()+g.j, p.Z()}; // I & J are offsets to center seen from arc startpoint.
             svec.back().p1={g.x,g.y,g.z};
-            if(svec.back().p0.Distance(svec.back().p1)>0){
-                // std::cout<<"center x:"<< svec.back().pc.X()<<" y:"<<svec.back().pc.Y()<<" z:"<<svec.back().pc.Z()<<std::endl;
-                svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_pc_arc(svec.back().p1,svec.back().p0,svec.back().pc,0,0,1,svec.back().pw),Quantity_NOC_GRAY50,0) ;
-
-                //draw_primitives::draw_3d_pc_arc(svec.back().p1,svec.back().p0,svec.back().pc,0,0,1,svec.back().pw);
-                //svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3p_3d_arc(svec.back().p0, svec.back().pw, svec.back().p1),Quantity_NOC_GRAY50,0) ;
-
-            } else {
-                // svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_pc_circle(svec.back().pc,0,0,1,svec.back().p1.Distance(svec.back().pc)),Quantity_NOC_GRAY50,0);
-            }
-            svec.back().lenght=draw_primitives::get_3d_arc_lenght(svec.back().p0,svec.back().pw,svec.back().p1);
+            svec.back().aShape=draw_primitives::draw_3d_gcode_line(svec.back().p0, svec.back().p1, svec.back().g_id, svec.back().pw);
         }
-//        // Arc G2 // G18 (Y-axis, XZ-plane)
-//        if(svec.back().g_id==2 && plane==1){
-//            svec.back().p0=p;
-//            svec.back().pc={p.X()+g.i, p.Z(), p.Y()+g.k};
-//            svec.back().p1={g.x, g.z, g.y};
-//            if(svec.back().p0.Distance(svec.back().p1)>0){
-//                svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_pc_arc(svec.back().p1,svec.back().p0,svec.back().pc,0,1,0,svec.back().pw),Quantity_NOC_GRAY50,0);
-//            } else {
-//                svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_pc_circle(svec.back().pc,0,1,0,svec.back().p1.Distance(svec.back().pc)),Quantity_NOC_GRAY50,0);
-//            }
-//            svec.back().lenght=draw_primitives::get_3d_arc_lenght(svec.back().p0,svec.back().pw,svec.back().p1);
-//        }
-//        // Arc G2 // G19 (X-axis, YZ-plane)
-//        if(svec.back().g_id==2 && plane==2){
-//            svec.back().p0=p;
-//            svec.back().pc={g.z, p.X()+g.x, p.Y()+g.y};
-//            svec.back().p1={g.z, g.x, g.y};
-//            if(svec.back().p0.Distance(svec.back().p1)>0){
-//                svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_pc_arc(svec.back().p1,svec.back().p0,svec.back().pc,1,0,0,svec.back().pw),Quantity_NOC_GRAY50,0);
-//            } else {
-//                svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_pc_circle(svec.back().pc,1,0,0,svec.back().p1.Distance(svec.back().pc)),Quantity_NOC_GRAY50,0);
-//            }
-//            svec.back().lenght=draw_primitives::get_3d_arc_lenght(svec.back().p0,svec.back().pw,svec.back().p1);
-//        }
 
-        // Arc G3 // G17 (Z-axis, XY-plane)
-        if(svec.back().g_id==3 && plane==0){
+        // Arc, circle or helix.
+        if(svec.back().g_id==2 || svec.back().g_id==3){ // Draw arc G2 or G3. Draw spiral G2 or G3
             svec.back().p0=p;
-            svec.back().pc={p.X()+g.i, p.Y()+g.j, p.Z()}; // I & J are offsets to center seen from arc startpoint.
-            svec.back().p1={g.x, g.y, g.z};
-            if(svec.back().p0.Distance(svec.back().p1)>0){
-                 svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_pc_arc(svec.back().p0,svec.back().p1,svec.back().pc,0,0,1,svec.back().pw),Quantity_NOC_GRAY50,0) ;
-
-                //draw_primitives::draw_3d_pc_arc(svec.back().p0,svec.back().p1,svec.back().pc,0,0,1,svec.back().pw);
-                //svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3p_3d_arc(svec.back().p0, svec.back().pw, svec.back().p1),Quantity_NOC_GRAY50,0) ;
-            } else {
-                svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_pc_circle(svec.back().pc,0,0,1,svec.back().p1.Distance(svec.back().pc)),Quantity_NOC_GRAY50,0);
-            }
-            svec.back().lenght=draw_primitives::get_3d_arc_lenght(svec.back().p1,svec.back().pw,svec.back().p0);
+            svec.back().p1={g.x,g.y,g.z};
+            svec.back().turns=g.p; // Set helix turns.
+            svec.back().aShape=draw_primitives::draw_3d_gcode_arc_circle_helix(svec.back().p0, svec.back().p1, plane, svec.back().g_id, g.i, g.j, g.k, svec.back().turns, svec.back().pw);
         }
-        // Arc G3 // G18 (Y-axis, XZ-plane)
-//        if(svec.back().g_id==3 && plane==1){
-//            svec.back().p0=p;
-//            svec.back().pc={p.X()+g.i, p.Z(), p.Y()+g.k};
-//            svec.back().p1={g.x, g.z, g.y};
-//            if(svec.back().p0.Distance(svec.back().p1)>0){
-//                svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_pc_arc(svec.back().p0,svec.back().p1,svec.back().pc,0,1,0,svec.back().pw),Quantity_NOC_GRAY50,0);
-//            } else {
-//                svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_pc_circle(svec.back().pc,0,1,0,svec.back().p1.Distance(svec.back().pc)),Quantity_NOC_GRAY50,0);
-//            }
-//            svec.back().lenght=draw_primitives::get_3d_arc_lenght(svec.back().p1,svec.back().pw,svec.back().p0);
-//        }
-//        // Arc G3 // G19 (X-axis, YZ-plane)
-//        if(svec.back().g_id==3 && plane==2){
-//            svec.back().p0=p;
-//            svec.back().pc={g.z, p.X()+g.x, p.Y()+g.y};
-//            svec.back().p1={g.z, g.x, g.y};
-//            if(svec.back().p0.Distance(svec.back().p1)>0){
-//                svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_pc_arc(svec.back().p0,svec.back().p1,svec.back().pc,1,0,0,svec.back().pw),Quantity_NOC_GRAY50,0);
-//            } else {
-//                svec.back().aShape=draw_primitives::colorize( draw_primitives::draw_3d_pc_circle(svec.back().pc,1,0,0,svec.back().p1.Distance(svec.back().pc)),Quantity_NOC_GRAY50,0);
-//            }
-//            svec.back().lenght=draw_primitives::get_3d_arc_lenght(svec.back().p1,svec.back().pw,svec.back().p0);
-//        }
         p=svec.back().p1;
     }
 }

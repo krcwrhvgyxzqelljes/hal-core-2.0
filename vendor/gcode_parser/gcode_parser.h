@@ -23,6 +23,7 @@ public:
     double m = 0.0;
     double n = 0.0;
     double o = 0.0;
+    double p = 0.0;
     double r = 0.0;
     double s = 0.0;
     double t = 0.0;
@@ -50,6 +51,7 @@ struct shape {
     double lenght;
     double theta0, theta1;
     double curva0, curva1;
+    double turns;               // Spiral, helix nr of turns.
     std::vector<int> line_nrs;  // Gcode line nrs for this shape.
 
     gp_Abc abc;

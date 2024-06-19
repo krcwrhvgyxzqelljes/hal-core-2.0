@@ -64,6 +64,7 @@ public:
 
     void update();
     void hal_connection();
+    void helix();
 
 private slots:
 
@@ -92,6 +93,12 @@ private slots:
     void on_pushButton_open_pressed();
 
     void on_pushButton_pressed();
+
+    void on_doubleSpinBox_valueChanged(double arg1);
+
+    void on_doubleSpinBox_2_valueChanged(double arg1);
+
+    void on_doubleSpinBox_3_valueChanged(double arg1);
 
 private:
     Ui::MainWindow *ui;

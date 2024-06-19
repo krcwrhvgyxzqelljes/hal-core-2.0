@@ -865,6 +865,7 @@
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Adaptor2d_HCurve2d.lxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Adaptor3d_Curve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Adaptor3d_CurveOnSurface.hxx
+ mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Aspect_Background.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Aspect_Drawable.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Aspect_Eye.hxx
@@ -981,6 +982,7 @@
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom2d_Ellipse.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom2d_Geometry.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom2d_TrimmedCurve.hxx
+ mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAPI_PointsToBSpline.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_CurveType.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_Shape.hxx
@@ -989,6 +991,7 @@
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomEvaluator_Curve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_Axis2Placement.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_AxisPlacement.hxx
+ mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_BSplineCurve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_BoundedCurve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_CartesianPoint.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_Circle.hxx
@@ -1621,6 +1624,7 @@
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Adaptor2d/Adaptor2d_HCurve2d.lxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Adaptor3d/Adaptor3d_Curve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Adaptor3d/Adaptor3d_CurveOnSurface.hxx
+ mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Approx/Approx_ParametrizationType.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Aspect/Aspect_Background.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Aspect/Aspect_Drawable.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Aspect/Aspect_Eye.hxx
@@ -1725,6 +1729,7 @@
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GCPnts/GCPnts_UniformAbscissa.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_Axis2Placement.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_AxisPlacement.hxx
+ mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_BSplineCurve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_BoundedCurve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_CartesianPoint.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_Circle.hxx
@@ -1753,6 +1758,7 @@
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom2dAdaptor/Geom2dAdaptor_HCurve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom2dConvert/Geom2dConvert_CompCurveToBSplineCurve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom2dEvaluator/Geom2dEvaluator_Curve.hxx
+ mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAPI/GeomAPI_PointsToBSpline.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_CurveType.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_Shape.hxx
@@ -3065,6 +3071,7 @@
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Adaptor2d_HCurve2d.lxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Adaptor3d_Curve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Adaptor3d_CurveOnSurface.hxx
+ mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Approx_ParametrizationType.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Aspect_Background.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Aspect_Drawable.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Aspect_Eye.hxx
@@ -3181,6 +3188,7 @@
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom2d_Ellipse.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom2d_Geometry.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom2d_TrimmedCurve.hxx
+ mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAPI_PointsToBSpline.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_BSplKnotDistribution.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_CurveType.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomAbs_Shape.hxx
@@ -3189,6 +3197,7 @@
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/GeomEvaluator_Curve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_Axis2Placement.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_AxisPlacement.hxx
+ mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_BSplineCurve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_BoundedCurve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_CartesianPoint.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom_Circle.hxx
@@ -3821,6 +3830,7 @@
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Adaptor2d/Adaptor2d_HCurve2d.lxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Adaptor3d/Adaptor3d_Curve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Adaptor3d/Adaptor3d_CurveOnSurface.hxx
+ mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Approx/Approx_ParametrizationType.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Aspect/Aspect_Background.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Aspect/Aspect_Drawable.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Aspect/Aspect_Eye.hxx
@@ -3925,6 +3935,7 @@
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GCPnts/GCPnts_UniformAbscissa.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_Axis2Placement.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_AxisPlacement.hxx
+ mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_BSplineCurve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_BoundedCurve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_CartesianPoint.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_Circle.hxx
@@ -3953,6 +3964,7 @@
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom2dAdaptor/Geom2dAdaptor_HCurve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom2dConvert/Geom2dConvert_CompCurveToBSplineCurve.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom2dEvaluator/Geom2dEvaluator_Curve.hxx
+ mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAPI/GeomAPI_PointsToBSpline.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_BSplKnotDistribution.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_CurveType.hxx
  mdp:/home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAbs/GeomAbs_Shape.hxx

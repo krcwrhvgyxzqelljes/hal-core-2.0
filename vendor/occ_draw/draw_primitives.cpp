@@ -83,6 +83,441 @@ Handle(AIS_Shape) draw_primitives::draw_cp_2d_arc(gp_Pnt center, gp_Pnt point1, 
     return new AIS_Shape(aEdge2);
 }
 
+//double calculate_2d_angle_rad(double x1, double y1, double x2, double y2, double x3, double y3) {
+//    // Vectors AB and BC
+//    double ABx = x1 - x2;
+//    double ABy = y1 - y2;
+//    double BCx = x3 - x2;
+//    double BCy = y3 - y2;
+
+//    // Dot product of AB and BC
+//    double dot_product = ABx * BCx + ABy * BCy;
+
+//    // Magnitudes of AB and BC
+//    double magnitude_AB = sqrt(ABx * ABx + ABy * ABy);
+//    double magnitude_BC = sqrt(BCx * BCx + BCy * BCy);
+
+//    // Calculate the angle in radians
+//    double angle_rad = acos(dot_product / (magnitude_AB * magnitude_BC));
+
+//    // Convert angle from radians to degrees
+//    return angle_rad;
+//}
+
+
+void makeHelix(void)
+{
+    Handle_Geom_CylindricalSurface aCylinder = new Geom_CylindricalSurface(gp::XOY(), 6.0);
+
+    gp_Lin2d aLine2d(gp_Pnt2d(0.0, 0.0), gp_Dir2d(1.0, 1.0));
+
+    Handle_Geom2d_TrimmedCurve aSegment = GCE2d_MakeSegment(aLine2d, 0.0, M_PI * 2.0);
+
+    TopoDS_Edge aHelixEdge = BRepBuilderAPI_MakeEdge(aSegment, aCylinder, 0.0, 6.0 * M_PI).Edge();
+
+
+}
+
+/*
+Sample gcode tested for spiral, helix:
+
+    x1 y1(start xy circle)
+    g17 g02 i.5 j.5 // xy plane
+
+    x1 z1(start xz circle)
+    g18 g02 i.5 k.5 // xz plane
+
+    y1 z1 (start yz circle)
+    g19 g02 j.5 k.5 // yz plane
+
+p0 = starpoint of arc.
+p1 = endpoint of arc.
+
+plane:
+    0=xy plane ,G17
+    1=xz plane ,G18
+    2=yz plane ,G19
+
+gcode:
+    2=gcode G2, clockwise arc, cw.
+    3=gcode G3, counter clockwise arc, ccw.
+
+gcode arc center:
+    i=gcode I, center offset for x, seen from arc startpoint.
+    j=gcode J, center offset for y, seen from arc startpoint.
+    k=gcode K, center offset for z, seen from arc startpoint.
+
+turns =
+    how many revolutions the spiral may have.
+    Gcode P0=no revolutions, gcode P1= one revolution etc.
+
+
+    Linuxcnc is also able to draw multiturn spirals
+    G2 or G3 <X- Y- Z- I- J- P-> where P is the number of turns
+
+    Full circle or spiral programming is possible without axis words
+    G2 Z- I- J- P-
+
+*/
+Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,
+                                                          const double& i, const double& j, const double& k ,const int& turns) {
+
+    // Validate
+    if(plane==0 && p0.Z()==p1.Z()){
+        std::cout<<"Error, spiral needs z diff value in xy plane."<<std::endl;
+        return draw_3d_point(p0);
+    }
+    if(plane==1 && p0.Y()==p1.Y()){
+        std::cout<<"Error, spiral needs y diff value in xz plane."<<std::endl;
+        return draw_3d_point(p0);
+    }
+    if(plane==2 && p0.X()==p1.X()){
+        std::cout<<"Error, spiral needs x diff value in yz plane."<<std::endl;
+        return draw_3d_point(p0);
+    }
+
+    if(p0.Distance(p1)==0){
+        std::cout<<"Error, spiral is circle"<<std::endl;
+        return draw_3d_point(p0);
+    }
+
+    gp_Pnt pc;
+    std::vector<gp_Pnt> pvec;
+    double angle0=0, angle1=0, radius=0, delta_angle=0, delta_pitch=0, full_pitch=0, angle_step=0;
+    int num_points=0;
+
+    if(plane==0){
+        pc={p0.X()+i, p0.Y()+j, p0.Z()};
+        angle0 = atan2(p0.Y()-pc.Y(),p0.X()-pc.X());
+        angle1 = atan2(p1.Y()-pc.Y(),p1.X()-pc.X());
+    }
+    if(plane==1){
+        pc={p0.X()+i, p0.Y(), p0.Z()+k};
+        angle0 = atan2(p0.Z()-pc.Z(),p0.X()-pc.X());
+        angle1 = atan2(p1.Z()-pc.Z(),p1.X()-pc.X());
+    }
+    if(plane==2){
+        pc={p0.X(), p0.Y()+j, p0.Z()+k};
+        angle0 = atan2(p0.Z()-pc.Z(),p0.Y()-pc.Y());
+        angle1 = atan2(p1.Z()-pc.Z(),p1.Y()-pc.Y());
+    }
+
+    radius =        p0.Distance(pc);
+    delta_angle =   angle0 - angle1;
+
+    // std::cout<<"center x:"<<pc.X()<<" y:"<<pc.Y()<<" z:"<<pc.Z()<<std::endl;
+    // std::cout<<"angle0:"<<angle0<<" angle1:"<<angle1<<std::endl;
+    // std::cout<<"radius:"<<radius<<std::endl;
+
+    // Calculate the difference in Z-coordinates
+    if(plane==0){
+        delta_pitch = p0.Z() - p1.Z();
+    }
+    if(plane==1){
+        delta_pitch = p0.Y() - p1.Y();
+    }
+    if(plane==2){
+        delta_pitch = p0.X() - p1.X();
+    }
+
+    // Check for zero angular difference which could mean a full revolution
+    if (delta_angle == 0) {
+        if (delta_pitch != 0) {
+            // Assume one full revolution
+            delta_angle = 2 * M_PI;
+        } else {
+            // Both delta_angle and delta_z are zero, meaning the points are the same
+        }
+    }
+
+    // Multi turn
+    delta_angle+=turns*2*M_PI;
+
+    // Calculate the pitch for a full revolution (2*pi)
+    full_pitch = (delta_pitch / delta_angle) * (2 * M_PI);
+
+    // Calculate step size
+    num_points = fmax(turns,1)  *50;
+    angle_step = delta_angle / (num_points - 1);
+
+    if(plane==0){
+        // Generate points along the helix
+        for (int i = 0; i < num_points; ++i) {
+            double angle = angle0 - i * angle_step;
+            double x = pc.X() + radius * cos(angle);
+            double y = pc.Y() + radius * sin(angle);
+            double z = p0.Z() + ((angle0 - angle) / (2 * M_PI)) * -full_pitch;
+            pvec.push_back({x,y,z});
+        }
+    }
+    if(plane==1){
+        // Generate points along the helix
+        for (int i = 0; i < num_points; ++i) {
+            double angle = angle0 - i * angle_step;
+            double x = pc.X() + radius * cos(angle);
+            double z = pc.Z() + radius * sin(angle);
+            double y = p0.Y() + ((angle0 - angle) / (2 * M_PI)) * -full_pitch;
+            pvec.push_back({x,y,z});
+        }
+    }
+    if(plane==2){
+        // Generate points along the helix
+        for (int i = 0; i < num_points; ++i) {
+            double angle = angle0 - i * angle_step;
+            double y = pc.Y() + radius * cos(angle);
+            double z = pc.Z() + radius * sin(angle);
+            double x = p0.X() + ((angle0 - angle) / (2 * M_PI)) * -full_pitch;
+            pvec.push_back({x, y, z});
+        }
+    }
+    return draw_3d_line_wire(pvec);
+}
+
+// For info see G2 helix.
+Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G3_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,
+                                                          const double& i, const double& j, const double& k, const int& turns) {
+
+    // Validate
+    if(plane==0 && p0.Z()==p1.Z()){
+        std::cout<<"Error, spiral needs z diff value in xy plane."<<std::endl;
+        return draw_3d_point(p0);
+    }
+    if(plane==1 && p0.Y()==p1.Y()){
+        std::cout<<"Error, spiral needs y diff value in xz plane."<<std::endl;
+        return draw_3d_point(p0);
+    }
+    if(plane==2 && p0.X()==p1.X()){
+        std::cout<<"Error, spiral needs x diff value in yz plane."<<std::endl;
+        return draw_3d_point(p0);
+    }
+
+    if(p0.Distance(p1)==0){
+        std::cout<<"Error, spiral is circle"<<std::endl;
+        return draw_3d_point(p0);
+    }
+
+    gp_Pnt pc;
+    std::vector<gp_Pnt> pvec;
+    double angle0 = 0, angle1 = 0, radius = 0, delta_angle = 0, delta_pitch = 0, full_pitch = 0, angle_step = 0;
+    int num_points = 0;
+
+    if (plane == 0) {
+        pc = {p0.X() + i, p0.Y() + j, p0.Z()};
+        angle0 = atan2(p0.Y() - pc.Y(), p0.X() - pc.X());
+        angle1 = atan2(p1.Y() - pc.Y(), p1.X() - pc.X());
+    }
+    else if (plane == 1) {
+        pc = {p0.X() + i, p0.Y(), p0.Z() + k};
+        angle0 = atan2(p0.Z() - pc.Z(), p0.X() - pc.X());
+        angle1 = atan2(p1.Z() - pc.Z(), p1.X() - pc.X());
+    }
+    else if (plane == 2) {
+        pc = {p0.X(), p0.Y() + j, p0.Z() + k};
+        angle0 = atan2(p0.Z() - pc.Z(), p0.Y() - pc.Y());
+        angle1 = atan2(p1.Z() - pc.Z(), p1.Y() - pc.Y());
+    }
+
+    // Adjust angle0 if needed for CCW arc
+    if (angle0 >= angle1) {
+        angle0 -= 2 * M_PI;
+    }
+
+    radius = p0.Distance(pc);
+    delta_angle = angle1 - angle0; // Change in angle direction for G3 CCW
+
+    // Calculate the difference in Z-coordinates
+    if (plane == 0) {
+        delta_pitch = p0.Z() - p1.Z();
+    }
+    else if (plane == 1) {
+        delta_pitch = p0.Y() - p1.Y();
+    }
+    else if (plane == 2) {
+        delta_pitch = p0.X() - p1.X();
+    }
+
+    // Check for zero angular difference which could mean a full revolution
+    if (delta_angle == 0) {
+        if (delta_pitch != 0) {
+            // Assume one full revolution
+            delta_angle = 2 * M_PI;
+        } else {
+            // Both delta_angle and delta_z are zero, meaning the points are the same
+        }
+    }
+
+    // Multi turn
+    delta_angle += turns * 2 * M_PI;
+
+    // Calculate the pitch for a full revolution (2*pi)
+    full_pitch = (delta_pitch / delta_angle) * (2 * M_PI);
+
+    // Calculate step size
+    num_points = fmax(turns, 1) * 50;
+    angle_step = delta_angle / (num_points - 1);
+
+    // Generate points along the helix
+    for (int idx = 0; idx < num_points; ++idx) {
+        double angle = angle0 + idx * angle_step; // Increase angle for counterclockwise direction (G3 CCW)
+        double x=0, y=0, z=0;
+
+        if (plane == 0) {
+            x = pc.X() + radius * cos(angle);
+            y = pc.Y() + radius * sin(angle);
+            z = p0.Z() + ((angle - angle0) / (2 * M_PI)) * -full_pitch; // Adjust Z using pitch
+        } else if (plane == 1) {
+            x = pc.X() + radius * cos(angle);
+            z = pc.Z() + radius * sin(angle);
+            y = p0.Y() + ((angle - angle0) / (2 * M_PI)) * -full_pitch; // Adjust Y using pitch
+        } else if (plane == 2) {
+            y = pc.Y() + radius * cos(angle);
+            z = pc.Z() + radius * sin(angle);
+            x = p0.X() + ((angle - angle0) / (2 * M_PI)) * -full_pitch; // Adjust X using pitch
+        }
+        pvec.push_back(gp_Pnt{x, y, z});
+    }
+    return draw_3d_line_wire(pvec);
+}
+
+Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_G3_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,const int& gcode,
+                                                   const double& i, const double& j, const double& k ,const int& turns){
+    if(gcode==2){
+        return draw_2d_gcode_G2_helix(p0,p1,plane,i,j,k,turns);
+    }
+    if(gcode==3){
+        return draw_2d_gcode_G3_helix(p0,p1,plane,i,j,k,turns);
+    }
+    std::cout<<"Error, helix has wrong gcode id."<<std::endl;
+    return draw_3d_point(p0);
+}
+
+double draw_primitives::calculate_2d_angle_rad(const double &x0, const double &y0, const double &x1, const double &y1) {
+    double angle = atan2(y0 - y1, x0 - x1);
+    return angle;
+}
+
+// Sample function.
+Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_xy_helix(const gp_Pnt& p0, const gp_Pnt& p1, const gp_Pnt& pc, const int& turns) {
+
+    // Calculate radius
+    double radius = p0.Distance(pc);
+    // Calculate initial and final angles
+    double angle0 = calculate_2d_angle_rad(p0.X(), p0.Y(), pc.X(), pc.Y());
+    double angle1 = calculate_2d_angle_rad(p1.X(), p1.Y(), pc.X(), pc.Y());
+
+    // Normalize angles to be in range [0, 2*PI)
+    if (angle0 < 0) {
+        angle0 += 2 * M_PI;
+    }
+    if (angle1 < 0) {
+        angle1 += 2 * M_PI;
+    }
+    // Ensure angle0 > angle1 for CW direction
+    if (angle0 <= angle1) {
+        angle0 += 2 * M_PI;
+    }
+
+    //std::cout << "angle0: " << angle0 << " angle1: " << angle1 << std::endl;
+
+    // Calculate the difference in angles
+    double delta_angle = angle0 - angle1;
+
+    // Calculate the difference in Z-coordinates
+    double delta_z = p0.Z() - p1.Z();
+
+    // Check for zero angular difference which could mean a full revolution
+    if (delta_angle == 0) {
+        if (delta_z != 0) {
+            // Assume one full revolution
+            delta_angle = 2 * M_PI;
+        } else {
+            // Both delta_angle and delta_z are zero, meaning the points are the same
+        }
+    }
+
+    // Multi turn
+    delta_angle+=turns*2*M_PI;
+
+    // Calculate the pitch for a full revolution (2*pi)
+    double full_pitch = -(delta_z / delta_angle) * (2 * M_PI); // Inverse pitch for clockwise direction
+
+    // Calculate step size
+    int num_points = fmax(turns,1)  *50;
+    double angle_step = delta_angle / (num_points - 1);
+    std::vector<gp_Pnt> pvec;
+
+    // Generate points along the helix
+    for (int i = 0; i < num_points; ++i) {
+        double angle = angle0 - i * angle_step; // Decrease angle for clockwise direction
+        double x = pc.X() + radius * cos(angle);
+        double y = pc.Y() + radius * sin(angle);
+        double z = p0.Z() + ((angle0 - angle) / (2 * M_PI)) * full_pitch; // Adjust Z using pitch
+
+        pvec.push_back({x,y,z});
+    }
+
+    return draw_3d_line_wire(pvec);
+}
+
+Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G3_xy_helix(const gp_Pnt& p0, const gp_Pnt& p1, const gp_Pnt& pc, const int& turns) {
+    // Calculate radius
+    double radius = p0.Distance(pc);
+    // Calculate initial and final angles
+    double angle0 = calculate_2d_angle_rad(p0.X(), p0.Y(), pc.X(), pc.Y());
+    double angle1 = calculate_2d_angle_rad(p1.X(), p1.Y(), pc.X(), pc.Y());
+
+    // Normalize angles to be in range [0, 2*PI)
+    if (angle0 < 0) {
+        angle0 += 2 * M_PI;
+    }
+    if (angle1 < 0) {
+        angle1 += 2 * M_PI;
+    }
+    // Ensure angle0 < angle1 for CCW direction
+    if (angle0 >= angle1) {
+        angle1 += 2 * M_PI;
+    }
+
+    // Calculate the difference in angles
+    double delta_angle = angle1 - angle0;
+
+    // Calculate the difference in Z-coordinates
+    double delta_z = p1.Z() - p0.Z();
+
+    // Check for zero angular difference which could mean a full revolution
+    if (delta_angle == 0) {
+        if (delta_z != 0) {
+            // Assume one full revolution
+            delta_angle = 2 * M_PI;
+        } else {
+            // Both delta_angle and delta_z are zero, meaning the points are the same
+        }
+    }
+
+    // Multi turn
+    delta_angle += turns * 2 * M_PI;
+
+    // Calculate the pitch for a full revolution (2*pi)
+    double full_pitch = (delta_z / delta_angle) * (2 * M_PI); // Positive pitch for counter-clockwise direction
+
+    // Calculate step size
+    int num_points = std::max(turns, 1) * 50;
+    double angle_step = delta_angle / (num_points - 1);
+    std::vector<gp_Pnt> pvec;
+
+    // Generate points along the helix
+    for (int i = 0; i < num_points; ++i) {
+        double angle = angle0 + i * angle_step; // Increase angle for counter-clockwise direction
+        double x = pc.X() + radius * cos(angle);
+        double y = pc.Y() + radius * sin(angle);
+        double z = p0.Z() + ((angle - angle0) / (2 * M_PI)) * full_pitch; // Adjust Z using pitch
+
+        pvec.push_back({x, y, z});
+    }
+
+    return draw_3d_line_wire(pvec);
+}
+
 Handle(AIS_Shape) draw_primitives::draw_2d_acad_arc(gp_Pnt center, double radius, const Standard_Real alpha1, const Standard_Real alpha2){
     gp_Dir dir(0,0,1); // you can change this
     gp_Circ circle(gp_Ax2( center, dir),radius);
@@ -368,6 +803,107 @@ Handle(AIS_Shape) draw_primitives::draw_3d_pc_arc_closest(gp_Pnt point1,gp_Pnt p
     }
 
     return new AIS_Shape(aEdge2);
+}
+
+Handle(AIS_Shape) draw_primitives::draw_3d_gcode_line(gp_Pnt p0, gp_Pnt p1, int gcode, gp_Pnt &pw){
+
+    pw=get_line_midpoint(p0,p1);
+    if(gcode==0){
+        return colorize( draw_primitives::draw_3d_line(p0,p1),Quantity_NOC_GRAY15,0);
+    }
+    if(gcode==1){
+        return colorize( draw_primitives::draw_3d_line(p0,p1),Quantity_NOC_GRAY50,0);
+    }
+
+    std::cout<<"Error draw 3d gcode line. Draws point."<<std::endl;
+    return draw_3d_point(p0);
+}
+
+/*
+p0 = starpoint of arc.
+p1 = endpoint of arc.
+pw = arc waypoint.
+
+plane:
+    0=xy plane ,G17
+    1=xz plane ,G18
+    2=yz plane ,G19
+
+gcode:
+    2=gcode G2, clockwise arc, cw.
+    3=gcode G3, counter clockwise arc, ccw.
+
+gcode arc center:
+    i=gcode I, center offset for x, seen from arc startpoint.
+    j=gcode J, center offset for y, seen from arc startpoint.
+    k=gcode K, center offset for z, seen from arc startpoint.
+
+turns:
+    P=gcode P, nr of turns, rotations. Normally use zero.
+
+*/
+Handle(AIS_Shape) draw_primitives::draw_3d_gcode_arc_circle_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane, const int& gcode,
+                                                                   const double& i, const double& j, const double& k, const int& turns, gp_Pnt &pw){
+
+    gp_Pnt pc;
+
+    if(plane==0){
+        pc={p0.X()+i, p0.Y()+j, p0.Z()};
+    }
+    if(plane==1){
+        pc={p0.X()+i, p0.Y(), p0.Z()+k};
+    }
+    if(plane==2){
+        pc={p0.X(), p0.Y()+j, p0.Z()+k};
+    }
+
+    // Draw full circle.
+    if(p0.Distance(p1)==0 && p0.Distance(pc)>0){
+        pw=p0;
+        if(plane==0){
+            return colorize( draw_3d_pc_circle(pc,0,0,1,p1.Distance(pc)),Quantity_NOC_GRAY50,0);
+        }
+        if(plane==1){
+            return colorize( draw_3d_pc_circle(pc,0,1,0,p1.Distance(pc)),Quantity_NOC_GRAY50,0);
+        }
+        if(plane==2){
+            return colorize( draw_3d_pc_circle(pc,1,0,0,p1.Distance(pc)),Quantity_NOC_GRAY50,0);
+        }
+    }
+
+    // Draw helix, spiral.
+    if( (plane==0 && p0.Z()!=p1.Z()) || (plane==1 && p0.Y()!=p1.Y()) || (plane==2 && p0.X()!=p1.X()) ){
+        return draw_2d_gcode_G2_G3_helix(p0,p1,plane,gcode,i,j,k,turns);
+    }
+
+    // G2 arc plane 0
+    if(gcode==2 && plane==0 && p0.Distance(p1)>0 && p0.Distance(pc)>0){
+        return colorize( draw_3d_pc_arc(p1,p0,pc,0,0,1,pw),Quantity_NOC_GRAY50,0);
+    }
+    // G2 arc plane 1
+    if(gcode==2 && plane==1 && p0.Distance(p1)>0 && p0.Distance(pc)>0){
+        return colorize( draw_3d_pc_arc(p1,p0,pc,0,1,0,pw),Quantity_NOC_GRAY50,0);
+    }
+    // G2 arc plane 2
+    if(gcode==2 && plane==2 && p0.Distance(p1)>0 && p0.Distance(pc)>0){
+        return colorize( draw_3d_pc_arc(p1,p0,pc,1,0,0,pw),Quantity_NOC_GRAY50,0);
+    }
+
+    // G3 arc plane 0
+    if(gcode==3 && plane==0 && p0.Distance(p1)>0 && p0.Distance(pc)>0){
+        return colorize( draw_3d_pc_arc(p0,p1,pc,0,0,1,pw),Quantity_NOC_GRAY50,0);
+    }
+    // G3 arc plane 1
+    if(gcode==3 && plane==1 && p0.Distance(p1)>0 && p0.Distance(pc)>0){
+        return colorize( draw_3d_pc_arc(p0,p1,pc,0,1,0,pw),Quantity_NOC_GRAY50,0);
+    }
+    // G3 arc plane 2
+    if(gcode==3 && plane==2 && p0.Distance(p1)>0 && p0.Distance(pc)>0){
+        return colorize( draw_3d_pc_arc(p0,p1,pc,1,0,0,pw),Quantity_NOC_GRAY50,0);
+    }
+
+    std::cout<<"Error draw 3d gcode arc, circle. Draws point."<<std::endl;
+    return draw_3d_point(p0);
 }
 
 Handle(AIS_Shape) draw_primitives::draw_3d_pc_arc(gp_Pnt point1,gp_Pnt point2,gp_Pnt center, double dir_Xv, double dir_Yv, double dir_Zv){
@@ -2154,8 +2690,19 @@ void sample_loading_huge_files(){ https://github.com/gkv311/occt-samples-qopengl
      m_context->Display(Ashape,Standard_False);
 } */
 
+/*
+// Create B-spline curve from points
+        gp_Pnt pt(x, y, z);
+        points.SetValue(i + 1, pt);
+  TColgp_Array1OfPnt points(1, num_points); // Use TColgp_Array1OfPnt for B-spline points
+GeomAPI_PointsToBSpline spline(points, 3, 8, GeomAbs_C2); // Degree 3, max segments 8, C2 continuity
+Handle(Geom_BSplineCurve) bspline = spline.Curve();
 
-
+// Create shape from B-spline curve
+TopoDS_Edge edge = BRepBuilderAPI_MakeEdge(bspline);
+TopoDS_Wire wire = BRepBuilderAPI_MakeWire(edge);
+Handle(AIS_Shape) ais_shape = new AIS_Shape(wire);
+*/
 
 
 
