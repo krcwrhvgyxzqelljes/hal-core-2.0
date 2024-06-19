@@ -12,7 +12,6 @@
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QDoubleSpinBox>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QMainWindow>
@@ -55,9 +54,6 @@ public:
     QVBoxLayout *verticalLayout;
     QPushButton *pushButton_open;
     QPushButton *pushButton;
-    QDoubleSpinBox *doubleSpinBox;
-    QDoubleSpinBox *doubleSpinBox_2;
-    QDoubleSpinBox *doubleSpinBox_3;
     QSpacerItem *verticalSpacer;
     QWidget *page_10;
     QStackedWidget *stackedWidget_2;
@@ -224,27 +220,6 @@ public:
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
         verticalLayout->addWidget(pushButton);
-
-        doubleSpinBox = new QDoubleSpinBox(page_9);
-        doubleSpinBox->setObjectName(QString::fromUtf8("doubleSpinBox"));
-        doubleSpinBox->setSingleStep(0.100000000000000);
-        doubleSpinBox->setValue(1.000000000000000);
-
-        verticalLayout->addWidget(doubleSpinBox);
-
-        doubleSpinBox_2 = new QDoubleSpinBox(page_9);
-        doubleSpinBox_2->setObjectName(QString::fromUtf8("doubleSpinBox_2"));
-        doubleSpinBox_2->setSingleStep(0.100000000000000);
-        doubleSpinBox_2->setValue(1.000000000000000);
-
-        verticalLayout->addWidget(doubleSpinBox_2);
-
-        doubleSpinBox_3 = new QDoubleSpinBox(page_9);
-        doubleSpinBox_3->setObjectName(QString::fromUtf8("doubleSpinBox_3"));
-        doubleSpinBox_3->setSingleStep(0.100000000000000);
-        doubleSpinBox_3->setValue(10.000000000000000);
-
-        verticalLayout->addWidget(doubleSpinBox_3);
 
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 

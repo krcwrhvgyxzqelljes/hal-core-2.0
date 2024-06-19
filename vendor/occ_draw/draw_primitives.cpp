@@ -459,6 +459,73 @@ Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_xy_helix(const gp_Pnt& p0, c
     return draw_3d_line_wire(pvec);
 }
 
+Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_xy_helix_test(const gp_Pnt& p0, const gp_Pnt& p1,
+                                                                  const gp_Pnt& pc, const int& turns) {
+
+    // Calculate radius
+    double radius = p0.Distance(pc);
+    // Calculate initial and final angles
+    double angle0 = calculate_2d_angle_rad(p0.X(), p0.Y(), pc.X(), pc.Y());
+    double angle1 = calculate_2d_angle_rad(p1.X(), p1.Y(), pc.X(), pc.Y());
+
+    // Normalize angles to be in range [0, 2*PI)
+    if (angle0 < 0) {
+        angle0 += 2 * M_PI;
+    }
+    if (angle1 < 0) {
+        angle1 += 2 * M_PI;
+    }
+    // Ensure angle0 > angle1 for CW direction
+    if (angle0 <= angle1) {
+        angle0 += 2 * M_PI;
+    }
+
+    //std::cout << "angle0: " << angle0 << " angle1: " << angle1 << std::endl;
+
+    // Calculate the difference in angles
+    double delta_angle = angle0 - angle1;
+
+    // Calculate the difference in Z-coordinates
+    double delta_z = p0.Z() - p1.Z();
+
+    // Check for zero angular difference which could mean a full revolution
+    if (delta_angle == 0) {
+        if (delta_z != 0) {
+            // Assume one full revolution
+            delta_angle = 2 * M_PI;
+        } else {
+            // Both delta_angle and delta_z are zero, meaning the points are the same
+        }
+    }
+
+    // Multi turn
+    delta_angle += turns * 2 * M_PI;
+
+    // Calculate the total number of points
+    int num_points = fmax(turns, 1) * 50;
+    double angle_step = delta_angle / (num_points - 1);
+    std::vector<gp_Pnt> pvec;
+
+    // Generate points along the helix with variable pitch
+    for (int i = 0; i < num_points; ++i) {
+        double angle = angle0 - i * angle_step; // Decrease angle for clockwise direction
+        double x = pc.X() + radius * cos(angle);
+        double y = pc.Y() + radius * sin(angle);
+
+
+
+        // Calculate Z using a sinusoidal function for variable pitch
+        double t = static_cast<double>(i) / (num_points - 1); // Normalized parameter [0, 1]
+        double sinusoidal_factor = 0.5 * (1 - cos(M_PI * t)); // Sinusoidal factor to vary pitch
+        double z = p0.Z() - sinusoidal_factor * delta_z;
+
+        pvec.push_back({x, y, z});
+    }
+
+    return draw_3d_line_wire(pvec);
+}
+
+
 Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G3_xy_helix(const gp_Pnt& p0, const gp_Pnt& p1, const gp_Pnt& pc, const int& turns) {
     // Calculate radius
     double radius = p0.Distance(pc);

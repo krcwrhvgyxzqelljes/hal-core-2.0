@@ -18444,11 +18444,6 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qeventloop.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qguiapplication.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qinputmethod.h \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDoubleSpinBox \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qspinbox.h \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qvalidator.h \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qregularexpression.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QFrame \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qframe.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QGridLayout \
@@ -18503,12 +18498,6 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qsplitter.h:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSplitter:
-
-/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractspinbox.h:
-
-/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qspinbox.h:
-
-/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDoubleSpinBox:
 
 /home/user/hal-core-2.0/projects/cnc/main.cpp:
 

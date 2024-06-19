@@ -139,6 +139,7 @@ public:
 
     static double calculate_2d_angle_rad(const double& x0, const double& y0, const double& x1, const double& y1);
     static Handle(AIS_Shape) draw_2d_gcode_G2_xy_helix(const gp_Pnt& p0, const gp_Pnt& p1, const gp_Pnt& pc, const int& turns);
+    static Handle(AIS_Shape) draw_2d_gcode_G2_xy_helix_test(const gp_Pnt& p0, const gp_Pnt& p1, const gp_Pnt& pc, const int& turns);
     static Handle(AIS_Shape) draw_2d_gcode_G3_xy_helix(const gp_Pnt& p0, const gp_Pnt& p1, const gp_Pnt& pc, const int& turns);
     static Handle(AIS_Shape) draw_2d_gcode_G2_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,
                                                  const double& i, const double& j, const double& k ,const int& turns);

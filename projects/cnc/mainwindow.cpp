@@ -162,64 +162,36 @@ void MainWindow::on_pushButton_open_pressed()
     occ->redraw();
 }
 
-
-
 void MainWindow::on_pushButton_pressed()
 {
-    //    std::vector<rs274ngc_data> datavec;
-    //    std::string filename=qt_functions().open_file_dialog_get_filename(this);
-    //    rs274ngc_intf().load_file(filename,"out.txt",datavec);
-
-    //    std::vector<Handle(AIS_Shape)> shapevec;
-    //    draw_rs274ngc_shapes().get_shapes(datavec,shapevec);
-
-
-    //    for(auto i:shapevec){
-    //        occ->add_shapevec(i);
-    //    }
-    //    occ->redraw();
-
-    //    editor->clear();
-    //    QString gcode=QString::fromStdString(std_functions().read_file_to_string(filename));
-    //    editor->appendPlainText(gcode);
-}
-
-double a=1,b=1,c=10;
-
-void MainWindow::helix(){
-
     occ->clear_shapevec();
+    occ->set_orthographic();
 
-    gp_Pnt p0={0,0,0};
-    double i=0;
-    double j=5;
-    double k=0;
-    gp_Pnt p1={2,10,2};
-    int plane=2; //
-    int turns=0; // Turns.
+    gp_Pnt p0={-10,0,0};
+    gp_Pnt pc={0,0,0};
+    gp_Pnt p1={10,0,-50};
+    int turns=2; // Turns.
+
+    occ->add_shapevec( draw_primitives::draw_3d_line(p0,{p0.X(),p0.Y()-50,p0.Z()}) );
+
+    occ->add_shapevec( draw_primitives::draw_3d_line(p1,{p1.X(),p1.Y()-50,p1.Z()}) );
 
    occ->add_shapevec( draw_primitives::draw_3d_point(p0));
-   occ->add_shapevec( draw_primitives::draw_2d_gcode_G3_helix(p0,p1,plane,i,j,k,turns) );
-
-}
-
-void MainWindow::on_doubleSpinBox_valueChanged(double arg1)
-{
-    a=arg1;
-    helix();
+   occ->add_shapevec( draw_primitives::draw_2d_gcode_G2_xy_helix(p0,p1,pc,turns) );
 }
 
 
-void MainWindow::on_doubleSpinBox_2_valueChanged(double arg1)
-{
-    b=arg1;
-    helix();
-}
 
 
-void MainWindow::on_doubleSpinBox_3_valueChanged(double arg1)
-{
-    c=arg1;
-    helix();
-}
+
+
+
+
+
+
+
+
+
+
+
 
