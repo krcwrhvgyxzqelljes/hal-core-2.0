@@ -51,7 +51,8 @@ struct shape {
     double lenght;
     double theta0, theta1;
     double curva0, curva1;
-    double turns;               // Spiral, helix nr of turns.
+    double turns;               // Spiral, helix nr of turns. Input integer.
+    double g2_continuity;       // Spiral, helix g2 continuity model. 1=on.
     std::vector<int> line_nrs;  // Gcode line nrs for this shape.
 
     gp_Abc abc;

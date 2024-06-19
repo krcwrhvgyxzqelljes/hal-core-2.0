@@ -46,6 +46,9 @@ void gcode_parser::tokenize(const std::string &filename, std::vector<gcode_line>
         if(pair.first=="p"){ // Used for spirals nr of turns..
             gc.p=pair.second;
         }
+        if(pair.first=="l"){ // Used for spirals enables g2_continuity mode.
+            gc.l=pair.second;
+        }
         if(pair.first=="x"){
             gc.x=pair.second;
         }
@@ -64,6 +67,16 @@ void gcode_parser::tokenize(const std::string &filename, std::vector<gcode_line>
         }
         if(pair.first=="k"){
             gc.k=pair.second;
+        }
+
+        if(pair.first=="u"){
+            gc.u=pair.second;
+        }
+        if(pair.first=="v"){
+            gc.v=pair.second;
+        }
+        if(pair.first=="w"){
+            gc.w=pair.second;
         }
     }
     gvec.push_back(gc);
@@ -160,7 +173,9 @@ void gcode_parser::tokens_to_shapes(const std::vector<gcode_line> &gvec, std::ve
             svec.back().p0=p;
             svec.back().p1={g.x,g.y,g.z};
             svec.back().turns=g.p; // Set helix turns.
-            svec.back().aShape=draw_primitives::draw_3d_gcode_arc_circle_helix(svec.back().p0, svec.back().p1, plane, svec.back().g_id, g.i, g.j, g.k, svec.back().turns, svec.back().pw);
+            svec.back().g2_continuity=g.l; // Set helix G2 continuity model.
+            svec.back().aShape=draw_primitives::draw_3d_gcode_arc_circle_helix(svec.back().p0, svec.back().p1, plane, svec.back().g_id, g.i, g.j, g.k,
+                                                                               svec.back().turns, svec.back().g2_continuity, svec.back().pw);
         }
         p=svec.back().p1;
     }

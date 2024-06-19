@@ -94,6 +94,8 @@ private slots:
 
     void on_pushButton_pressed();
 
+    void on_toolButton_ortho_pressed();
+
 private:
     Ui::MainWindow *ui;
 

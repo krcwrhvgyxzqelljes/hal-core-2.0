@@ -64,16 +64,17 @@ public:
     QGridLayout *gridLayout_11;
     QGridLayout *gridLayout_occ;
     QGridLayout *gridLayout_2;
-    QToolButton *toolButton_view_front;
-    QToolButton *toolButton_view_back;
+    QToolButton *toolButton_view_top;
     QToolButton *toolButton_zoom_min;
-    QToolButton *toolButton_view_bottom;
-    QToolButton *toolButton_view_right;
-    QToolButton *toolButton_view_left;
+    QToolButton *toolButton_zoom_plus;
     QToolButton *toolButton_view_3d;
     QToolButton *toolButton_fit_all;
-    QToolButton *toolButton_view_top;
-    QToolButton *toolButton_zoom_plus;
+    QToolButton *toolButton_view_left;
+    QToolButton *toolButton_view_bottom;
+    QToolButton *toolButton_view_back;
+    QToolButton *toolButton_view_right;
+    QToolButton *toolButton_view_front;
+    QToolButton *toolButton_ortho;
     QFrame *frame_5;
     QGridLayout *gridLayout_12;
     QGridLayout *gridLayout_gcode;
@@ -264,51 +265,50 @@ public:
 
         gridLayout_2 = new QGridLayout();
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        toolButton_view_front = new QToolButton(frame_4);
-        toolButton_view_front->setObjectName(QString::fromUtf8("toolButton_view_front"));
+        toolButton_view_top = new QToolButton(frame_4);
+        toolButton_view_top->setObjectName(QString::fromUtf8("toolButton_view_top"));
         QIcon icon5;
-        icon5.addFile(QString::fromUtf8(":/vendor/icons/view-front.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_view_front->setIcon(icon5);
-        toolButton_view_front->setIconSize(QSize(28, 28));
+        icon5.addFile(QString::fromUtf8(":/vendor/icons/view-top.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_view_top->setIcon(icon5);
+        toolButton_view_top->setIconSize(QSize(28, 28));
 
-        gridLayout_2->addWidget(toolButton_view_front, 0, 3, 1, 1);
-
-        toolButton_view_back = new QToolButton(frame_4);
-        toolButton_view_back->setObjectName(QString::fromUtf8("toolButton_view_back"));
-        QIcon icon6;
-        icon6.addFile(QString::fromUtf8(":/vendor/icons/view-back.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_view_back->setIcon(icon6);
-        toolButton_view_back->setIconSize(QSize(28, 28));
-
-        gridLayout_2->addWidget(toolButton_view_back, 0, 4, 1, 1);
+        gridLayout_2->addWidget(toolButton_view_top, 0, 5, 1, 1);
 
         toolButton_zoom_min = new QToolButton(frame_4);
         toolButton_zoom_min->setObjectName(QString::fromUtf8("toolButton_zoom_min"));
-        QIcon icon7;
-        icon7.addFile(QString::fromUtf8(":/vendor/icons/zoom_min.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_zoom_min->setIcon(icon7);
+        QIcon icon6;
+        icon6.addFile(QString::fromUtf8(":/vendor/icons/zoom_min.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_zoom_min->setIcon(icon6);
         toolButton_zoom_min->setIconSize(QSize(28, 28));
 
         gridLayout_2->addWidget(toolButton_zoom_min, 0, 0, 1, 1);
 
-        toolButton_view_bottom = new QToolButton(frame_4);
-        toolButton_view_bottom->setObjectName(QString::fromUtf8("toolButton_view_bottom"));
+        toolButton_zoom_plus = new QToolButton(frame_4);
+        toolButton_zoom_plus->setObjectName(QString::fromUtf8("toolButton_zoom_plus"));
+        QIcon icon7;
+        icon7.addFile(QString::fromUtf8(":/vendor/icons/zoom_plus.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_zoom_plus->setIcon(icon7);
+        toolButton_zoom_plus->setIconSize(QSize(28, 28));
+
+        gridLayout_2->addWidget(toolButton_zoom_plus, 0, 1, 1, 1);
+
+        toolButton_view_3d = new QToolButton(frame_4);
+        toolButton_view_3d->setObjectName(QString::fromUtf8("toolButton_view_3d"));
         QIcon icon8;
-        icon8.addFile(QString::fromUtf8(":/vendor/icons/view-bottom.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_view_bottom->setIcon(icon8);
-        toolButton_view_bottom->setIconSize(QSize(28, 28));
+        icon8.addFile(QString::fromUtf8(":/vendor/icons/view-iso.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_view_3d->setIcon(icon8);
+        toolButton_view_3d->setIconSize(QSize(28, 28));
 
-        gridLayout_2->addWidget(toolButton_view_bottom, 0, 6, 1, 1);
+        gridLayout_2->addWidget(toolButton_view_3d, 0, 9, 1, 1);
 
-        toolButton_view_right = new QToolButton(frame_4);
-        toolButton_view_right->setObjectName(QString::fromUtf8("toolButton_view_right"));
-        toolButton_view_right->setMaximumSize(QSize(16777215, 16777215));
+        toolButton_fit_all = new QToolButton(frame_4);
+        toolButton_fit_all->setObjectName(QString::fromUtf8("toolButton_fit_all"));
         QIcon icon9;
-        icon9.addFile(QString::fromUtf8(":/vendor/icons/view-right.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_view_right->setIcon(icon9);
-        toolButton_view_right->setIconSize(QSize(28, 28));
+        icon9.addFile(QString::fromUtf8(":/vendor/icons/zoom_extend.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_fit_all->setIcon(icon9);
+        toolButton_fit_all->setIconSize(QSize(28, 28));
 
-        gridLayout_2->addWidget(toolButton_view_right, 0, 8, 1, 1);
+        gridLayout_2->addWidget(toolButton_fit_all, 0, 2, 1, 1);
 
         toolButton_view_left = new QToolButton(frame_4);
         toolButton_view_left->setObjectName(QString::fromUtf8("toolButton_view_left"));
@@ -319,41 +319,47 @@ public:
 
         gridLayout_2->addWidget(toolButton_view_left, 0, 7, 1, 1);
 
-        toolButton_view_3d = new QToolButton(frame_4);
-        toolButton_view_3d->setObjectName(QString::fromUtf8("toolButton_view_3d"));
+        toolButton_view_bottom = new QToolButton(frame_4);
+        toolButton_view_bottom->setObjectName(QString::fromUtf8("toolButton_view_bottom"));
         QIcon icon11;
-        icon11.addFile(QString::fromUtf8(":/vendor/icons/view-iso.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_view_3d->setIcon(icon11);
-        toolButton_view_3d->setIconSize(QSize(28, 28));
+        icon11.addFile(QString::fromUtf8(":/vendor/icons/view-bottom.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_view_bottom->setIcon(icon11);
+        toolButton_view_bottom->setIconSize(QSize(28, 28));
 
-        gridLayout_2->addWidget(toolButton_view_3d, 0, 9, 1, 1);
+        gridLayout_2->addWidget(toolButton_view_bottom, 0, 6, 1, 1);
 
-        toolButton_fit_all = new QToolButton(frame_4);
-        toolButton_fit_all->setObjectName(QString::fromUtf8("toolButton_fit_all"));
+        toolButton_view_back = new QToolButton(frame_4);
+        toolButton_view_back->setObjectName(QString::fromUtf8("toolButton_view_back"));
         QIcon icon12;
-        icon12.addFile(QString::fromUtf8(":/vendor/icons/zoom_extend.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_fit_all->setIcon(icon12);
-        toolButton_fit_all->setIconSize(QSize(28, 28));
+        icon12.addFile(QString::fromUtf8(":/vendor/icons/view-back.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_view_back->setIcon(icon12);
+        toolButton_view_back->setIconSize(QSize(28, 28));
 
-        gridLayout_2->addWidget(toolButton_fit_all, 0, 2, 1, 1);
+        gridLayout_2->addWidget(toolButton_view_back, 0, 4, 1, 1);
 
-        toolButton_view_top = new QToolButton(frame_4);
-        toolButton_view_top->setObjectName(QString::fromUtf8("toolButton_view_top"));
+        toolButton_view_right = new QToolButton(frame_4);
+        toolButton_view_right->setObjectName(QString::fromUtf8("toolButton_view_right"));
+        toolButton_view_right->setMaximumSize(QSize(16777215, 16777215));
         QIcon icon13;
-        icon13.addFile(QString::fromUtf8(":/vendor/icons/view-top.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_view_top->setIcon(icon13);
-        toolButton_view_top->setIconSize(QSize(28, 28));
+        icon13.addFile(QString::fromUtf8(":/vendor/icons/view-right.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_view_right->setIcon(icon13);
+        toolButton_view_right->setIconSize(QSize(28, 28));
 
-        gridLayout_2->addWidget(toolButton_view_top, 0, 5, 1, 1);
+        gridLayout_2->addWidget(toolButton_view_right, 0, 8, 1, 1);
 
-        toolButton_zoom_plus = new QToolButton(frame_4);
-        toolButton_zoom_plus->setObjectName(QString::fromUtf8("toolButton_zoom_plus"));
+        toolButton_view_front = new QToolButton(frame_4);
+        toolButton_view_front->setObjectName(QString::fromUtf8("toolButton_view_front"));
         QIcon icon14;
-        icon14.addFile(QString::fromUtf8(":/vendor/icons/zoom_plus.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_zoom_plus->setIcon(icon14);
-        toolButton_zoom_plus->setIconSize(QSize(28, 28));
+        icon14.addFile(QString::fromUtf8(":/vendor/icons/view-front.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_view_front->setIcon(icon14);
+        toolButton_view_front->setIconSize(QSize(28, 28));
 
-        gridLayout_2->addWidget(toolButton_zoom_plus, 0, 1, 1, 1);
+        gridLayout_2->addWidget(toolButton_view_front, 0, 3, 1, 1);
+
+        toolButton_ortho = new QToolButton(frame_4);
+        toolButton_ortho->setObjectName(QString::fromUtf8("toolButton_ortho"));
+
+        gridLayout_2->addWidget(toolButton_ortho, 0, 10, 1, 1);
 
 
         gridLayout_11->addLayout(gridLayout_2, 0, 0, 1, 2);
@@ -431,16 +437,17 @@ public:
         toolButton_reload->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
         pushButton_open->setText(QCoreApplication::translate("MainWindow", "open", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        toolButton_view_front->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        toolButton_view_back->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
+        toolButton_view_top->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
         toolButton_zoom_min->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        toolButton_view_bottom->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        toolButton_view_right->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        toolButton_view_left->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
+        toolButton_zoom_plus->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
         toolButton_view_3d->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
         toolButton_fit_all->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        toolButton_view_top->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        toolButton_zoom_plus->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
+        toolButton_view_left->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
+        toolButton_view_bottom->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
+        toolButton_view_back->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
+        toolButton_view_right->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
+        toolButton_view_front->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
+        toolButton_ortho->setText(QCoreApplication::translate("MainWindow", "ortho", nullptr));
     } // retranslateUi
 
 };

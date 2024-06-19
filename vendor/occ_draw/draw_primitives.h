@@ -139,14 +139,14 @@ public:
 
     static double calculate_2d_angle_rad(const double& x0, const double& y0, const double& x1, const double& y1);
     static Handle(AIS_Shape) draw_2d_gcode_G2_xy_helix(const gp_Pnt& p0, const gp_Pnt& p1, const gp_Pnt& pc, const int& turns);
-    static Handle(AIS_Shape) draw_2d_gcode_G2_xy_helix_test(const gp_Pnt& p0, const gp_Pnt& p1, const gp_Pnt& pc, const int& turns);
+    static Handle(AIS_Shape) draw_2d_gcode_G2_xy_helix_g2_continuity_test(const gp_Pnt& p0, const gp_Pnt& p1, const gp_Pnt& pc, const int& turns);
     static Handle(AIS_Shape) draw_2d_gcode_G3_xy_helix(const gp_Pnt& p0, const gp_Pnt& p1, const gp_Pnt& pc, const int& turns);
     static Handle(AIS_Shape) draw_2d_gcode_G2_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,
-                                                 const double& i, const double& j, const double& k ,const int& turns);
+                                                 const double& i, const double& j, const double& k ,const int& turns, const int& g2_continuity);
     static Handle(AIS_Shape) draw_2d_gcode_G3_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,
-                                                 const double& i, const double& j, const double& k ,const int& turns);
+                                                 const double& i, const double& j, const double& k ,const int& turns, const int& g2_continuity);
     static Handle(AIS_Shape) draw_2d_gcode_G2_G3_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,const int& gcode,
-                                                 const double& i, const double& j, const double& k ,const int& turns);
+                                                 const double& i, const double& j, const double& k ,const int& turns, const int& g2_continuity);
 
     // Draw 3d primitives:
     static Handle(AIS_Shape) draw_3d_point(gp_Pnt point);
@@ -157,7 +157,8 @@ public:
     static Handle(AIS_Shape) draw_3d_acad_arc(gp_Pnt center, double radius, double alpha1, double alpha2, gp_Dir dir);
     static Handle(AIS_Shape) draw_3d_pc_arc_closest(gp_Pnt point1,gp_Pnt point2,gp_Pnt center,gp_Dir dir ,gp_Pnt closest);
     static Handle(AIS_Shape) draw_3d_gcode_arc_circle_helix(const gp_Pnt& p0, const gp_Pnt& p1,const int& plane,const int& gcode,
-                                                             const double& i, const double& j, const double& k, const int& turns, gp_Pnt &pw);
+                                                             const double& i, const double& j, const double& k,
+                                                             const int& turns, const int& g2_continuity, gp_Pnt &pw);
     static Handle(AIS_Shape) draw_3d_pc_arc(gp_Pnt point1, gp_Pnt point2, gp_Pnt center, double dir_Xv, double dir_Yv, double dir_Zv, gp_Pnt &pw);
     static Handle(AIS_Shape) draw_3d_pc_arc(gp_Pnt point1,gp_Pnt point2,gp_Pnt center, double dir_Xv, double dir_Yv, double dir_Zv);
     static Handle(AIS_Shape) draw_3p_3d_circle(gp_Pnt point1,gp_Pnt point2,gp_Pnt point3);

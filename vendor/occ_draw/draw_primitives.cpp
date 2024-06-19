@@ -160,7 +160,8 @@ turns =
 
 */
 Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,
-                                                          const double& i, const double& j, const double& k ,const int& turns) {
+                                                          const double& i, const double& j, const double& k ,
+                                                          const int& turns, const int& g2_continuity) {
 
     // Validate
     if(plane==0 && p0.Z()==p1.Z()){
@@ -242,31 +243,59 @@ Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_helix(const gp_Pnt& p0, cons
 
     if(plane==0){
         // Generate points along the helix
-        for (int i = 0; i < num_points; ++i) {
-            double angle = angle0 - i * angle_step;
+        for (int idx = 0; idx < num_points; ++idx) {
+            double angle = angle0 - idx * angle_step;
             double x = pc.X() + radius * cos(angle);
             double y = pc.Y() + radius * sin(angle);
-            double z = p0.Z() + ((angle0 - angle) / (2 * M_PI)) * -full_pitch;
+            double z=0;
+
+            if(!g2_continuity){
+                z = p0.Z() + ((angle0 - angle) / (2 * M_PI)) * -full_pitch;
+            } else {
+                // Calculate Z using a sinusoidal function for variable pitch
+                double t = static_cast<double>(idx) / (num_points - 1); // Normalized parameter [0, 1]
+                double sinusoidal_factor = 0.5 * (1 - cos(M_PI * t)); // Sinusoidal factor to vary pitch
+                z = p0.Z() - sinusoidal_factor * delta_pitch;
+            }
+
             pvec.push_back({x,y,z});
         }
     }
     if(plane==1){
         // Generate points along the helix
-        for (int i = 0; i < num_points; ++i) {
-            double angle = angle0 - i * angle_step;
+        for (int idx = 0; idx < num_points; ++idx) {
+            double angle = angle0 - idx * angle_step;
             double x = pc.X() + radius * cos(angle);
             double z = pc.Z() + radius * sin(angle);
-            double y = p0.Y() + ((angle0 - angle) / (2 * M_PI)) * -full_pitch;
+            double y = 0;
+
+            if(!g2_continuity){
+                y = p0.Y() + ((angle0 - angle) / (2 * M_PI)) * -full_pitch;
+            } else {
+                // Calculate Z using a sinusoidal function for variable pitch
+                double t = static_cast<double>(idx) / (num_points - 1); // Normalized parameter [0, 1]
+                double sinusoidal_factor = 0.5 * (1 - cos(M_PI * t)); // Sinusoidal factor to vary pitch
+                y = p0.Y() - sinusoidal_factor * delta_pitch;
+            }
             pvec.push_back({x,y,z});
         }
     }
     if(plane==2){
         // Generate points along the helix
-        for (int i = 0; i < num_points; ++i) {
-            double angle = angle0 - i * angle_step;
+        for (int idx = 0; idx < num_points; ++idx) {
+            double angle = angle0 - idx * angle_step;
             double y = pc.Y() + radius * cos(angle);
             double z = pc.Z() + radius * sin(angle);
-            double x = p0.X() + ((angle0 - angle) / (2 * M_PI)) * -full_pitch;
+            double x = 0;
+
+            if(!g2_continuity){
+                x = p0.X() + ((angle0 - angle) / (2 * M_PI)) * -full_pitch;
+            } else {
+                // Calculate Z using a sinusoidal function for variable pitch
+                double t = static_cast<double>(idx) / (num_points - 1); // Normalized parameter [0, 1]
+                double sinusoidal_factor = 0.5 * (1 - cos(M_PI * t)); // Sinusoidal factor to vary pitch
+                x = p0.X() - sinusoidal_factor * delta_pitch;
+            }
             pvec.push_back({x, y, z});
         }
     }
@@ -275,7 +304,8 @@ Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_helix(const gp_Pnt& p0, cons
 
 // For info see G2 helix.
 Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G3_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,
-                                                          const double& i, const double& j, const double& k, const int& turns) {
+                                                          const double& i, const double& j, const double& k,
+                                                          const int& turns, const int& g2_continuity) {
 
     // Validate
     if(plane==0 && p0.Z()==p1.Z()){
@@ -364,28 +394,54 @@ Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G3_helix(const gp_Pnt& p0, cons
         if (plane == 0) {
             x = pc.X() + radius * cos(angle);
             y = pc.Y() + radius * sin(angle);
-            z = p0.Z() + ((angle - angle0) / (2 * M_PI)) * -full_pitch; // Adjust Z using pitch
+
+            if(!g2_continuity){
+                z = p0.Z() + ((angle - angle0) / (2 * M_PI)) * -full_pitch; // Adjust Z using pitch
+            } else {
+                // Calculate Z using a sinusoidal function for variable pitch
+                double t = static_cast<double>(idx) / (num_points - 1); // Normalized parameter [0, 1]
+                double sinusoidal_factor = 0.5 * (1 - cos(M_PI * t)); // Sinusoidal factor to vary pitch
+                z = p0.Z() - sinusoidal_factor * delta_pitch;
+            }
         } else if (plane == 1) {
             x = pc.X() + radius * cos(angle);
             z = pc.Z() + radius * sin(angle);
-            y = p0.Y() + ((angle - angle0) / (2 * M_PI)) * -full_pitch; // Adjust Y using pitch
+            if(!g2_continuity){
+                y = p0.Y() + ((angle - angle0) / (2 * M_PI)) * -full_pitch; // Adjust Y using pitch
+            } else {
+                // Calculate Z using a sinusoidal function for variable pitch
+                double t = static_cast<double>(idx) / (num_points - 1); // Normalized parameter [0, 1]
+                double sinusoidal_factor = 0.5 * (1 - cos(M_PI * t)); // Sinusoidal factor to vary pitch
+                y = p0.Y() - sinusoidal_factor * delta_pitch;
+            }
         } else if (plane == 2) {
             y = pc.Y() + radius * cos(angle);
             z = pc.Z() + radius * sin(angle);
-            x = p0.X() + ((angle - angle0) / (2 * M_PI)) * -full_pitch; // Adjust X using pitch
+            if(!g2_continuity){
+                x = p0.X() + ((angle - angle0) / (2 * M_PI)) * -full_pitch; // Adjust X using pitch
+            } else {
+                // Calculate Z using a sinusoidal function for variable pitch
+                double t = static_cast<double>(idx) / (num_points - 1); // Normalized parameter [0, 1]
+                double sinusoidal_factor = 0.5 * (1 - cos(M_PI * t)); // Sinusoidal factor to vary pitch
+                x = p0.X() - sinusoidal_factor * delta_pitch;
+            }
         }
-        pvec.push_back(gp_Pnt{x, y, z});
+        pvec.push_back({x, y, z});
     }
     return draw_3d_line_wire(pvec);
 }
 
 Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_G3_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane,const int& gcode,
-                                                   const double& i, const double& j, const double& k ,const int& turns){
+                                                             const double& i, const double& j, const double& k,
+                                                             const int& turns, const int& g2_continuity){
+
+    std::cout<<"helix g2_continuity status:"<<g2_continuity<<std::endl;
+
     if(gcode==2){
-        return draw_2d_gcode_G2_helix(p0,p1,plane,i,j,k,turns);
+        return draw_2d_gcode_G2_helix(p0,p1,plane,i,j,k,turns,g2_continuity);
     }
     if(gcode==3){
-        return draw_2d_gcode_G3_helix(p0,p1,plane,i,j,k,turns);
+        return draw_2d_gcode_G3_helix(p0,p1,plane,i,j,k,turns,g2_continuity);
     }
     std::cout<<"Error, helix has wrong gcode id."<<std::endl;
     return draw_3d_point(p0);
@@ -459,8 +515,8 @@ Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_xy_helix(const gp_Pnt& p0, c
     return draw_3d_line_wire(pvec);
 }
 
-Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_xy_helix_test(const gp_Pnt& p0, const gp_Pnt& p1,
-                                                                  const gp_Pnt& pc, const int& turns) {
+Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_xy_helix_g2_continuity_test(const gp_Pnt& p0, const gp_Pnt& p1,
+                                                                                const gp_Pnt& pc, const int& turns) {
 
     // Calculate radius
     double radius = p0.Distance(pc);
@@ -511,8 +567,6 @@ Handle(AIS_Shape) draw_primitives::draw_2d_gcode_G2_xy_helix_test(const gp_Pnt& 
         double angle = angle0 - i * angle_step; // Decrease angle for clockwise direction
         double x = pc.X() + radius * cos(angle);
         double y = pc.Y() + radius * sin(angle);
-
-
 
         // Calculate Z using a sinusoidal function for variable pitch
         double t = static_cast<double>(i) / (num_points - 1); // Normalized parameter [0, 1]
@@ -910,7 +964,8 @@ turns:
 
 */
 Handle(AIS_Shape) draw_primitives::draw_3d_gcode_arc_circle_helix(const gp_Pnt& p0, const gp_Pnt& p1, const int& plane, const int& gcode,
-                                                                   const double& i, const double& j, const double& k, const int& turns, gp_Pnt &pw){
+                                                                  const double& i, const double& j, const double& k,
+                                                                  const int& turns, const int& g2_continuity, gp_Pnt &pw){
 
     gp_Pnt pc;
 
@@ -940,7 +995,7 @@ Handle(AIS_Shape) draw_primitives::draw_3d_gcode_arc_circle_helix(const gp_Pnt& 
 
     // Draw helix, spiral.
     if( (plane==0 && p0.Z()!=p1.Z()) || (plane==1 && p0.Y()!=p1.Y()) || (plane==2 && p0.X()!=p1.X()) ){
-        return draw_2d_gcode_G2_G3_helix(p0,p1,plane,gcode,i,j,k,turns);
+        return draw_2d_gcode_G2_G3_helix(p0,p1,plane,gcode,i,j,k,turns,g2_continuity);
     }
 
     // G2 arc plane 0

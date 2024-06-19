@@ -140,6 +140,11 @@ void MainWindow::on_toolButton_file_open_pressed()
 
 }
 
+void MainWindow::on_toolButton_ortho_pressed()
+{
+    occ->set_orthographic();
+}
+
 void MainWindow::on_pushButton_open_pressed()
 {
     occ->clear_shapevec();
@@ -176,22 +181,8 @@ void MainWindow::on_pushButton_pressed()
 
     occ->add_shapevec( draw_primitives::draw_3d_line(p1,{p1.X(),p1.Y()-50,p1.Z()}) );
 
-   occ->add_shapevec( draw_primitives::draw_3d_point(p0));
-   occ->add_shapevec( draw_primitives::draw_2d_gcode_G2_xy_helix(p0,p1,pc,turns) );
+    occ->add_shapevec( draw_primitives::draw_3d_point(p0));
+    occ->add_shapevec( draw_primitives::draw_2d_gcode_G2_xy_helix(p0,p1,pc,turns) );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
