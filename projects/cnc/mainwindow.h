@@ -40,7 +40,7 @@
 #include "QGCodeEditor.h"
 
 // Linuxcnc hal, hardware abstract layer.
-#include "hal.h"
+#include "hal_functions.h"
 
 // File open dialog.
 #include "qt_functions.h"
@@ -49,6 +49,9 @@
 
 // Interpreter
 #include "rs274ngc_intf.h"
+
+// Shared memory
+#include "state_machine_vector.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -64,7 +67,6 @@ public:
 
     void update();
     void hal_connection();
-    void helix();
 
 private slots:
 
@@ -88,13 +90,41 @@ private slots:
 
     void on_toolButton_zoom_plus_pressed();
 
-    void on_toolButton_file_open_pressed();
-
-    void on_pushButton_open_pressed();
-
-    void on_pushButton_pressed();
-
     void on_toolButton_ortho_pressed();
+
+    void on_toolButton_open_pressed();
+
+    void on_toolButton_reload_pressed();
+
+    void on_toolButton_view_ortho_toggled(bool checked);
+
+    void on_toolButton_manual_pressed();
+
+    void on_toolButton_auto_pressed();
+
+    void on_toolButton_mdi_pressed();
+
+    void on_toolButton_settings_toggled(bool checked);
+
+    void on_toolButton_run_pressed();
+
+    void on_toolButton_stop_pressed();
+
+    void on_toolButton_edit_pressed();
+
+    void on_toolButton_text_edit_home_pressed();
+
+    void on_toolButton_textedit_save_as_pressed();
+
+    void on_toolButton_textedit_save_pressed();
+
+    void on_toolButton_remove_line_nrs_pressed();
+
+    void on_toolButton_to_capital_letters_pressed();
+
+    void on_toolButton_to_lower_letters_pressed();
+
+    void on_toolButton_test_pressed();
 
 private:
     Ui::MainWindow *ui;
@@ -105,6 +135,10 @@ private:
 
     Form *form = new Form();
 
+    hal_functions *hal = new hal_functions();
+
     QGCodeEditor *editor;
+
+    state_machine_vector *smv = new state_machine_vector();
 };
 #endif

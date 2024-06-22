@@ -1,12 +1,14 @@
 #!/usr/bin/bash
 
+export LD_LIBRARY_PATH=../lib
+
 cd .. && cd scripts
-. ./rip-environment 
-# Clean previous hal session:
 ./halclean 
 
 cd ..
 cd bin
+
+
 
 # Test:
 ./halcmd stop

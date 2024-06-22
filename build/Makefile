@@ -305,6 +305,19 @@ motion/fast:
 .PHONY : motion/fast
 
 #=============================================================================
+# Target rules for targets named state_machine
+
+# Build rule for target.
+state_machine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 state_machine
+.PHONY : state_machine
+
+# fast build rule for target.
+state_machine/fast:
+	$(MAKE) $(MAKESILENT) -f src/hal/components/state_machine/CMakeFiles/state_machine.dir/build.make src/hal/components/state_machine/CMakeFiles/state_machine.dir/build
+.PHONY : state_machine/fast
+
+#=============================================================================
 # Target rules for targets named lcec
 
 # Build rule for target.
@@ -394,6 +407,7 @@ help:
 	@echo "... module_helper"
 	@echo "... motion"
 	@echo "... rtapi_app"
+	@echo "... state_machine"
 	@echo "... stepgen"
 	@echo "... test"
 	@echo "... threads"

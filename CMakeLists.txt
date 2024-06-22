@@ -43,6 +43,7 @@ add_subdirectory(src/hal/components/test)
 add_subdirectory(src/hal/components/threads)
 add_subdirectory(src/hal/components/hostmot2)
 add_subdirectory(src/hal/components/motion)
+add_subdirectory(src/hal/components/state_machine)
 
 # Ethercat lcec driver.
 add_subdirectory(src/hal/components/ethercat)

@@ -6,6 +6,8 @@
 
 #include "BRepBuilderAPI_MakeEdge.hxx"
 
+int comp_id=0;
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -14,6 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     // occ = new Opencascade();
     occ = new  OcctQtViewer();
+    occ->set_perspective();
 
     //! Add gridlayout on top of the occ widget.
     QGridLayout *layout=new QGridLayout(occ);
@@ -24,65 +27,39 @@ MainWindow::MainWindow(QWidget *parent)
     ui->gridLayout_occ->addWidget(occ);
     occ->create_tp_cone();
 
-
-
     editor = new QGCodeEditor();
     ui->gridLayout_gcode->addWidget(editor);
     editor->setStyleSheet("background-color: rgb(75, 75, 75);");
 
+    ui->stackedWidget_toplevel->setCurrentIndex(1);
+
+    try {
+        smv->create_shared_memory();
+        std::cout << "Qt shared memory setup successful" << std::endl;
+        // Optionally notify user or update UI that shared memory setup is complete
+
+    } catch (const std::exception& e) {
+        std::cerr << "Qt error setting up shared memory: " << e.what() << std::endl;
+        // Handle error: notify user or log the error
+    }
+
     //! This activates a screen update when robot is moving and screen needs to be updated automaticly.
     connect(timer, &QTimer::timeout, this, &MainWindow::update);
     timer->start(50);
-
-    hal_connection();
-
-
-
-
-    // std::string file=qt_functions().open_file_dialog_get_filename(this);
-    // std::string gcode= std_functions().read_file_to_string(file);
-
-    //    std::string file="/home/user/hal-core-2.0/nc_files/nc_files_grotius/G9_test.ngc";
-
-    //    std::string gcode= std_functions().read_file_to_string(file);
-
-    //    editor->appendPlainText(QString::fromStdString(gcode));
-    //    std::vector<gcode_line> gvec;
-    //    gcode_parser().tokenize(file,gvec);
-
-    //    for (const auto& i : gvec) {
-    //        std::cout<<"newline:"<<std::endl;
-    //        gcode_parser().print_line(i);
-    //    }
-
-    //    std::vector<shape> svec;
-    //    gcode_parser().tokens_to_shapes(gvec,svec);
-    //    for (const auto& i : svec) {
-    //        occ->add_shapevec(i.aShape);
-    //    }
-    //    occ->redraw();
-
-
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+    hal->exit();
 }
 
 void MainWindow::update(){
 
+    hal->update();
+
     //! To update tp moves.
     occ->redraw();
-}
-
-void MainWindow::hal_connection(){
-    // Create hal component from here.
-    int comp_id = hal_init("QT_C++_Interface");
-    hal_comp_name(comp_id);
-    hal_malloc(200);
-    // int sigml= hal_signal_new("xxx", HAL_FLOAT );
-    hal_ready(comp_id);
 }
 
 void MainWindow::on_toolButton_fit_all_pressed()
@@ -135,29 +112,25 @@ void MainWindow::on_toolButton_zoom_plus_pressed()
     occ->zoom_plus();
 }
 
-void MainWindow::on_toolButton_file_open_pressed()
-{
-
-}
-
 void MainWindow::on_toolButton_ortho_pressed()
 {
     occ->set_orthographic();
 }
 
-void MainWindow::on_pushButton_open_pressed()
+void MainWindow::on_toolButton_open_pressed()
 {
     occ->clear_shapevec();
     editor->clear();
 
-    std::string filename=qt_functions().open_file_dialog_get_filename(this);
+    std::string file_name=qt_functions().open_file_dialog_get_filename(this);
 
-    QString gcode=QString::fromStdString(std_functions().read_file_to_string(filename));
+    QString gcode=QString::fromStdString(std_functions().read_file_to_string(file_name));
     editor->appendPlainText(gcode);
 
     std::vector<gcode_line> gvec;
-    gcode_parser().tokenize(filename,gvec,1);
+    gcode_parser().tokenize(file_name,gvec,1);
 
+    ui->label_current_file->setText(QString::fromStdString(file_name));
 
     std::vector<shape> svec;
     gcode_parser().tokens_to_shapes(gvec,svec);
@@ -167,22 +140,170 @@ void MainWindow::on_pushButton_open_pressed()
     occ->redraw();
 }
 
-void MainWindow::on_pushButton_pressed()
+void MainWindow::on_toolButton_reload_pressed()
 {
-    occ->clear_shapevec();
-    occ->set_orthographic();
+    std::string file_name=ui->label_current_file->text().toStdString();
 
-    gp_Pnt p0={-10,0,0};
-    gp_Pnt pc={0,0,0};
-    gp_Pnt p1={10,0,-50};
-    int turns=2; // Turns.
+    if(file_name.size()>0){
+        occ->clear_shapevec();
+        editor->clear();
 
-    occ->add_shapevec( draw_primitives::draw_3d_line(p0,{p0.X(),p0.Y()-50,p0.Z()}) );
+        QString gcode=QString::fromStdString(std_functions().read_file_to_string(file_name));
+        editor->appendPlainText(gcode);
 
-    occ->add_shapevec( draw_primitives::draw_3d_line(p1,{p1.X(),p1.Y()-50,p1.Z()}) );
+        std::vector<gcode_line> gvec;
+        gcode_parser().tokenize(file_name,gvec,1);
 
-    occ->add_shapevec( draw_primitives::draw_3d_point(p0));
-    occ->add_shapevec( draw_primitives::draw_2d_gcode_G2_xy_helix(p0,p1,pc,turns) );
+        ui->label_current_file->setText(QString::fromStdString(file_name));
+
+        std::vector<shape> svec;
+        gcode_parser().tokens_to_shapes(gvec,svec);
+        for (const auto& i : svec) {
+            occ->add_shapevec(i.aShape);
+        }
+        occ->redraw();
+    }
 }
 
+void MainWindow::on_toolButton_view_ortho_toggled(bool checked)
+{
+    if(checked){
+        occ->set_orthographic();
+    } else {
+        occ->set_perspective();
+    }
+}
+
+void MainWindow::on_toolButton_manual_pressed()
+{
+    ui->stackedWidget_mode_manual_auto_mdi->show();
+
+    ui->toolButton_auto->setChecked(0);
+    ui->toolButton_mdi->setChecked(0);
+    ui->toolButton_settings->setChecked(0);
+    ui->toolButton_manual->setDown(1);
+
+    ui->stackedWidget_mode_manual_auto_mdi->setCurrentIndex(0);
+}
+
+
+void MainWindow::on_toolButton_auto_pressed()
+{
+    ui->stackedWidget_mode_manual_auto_mdi->show();
+
+    ui->toolButton_auto->setDown(1);
+    ui->toolButton_manual->setChecked(0);
+    ui->toolButton_mdi->setChecked(0);
+    ui->toolButton_settings->setChecked(0);
+
+    ui->stackedWidget_mode_manual_auto_mdi->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_toolButton_mdi_pressed()
+{
+    ui->stackedWidget_mode_manual_auto_mdi->show();
+
+    ui->toolButton_auto->setChecked(0);
+    ui->toolButton_manual->setChecked(0);
+    ui->toolButton_mdi->setDown(1);
+    ui->toolButton_settings->setChecked(0);
+
+    ui->stackedWidget_mode_manual_auto_mdi->setCurrentIndex(2);
+}
+
+void MainWindow::on_toolButton_settings_toggled(bool checked)
+{
+    if(checked){
+        ui->stackedWidget_mode_manual_auto_mdi->hide();
+        ui->stackedWidget_main->setCurrentIndex(1);
+    } else {
+        ui->stackedWidget_mode_manual_auto_mdi->show();
+        ui->stackedWidget_main->setCurrentIndex(0);
+    }
+}
+
+void MainWindow::on_toolButton_run_pressed()
+{
+    std::string file_name=ui->label_current_file->text().toStdString();
+    if(file_name.size()==0){
+        qt_functions::message_box(this,2000,"no file.");
+    }
+    ui->toolButton_run->setDown(1);
+    ui->toolButton_stop->setChecked(0);
+}
+
+void MainWindow::on_toolButton_stop_pressed()
+{
+    ui->toolButton_run->setChecked(0);
+    ui->toolButton_stop->setDown(1);
+}
+
+void MainWindow::on_toolButton_edit_pressed()
+{
+    ui->stackedWidget_toplevel->setCurrentIndex(2);
+    ui->plainTextEdit_gcode->setPlainText(editor->toPlainText());
+}
+
+void MainWindow::on_toolButton_text_edit_home_pressed()
+{
+    ui->stackedWidget_toplevel->setCurrentIndex(1);
+}
+
+void MainWindow::on_toolButton_textedit_save_as_pressed()
+{
+    std::string file_path=qt_functions::save_file_dialog_get_filename(this);
+    std_functions::save_string_to_file(ui->plainTextEdit_gcode->toPlainText().toStdString(),file_path);
+}
+
+void MainWindow::on_toolButton_textedit_save_pressed()
+{
+    std::string file_name=ui->label_current_file->text().toStdString();
+    std_functions::save_string_to_file(ui->plainTextEdit_gcode->toPlainText().toStdString(),file_name);
+}
+
+
+void MainWindow::on_toolButton_remove_line_nrs_pressed()
+{
+    std::string string=ui->plainTextEdit_gcode->toPlainText().toStdString();
+    string=std_functions::remove_line_nummers_n_and_value(string);
+    string=std_functions::remove_left_white_spaces_lines(string);
+    ui->plainTextEdit_gcode->setPlainText(QString::fromStdString(string));
+}
+
+void MainWindow::on_toolButton_to_capital_letters_pressed()
+{
+    std::string string=ui->plainTextEdit_gcode->toPlainText().toStdString();
+    string=std_functions::to_capical(string);
+    ui->plainTextEdit_gcode->setPlainText(QString::fromStdString(string));
+}
+
+
+void MainWindow::on_toolButton_to_lower_letters_pressed()
+{
+    std::string string=ui->plainTextEdit_gcode->toPlainText().toStdString();
+    string=std_functions::to_lower(string);
+    ui->plainTextEdit_gcode->setPlainText(QString::fromStdString(string));
+}
+
+void MainWindow::on_toolButton_test_pressed()
+{
+    std::cout << "Setting shared memory value from Qt." << std::endl;
+
+     // Modify tvec in state_machine_vector instance
+     if (smv) {
+         if (smv->tvec.size() > 0) {
+             double value = 12345.0; // Example value to set
+             smv->tvec[0] = value++;
+
+             // Update shared memory with the new value
+             smv->update_shared_memory();
+             std::cout << "Shared memory updated with value: " << smv->tvec[0] << std::endl;
+         } else {
+             std::cerr << "Error: tvec in state_machine_vector has size 0." << std::endl;
+         }
+     } else {
+         std::cerr << "Error: state_machine_vector instance (smv) is null." << std::endl;
+     }
+}
 

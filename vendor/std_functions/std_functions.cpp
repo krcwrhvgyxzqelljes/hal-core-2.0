@@ -7,6 +7,8 @@
 #include <string>
 #include <vector>
 #include <cstdlib>  // For std::strtod
+#include <regex>
+#include <cctype> // For std::toupper
 
 std_functions::std_functions()
 {
@@ -157,4 +159,89 @@ int std_functions::digits(double value)
     }
     return digits;
 }
+
+std::string std_functions::remove_line_nummers_n_and_value(const std::string& input){
+    // Define the regular expression to match "N" or "n" followed by one or more digits
+    std::regex pattern("(N|n)\\d+");
+
+    // Use regex_replace to remove the matched patterns from the input string
+    return std::regex_replace(input, pattern, "");
+}
+
+std::string std_functions::remove_left_white_spaces_lines(const std::string& input){
+    std::stringstream ss(input);
+    std::string line;
+    std::stringstream result;
+
+    while (std::getline(ss, line)) {
+        size_t start = line.find_first_not_of(" \t");
+        if (start != std::string::npos) {
+            result << line.substr(start) << "\n";
+        } else {
+            result << "\n"; // If the line is all whitespace, add a newline
+        }
+    }
+
+    return result.str(); // Update the original string with the modified lines
+}
+
+std::string std_functions::to_capical(std::string input){
+    bool insideParentheses = false;
+
+    for (size_t i = 0; i < input.size(); ++i) {
+        if (input[i] == '(') {
+            insideParentheses = true;
+        } else if (input[i] == ')') {
+            insideParentheses = false;
+        }
+
+        if (!insideParentheses && std::isalpha(input[i])) {
+            input[i] = std::toupper(input[i]);
+        }
+    }
+    return input;
+}
+
+std::string std_functions::to_lower(std::string input){
+    bool insideParentheses = false;
+
+    for (size_t i = 0; i < input.size(); ++i) {
+        if (input[i] == '(') {
+            insideParentheses = true;
+        } else if (input[i] == ')') {
+            insideParentheses = false;
+        }
+
+        if (!insideParentheses && std::isalpha(input[i])) {
+            input[i] = std::tolower(input[i]);
+        }
+    }
+    return input;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

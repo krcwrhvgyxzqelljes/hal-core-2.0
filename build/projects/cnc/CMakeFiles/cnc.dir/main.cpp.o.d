@@ -2187,6 +2187,7 @@ projects/cnc/CMakeFiles/cnc.dir/main.cpp.o: \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qcontiguouscache.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/QTextBlock \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextobject.h \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/hal_functions/hal_functions.h \
  /home/user/hal-core-2.0/src/hal/hal.h \
  /home/user/hal-core-2.0/projects/cnc/../../src/rtapi/rtapi.h \
  /usr/include/spawn.h \
@@ -2198,6 +2199,7 @@ projects/cnc/CMakeFiles/cnc.dir/main.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/gcode_parser/gcode_parser.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_intf.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_data.h \
+ /home/user/hal-core-2.0/projects/cnc/../../src/hal/components/state_machine/state_machine_vector.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QApplication \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qapplication.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qcoreapplication.h \

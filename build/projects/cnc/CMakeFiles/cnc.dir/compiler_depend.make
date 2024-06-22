@@ -3445,6 +3445,230 @@ projects/cnc/CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.o: /home/user/hal-co
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/QTextBlock \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextobject.h
 
+projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.o: /home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.cpp \
+  /usr/include/stdc-predef.h \
+  /home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.h \
+  /usr/include/c++/12/vector \
+  /usr/include/c++/12/bits/stl_algobase.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
+  /usr/include/c++/12/bits/functexcept.h \
+  /usr/include/c++/12/bits/exception_defines.h \
+  /usr/include/c++/12/bits/cpp_type_traits.h \
+  /usr/include/c++/12/ext/type_traits.h \
+  /usr/include/c++/12/ext/numeric_traits.h \
+  /usr/include/c++/12/bits/stl_pair.h \
+  /usr/include/c++/12/type_traits \
+  /usr/include/c++/12/bits/move.h \
+  /usr/include/c++/12/bits/utility.h \
+  /usr/include/c++/12/bits/stl_iterator_base_types.h \
+  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/12/bits/concept_check.h \
+  /usr/include/c++/12/debug/assertions.h \
+  /usr/include/c++/12/bits/stl_iterator.h \
+  /usr/include/c++/12/bits/ptr_traits.h \
+  /usr/include/c++/12/debug/debug.h \
+  /usr/include/c++/12/bits/predefined_ops.h \
+  /usr/include/c++/12/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
+  /usr/include/c++/12/bits/new_allocator.h \
+  /usr/include/c++/12/new \
+  /usr/include/c++/12/bits/exception.h \
+  /usr/include/c++/12/bits/memoryfwd.h \
+  /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/bits/stl_uninitialized.h \
+  /usr/include/c++/12/ext/alloc_traits.h \
+  /usr/include/c++/12/bits/alloc_traits.h \
+  /usr/include/c++/12/bits/stl_vector.h \
+  /usr/include/c++/12/initializer_list \
+  /usr/include/c++/12/bits/stl_bvector.h \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/refwrap.h \
+  /usr/include/c++/12/bits/invoke.h \
+  /usr/include/c++/12/bits/stl_function.h \
+  /usr/include/c++/12/backward/binders.h \
+  /usr/include/c++/12/bits/range_access.h \
+  /usr/include/c++/12/bits/vector.tcc \
+  /usr/include/c++/12/iostream \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/iosfwd \
+  /usr/include/c++/12/bits/stringfwd.h \
+  /usr/include/c++/12/bits/postypes.h \
+  /usr/include/c++/12/cwchar \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/c++/12/exception \
+  /usr/include/c++/12/bits/exception_ptr.h \
+  /usr/include/c++/12/bits/cxxabi_init_exception.h \
+  /usr/include/c++/12/typeinfo \
+  /usr/include/c++/12/bits/nested_exception.h \
+  /usr/include/c++/12/bits/char_traits.h \
+  /usr/include/c++/12/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/12/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
+  /usr/include/c++/12/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/12/cctype \
+  /usr/include/ctype.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/string \
+  /usr/include/c++/12/bits/ostream_insert.h \
+  /usr/include/c++/12/bits/cxxabi_forced.h \
+  /usr/include/c++/12/bits/basic_string.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/string_view.tcc \
+  /usr/include/c++/12/ext/string_conversions.h \
+  /usr/include/c++/12/cstdlib \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/c++/12/bits/std_abs.h \
+  /usr/include/c++/12/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/c++/12/cerrno \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/c++/12/bits/charconv.h \
+  /usr/include/c++/12/bits/basic_string.tcc \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
+  /usr/include/x86_64-linux-gnu/sys/ipc.h \
+  /usr/include/x86_64-linux-gnu/bits/ipctypes.h \
+  /usr/include/x86_64-linux-gnu/bits/ipc.h \
+  /usr/include/x86_64-linux-gnu/bits/ipc-perm.h \
+  /usr/include/x86_64-linux-gnu/sys/shm.h \
+  /usr/include/x86_64-linux-gnu/bits/shm.h \
+  /usr/include/x86_64-linux-gnu/bits/shmlba.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_shmid_ds.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_shmid64_ds.h
+
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o: /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.cpp \
   /usr/include/stdc-predef.h \
   /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.h \
@@ -5384,6 +5608,198 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o: /h
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+
+projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.o: /home/user/hal-core-2.0/vendor/hal_functions/hal_functions.cpp \
+  /usr/include/stdc-predef.h \
+  /home/user/hal-core-2.0/vendor/hal_functions/hal_functions.h \
+  /home/user/hal-core-2.0/src/hal/hal.h \
+  /home/user/hal-core-2.0/src/rtapi/rtapi.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+  /usr/include/spawn.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /home/user/hal-core-2.0/src/rtapi/rtapi_errno.h \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /home/user/hal-core-2.0/src/rtapi/rtapi_bool.h \
+  /home/user/hal-core-2.0/src/rtapi/rtapi_stdint.h \
+  /usr/include/inttypes.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/12/iostream \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/iosfwd \
+  /usr/include/c++/12/bits/stringfwd.h \
+  /usr/include/c++/12/bits/memoryfwd.h \
+  /usr/include/c++/12/bits/postypes.h \
+  /usr/include/c++/12/cwchar \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/c++/12/exception \
+  /usr/include/c++/12/bits/exception.h \
+  /usr/include/c++/12/bits/exception_ptr.h \
+  /usr/include/c++/12/bits/exception_defines.h \
+  /usr/include/c++/12/bits/cxxabi_init_exception.h \
+  /usr/include/c++/12/typeinfo \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/new \
+  /usr/include/c++/12/bits/move.h \
+  /usr/include/c++/12/type_traits \
+  /usr/include/c++/12/bits/nested_exception.h \
+  /usr/include/c++/12/bits/char_traits.h \
+  /usr/include/c++/12/cstdint \
+  /usr/include/c++/12/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
+  /usr/include/c++/12/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/12/cctype \
+  /usr/include/ctype.h \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/string \
+  /usr/include/c++/12/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
+  /usr/include/c++/12/bits/new_allocator.h \
+  /usr/include/c++/12/bits/functexcept.h \
+  /usr/include/c++/12/bits/cpp_type_traits.h \
+  /usr/include/c++/12/bits/ostream_insert.h \
+  /usr/include/c++/12/bits/cxxabi_forced.h \
+  /usr/include/c++/12/bits/stl_iterator_base_types.h \
+  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/12/bits/concept_check.h \
+  /usr/include/c++/12/debug/assertions.h \
+  /usr/include/c++/12/bits/stl_iterator.h \
+  /usr/include/c++/12/ext/type_traits.h \
+  /usr/include/c++/12/bits/ptr_traits.h \
+  /usr/include/c++/12/bits/stl_function.h \
+  /usr/include/c++/12/backward/binders.h \
+  /usr/include/c++/12/ext/numeric_traits.h \
+  /usr/include/c++/12/bits/stl_algobase.h \
+  /usr/include/c++/12/bits/stl_pair.h \
+  /usr/include/c++/12/bits/utility.h \
+  /usr/include/c++/12/debug/debug.h \
+  /usr/include/c++/12/bits/predefined_ops.h \
+  /usr/include/c++/12/bits/refwrap.h \
+  /usr/include/c++/12/bits/invoke.h \
+  /usr/include/c++/12/bits/range_access.h \
+  /usr/include/c++/12/initializer_list \
+  /usr/include/c++/12/bits/basic_string.h \
+  /usr/include/c++/12/ext/alloc_traits.h \
+  /usr/include/c++/12/bits/alloc_traits.h \
+  /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/string_view.tcc \
+  /usr/include/c++/12/ext/string_conversions.h \
+  /usr/include/c++/12/cstdlib \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/c++/12/bits/std_abs.h \
+  /usr/include/c++/12/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/c++/12/cerrno \
+  /usr/include/c++/12/bits/charconv.h \
+  /usr/include/c++/12/bits/basic_string.tcc \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/bits/istream.tcc
 
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o: /home/user/hal-core-2.0/vendor/occ_draw/draw_primitives.cpp \
   /usr/include/stdc-predef.h \
@@ -11230,7 +11646,48 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o: 
   /usr/include/c++/12/bits/stl_tempbuf.h \
   /usr/include/c++/12/bits/uniform_int_dist.h \
   /usr/include/c++/12/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/12/pstl/execution_defs.h
+  /usr/include/c++/12/pstl/execution_defs.h \
+  /usr/include/c++/12/regex \
+  /usr/include/c++/12/bitset \
+  /usr/include/c++/12/locale \
+  /usr/include/c++/12/bits/locale_facets_nonio.h \
+  /usr/include/c++/12/ctime \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/12/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/12/bits/locale_conv.h \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/c++/12/stack \
+  /usr/include/c++/12/deque \
+  /usr/include/c++/12/bits/stl_deque.h \
+  /usr/include/c++/12/bits/deque.tcc \
+  /usr/include/c++/12/bits/stl_stack.h \
+  /usr/include/c++/12/bits/uses_allocator.h \
+  /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/shared_ptr.h \
+  /usr/include/c++/12/bits/shared_ptr_base.h \
+  /usr/include/c++/12/bits/allocated_ptr.h \
+  /usr/include/c++/12/bits/unique_ptr.h \
+  /usr/include/c++/12/tuple \
+  /usr/include/c++/12/ext/concurrence.h \
+  /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/bits/stl_tree.h \
+  /usr/include/c++/12/bits/node_handle.h \
+  /usr/include/c++/12/bits/stl_map.h \
+  /usr/include/c++/12/bits/regex_constants.h \
+  /usr/include/c++/12/bits/regex_error.h \
+  /usr/include/c++/12/bits/regex_automaton.h \
+  /usr/include/c++/12/bits/regex_automaton.tcc \
+  /usr/include/c++/12/bits/regex_scanner.h \
+  /usr/include/c++/12/bits/regex_scanner.tcc \
+  /usr/include/c++/12/bits/regex_compiler.h \
+  /usr/include/c++/12/bits/regex_compiler.tcc \
+  /usr/include/c++/12/bits/regex.h \
+  /usr/include/c++/12/bits/regex.tcc \
+  /usr/include/c++/12/bits/regex_executor.h \
+  /usr/include/c++/12/bits/regex_executor.tcc
 
 projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o: projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp \
   /usr/include/stdc-predef.h
@@ -13512,6 +13969,7 @@ projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/mocs_compilation.cpp.o: projects/cnc
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h \
   /home/user/hal-core-2.0/projects/cnc/form.h \
   /home/user/hal-core-2.0/projects/cnc/QGCodeEditor.h \
+  /home/user/hal-core-2.0/vendor/hal_functions/hal_functions.h \
   /home/user/hal-core-2.0/src/hal/hal.h \
   /home/user/hal-core-2.0/src/rtapi/rtapi.h \
   /usr/include/spawn.h \
@@ -13522,7 +13980,8 @@ projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/mocs_compilation.cpp.o: projects/cnc
   /home/user/hal-core-2.0/vendor/std_functions/std_functions.h \
   /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.h \
   /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_intf.h \
-  /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_data.h
+  /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_data.h \
+  /home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.h
 
 projects/cnc/CMakeFiles/cnc.dir/form.cpp.o: /home/user/hal-core-2.0/projects/cnc/form.cpp \
   /usr/include/stdc-predef.h \
@@ -16143,6 +16602,7 @@ projects/cnc/CMakeFiles/cnc.dir/main.cpp.o: /home/user/hal-core-2.0/projects/cnc
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qcontiguouscache.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/QTextBlock \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextobject.h \
+  /home/user/hal-core-2.0/vendor/hal_functions/hal_functions.h \
   /home/user/hal-core-2.0/src/hal/hal.h \
   /home/user/hal-core-2.0/src/rtapi/rtapi.h \
   /usr/include/spawn.h \
@@ -16154,6 +16614,7 @@ projects/cnc/CMakeFiles/cnc.dir/main.cpp.o: /home/user/hal-core-2.0/projects/cnc
   /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.h \
   /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_intf.h \
   /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_data.h \
+  /home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QApplication \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qapplication.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qcoreapplication.h \
@@ -18422,6 +18883,7 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qcontiguouscache.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/QTextBlock \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextobject.h \
+  /home/user/hal-core-2.0/vendor/hal_functions/hal_functions.h \
   /home/user/hal-core-2.0/src/hal/hal.h \
   /home/user/hal-core-2.0/src/rtapi/rtapi.h \
   /usr/include/spawn.h \
@@ -18433,6 +18895,7 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
   /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.h \
   /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_intf.h \
   /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_data.h \
+  /home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.h \
   projects/cnc/cnc_autogen/include/ui_mainwindow.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QVariant \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qvariant.h \
@@ -18444,6 +18907,11 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qeventloop.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qguiapplication.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qinputmethod.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDoubleSpinBox \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qspinbox.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qvalidator.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qregularexpression.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QFrame \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qframe.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QGridLayout \
@@ -18452,11 +18920,17 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlayoutitem.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qgridlayout.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QHBoxLayout \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QLabel \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlabel.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QLineEdit \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlineedit.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QMainWindow \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QPlainTextEdit \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QPushButton \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qpushbutton.h \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSlider \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qslider.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractslider.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSpacerItem \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlayoutitem.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSplitter \
@@ -18465,8 +18939,7 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qstackedwidget.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QToolButton \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtoolbutton.h \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QVBoxLayout \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractbutton.h \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_MakeEdge.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRepBuilderAPI/BRepBuilderAPI_MakeEdge.hxx \
   /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepLib_MakeEdge.hxx \
@@ -18499,19 +18972,19 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSplitter:
 
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QHBoxLayout:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractspinbox.h:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qspinbox.h:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDoubleSpinBox:
+
 /home/user/hal-core-2.0/projects/cnc/main.cpp:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlabel.h:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QVariant:
-
-/home/user/hal-core-2.0/src/rtapi/rtapi_stdint.h:
-
-/home/user/hal-core-2.0/src/rtapi/rtapi_bool.h:
-
-/home/user/hal-core-2.0/src/rtapi/rtapi_errno.h:
-
-/home/user/hal-core-2.0/src/hal/hal.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h:
 
@@ -18563,10 +19036,6 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
 
 /usr/include/c++/12/bits/fs_fwd.h:
 
-projects/cnc/cnc_autogen/include/ui_form.h:
-
-/usr/include/c++/12/bitset:
-
 /home/user/hal-core-2.0/vendor/Clothoids/lib3rd/include/Utils/fmt/std.h:
 
 /home/user/hal-core-2.0/vendor/Clothoids/lib3rd/include/Utils/fmt/color.h:
@@ -18602,6 +19071,26 @@ projects/cnc/cnc_autogen/EWIEGA46WW/moc_QGCodeEditor.cpp:
 projects/cnc/cnc_autogen/EWIEGA46WW/moc_OcctQtViewer.cpp:
 
 projects/cnc/cnc_autogen/mocs_compilation.cpp:
+
+/usr/include/c++/12/bits/regex_executor.tcc:
+
+/usr/include/c++/12/bits/regex_executor.h:
+
+/usr/include/c++/12/bits/regex.tcc:
+
+/usr/include/c++/12/bits/regex.h:
+
+/usr/include/c++/12/bits/regex_compiler.h:
+
+/usr/include/c++/12/bits/regex_scanner.tcc:
+
+/usr/include/c++/12/bits/regex_automaton.tcc:
+
+/usr/include/c++/12/stack:
+
+projects/cnc/cnc_autogen/include/ui_form.h:
+
+/usr/include/c++/12/bitset:
 
 /home/user/hal-core-2.0/vendor/std_functions/std_functions.cpp:
 
@@ -18656,6 +19145,8 @@ projects/cnc/cnc_autogen/mocs_compilation.cpp:
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Extrema_ExtPC.hxx:
 
 /usr/include/c++/12/filesystem:
+
+/usr/include/c++/12/bits/regex_constants.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GeomAPI/GeomAPI_ProjectPointOnCurve.hxx:
 
@@ -18999,11 +19490,37 @@ projects/cnc/cnc_autogen/mocs_compilation.cpp:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/BRepLib.hxx:
 
+/home/user/hal-core-2.0/src/rtapi/rtapi_stdint.h:
+
+/home/user/hal-core-2.0/src/rtapi/rtapi_bool.h:
+
+/home/user/hal-core-2.0/src/rtapi/rtapi_errno.h:
+
+/usr/include/c++/12/regex:
+
+/home/user/hal-core-2.0/src/hal/hal.h:
+
+/home/user/hal-core-2.0/vendor/hal_functions/hal_functions.h:
+
+/home/user/hal-core-2.0/vendor/hal_functions/hal_functions.cpp:
+
 /home/user/hal-core-2.0/vendor/std_functions/std_functions.h:
 
 /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.h:
 
 /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_shmid_ds.h:
+
+/usr/include/x86_64-linux-gnu/bits/shm.h:
+
+/usr/include/x86_64-linux-gnu/bits/ipc-perm.h:
+
+/usr/include/x86_64-linux-gnu/bits/ipc.h:
+
+/usr/include/x86_64-linux-gnu/bits/ipctypes.h:
+
+/usr/include/x86_64-linux-gnu/sys/ipc.h:
 
 /home/user/hal-core-2.0/projects/cnc/QGCodeSyntaxHighlighter.cpp:
 
@@ -19088,6 +19605,8 @@ projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp:
 /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qopenglpixeltransferoptions.h:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qopenglpaintdevice.h:
+
+/usr/include/c++/12/bits/regex_automaton.h:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qopenglfunctions.h:
 
@@ -19715,6 +20234,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
 
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractslider.h:
+
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/NCollection/NCollection_DefineArray1.hxx:
 
 /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
@@ -20151,6 +20672,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /usr/include/c++/12/ext/alloc_traits.h:
 
+/usr/include/c++/12/bits/regex_error.h:
+
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/PrsMgr_TypeOfPresentation3d.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Message/Message_MetricType.hxx:
@@ -20274,6 +20797,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/12/bits/refwrap.h:
+
+/home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.cpp:
 
 /usr/include/eigen3/Eigen/src/Core/util/Memory.h:
 
@@ -20572,6 +21097,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/gp/gp_Dir.lxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TopLoc_SListOfItemLocation.hxx:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlineedit.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Graphic3d_AspectFillArea3d.hxx:
 
@@ -21745,6 +22272,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /usr/include/c++/12/bits/move.h:
 
+/home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.h:
+
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/XCAFDoc_Datum.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/GCE2d/GCE2d_MakeSegment.hxx:
@@ -21812,6 +22341,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Standard/Standard_Std.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TopLoc/TopLoc_Datum3D.hxx:
+
+/usr/include/x86_64-linux-gnu/bits/shmlba.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Geom/Geom_CartesianPoint.hxx:
 
@@ -21902,6 +22433,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qvector.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/sys/shm.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TColStd_ListOfTransient.hxx:
 
@@ -22297,6 +22830,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qanimationgroup.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_shmid64_ds.h:
+
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Graphic3d_StereoMode.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/BRep/BRep_TVertex.hxx:
@@ -22399,6 +22934,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Standard/Standard_Condition.hxx:
 
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qslider.h:
+
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TopTools/TopTools_SequenceOfShape.hxx:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qgenericplugin.h:
@@ -22418,6 +22955,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Prs3d/Prs3d_TypeOfHighlight.hxx:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QFrame:
+
+/usr/include/c++/12/bits/stl_stack.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/PrsMgr_PresentationManager3d.hxx:
 
@@ -23223,6 +23762,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/TopoDS/TopoDS_Wire.lxx:
 
+/usr/include/c++/12/bits/regex_compiler.tcc:
+
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Graphic3d/Graphic3d_PresentationAttributes.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TopoDS_Edge.hxx:
@@ -23351,6 +23892,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDF_ChildIterator.hxx:
 
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QLineEdit:
+
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/Geom2dConvert_CompCurveToBSplineCurve.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TDF_ChildIterator.lxx:
@@ -23422,6 +23965,8 @@ projects/cnc/cnc_autogen/include/ui_mainwindow.h:
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/src/Graphic3d/Graphic3d_CView.hxx:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/inc/TopoDS_TWire.hxx:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSlider:
 
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
 
@@ -24364,6 +24909,8 @@ projects/cnc/cnc_autogen/EWIEGA46WW/moc_form.cpp:
 /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qloggingcategory.h:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qmath.h:
+
+/usr/include/c++/12/bits/regex_scanner.h:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qmessageauthenticationcode.h:
 

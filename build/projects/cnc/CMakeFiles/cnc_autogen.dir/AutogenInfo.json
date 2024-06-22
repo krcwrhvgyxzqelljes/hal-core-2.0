@@ -130,9 +130,33 @@
 			null
 		],
 		[
+			"/home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.h",
+			"MU",
+			"NV5GZQSDT7/moc_state_machine_vector.cpp",
+			null
+		],
+		[
+			"/home/user/hal-core-2.0/src/hal/hal.h",
+			"MU",
+			"5RZQZSKTU2/moc_hal.cpp",
+			null
+		],
+		[
 			"/home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.h",
 			"MU",
 			"WS7IHTATIA/moc_gcode_parser.cpp",
+			null
+		],
+		[
+			"/home/user/hal-core-2.0/vendor/hal_functions/hal_common.h",
+			"MU",
+			"DSNUTU3ZEQ/moc_hal_common.cpp",
+			null
+		],
+		[
+			"/home/user/hal-core-2.0/vendor/hal_functions/hal_functions.h",
+			"MU",
+			"DSNUTU3ZEQ/moc_hal_functions.cpp",
 			null
 		],
 		[
@@ -219,6 +243,7 @@
 	[
 		"/home/user/hal-core-2.0/build/projects/cnc",
 		"/home/user/hal-core-2.0/projects/cnc",
+		"/home/user/hal-core-2.0/vendor/hal_functions",
 		"/home/user/hal-core-2.0/vendor/qt_functions",
 		"/home/user/hal-core-2.0/vendor/std_functions",
 		"/home/user/hal-core-2.0/vendor/occ_draw",
@@ -228,6 +253,7 @@
 		"/home/user/hal-core-2.0/vendor/Clothoids/lib3rd/include",
 		"/home/user/hal-core-2.0/vendor/gcode_parser",
 		"/home/user/hal-core-2.0/vendor/rs274ngc",
+		"/home/user/hal-core-2.0/src/hal/components/state_machine",
 		"/home/user/hal-core-2.0/src/rtapi",
 		"/home/user/hal-core-2.0/include",
 		"/home/user/hal-core-2.0/projects/cnc/usr/include",
@@ -284,7 +310,17 @@
 		[ "/home/user/hal-core-2.0/projects/cnc/main.cpp", "MU", null ],
 		[ "/home/user/hal-core-2.0/projects/cnc/mainwindow.cpp", "MU", null ],
 		[
+			"/home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/user/hal-core-2.0/vendor/hal_functions/hal_functions.cpp",
 			"MU",
 			null
 		],

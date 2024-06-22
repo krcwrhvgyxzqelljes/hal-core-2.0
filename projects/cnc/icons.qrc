@@ -167,5 +167,34 @@
         <file>../../vendor/icons/test</file>
         <file>../../vendor/icons/zoom-in.svg</file>
         <file>../../vendor/icons/zoom-out.svg</file>
+        <file>../../pictures/btn_25_25.png</file>
+        <file>../../pictures/High_resolution_wallpaper_background.png</file>
+        <file>../../pictures/btn_25_25_in.png</file>
+        <file>../../pictures/btn_25_25_in_blue.png</file>
+        <file>../../pictures/btn_25_25_in_green.png</file>
+        <file>../../pictures/btn_25_25_in_orange.png</file>
+        <file>../../pictures/btn_25_25_in_purple.png</file>
+        <file>../../pictures/btn_25_25_zoom_plus.png</file>
+        <file>../../pictures/btn_25_25_file_open.png</file>
+        <file>../../pictures/btn_25_25_file_save_as.png</file>
+        <file>../../pictures/btn_25_25_file_reload.png</file>
+        <file>../../pictures/btn_25_25_file_refresh.png</file>
+        <file>../../pictures/btn_25_25_file_new.png</file>
+        <file>../../pictures/btn_25_25_view_3d.png</file>
+        <file>../../pictures/btn_25_25_view_back.png</file>
+        <file>../../pictures/btn_25_25_view_bottom.png</file>
+        <file>../../pictures/btn_25_25_view_front.png</file>
+        <file>../../pictures/btn_25_25_view_left.png</file>
+        <file>../../pictures/btn_25_25_view_right.png</file>
+        <file>../../pictures/btn_25_25_view_top.png</file>
+        <file>../../pictures/btn_25_25_zoom_extends.png</file>
+        <file>../../pictures/btn_25_25_zoom_min.png</file>
+        <file>../../pictures/btn_25_25_ok.png</file>
+        <file>../../pictures/btn_25_25_file_save.png</file>
+        <file>../../pictures/btn_25_25_home.png</file>
+        <file>../../pictures/btn_25_25_cancel.png</file>
+        <file>../../pictures/btn_25_25_text_edit.png</file>
+        <file>../../pictures/btn_25_25_settings.png</file>
+        <file>../../pictures/cyberdyne.jpg</file>
     </qresource>
 </RCC>

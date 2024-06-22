@@ -2188,6 +2188,7 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qcontiguouscache.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/QTextBlock \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextobject.h \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/hal_functions/hal_functions.h \
  /home/user/hal-core-2.0/src/hal/hal.h \
  /home/user/hal-core-2.0/projects/cnc/../../src/rtapi/rtapi.h \
  /usr/include/spawn.h \
@@ -2199,6 +2200,7 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/gcode_parser/gcode_parser.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_intf.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_data.h \
+ /home/user/hal-core-2.0/projects/cnc/../../src/hal/components/state_machine/state_machine_vector.h \
  /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/include/./ui_mainwindow.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QVariant \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qvariant.h \
@@ -2210,6 +2212,11 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qeventloop.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qguiapplication.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qinputmethod.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDoubleSpinBox \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qspinbox.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qvalidator.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qregularexpression.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QFrame \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qframe.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QGridLayout \
@@ -2218,11 +2225,17 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlayoutitem.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qgridlayout.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QHBoxLayout \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QLabel \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlabel.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QLineEdit \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlineedit.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QMainWindow \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QPlainTextEdit \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QPushButton \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qpushbutton.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSlider \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qslider.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractslider.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSpacerItem \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlayoutitem.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSplitter \
@@ -2231,8 +2244,7 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qstackedwidget.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QToolButton \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtoolbutton.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QVBoxLayout \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qboxlayout.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractbutton.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BRepBuilderAPI_MakeEdge.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/BRepBuilderAPI/BRepBuilderAPI_MakeEdge.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/BRepLib_MakeEdge.hxx \

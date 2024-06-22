@@ -2201,6 +2201,7 @@ projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/mocs_compilation.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h \
  /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/EWIEGA46WW/../../../../../projects/cnc/form.h \
  /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/EWIEGA46WW/../../../../../projects/cnc/QGCodeEditor.h \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/hal_functions/hal_functions.h \
  /home/user/hal-core-2.0/src/hal/hal.h \
  /home/user/hal-core-2.0/projects/cnc/../../src/rtapi/rtapi.h \
  /usr/include/spawn.h \
@@ -2211,4 +2212,5 @@ projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/mocs_compilation.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/std_functions/std_functions.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/gcode_parser/gcode_parser.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_intf.h \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_data.h
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_data.h \
+ /home/user/hal-core-2.0/projects/cnc/../../src/hal/components/state_machine/state_machine_vector.h

@@ -261,6 +261,30 @@ QGCodeSyntaxHighlighter.cpp.s:
 	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.s
 .PHONY : QGCodeSyntaxHighlighter.cpp.s
 
+__/__/src/hal/components/state_machine/state_machine_vector.o: __/__/src/hal/components/state_machine/state_machine_vector.cpp.o
+.PHONY : __/__/src/hal/components/state_machine/state_machine_vector.o
+
+# target to build an object file
+__/__/src/hal/components/state_machine/state_machine_vector.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.o
+.PHONY : __/__/src/hal/components/state_machine/state_machine_vector.cpp.o
+
+__/__/src/hal/components/state_machine/state_machine_vector.i: __/__/src/hal/components/state_machine/state_machine_vector.cpp.i
+.PHONY : __/__/src/hal/components/state_machine/state_machine_vector.i
+
+# target to preprocess a source file
+__/__/src/hal/components/state_machine/state_machine_vector.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.i
+.PHONY : __/__/src/hal/components/state_machine/state_machine_vector.cpp.i
+
+__/__/src/hal/components/state_machine/state_machine_vector.s: __/__/src/hal/components/state_machine/state_machine_vector.cpp.s
+.PHONY : __/__/src/hal/components/state_machine/state_machine_vector.s
+
+# target to generate assembly for a file
+__/__/src/hal/components/state_machine/state_machine_vector.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.s
+.PHONY : __/__/src/hal/components/state_machine/state_machine_vector.cpp.s
+
 __/__/vendor/gcode_parser/gcode_parser.o: __/__/vendor/gcode_parser/gcode_parser.cpp.o
 .PHONY : __/__/vendor/gcode_parser/gcode_parser.o
 
@@ -284,6 +308,30 @@ __/__/vendor/gcode_parser/gcode_parser.s: __/__/vendor/gcode_parser/gcode_parser
 __/__/vendor/gcode_parser/gcode_parser.cpp.s:
 	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.s
 .PHONY : __/__/vendor/gcode_parser/gcode_parser.cpp.s
+
+__/__/vendor/hal_functions/hal_functions.o: __/__/vendor/hal_functions/hal_functions.cpp.o
+.PHONY : __/__/vendor/hal_functions/hal_functions.o
+
+# target to build an object file
+__/__/vendor/hal_functions/hal_functions.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.o
+.PHONY : __/__/vendor/hal_functions/hal_functions.cpp.o
+
+__/__/vendor/hal_functions/hal_functions.i: __/__/vendor/hal_functions/hal_functions.cpp.i
+.PHONY : __/__/vendor/hal_functions/hal_functions.i
+
+# target to preprocess a source file
+__/__/vendor/hal_functions/hal_functions.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.i
+.PHONY : __/__/vendor/hal_functions/hal_functions.cpp.i
+
+__/__/vendor/hal_functions/hal_functions.s: __/__/vendor/hal_functions/hal_functions.cpp.s
+.PHONY : __/__/vendor/hal_functions/hal_functions.s
+
+# target to generate assembly for a file
+__/__/vendor/hal_functions/hal_functions.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.s
+.PHONY : __/__/vendor/hal_functions/hal_functions.cpp.s
 
 __/__/vendor/occ_draw/draw_primitives.o: __/__/vendor/occ_draw/draw_primitives.cpp.o
 .PHONY : __/__/vendor/occ_draw/draw_primitives.o
@@ -596,9 +644,15 @@ help:
 	@echo "... QGCodeSyntaxHighlighter.o"
 	@echo "... QGCodeSyntaxHighlighter.i"
 	@echo "... QGCodeSyntaxHighlighter.s"
+	@echo "... __/__/src/hal/components/state_machine/state_machine_vector.o"
+	@echo "... __/__/src/hal/components/state_machine/state_machine_vector.i"
+	@echo "... __/__/src/hal/components/state_machine/state_machine_vector.s"
 	@echo "... __/__/vendor/gcode_parser/gcode_parser.o"
 	@echo "... __/__/vendor/gcode_parser/gcode_parser.i"
 	@echo "... __/__/vendor/gcode_parser/gcode_parser.s"
+	@echo "... __/__/vendor/hal_functions/hal_functions.o"
+	@echo "... __/__/vendor/hal_functions/hal_functions.i"
+	@echo "... __/__/vendor/hal_functions/hal_functions.s"
 	@echo "... __/__/vendor/occ_draw/draw_primitives.o"
 	@echo "... __/__/vendor/occ_draw/draw_primitives.i"
 	@echo "... __/__/vendor/occ_draw/draw_primitives.s"

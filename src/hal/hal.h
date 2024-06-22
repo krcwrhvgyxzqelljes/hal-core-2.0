@@ -865,7 +865,6 @@ extern unsigned hal_port_buffer_size(hal_port_t port);
 */
 extern void hal_port_clear(hal_port_t port);
 
-
 #ifdef ULAPI
 /** hal_port_wait_readable spin waits on a port until it has at least 
     count bytes available for reading, or *stop > 0
@@ -877,11 +876,6 @@ extern void hal_port_wait_readable(hal_port_t** port, unsigned count, sig_atomic
  */
 extern void hal_port_wait_writable(hal_port_t** port, unsigned count, sig_atomic_t* stop);
 #endif
-
-
-
-
-
 
 union hal_stream_data {
     real_t f;

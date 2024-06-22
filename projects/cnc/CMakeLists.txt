@@ -20,6 +20,7 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Set includepaths for header files etc.
 include_directories(${SRC_DIR})
+include_directories(${SRC_DIR}/../../vendor/hal_functions)
 include_directories(${SRC_DIR}/../../vendor/qt_functions)
 include_directories(${SRC_DIR}/../../vendor/std_functions)
 include_directories(${SRC_DIR}/../../vendor/occ_draw)
@@ -29,6 +30,8 @@ include_directories(${SRC_DIR}/../../vendor/Clothoids/lib/include)
 include_directories(${SRC_DIR}/../../vendor/Clothoids/lib3rd/include)
 include_directories(${SRC_DIR}/../../vendor/gcode_parser)
 include_directories(${SRC_DIR}/../../vendor/rs274ngc)
+
+include_directories(${SRC_DIR}/../../src/hal/components/state_machine)
 
 include_directories(${SRC_DIR}/../../src/hal)
 include_directories(${SRC_DIR}/../../src/rtapi)
@@ -44,13 +47,19 @@ find_package(GLUT REQUIRED)
 # Set path to eigen3, for install $ sudo apt-get install libeigen3-dev
 include_directories("/usr/include/eigen3")
 
-
 # Set include paths for libraries to link.
 add_library(halcore_ SHARED IMPORTED) # or STATIC instead of SHARED
 set_target_properties(halcore_ PROPERTIES
     IMPORTED_LOCATION ${BUILD_DIR}/../../../lib/libhalcore.so
     INTERFACE_INCLUDE_DIRECTORIES ${SRC_DIR}/../../src/hal
 )
+
+## Set include paths for libraries to link.
+#add_library(state_ SHARED IMPORTED) # or STATIC instead of SHARED
+#set_target_properties(state_ PROPERTIES
+#    IMPORTED_LOCATION ${BUILD_DIR}/../../../rtlib/state_machine.so
+#    INTERFACE_INCLUDE_DIRECTORIES ${SRC_DIR}/../../src/hal/components/state_machine
+#)
 
 # Opencascade
 find_package (OpenCASCADE REQUIRED)
@@ -109,6 +118,12 @@ set(PROJECT_SOURCES
     ${SRC_DIR}/QGCodeSyntaxHighlighter.cpp
     ${SRC_DIR}/QGCodeEditor.h
     ${SRC_DIR}/QGCodeSyntaxHighlighter.h
+
+    ${SRC_DIR}/../../src/hal/hal.h
+    ${SRC_DIR}/../../vendor/hal_functions/hal_common.h
+    ${SRC_DIR}/../../vendor/hal_functions/hal_functions.h
+    ${SRC_DIR}/../../vendor/hal_functions/hal_functions.cpp
+
     ${SRC_DIR}/../../vendor/occ_draw/draw_primitives.h
     ${SRC_DIR}/../../vendor/occ_draw/draw_primitives.cpp
     # ${SRC_DIR}/../../vendor/occ_draw/draw_clothoids.h
@@ -122,6 +137,8 @@ set(PROJECT_SOURCES
     ${SRC_DIR}/../../vendor/gcode_parser/gcode_parser.h
     ${SRC_DIR}/../../vendor/gcode_parser/gcode_parser.cpp
 
+    ${SRC_DIR}/../../src/hal/components/state_machine/state_machine_vector.h
+    ${SRC_DIR}/../../src/hal/components/state_machine/state_machine_vector.cpp
 
     ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_intf.cpp
     ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_intf.h

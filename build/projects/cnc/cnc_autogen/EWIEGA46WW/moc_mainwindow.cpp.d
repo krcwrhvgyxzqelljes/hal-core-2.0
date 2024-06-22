@@ -3,6 +3,7 @@
   /home/user/hal-core-2.0/projects/cnc/OcctQtViewer.h \
   /home/user/hal-core-2.0/projects/cnc/QGCodeEditor.h \
   /home/user/hal-core-2.0/projects/cnc/form.h \
+  /home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.h \
   /home/user/hal-core-2.0/src/hal/hal.h \
   /home/user/hal-core-2.0/src/rtapi/rtapi.h \
   /home/user/hal-core-2.0/src/rtapi/rtapi_bool.h \
@@ -52,6 +53,7 @@
   /home/user/hal-core-2.0/vendor/Clothoids/lib3rd/include/Utils/rang.hxx \
   /home/user/hal-core-2.0/vendor/Clothoids/lib3rd/include/Utils_AABB_tree.hh \
   /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.h \
+  /home/user/hal-core-2.0/vendor/hal_functions/hal_functions.h \
   /home/user/hal-core-2.0/vendor/occ_draw/draw_clothoids.h \
   /home/user/hal-core-2.0/vendor/occ_draw/draw_primitives.h \
   /home/user/hal-core-2.0/vendor/occ_draw/draw_rs274ngc_shapes.h \

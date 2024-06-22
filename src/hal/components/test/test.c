@@ -81,12 +81,13 @@ void rtapi_app_exit(void){
 //! Perforn's every ms.
 static void the_function(){
 
-    rtapi_print_msg(RTAPI_MSG_ERR,"function call is active.. \n");
+    // rtapi_print_msg(RTAPI_MSG_ERR,"function call is active.. \n");
 
     if(*enable->Pin==1){
 
-
     }
+    *tool_on->Pin=1;
+
 }
 
 static int setup_pins(){
@@ -103,6 +104,11 @@ static int setup_pins(){
     return r;
 }
 
+//int tpTest(){
+
+//}
+
+//EXPORT_SYMBOL(tpTest);
 
 
 

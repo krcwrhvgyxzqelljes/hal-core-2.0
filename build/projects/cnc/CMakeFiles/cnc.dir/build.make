@@ -238,6 +238,35 @@ projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/vendo
 projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/vendor/icons/go-previous-view.png
 projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/vendor/icons/edit-redo.png
 projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/vendor/icons/spline.svg
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_view_bottom.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_file_open.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_view_3d.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_text_edit.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_settings.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_view_top.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/cyberdyne.jpg
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_file_reload.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_view_right.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_zoom_min.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_in_green.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_zoom_extends.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_file_new.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_cancel.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_in_purple.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_file_save_as.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_ok.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_view_front.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_zoom_plus.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_in.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_home.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/High_resolution_wallpaper_background.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_view_left.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_in_blue.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_file_refresh.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_view_back.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_in_orange.png
+projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /home/user/hal-core-2.0/pictures/btn_25_25_file_save.png
 projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp: /opt/qt-creator/5.15.1/gcc_64/bin/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for icons.qrc"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/cmake -E cmake_autorcc /home/user/hal-core-2.0/build/projects/cnc/CMakeFiles/cnc_autogen.dir/AutoRcc_icons_EWIEGA46WW_Info.json 
@@ -340,10 +369,24 @@ projects/cnc/CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.s"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/hal-core-2.0/projects/cnc/QGCodeSyntaxHighlighter.cpp -o CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.s
 
+projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
+projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.o: /home/user/hal-core-2.0/vendor/hal_functions/hal_functions.cpp
+projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.o"
+	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.o -MF CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.o.d -o CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.o -c /home/user/hal-core-2.0/vendor/hal_functions/hal_functions.cpp
+
+projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.i"
+	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/hal-core-2.0/vendor/hal_functions/hal_functions.cpp > CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.i
+
+projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.s"
+	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/hal-core-2.0/vendor/hal_functions/hal_functions.cpp -o CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.s
+
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o: /home/user/hal-core-2.0/vendor/occ_draw/draw_primitives.cpp
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o -MF CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o.d -o CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o -c /home/user/hal-core-2.0/vendor/occ_draw/draw_primitives.cpp
 
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.i: cmake_force
@@ -357,7 +400,7 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.s: cma
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o: /home/user/hal-core-2.0/vendor/occ_draw/draw_rs274ngc_shapes.cpp
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o -MF CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o.d -o CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o -c /home/user/hal-core-2.0/vendor/occ_draw/draw_rs274ngc_shapes.cpp
 
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.i: cmake_force
@@ -371,7 +414,7 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.s
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o: /home/user/hal-core-2.0/vendor/qt_functions/qt_functions.cpp
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o -MF CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o.d -o CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o -c /home/user/hal-core-2.0/vendor/qt_functions/qt_functions.cpp
 
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.i: cmake_force
@@ -385,7 +428,7 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.s: cm
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o: /home/user/hal-core-2.0/vendor/std_functions/std_functions.cpp
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o -MF CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o.d -o CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o -c /home/user/hal-core-2.0/vendor/std_functions/std_functions.cpp
 
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.i: cmake_force
@@ -399,7 +442,7 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.s: 
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o: /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.cpp
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o -MF CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o.d -o CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o -c /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.cpp
 
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.i: cmake_force
@@ -410,10 +453,24 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.s: cm
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.s"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/hal-core-2.0/vendor/gcode_parser/gcode_parser.cpp -o CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.s
 
+projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
+projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.o: /home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.cpp
+projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.o"
+	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.o -MF CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.o.d -o CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.o -c /home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.cpp
+
+projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.i"
+	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.cpp > CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.i
+
+projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.s"
+	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.cpp -o CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.s
+
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o: /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_intf.cpp
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o -MF CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o.d -o CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o -c /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_intf.cpp
 
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.i: cmake_force
@@ -427,7 +484,7 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.s: cmake
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.o: /home/user/hal-core-2.0/vendor/rs274ngc/canon.cpp
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.o"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.o -MF CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.o.d -o CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.o -c /home/user/hal-core-2.0/vendor/rs274ngc/canon.cpp
 
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.i: cmake_force
@@ -441,7 +498,7 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.s: cmake_force
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o: /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_pre.cpp
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o -MF CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o.d -o CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o -c /home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_pre.cpp
 
 projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.i: cmake_force
@@ -455,7 +512,7 @@ projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.s: cmake_
 projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o: projects/cnc/CMakeFiles/cnc.dir/flags.make
 projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o: projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp
 projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o: projects/cnc/CMakeFiles/cnc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o"
 	cd /home/user/hal-core-2.0/build/projects/cnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o -MF CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o.d -o CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.o -c /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/EWIEGA46WW/qrc_icons.cpp
 
 projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/EWIEGA46WW/qrc_icons.cpp.i: cmake_force
@@ -475,11 +532,13 @@ cnc_OBJECTS = \
 "CMakeFiles/cnc.dir/OcctQtViewer.cpp.o" \
 "CMakeFiles/cnc.dir/QGCodeEditor.cpp.o" \
 "CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.o" \
+"CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.o" \
 "CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o" \
 "CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o" \
 "CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o" \
 "CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o" \
 "CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o" \
+"CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.o" \
 "CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o" \
 "CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.o" \
 "CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o" \
@@ -495,11 +554,13 @@ projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/form.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/OcctQtViewer.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/QGCodeEditor.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.o
+projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/hal_functions/hal_functions.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_primitives.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/occ_draw/draw_rs274ngc_shapes.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/std_functions/std_functions.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/gcode_parser/gcode_parser.cpp.o
+projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.o
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o
@@ -567,7 +628,7 @@ projects/cnc/cnc: /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Widgets.so.5.15.1
 projects/cnc/cnc: /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Gui.so.5.15.1
 projects/cnc/cnc: /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Core.so.5.15.1
 projects/cnc/cnc: projects/cnc/CMakeFiles/cnc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable cnc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable cnc"
 	cd /home/user/hal-core-2.0/build/projects/cnc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cnc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

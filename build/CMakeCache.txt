@@ -446,6 +446,18 @@ rtapi_app_IS_TOP_LEVEL:STATIC=OFF
 rtapi_app_SOURCE_DIR:STATIC=/home/user/hal-core-2.0/src/rtapi
 
 //Value Computed by CMake
+state_machine_BINARY_DIR:STATIC=/home/user/hal-core-2.0/build/src/hal/components/state_machine
+
+//Value Computed by CMake
+state_machine_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+state_machine_LIB_DEPENDS:STATIC=general;pthread;general;rt;general;halcore;
+
+//Value Computed by CMake
+state_machine_SOURCE_DIR:STATIC=/home/user/hal-core-2.0/src/hal/components/state_machine
+
+//Value Computed by CMake
 stepgen_BINARY_DIR:STATIC=/home/user/hal-core-2.0/build/src/hal/components/stepgen
 
 //Value Computed by CMake
@@ -603,7 +615,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
