@@ -452,7 +452,7 @@ state_machine_BINARY_DIR:STATIC=/home/user/hal-core-2.0/build/src/hal/components
 state_machine_IS_TOP_LEVEL:STATIC=OFF
 
 //Dependencies for the target
-state_machine_LIB_DEPENDS:STATIC=general;pthread;general;rt;general;halcore;
+state_machine_LIB_DEPENDS:STATIC=general;TKGeomAlgo;general;TKMesh;general;TKHLR;general;TKBO;general;TKShHealing;general;TKPrim;general;TKernel;general;TKMath;general;TKTopAlgo;general;TKService;general;TKG2d;general;TKG3d;general;TKV3d;general;TKOpenGl;general;TKBRep;general;TKXSBase;general;TKGeomBase;general;TKGeomAlgo;general;TKXSDRAW;general;TKLCAF;general;TKXCAF;general;TKCAF;general;TKVCAF;general;TKCDF;general;TKBin;general;TKBinL;general;TKBinXCAF;general;TKXml;general;TKXmlL;general;TKXmlXCAF;general;TKIGES;general;TKSTEP;general;TKXDESTEP;general;TKXDEIGES;general;TKSTEPAttr;general;TKSTEPBase;general;TKSTEP209;general;TKSTL;general;TKRWMesh;general;TKMeshVS;general;TKVRML;general;TKViewerTest;general;pthread;general;rt;general;halcore;
 
 //Value Computed by CMake
 state_machine_SOURCE_DIR:STATIC=/home/user/hal-core-2.0/src/hal/components/state_machine

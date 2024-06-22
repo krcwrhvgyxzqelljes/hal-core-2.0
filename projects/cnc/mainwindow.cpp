@@ -33,16 +33,6 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->stackedWidget_toplevel->setCurrentIndex(1);
 
-    try {
-        smv->create_shared_memory();
-        std::cout << "Qt shared memory setup successful" << std::endl;
-        // Optionally notify user or update UI that shared memory setup is complete
-
-    } catch (const std::exception& e) {
-        std::cerr << "Qt error setting up shared memory: " << e.what() << std::endl;
-        // Handle error: notify user or log the error
-    }
-
     //! This activates a screen update when robot is moving and screen needs to be updated automaticly.
     connect(timer, &QTimer::timeout, this, &MainWindow::update);
     timer->start(50);
@@ -138,6 +128,12 @@ void MainWindow::on_toolButton_open_pressed()
         occ->add_shapevec(i.aShape);
     }
     occ->redraw();
+
+    // Send data to hal state_machine.
+    shared_mem_data d;
+    d.svec=svec;
+    shm->write_to_shared_memory(d);
+    std::cout<<"writing shapes to shared memory."<<std::endl;
 }
 
 void MainWindow::on_toolButton_reload_pressed()
@@ -286,24 +282,12 @@ void MainWindow::on_toolButton_to_lower_letters_pressed()
     ui->plainTextEdit_gcode->setPlainText(QString::fromStdString(string));
 }
 
+double value = 12345.0; // Example value to set
 void MainWindow::on_toolButton_test_pressed()
 {
-    std::cout << "Setting shared memory value from Qt." << std::endl;
-
-     // Modify tvec in state_machine_vector instance
-     if (smv) {
-         if (smv->tvec.size() > 0) {
-             double value = 12345.0; // Example value to set
-             smv->tvec[0] = value++;
-
-             // Update shared memory with the new value
-             smv->update_shared_memory();
-             std::cout << "Shared memory updated with value: " << smv->tvec[0] << std::endl;
-         } else {
-             std::cerr << "Error: tvec in state_machine_vector has size 0." << std::endl;
-         }
-     } else {
-         std::cerr << "Error: state_machine_vector instance (smv) is null." << std::endl;
-     }
+    shared_mem_data d;
+    d.dvalue=2223333333;
+    d.value=12;
+    shm->write_to_shared_memory(d);
 }
 

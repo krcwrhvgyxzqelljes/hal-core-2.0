@@ -19,6 +19,36 @@ include_directories(${RTAPI_DIR})
 include_directories(${HAL_DIR})
 include_directories(${LIB_DIR})
 
+include_directories(${SRC_DIR}/../../../../vendor/gcode_parser)
+include_directories(${SRC_DIR}/../../../../vendor/std_functions)
+include_directories(${SRC_DIR}/../../../../vendor/oce-upstream-V7_5_0beta/inc)
+
+# Opencascade
+find_package (OpenCASCADE REQUIRED)
+
+SET(OpenCASCADE_LIBS
+    TKGeomAlgo TKMesh TKHLR TKBO TKShHealing
+    TKPrim
+    TKernel TKMath TKTopAlgo TKService
+    TKG2d TKG3d TKV3d TKOpenGl
+    TKBRep TKXSBase TKGeomBase TKGeomAlgo
+    TKXSDRAW
+    TKLCAF TKXCAF TKCAF TKVCAF
+    TKCDF TKBin TKBinL TKBinXCAF TKXml TKXmlL TKXmlXCAF
+    # -- IGES support
+    TKIGES
+    # -- STEP support
+    TKSTEP TKXDESTEP TKXDEIGES TKSTEPAttr TKSTEPBase TKSTEP209
+    # -- STL support
+    TKSTL
+    # -- OBJ/glTF support
+    TKRWMesh TKMeshVS
+    # -- VRML support
+    TKVRML
+    # -- ViewerTest
+    TKViewerTest
+)
+
 # Compile flags.
 SET(GCC_COVERAGE_COMPILE_FLAGS "-I. -I${RTAPI_DIR} -I${HAL_DIR} \
     -DUSPACE -fno-fast-math -fno-unsafe-math-optimizations -DRTAPI -D_GNU_SOURCE
@@ -29,7 +59,6 @@ add_definitions(-DRTAPI -DUSPACE -DRTAPI -D_GNU_SOURCE -D__MODULE__ )
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} SHARED
-    ${SRC_DIR}/state_machine.h
     ${SRC_DIR}/state_machine.c
     ${SRC_DIR}/state_machine_vector.h
     ${SRC_DIR}/state_machine_vector.cpp
@@ -38,6 +67,7 @@ ADD_LIBRARY(${PROJECT} SHARED
 # Compile link with libhalcore.so or linuxcnchal.so
 target_include_directories(${PROJECT_NAME} PRIVATE "${BUIlD_DIR}/src/hal/${RTLINK}")
 target_link_libraries(${PROJECT_NAME} PRIVATE
+    ${OpenCASCADE_LIBS}
     pthread rt ${RTLINK})
 
 # make install

@@ -139,6 +139,6 @@ private:
 
     QGCodeEditor *editor;
 
-    state_machine_vector *smv = new state_machine_vector();
+    state_machine_vector *shm = new state_machine_vector();
 };
 #endif

@@ -1,5 +1,3 @@
-
-
 #include "rtapi.h"
 #include "rtapi_ctype.h"
 #include "rtapi_app.h"
@@ -8,7 +6,6 @@
 #include "rtapi_math64.h"
 #include <rtapi_io.h>
 #include "hal.h"
-#include "state_machine.h"
 
 /* module information */
 MODULE_AUTHOR("Skynet");
@@ -56,7 +53,7 @@ typedef struct {
 
 struct state_machine_vector *ptr; // Pointer to vector c++ class.
 extern struct state_machine_vector* vector_init_ptr();
-
+extern void vector_detach(struct state_machine_vector *ptr);
 extern double vector_test_value(struct state_machine_vector *ptr);
 
 static int comp_idx; /* component ID */
@@ -85,6 +82,7 @@ int rtapi_app_main(void) {
 }
 
 void rtapi_app_exit(void){
+    vector_detach(ptr);
     hal_exit(comp_idx);
 }
 
