@@ -30,11 +30,11 @@
 #include "draw_rs274ngc_shapes.h"
 #include "OcctQtViewer.h"
 
-// Scurve planner primitive struct.
-#include "../../vendor/scurve/scurve_engine/tp_scurve.h"
+// Scurve motion.
+#include "scurve_engine.h"
 
 // Opencascade occ widget overlay, ensure it's a created from qt->add_new->dialog_gui_class->widget.
-#include "form.h"
+#include "form_dro.h"
 
 // Qt widget, gcode editor.
 #include "QGCodeEditor.h"
@@ -47,11 +47,8 @@
 #include "std_functions.h"
 #include "gcode_parser.h"
 
-// Interpreter
-#include "rs274ngc_intf.h"
-
 // Shared memory
-#include "state_machine_vector.h"
+#include "state_machine_shm.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -126,6 +123,32 @@ private slots:
 
     void on_toolButton_test_pressed();
 
+    void on_toolButton_jog_x_min_pressed();
+
+    void on_toolButton_jog_x_plus_pressed();
+
+    void on_toolButton_jog_y_min_pressed();
+
+    void on_toolButton_jog_y_plus_pressed();
+
+    void on_toolButton_jog_z_min_pressed();
+
+    void on_toolButton_jog_z_plus_pressed();
+
+    void on_toolButton_jog_x_min_released();
+
+    void on_toolButton_jog_x_plus_released();
+
+    void on_toolButton_jog_y_min_released();
+
+    void on_toolButton_jog_y_plus_released();
+
+    void on_toolButton_jog_z_min_released();
+
+    void on_toolButton_jog_z_plus_released();
+
+    void on_toolButton_jog_step_toggled(bool checked);
+
 private:
     Ui::MainWindow *ui;
 
@@ -133,12 +156,13 @@ private:
 
     OcctQtViewer *occ;
 
-    Form *form = new Form();
+    form_dro *dro = new form_dro();
 
     hal_functions *hal = new hal_functions();
 
     QGCodeEditor *editor;
 
-    state_machine_vector *shm = new state_machine_vector();
+    state_machine_shm *shm = new state_machine_shm();
+    shared_mem_data shm_data;
 };
 #endif

@@ -1,0 +1,1 @@
+/usr/bin/clang++-14 -DQT_QML_DEBUG -g CMakeFiles/scurve_engine.dir/main.cpp.o CMakeFiles/scurve_engine.dir/scurve_engine.cpp.o CMakeFiles/scurve_engine.dir/scurve_vector.cpp.o -o scurve_engine 

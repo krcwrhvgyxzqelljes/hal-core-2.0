@@ -1,0 +1,222 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "scurve_jog_plot",
+					"jsonFile" : "directory-scurve_jog_plot-Debug-36c2f26dc6e005f47d9f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "scurve_jog_plot",
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				},
+				{
+					"build" : "scurve_auto_plot",
+					"jsonFile" : "directory-scurve_auto_plot-Debug-106a3e049703a95f674e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "scurve_auto_plot",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"build" : "scurve_engine",
+					"jsonFile" : "directory-scurve_engine-Debug-99e6fd5a78c1820aa945.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "scurve_engine",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "scurve_3axis_jog",
+					"jsonFile" : "directory-scurve_3axis_jog-Debug-72062bf91e5e0981ab4b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "scurve_3axis_jog",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "scurve_project"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "scurve_jog_plot",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "scurve_auto_plot",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "scurve_engine",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "scurve_3axis_jog",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "scurve_3axis_jog::@5c322af3e0f394d843b4",
+					"jsonFile" : "target-scurve_3axis_jog-Debug-2503564fae7992d1a0d2.json",
+					"name" : "scurve_3axis_jog",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "scurve_3axis_jog_autogen::@5c322af3e0f394d843b4",
+					"jsonFile" : "target-scurve_3axis_jog_autogen-Debug-7cd4fecf77b0df7dc5ad.json",
+					"name" : "scurve_3axis_jog_autogen",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "scurve_auto_plot::@8c386db418eff2d09cfb",
+					"jsonFile" : "target-scurve_auto_plot-Debug-9c3e84526443188f9ba7.json",
+					"name" : "scurve_auto_plot",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "scurve_auto_plot_autogen::@8c386db418eff2d09cfb",
+					"jsonFile" : "target-scurve_auto_plot_autogen-Debug-c6a1b408ed52a2e41f34.json",
+					"name" : "scurve_auto_plot_autogen",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "scurve_engine::@8fbd1f189128998cae6c",
+					"jsonFile" : "target-scurve_engine-Debug-a6d915bcc9d7acc0c8c2.json",
+					"name" : "scurve_engine",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "scurve_jog_plot::@a4e109cd2e2b97e7a089",
+					"jsonFile" : "target-scurve_jog_plot-Debug-629ebbc1bf7e4d3538ca.json",
+					"name" : "scurve_jog_plot",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "scurve_jog_plot_autogen::@a4e109cd2e2b97e7a089",
+					"jsonFile" : "target-scurve_jog_plot_autogen-Debug-06e9f9a38e68e0fe7c3d.json",
+					"name" : "scurve_jog_plot_autogen",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/user/hal-core-2.0/vendor/build-scurve-Desktop-Debug",
+		"source" : "/home/user/hal-core-2.0/vendor/scurve"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

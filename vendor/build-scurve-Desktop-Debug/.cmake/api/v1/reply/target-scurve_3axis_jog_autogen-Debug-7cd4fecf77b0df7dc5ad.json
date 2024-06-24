@@ -1,0 +1,58 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"scurve_3axis_jog/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"id" : "scurve_3axis_jog_autogen::@5c322af3e0f394d843b4",
+	"isGeneratorProvided" : true,
+	"name" : "scurve_3axis_jog_autogen",
+	"paths" : 
+	{
+		"build" : "scurve_3axis_jog",
+		"source" : "scurve_3axis_jog"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/user/hal-core-2.0/vendor/build-scurve-Desktop-Debug/scurve_3axis_jog/CMakeFiles/scurve_3axis_jog_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/user/hal-core-2.0/vendor/build-scurve-Desktop-Debug/scurve_3axis_jog/CMakeFiles/scurve_3axis_jog_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

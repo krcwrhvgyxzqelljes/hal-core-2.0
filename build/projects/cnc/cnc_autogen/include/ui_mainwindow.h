@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QDoubleSpinBox>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
@@ -89,27 +90,44 @@ public:
     QGridLayout *gridLayout_14;
     QLabel *label_7;
     QLabel *label_10;
-    QLineEdit *lineEdit_2;
+    QLineEdit *lineEdit_max_acceleration;
     QLabel *label_8;
-    QLineEdit *lineEdit_3;
-    QLineEdit *lineEdit;
+    QLineEdit *lineEdit_max_jerk;
+    QLineEdit *lineEdit_max_velocity;
     QLabel *label_6;
     QLabel *label_11;
     QLabel *label_12;
-    QToolButton *toolButton_mdi_3;
+    QWidget *layoutWidget_2;
+    QGridLayout *gridLayout_15;
+    QLabel *label_26;
+    QLabel *label_22;
+    QLineEdit *lineEdit_max_jerk_4;
+    QLabel *label_19;
+    QLineEdit *lineEdit_max_acceleration_2;
+    QLineEdit *lineEdit_max_velocity_2;
+    QLabel *label_24;
+    QLabel *label_25;
+    QLabel *label_21;
+    QComboBox *comboBox;
+    QLabel *label_20;
+    QLineEdit *lineEdit_max_jerk_2;
+    QLabel *label_23;
+    QLineEdit *lineEdit_max_jerk_3;
+    QLabel *label_18;
+    QLabel *label_9;
+    QLabel *label_17;
     QStackedWidget *stackedWidget_mode_manual_auto_mdi;
     QWidget *page_manual;
     QGridLayout *gridLayout_10;
     QGridLayout *gridLayout_jog_settings;
-    QToolButton *toolButton_jog_step_2;
-    QLabel *label_2;
-    QSlider *horizontalSlider;
-    QLabel *label_3;
-    QToolButton *toolButton_jog_step;
-    QDoubleSpinBox *doubleSpinBox_stepsize;
-    QLabel *label;
-    QLabel *label_9;
     QLabel *label_4;
+    QLabel *label;
+    QLabel *label_jog_velocity;
+    QToolButton *toolButton_jog_step;
+    QSlider *horizontalSlider_jog_velocity;
+    QDoubleSpinBox *doubleSpinBox_stepsize;
+    QToolButton *toolButton_jog_select_xyz_abc_uvw;
+    QLabel *label_2;
     QStackedWidget *stackedWidget_3;
     QWidget *page_jog_xyz;
     QGridLayout *gridLayout_13;
@@ -127,13 +145,12 @@ public:
     QWidget *page_6;
     QWidget *page_8;
     QGridLayout *gridLayout_3;
-    QGridLayout *gridLayout_15;
+    QLabel *label_auto;
+    QToolButton *toolButton_open;
     QToolButton *toolButton_reload;
     QToolButton *toolButton_run;
-    QToolButton *toolButton_stop;
     QToolButton *toolButton_pause;
-    QToolButton *toolButton_open;
-    QLabel *label_auto;
+    QToolButton *toolButton_stop;
     QSpacerItem *verticalSpacer_3;
     QWidget *page_5;
     QGridLayout *gridLayout_5;
@@ -563,7 +580,7 @@ public:
         label_5->setAlignment(Qt::AlignCenter);
         layoutWidget = new QWidget(page_settings);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(30, 60, 331, 151));
+        layoutWidget->setGeometry(QRect(20, 60, 381, 101));
         gridLayout_14 = new QGridLayout(layoutWidget);
         gridLayout_14->setObjectName(QString::fromUtf8("gridLayout_14"));
         gridLayout_14->setContentsMargins(0, 0, 0, 0);
@@ -577,25 +594,25 @@ public:
 
         gridLayout_14->addWidget(label_10, 0, 0, 1, 2);
 
-        lineEdit_2 = new QLineEdit(layoutWidget);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_max_acceleration = new QLineEdit(layoutWidget);
+        lineEdit_max_acceleration->setObjectName(QString::fromUtf8("lineEdit_max_acceleration"));
 
-        gridLayout_14->addWidget(lineEdit_2, 2, 1, 1, 1);
+        gridLayout_14->addWidget(lineEdit_max_acceleration, 2, 1, 1, 1);
 
         label_8 = new QLabel(layoutWidget);
         label_8->setObjectName(QString::fromUtf8("label_8"));
 
         gridLayout_14->addWidget(label_8, 3, 0, 1, 1);
 
-        lineEdit_3 = new QLineEdit(layoutWidget);
-        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+        lineEdit_max_jerk = new QLineEdit(layoutWidget);
+        lineEdit_max_jerk->setObjectName(QString::fromUtf8("lineEdit_max_jerk"));
 
-        gridLayout_14->addWidget(lineEdit_3, 3, 1, 1, 1);
+        gridLayout_14->addWidget(lineEdit_max_jerk, 3, 1, 1, 1);
 
-        lineEdit = new QLineEdit(layoutWidget);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit_max_velocity = new QLineEdit(layoutWidget);
+        lineEdit_max_velocity->setObjectName(QString::fromUtf8("lineEdit_max_velocity"));
 
-        gridLayout_14->addWidget(lineEdit, 1, 1, 1, 1);
+        gridLayout_14->addWidget(lineEdit_max_velocity, 1, 1, 1, 1);
 
         label_6 = new QLabel(layoutWidget);
         label_6->setObjectName(QString::fromUtf8("label_6"));
@@ -612,19 +629,108 @@ public:
 
         gridLayout_14->addWidget(label_12, 2, 2, 1, 1);
 
-        toolButton_mdi_3 = new QToolButton(layoutWidget);
-        toolButton_mdi_3->setObjectName(QString::fromUtf8("toolButton_mdi_3"));
-        sizePolicy1.setHeightForWidth(toolButton_mdi_3->sizePolicy().hasHeightForWidth());
-        toolButton_mdi_3->setSizePolicy(sizePolicy1);
-        toolButton_mdi_3->setAutoFillBackground(false);
-        toolButton_mdi_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        toolButton_mdi_3->setIcon(icon1);
-        toolButton_mdi_3->setIconSize(QSize(35, 35));
-        toolButton_mdi_3->setCheckable(false);
-        toolButton_mdi_3->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-        toolButton_mdi_3->setAutoRaise(false);
+        layoutWidget_2 = new QWidget(page_settings);
+        layoutWidget_2->setObjectName(QString::fromUtf8("layoutWidget_2"));
+        layoutWidget_2->setGeometry(QRect(20, 190, 381, 211));
+        gridLayout_15 = new QGridLayout(layoutWidget_2);
+        gridLayout_15->setObjectName(QString::fromUtf8("gridLayout_15"));
+        gridLayout_15->setContentsMargins(0, 0, 0, 0);
+        label_26 = new QLabel(layoutWidget_2);
+        label_26->setObjectName(QString::fromUtf8("label_26"));
 
-        gridLayout_14->addWidget(toolButton_mdi_3, 3, 2, 1, 1);
+        gridLayout_15->addWidget(label_26, 1, 0, 1, 1);
+
+        label_22 = new QLabel(layoutWidget_2);
+        label_22->setObjectName(QString::fromUtf8("label_22"));
+
+        gridLayout_15->addWidget(label_22, 6, 0, 1, 1);
+
+        lineEdit_max_jerk_4 = new QLineEdit(layoutWidget_2);
+        lineEdit_max_jerk_4->setObjectName(QString::fromUtf8("lineEdit_max_jerk_4"));
+
+        gridLayout_15->addWidget(lineEdit_max_jerk_4, 6, 1, 1, 1);
+
+        label_19 = new QLabel(layoutWidget_2);
+        label_19->setObjectName(QString::fromUtf8("label_19"));
+
+        gridLayout_15->addWidget(label_19, 2, 0, 1, 1);
+
+        lineEdit_max_acceleration_2 = new QLineEdit(layoutWidget_2);
+        lineEdit_max_acceleration_2->setObjectName(QString::fromUtf8("lineEdit_max_acceleration_2"));
+
+        gridLayout_15->addWidget(lineEdit_max_acceleration_2, 3, 1, 1, 1);
+
+        lineEdit_max_velocity_2 = new QLineEdit(layoutWidget_2);
+        lineEdit_max_velocity_2->setObjectName(QString::fromUtf8("lineEdit_max_velocity_2"));
+
+        gridLayout_15->addWidget(lineEdit_max_velocity_2, 2, 1, 1, 1);
+
+        label_24 = new QLabel(layoutWidget_2);
+        label_24->setObjectName(QString::fromUtf8("label_24"));
+
+        gridLayout_15->addWidget(label_24, 6, 2, 1, 1);
+
+        label_25 = new QLabel(layoutWidget_2);
+        label_25->setObjectName(QString::fromUtf8("label_25"));
+
+        gridLayout_15->addWidget(label_25, 5, 2, 1, 1);
+
+        label_21 = new QLabel(layoutWidget_2);
+        label_21->setObjectName(QString::fromUtf8("label_21"));
+
+        gridLayout_15->addWidget(label_21, 3, 2, 1, 1);
+
+        comboBox = new QComboBox(layoutWidget_2);
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->setObjectName(QString::fromUtf8("comboBox"));
+
+        gridLayout_15->addWidget(comboBox, 1, 1, 1, 1);
+
+        label_20 = new QLabel(layoutWidget_2);
+        label_20->setObjectName(QString::fromUtf8("label_20"));
+
+        gridLayout_15->addWidget(label_20, 2, 2, 1, 1);
+
+        lineEdit_max_jerk_2 = new QLineEdit(layoutWidget_2);
+        lineEdit_max_jerk_2->setObjectName(QString::fromUtf8("lineEdit_max_jerk_2"));
+
+        gridLayout_15->addWidget(lineEdit_max_jerk_2, 4, 1, 1, 1);
+
+        label_23 = new QLabel(layoutWidget_2);
+        label_23->setObjectName(QString::fromUtf8("label_23"));
+
+        gridLayout_15->addWidget(label_23, 5, 0, 1, 1);
+
+        lineEdit_max_jerk_3 = new QLineEdit(layoutWidget_2);
+        lineEdit_max_jerk_3->setObjectName(QString::fromUtf8("lineEdit_max_jerk_3"));
+
+        gridLayout_15->addWidget(lineEdit_max_jerk_3, 5, 1, 1, 1);
+
+        label_18 = new QLabel(layoutWidget_2);
+        label_18->setObjectName(QString::fromUtf8("label_18"));
+
+        gridLayout_15->addWidget(label_18, 4, 0, 1, 1);
+
+        label_9 = new QLabel(layoutWidget_2);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+
+        gridLayout_15->addWidget(label_9, 3, 0, 1, 1);
+
+        label_17 = new QLabel(layoutWidget_2);
+        label_17->setObjectName(QString::fromUtf8("label_17"));
+        label_17->setMinimumSize(QSize(0, 35));
+        label_17->setFont(font);
+        label_17->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        gridLayout_15->addWidget(label_17, 0, 0, 1, 1);
 
         stackedWidget_main->addWidget(page_settings);
         splitter_2->addWidget(stackedWidget_main);
@@ -641,38 +747,24 @@ public:
         gridLayout_10->setObjectName(QString::fromUtf8("gridLayout_10"));
         gridLayout_jog_settings = new QGridLayout();
         gridLayout_jog_settings->setObjectName(QString::fromUtf8("gridLayout_jog_settings"));
-        toolButton_jog_step_2 = new QToolButton(page_manual);
-        toolButton_jog_step_2->setObjectName(QString::fromUtf8("toolButton_jog_step_2"));
-        sizePolicy1.setHeightForWidth(toolButton_jog_step_2->sizePolicy().hasHeightForWidth());
-        toolButton_jog_step_2->setSizePolicy(sizePolicy1);
-        toolButton_jog_step_2->setIcon(icon1);
-        toolButton_jog_step_2->setIconSize(QSize(35, 35));
-        toolButton_jog_step_2->setCheckable(false);
-        toolButton_jog_step_2->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-        toolButton_jog_step_2->setAutoRaise(true);
+        label_4 = new QLabel(page_manual);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setMinimumSize(QSize(0, 35));
+        label_4->setFont(font);
+        label_4->setAlignment(Qt::AlignCenter);
 
-        gridLayout_jog_settings->addWidget(toolButton_jog_step_2, 7, 0, 1, 3);
+        gridLayout_jog_settings->addWidget(label_4, 0, 0, 1, 3);
 
-        label_2 = new QLabel(page_manual);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label = new QLabel(page_manual);
+        label->setObjectName(QString::fromUtf8("label"));
 
-        gridLayout_jog_settings->addWidget(label_2, 1, 0, 1, 2);
+        gridLayout_jog_settings->addWidget(label, 5, 0, 1, 3);
 
-        horizontalSlider = new QSlider(page_manual);
-        horizontalSlider->setObjectName(QString::fromUtf8("horizontalSlider"));
-        horizontalSlider->setMinimumSize(QSize(0, 35));
-        QFont font1;
-        font1.setPointSize(8);
-        horizontalSlider->setFont(font1);
-        horizontalSlider->setOrientation(Qt::Horizontal);
+        label_jog_velocity = new QLabel(page_manual);
+        label_jog_velocity->setObjectName(QString::fromUtf8("label_jog_velocity"));
+        label_jog_velocity->setFont(font);
 
-        gridLayout_jog_settings->addWidget(horizontalSlider, 2, 0, 1, 3);
-
-        label_3 = new QLabel(page_manual);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setFont(font);
-
-        gridLayout_jog_settings->addWidget(label_3, 3, 0, 1, 3);
+        gridLayout_jog_settings->addWidget(label_jog_velocity, 3, 0, 1, 3);
 
         toolButton_jog_step = new QToolButton(page_manual);
         toolButton_jog_step->setObjectName(QString::fromUtf8("toolButton_jog_step"));
@@ -686,6 +778,14 @@ public:
 
         gridLayout_jog_settings->addWidget(toolButton_jog_step, 4, 0, 1, 3);
 
+        horizontalSlider_jog_velocity = new QSlider(page_manual);
+        horizontalSlider_jog_velocity->setObjectName(QString::fromUtf8("horizontalSlider_jog_velocity"));
+        horizontalSlider_jog_velocity->setMaximum(100);
+        horizontalSlider_jog_velocity->setValue(75);
+        horizontalSlider_jog_velocity->setOrientation(Qt::Horizontal);
+
+        gridLayout_jog_settings->addWidget(horizontalSlider_jog_velocity, 2, 0, 1, 3);
+
         doubleSpinBox_stepsize = new QDoubleSpinBox(page_manual);
         doubleSpinBox_stepsize->setObjectName(QString::fromUtf8("doubleSpinBox_stepsize"));
         doubleSpinBox_stepsize->setMinimumSize(QSize(0, 35));
@@ -695,23 +795,22 @@ public:
 
         gridLayout_jog_settings->addWidget(doubleSpinBox_stepsize, 6, 0, 1, 3);
 
-        label = new QLabel(page_manual);
-        label->setObjectName(QString::fromUtf8("label"));
+        toolButton_jog_select_xyz_abc_uvw = new QToolButton(page_manual);
+        toolButton_jog_select_xyz_abc_uvw->setObjectName(QString::fromUtf8("toolButton_jog_select_xyz_abc_uvw"));
+        sizePolicy1.setHeightForWidth(toolButton_jog_select_xyz_abc_uvw->sizePolicy().hasHeightForWidth());
+        toolButton_jog_select_xyz_abc_uvw->setSizePolicy(sizePolicy1);
+        toolButton_jog_select_xyz_abc_uvw->setIcon(icon1);
+        toolButton_jog_select_xyz_abc_uvw->setIconSize(QSize(35, 35));
+        toolButton_jog_select_xyz_abc_uvw->setCheckable(false);
+        toolButton_jog_select_xyz_abc_uvw->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+        toolButton_jog_select_xyz_abc_uvw->setAutoRaise(true);
 
-        gridLayout_jog_settings->addWidget(label, 5, 0, 1, 3);
+        gridLayout_jog_settings->addWidget(toolButton_jog_select_xyz_abc_uvw, 7, 0, 1, 3);
 
-        label_9 = new QLabel(page_manual);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_2 = new QLabel(page_manual);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
 
-        gridLayout_jog_settings->addWidget(label_9, 1, 2, 1, 1);
-
-        label_4 = new QLabel(page_manual);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setMinimumSize(QSize(0, 35));
-        label_4->setFont(font);
-        label_4->setAlignment(Qt::AlignCenter);
-
-        gridLayout_jog_settings->addWidget(label_4, 0, 0, 1, 3);
+        gridLayout_jog_settings->addWidget(label_2, 1, 0, 1, 3);
 
 
         gridLayout_10->addLayout(gridLayout_jog_settings, 0, 0, 1, 1);
@@ -847,20 +946,39 @@ public:
         page_8->setObjectName(QString::fromUtf8("page_8"));
         gridLayout_3 = new QGridLayout(page_8);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
-        gridLayout_15 = new QGridLayout();
-        gridLayout_15->setObjectName(QString::fromUtf8("gridLayout_15"));
+        label_auto = new QLabel(page_8);
+        label_auto->setObjectName(QString::fromUtf8("label_auto"));
+        label_auto->setMinimumSize(QSize(0, 35));
+        label_auto->setFont(font);
+        label_auto->setAlignment(Qt::AlignCenter);
+
+        gridLayout_3->addWidget(label_auto, 0, 0, 1, 1);
+
+        toolButton_open = new QToolButton(page_8);
+        toolButton_open->setObjectName(QString::fromUtf8("toolButton_open"));
+        sizePolicy1.setHeightForWidth(toolButton_open->sizePolicy().hasHeightForWidth());
+        toolButton_open->setSizePolicy(sizePolicy1);
+        QIcon icon13;
+        icon13.addFile(QString::fromUtf8(":/pictures/btn_25_25_file_open.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_open->setIcon(icon13);
+        toolButton_open->setIconSize(QSize(35, 35));
+        toolButton_open->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+        toolButton_open->setAutoRaise(true);
+
+        gridLayout_3->addWidget(toolButton_open, 1, 0, 1, 2);
+
         toolButton_reload = new QToolButton(page_8);
         toolButton_reload->setObjectName(QString::fromUtf8("toolButton_reload"));
         sizePolicy1.setHeightForWidth(toolButton_reload->sizePolicy().hasHeightForWidth());
         toolButton_reload->setSizePolicy(sizePolicy1);
-        QIcon icon13;
-        icon13.addFile(QString::fromUtf8(":/pictures/btn_25_25_file_refresh.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_reload->setIcon(icon13);
+        QIcon icon14;
+        icon14.addFile(QString::fromUtf8(":/pictures/btn_25_25_file_refresh.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_reload->setIcon(icon14);
         toolButton_reload->setIconSize(QSize(35, 35));
         toolButton_reload->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
         toolButton_reload->setAutoRaise(true);
 
-        gridLayout_15->addWidget(toolButton_reload, 2, 0, 1, 1);
+        gridLayout_3->addWidget(toolButton_reload, 2, 0, 1, 2);
 
         toolButton_run = new QToolButton(page_8);
         toolButton_run->setObjectName(QString::fromUtf8("toolButton_run"));
@@ -875,25 +993,7 @@ public:
         toolButton_run->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
         toolButton_run->setAutoRaise(true);
 
-        gridLayout_15->addWidget(toolButton_run, 5, 0, 1, 1);
-
-        toolButton_stop = new QToolButton(page_8);
-        toolButton_stop->setObjectName(QString::fromUtf8("toolButton_stop"));
-        sizePolicy1.setHeightForWidth(toolButton_stop->sizePolicy().hasHeightForWidth());
-        toolButton_stop->setSizePolicy(sizePolicy1);
-        toolButton_stop->setAutoFillBackground(false);
-        toolButton_stop->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        QIcon icon14;
-        icon14.addFile(QString::fromUtf8(":/pictures/btn_25_25.png"), QSize(), QIcon::Normal, QIcon::Off);
-        icon14.addFile(QString::fromUtf8(":/pictures/btn_25_25_in_purple.png"), QSize(), QIcon::Normal, QIcon::On);
-        toolButton_stop->setIcon(icon14);
-        toolButton_stop->setIconSize(QSize(35, 35));
-        toolButton_stop->setCheckable(true);
-        toolButton_stop->setChecked(true);
-        toolButton_stop->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-        toolButton_stop->setAutoRaise(true);
-
-        gridLayout_15->addWidget(toolButton_stop, 7, 0, 1, 1);
+        gridLayout_3->addWidget(toolButton_run, 3, 0, 1, 1);
 
         toolButton_pause = new QToolButton(page_8);
         toolButton_pause->setObjectName(QString::fromUtf8("toolButton_pause"));
@@ -911,35 +1011,29 @@ public:
         toolButton_pause->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
         toolButton_pause->setAutoRaise(true);
 
-        gridLayout_15->addWidget(toolButton_pause, 6, 0, 1, 1);
+        gridLayout_3->addWidget(toolButton_pause, 4, 0, 1, 2);
 
-        toolButton_open = new QToolButton(page_8);
-        toolButton_open->setObjectName(QString::fromUtf8("toolButton_open"));
-        sizePolicy1.setHeightForWidth(toolButton_open->sizePolicy().hasHeightForWidth());
-        toolButton_open->setSizePolicy(sizePolicy1);
+        toolButton_stop = new QToolButton(page_8);
+        toolButton_stop->setObjectName(QString::fromUtf8("toolButton_stop"));
+        sizePolicy1.setHeightForWidth(toolButton_stop->sizePolicy().hasHeightForWidth());
+        toolButton_stop->setSizePolicy(sizePolicy1);
+        toolButton_stop->setAutoFillBackground(false);
+        toolButton_stop->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         QIcon icon16;
-        icon16.addFile(QString::fromUtf8(":/pictures/btn_25_25_file_open.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_open->setIcon(icon16);
-        toolButton_open->setIconSize(QSize(35, 35));
-        toolButton_open->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-        toolButton_open->setAutoRaise(true);
+        icon16.addFile(QString::fromUtf8(":/pictures/btn_25_25.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon16.addFile(QString::fromUtf8(":/pictures/btn_25_25_in_purple.png"), QSize(), QIcon::Normal, QIcon::On);
+        toolButton_stop->setIcon(icon16);
+        toolButton_stop->setIconSize(QSize(35, 35));
+        toolButton_stop->setCheckable(true);
+        toolButton_stop->setChecked(true);
+        toolButton_stop->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+        toolButton_stop->setAutoRaise(true);
 
-        gridLayout_15->addWidget(toolButton_open, 1, 0, 1, 1);
+        gridLayout_3->addWidget(toolButton_stop, 5, 0, 1, 2);
 
-        label_auto = new QLabel(page_8);
-        label_auto->setObjectName(QString::fromUtf8("label_auto"));
-        label_auto->setMinimumSize(QSize(0, 35));
-        label_auto->setFont(font);
-        label_auto->setAlignment(Qt::AlignCenter);
+        verticalSpacer_3 = new QSpacerItem(20, 295, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout_15->addWidget(label_auto, 0, 0, 1, 1);
-
-        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout_15->addItem(verticalSpacer_3, 8, 0, 1, 1);
-
-
-        gridLayout_3->addLayout(gridLayout_15, 0, 0, 1, 1);
+        gridLayout_3->addItem(verticalSpacer_3, 6, 1, 1, 1);
 
         stackedWidget_mode_manual_auto_mdi->addWidget(page_8);
         page_5 = new QWidget();
@@ -961,7 +1055,7 @@ public:
         stackedWidget_mode_manual_auto_mdi->addWidget(page_5);
         splitter_2->addWidget(stackedWidget_mode_manual_auto_mdi);
 
-        gridLayout_6->addWidget(splitter_2, 0, 0, 1, 1);
+        gridLayout_6->addWidget(splitter_2, 1, 0, 1, 1);
 
         stackedWidget_toplevel->addWidget(page_2);
         editor = new QWidget();
@@ -1096,7 +1190,7 @@ public:
 
         stackedWidget_toplevel->setCurrentIndex(1);
         stackedWidget_index->setCurrentIndex(0);
-        stackedWidget_main->setCurrentIndex(0);
+        stackedWidget_main->setCurrentIndex(1);
         stackedWidget_mode_manual_auto_mdi->setCurrentIndex(0);
         stackedWidget_3->setCurrentIndex(0);
 
@@ -1133,22 +1227,46 @@ public:
         label_current_file->setText(QString());
         label_5->setText(QCoreApplication::translate("MainWindow", "- SETTINGS -", nullptr));
         label_7->setText(QCoreApplication::translate("MainWindow", "max acceleration", nullptr));
-        label_10->setText(QCoreApplication::translate("MainWindow", "trajectory", nullptr));
-        lineEdit_2->setText(QCoreApplication::translate("MainWindow", "12000", nullptr));
+        label_10->setText(QCoreApplication::translate("MainWindow", "trajectory :", nullptr));
+        lineEdit_max_acceleration->setText(QCoreApplication::translate("MainWindow", "50", nullptr));
         label_8->setText(QCoreApplication::translate("MainWindow", "max jerk", nullptr));
-        lineEdit_3->setText(QCoreApplication::translate("MainWindow", "12000", nullptr));
-        lineEdit->setText(QCoreApplication::translate("MainWindow", "12000", nullptr));
+        lineEdit_max_jerk->setText(QCoreApplication::translate("MainWindow", "50", nullptr));
+        lineEdit_max_velocity->setText(QCoreApplication::translate("MainWindow", "100", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "max velocity", nullptr));
         label_11->setText(QCoreApplication::translate("MainWindow", "mm / s", nullptr));
         label_12->setText(QCoreApplication::translate("MainWindow", "mm / s^2", nullptr));
-        toolButton_mdi_3->setText(QCoreApplication::translate("MainWindow", " save", nullptr));
-        toolButton_jog_step_2->setText(QCoreApplication::translate("MainWindow", " select xyz abc uvw", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "jog velocity", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "0.000", nullptr));
-        toolButton_jog_step->setText(QCoreApplication::translate("MainWindow", " jog step", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "step size unit", nullptr));
-        label_9->setText(QCoreApplication::translate("MainWindow", "mm / min", nullptr));
+        label_26->setText(QCoreApplication::translate("MainWindow", "axis", nullptr));
+        label_22->setText(QCoreApplication::translate("MainWindow", "max position", nullptr));
+        lineEdit_max_jerk_4->setText(QCoreApplication::translate("MainWindow", "1000", nullptr));
+        label_19->setText(QCoreApplication::translate("MainWindow", "max velocity", nullptr));
+        lineEdit_max_acceleration_2->setText(QCoreApplication::translate("MainWindow", "50", nullptr));
+        lineEdit_max_velocity_2->setText(QCoreApplication::translate("MainWindow", "100", nullptr));
+        label_24->setText(QCoreApplication::translate("MainWindow", "mm", nullptr));
+        label_25->setText(QCoreApplication::translate("MainWindow", "mm", nullptr));
+        label_21->setText(QCoreApplication::translate("MainWindow", "mm / s^2", nullptr));
+        comboBox->setItemText(0, QCoreApplication::translate("MainWindow", "x", nullptr));
+        comboBox->setItemText(1, QCoreApplication::translate("MainWindow", "y", nullptr));
+        comboBox->setItemText(2, QCoreApplication::translate("MainWindow", "z", nullptr));
+        comboBox->setItemText(3, QCoreApplication::translate("MainWindow", "a", nullptr));
+        comboBox->setItemText(4, QCoreApplication::translate("MainWindow", "b", nullptr));
+        comboBox->setItemText(5, QCoreApplication::translate("MainWindow", "c", nullptr));
+        comboBox->setItemText(6, QCoreApplication::translate("MainWindow", "u", nullptr));
+        comboBox->setItemText(7, QCoreApplication::translate("MainWindow", "v", nullptr));
+        comboBox->setItemText(8, QCoreApplication::translate("MainWindow", "w", nullptr));
+
+        label_20->setText(QCoreApplication::translate("MainWindow", "mm / s", nullptr));
+        lineEdit_max_jerk_2->setText(QCoreApplication::translate("MainWindow", "50", nullptr));
+        label_23->setText(QCoreApplication::translate("MainWindow", "min position", nullptr));
+        lineEdit_max_jerk_3->setText(QCoreApplication::translate("MainWindow", "-1000", nullptr));
+        label_18->setText(QCoreApplication::translate("MainWindow", "max jerk", nullptr));
+        label_9->setText(QCoreApplication::translate("MainWindow", "max acceleration", nullptr));
+        label_17->setText(QCoreApplication::translate("MainWindow", "..", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "- MANUAL -", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "step size unit", nullptr));
+        label_jog_velocity->setText(QCoreApplication::translate("MainWindow", "0.000", nullptr));
+        toolButton_jog_step->setText(QCoreApplication::translate("MainWindow", " jog step", nullptr));
+        toolButton_jog_select_xyz_abc_uvw->setText(QCoreApplication::translate("MainWindow", " select xyz abc uvw", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "jog speed 0-100%", nullptr));
         toolButton_jog_z_min->setText(QCoreApplication::translate("MainWindow", "z -", nullptr));
         toolButton_jog_x_min->setText(QCoreApplication::translate("MainWindow", "x -", nullptr));
         toolButton_jog_z_plus->setText(QCoreApplication::translate("MainWindow", "z +", nullptr));
@@ -1158,12 +1276,12 @@ public:
         toolButton_jog_y_min->setText(QCoreApplication::translate("MainWindow", "y -", nullptr));
         label_jog_dro_y->setText(QCoreApplication::translate("MainWindow", "Y 0.000", nullptr));
         label_jog_dro_z->setText(QCoreApplication::translate("MainWindow", "Z 0.000", nullptr));
+        label_auto->setText(QCoreApplication::translate("MainWindow", "- AUTO -", nullptr));
+        toolButton_open->setText(QCoreApplication::translate("MainWindow", " file open", nullptr));
         toolButton_reload->setText(QCoreApplication::translate("MainWindow", " file reload", nullptr));
         toolButton_run->setText(QCoreApplication::translate("MainWindow", " run", nullptr));
-        toolButton_stop->setText(QCoreApplication::translate("MainWindow", " stop", nullptr));
         toolButton_pause->setText(QCoreApplication::translate("MainWindow", " pause", nullptr));
-        toolButton_open->setText(QCoreApplication::translate("MainWindow", " file open", nullptr));
-        label_auto->setText(QCoreApplication::translate("MainWindow", "- AUTO -", nullptr));
+        toolButton_stop->setText(QCoreApplication::translate("MainWindow", " stop", nullptr));
         label_15->setText(QCoreApplication::translate("MainWindow", "- MDI -", nullptr));
         plainTextEdit_gcode->setPlainText(QString());
         toolButton_textedit_save_as->setText(QCoreApplication::translate("MainWindow", " save as", nullptr));

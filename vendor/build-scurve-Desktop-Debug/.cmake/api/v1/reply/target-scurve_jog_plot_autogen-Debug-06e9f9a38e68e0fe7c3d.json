@@ -1,0 +1,58 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"scurve_jog_plot/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"id" : "scurve_jog_plot_autogen::@a4e109cd2e2b97e7a089",
+	"isGeneratorProvided" : true,
+	"name" : "scurve_jog_plot_autogen",
+	"paths" : 
+	{
+		"build" : "scurve_jog_plot",
+		"source" : "scurve_jog_plot"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/user/hal-core-2.0/vendor/build-scurve-Desktop-Debug/scurve_jog_plot/CMakeFiles/scurve_jog_plot_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/user/hal-core-2.0/vendor/build-scurve-Desktop-Debug/scurve_jog_plot/CMakeFiles/scurve_jog_plot_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

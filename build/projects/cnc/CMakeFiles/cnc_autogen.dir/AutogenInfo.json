@@ -118,9 +118,15 @@
 			null
 		],
 		[
-			"/home/user/hal-core-2.0/projects/cnc/form.h",
+			"/home/user/hal-core-2.0/projects/cnc/form_dro.h",
 			"MU",
-			"EWIEGA46WW/moc_form.cpp",
+			"EWIEGA46WW/moc_form_dro.cpp",
+			null
+		],
+		[
+			"/home/user/hal-core-2.0/projects/cnc/form_settings.h",
+			"MU",
+			"EWIEGA46WW/moc_form_settings.cpp",
 			null
 		],
 		[
@@ -130,9 +136,9 @@
 			null
 		],
 		[
-			"/home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.h",
+			"/home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_shm.h",
 			"MU",
-			"NV5GZQSDT7/moc_state_machine_vector.cpp",
+			"NV5GZQSDT7/moc_state_machine_shm.cpp",
 			null
 		],
 		[
@@ -178,39 +184,15 @@
 			null
 		],
 		[
-			"/home/user/hal-core-2.0/vendor/rs274ngc/canon.h",
+			"/home/user/hal-core-2.0/vendor/scurve/scurve_engine/scurve_engine.h",
 			"MU",
-			"ZITRRGVZRW/moc_canon.cpp",
+			"FBCZ6VF5P6/moc_scurve_engine.cpp",
 			null
 		],
 		[
-			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc.h",
+			"/home/user/hal-core-2.0/vendor/scurve/scurve_engine/scurve_struct.h",
 			"MU",
-			"ZITRRGVZRW/moc_rs274ngc.cpp",
-			null
-		],
-		[
-			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_data.h",
-			"MU",
-			"ZITRRGVZRW/moc_rs274ngc_data.cpp",
-			null
-		],
-		[
-			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_errors.h",
-			"MU",
-			"ZITRRGVZRW/moc_rs274ngc_errors.cpp",
-			null
-		],
-		[
-			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_intf.h",
-			"MU",
-			"ZITRRGVZRW/moc_rs274ngc_intf.cpp",
-			null
-		],
-		[
-			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_return.h",
-			"MU",
-			"ZITRRGVZRW/moc_rs274ngc_return.cpp",
+			"FBCZ6VF5P6/moc_scurve_struct.cpp",
 			null
 		],
 		[
@@ -252,7 +234,7 @@
 		"/home/user/hal-core-2.0/vendor/Clothoids/lib/include",
 		"/home/user/hal-core-2.0/vendor/Clothoids/lib3rd/include",
 		"/home/user/hal-core-2.0/vendor/gcode_parser",
-		"/home/user/hal-core-2.0/vendor/rs274ngc",
+		"/home/user/hal-core-2.0/vendor/scurve/scurve_engine",
 		"/home/user/hal-core-2.0/src/hal/components/state_machine",
 		"/home/user/hal-core-2.0/src/rtapi",
 		"/home/user/hal-core-2.0/include",
@@ -306,11 +288,12 @@
 			"MU",
 			null
 		],
-		[ "/home/user/hal-core-2.0/projects/cnc/form.cpp", "MU", null ],
+		[ "/home/user/hal-core-2.0/projects/cnc/form_dro.cpp", "MU", null ],
+		[ "/home/user/hal-core-2.0/projects/cnc/form_settings.cpp", "MU", null ],
 		[ "/home/user/hal-core-2.0/projects/cnc/main.cpp", "MU", null ],
 		[ "/home/user/hal-core-2.0/projects/cnc/mainwindow.cpp", "MU", null ],
 		[
-			"/home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_vector.cpp",
+			"/home/user/hal-core-2.0/src/hal/components/state_machine/state_machine_shm.cpp",
 			"MU",
 			null
 		],
@@ -339,14 +322,8 @@
 			"MU",
 			null
 		],
-		[ "/home/user/hal-core-2.0/vendor/rs274ngc/canon.cpp", "MU", null ],
 		[
-			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_intf.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/user/hal-core-2.0/vendor/rs274ngc/rs274ngc_pre.cpp",
+			"/home/user/hal-core-2.0/vendor/scurve/scurve_engine/scurve_engine.cpp",
 			"MU",
 			null
 		],

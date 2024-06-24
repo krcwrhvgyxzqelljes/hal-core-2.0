@@ -22,6 +22,7 @@ include_directories(${LIB_DIR})
 include_directories(${SRC_DIR}/../../../../vendor/gcode_parser)
 include_directories(${SRC_DIR}/../../../../vendor/std_functions)
 include_directories(${SRC_DIR}/../../../../vendor/oce-upstream-V7_5_0beta/inc)
+include_directories(${SRC_DIR}/../../../../vendor/scurve/scurve_engine)
 
 # Opencascade
 find_package (OpenCASCADE REQUIRED)
@@ -60,8 +61,14 @@ set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} SHARED
     ${SRC_DIR}/state_machine.c
-    ${SRC_DIR}/state_machine_vector.h
-    ${SRC_DIR}/state_machine_vector.cpp
+    ${SRC_DIR}/state_machine_shm.h
+    ${SRC_DIR}/state_machine_shm.cpp
+
+    ${SRC_DIR}/../../../../vendor/scurve/scurve_engine/scurve_struct.h
+    ${SRC_DIR}/../../../../vendor/scurve/scurve_engine/scurve_reset.h
+    ${SRC_DIR}/../../../../vendor/scurve/scurve_engine/scurve_engine.h
+    ${SRC_DIR}/../../../../vendor/scurve/scurve_engine/scurve_engine.cpp
+    ${SRC_DIR}/../../../../vendor/scurve/scurve_engine/scurve_segment.h
 )
 
 # Compile link with libhalcore.so or linuxcnchal.so

@@ -2149,10 +2149,11 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/V3d/V3d_ListOfView.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/V3d_ViewerPointer.hxx \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/oce-upstream-V7_5_0beta/inc/../src/V3d/V3d_ViewerPointer.hxx \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/scurve/scurve_engine/tp_scurve.h \
- /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h \
- /home/user/hal-core-2.0/projects/cnc/form.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QWidget \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/scurve/scurve_engine/scurve_engine.h \
+ /home/user/hal-core-2.0/projects/cnc/../../vendor/scurve/scurve_engine/scurve_struct.h \
+ /home/user/hal-core-2.0/projects/cnc/form_dro.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDialog \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qdialog.h \
  /home/user/hal-core-2.0/projects/cnc/QGCodeEditor.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QObject \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qobject.h \
@@ -2196,11 +2197,11 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../src/rtapi/rtapi_bool.h \
  /home/user/hal-core-2.0/projects/cnc/../../src/rtapi/rtapi_stdint.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/qt_functions/qt_functions.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QWidget \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/std_functions/std_functions.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/gcode_parser/gcode_parser.h \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_intf.h \
- /home/user/hal-core-2.0/projects/cnc/../../vendor/rs274ngc/rs274ngc_data.h \
- /home/user/hal-core-2.0/projects/cnc/../../src/hal/components/state_machine/state_machine_vector.h \
+ /home/user/hal-core-2.0/projects/cnc/../../src/hal/components/state_machine/state_machine_shm.h \
+ /home/user/hal-core-2.0/projects/cnc/../../src/hal/components/state_machine/../../../../vendor/scurve/scurve_engine/scurve_struct.h \
  /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/include/./ui_mainwindow.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QVariant \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qvariant.h \
@@ -2212,11 +2213,21 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qeventloop.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qguiapplication.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qinputmethod.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDoubleSpinBox \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qspinbox.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QComboBox \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qcombobox.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qstyleoption.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qvalidator.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qregularexpression.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qslider.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractslider.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qstyle.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtabbar.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qrubberband.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qabstractitemmodel.h \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDoubleSpinBox \
+ /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qspinbox.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QFrame \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qframe.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QGridLayout \
@@ -2235,7 +2246,6 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QPlainTextEdit \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSlider \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qslider.h \
- /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractslider.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSpacerItem \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlayoutitem.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSplitter \

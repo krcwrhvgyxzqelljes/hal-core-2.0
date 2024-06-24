@@ -261,29 +261,29 @@ QGCodeSyntaxHighlighter.cpp.s:
 	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.s
 .PHONY : QGCodeSyntaxHighlighter.cpp.s
 
-__/__/src/hal/components/state_machine/state_machine_vector.o: __/__/src/hal/components/state_machine/state_machine_vector.cpp.o
-.PHONY : __/__/src/hal/components/state_machine/state_machine_vector.o
+__/__/src/hal/components/state_machine/state_machine_shm.o: __/__/src/hal/components/state_machine/state_machine_shm.cpp.o
+.PHONY : __/__/src/hal/components/state_machine/state_machine_shm.o
 
 # target to build an object file
-__/__/src/hal/components/state_machine/state_machine_vector.cpp.o:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.o
-.PHONY : __/__/src/hal/components/state_machine/state_machine_vector.cpp.o
+__/__/src/hal/components/state_machine/state_machine_shm.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_shm.cpp.o
+.PHONY : __/__/src/hal/components/state_machine/state_machine_shm.cpp.o
 
-__/__/src/hal/components/state_machine/state_machine_vector.i: __/__/src/hal/components/state_machine/state_machine_vector.cpp.i
-.PHONY : __/__/src/hal/components/state_machine/state_machine_vector.i
+__/__/src/hal/components/state_machine/state_machine_shm.i: __/__/src/hal/components/state_machine/state_machine_shm.cpp.i
+.PHONY : __/__/src/hal/components/state_machine/state_machine_shm.i
 
 # target to preprocess a source file
-__/__/src/hal/components/state_machine/state_machine_vector.cpp.i:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.i
-.PHONY : __/__/src/hal/components/state_machine/state_machine_vector.cpp.i
+__/__/src/hal/components/state_machine/state_machine_shm.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_shm.cpp.i
+.PHONY : __/__/src/hal/components/state_machine/state_machine_shm.cpp.i
 
-__/__/src/hal/components/state_machine/state_machine_vector.s: __/__/src/hal/components/state_machine/state_machine_vector.cpp.s
-.PHONY : __/__/src/hal/components/state_machine/state_machine_vector.s
+__/__/src/hal/components/state_machine/state_machine_shm.s: __/__/src/hal/components/state_machine/state_machine_shm.cpp.s
+.PHONY : __/__/src/hal/components/state_machine/state_machine_shm.s
 
 # target to generate assembly for a file
-__/__/src/hal/components/state_machine/state_machine_vector.cpp.s:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_vector.cpp.s
-.PHONY : __/__/src/hal/components/state_machine/state_machine_vector.cpp.s
+__/__/src/hal/components/state_machine/state_machine_shm.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_shm.cpp.s
+.PHONY : __/__/src/hal/components/state_machine/state_machine_shm.cpp.s
 
 __/__/vendor/gcode_parser/gcode_parser.o: __/__/vendor/gcode_parser/gcode_parser.cpp.o
 .PHONY : __/__/vendor/gcode_parser/gcode_parser.o
@@ -405,77 +405,29 @@ __/__/vendor/qt_functions/qt_functions.cpp.s:
 	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/qt_functions/qt_functions.cpp.s
 .PHONY : __/__/vendor/qt_functions/qt_functions.cpp.s
 
-__/__/vendor/rs274ngc/canon.o: __/__/vendor/rs274ngc/canon.cpp.o
-.PHONY : __/__/vendor/rs274ngc/canon.o
+__/__/vendor/scurve/scurve_engine/scurve_engine.o: __/__/vendor/scurve/scurve_engine/scurve_engine.cpp.o
+.PHONY : __/__/vendor/scurve/scurve_engine/scurve_engine.o
 
 # target to build an object file
-__/__/vendor/rs274ngc/canon.cpp.o:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.o
-.PHONY : __/__/vendor/rs274ngc/canon.cpp.o
+__/__/vendor/scurve/scurve_engine/scurve_engine.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/scurve/scurve_engine/scurve_engine.cpp.o
+.PHONY : __/__/vendor/scurve/scurve_engine/scurve_engine.cpp.o
 
-__/__/vendor/rs274ngc/canon.i: __/__/vendor/rs274ngc/canon.cpp.i
-.PHONY : __/__/vendor/rs274ngc/canon.i
-
-# target to preprocess a source file
-__/__/vendor/rs274ngc/canon.cpp.i:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.i
-.PHONY : __/__/vendor/rs274ngc/canon.cpp.i
-
-__/__/vendor/rs274ngc/canon.s: __/__/vendor/rs274ngc/canon.cpp.s
-.PHONY : __/__/vendor/rs274ngc/canon.s
-
-# target to generate assembly for a file
-__/__/vendor/rs274ngc/canon.cpp.s:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/canon.cpp.s
-.PHONY : __/__/vendor/rs274ngc/canon.cpp.s
-
-__/__/vendor/rs274ngc/rs274ngc_intf.o: __/__/vendor/rs274ngc/rs274ngc_intf.cpp.o
-.PHONY : __/__/vendor/rs274ngc/rs274ngc_intf.o
-
-# target to build an object file
-__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.o
-.PHONY : __/__/vendor/rs274ngc/rs274ngc_intf.cpp.o
-
-__/__/vendor/rs274ngc/rs274ngc_intf.i: __/__/vendor/rs274ngc/rs274ngc_intf.cpp.i
-.PHONY : __/__/vendor/rs274ngc/rs274ngc_intf.i
+__/__/vendor/scurve/scurve_engine/scurve_engine.i: __/__/vendor/scurve/scurve_engine/scurve_engine.cpp.i
+.PHONY : __/__/vendor/scurve/scurve_engine/scurve_engine.i
 
 # target to preprocess a source file
-__/__/vendor/rs274ngc/rs274ngc_intf.cpp.i:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.i
-.PHONY : __/__/vendor/rs274ngc/rs274ngc_intf.cpp.i
+__/__/vendor/scurve/scurve_engine/scurve_engine.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/scurve/scurve_engine/scurve_engine.cpp.i
+.PHONY : __/__/vendor/scurve/scurve_engine/scurve_engine.cpp.i
 
-__/__/vendor/rs274ngc/rs274ngc_intf.s: __/__/vendor/rs274ngc/rs274ngc_intf.cpp.s
-.PHONY : __/__/vendor/rs274ngc/rs274ngc_intf.s
-
-# target to generate assembly for a file
-__/__/vendor/rs274ngc/rs274ngc_intf.cpp.s:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_intf.cpp.s
-.PHONY : __/__/vendor/rs274ngc/rs274ngc_intf.cpp.s
-
-__/__/vendor/rs274ngc/rs274ngc_pre.o: __/__/vendor/rs274ngc/rs274ngc_pre.cpp.o
-.PHONY : __/__/vendor/rs274ngc/rs274ngc_pre.o
-
-# target to build an object file
-__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.o
-.PHONY : __/__/vendor/rs274ngc/rs274ngc_pre.cpp.o
-
-__/__/vendor/rs274ngc/rs274ngc_pre.i: __/__/vendor/rs274ngc/rs274ngc_pre.cpp.i
-.PHONY : __/__/vendor/rs274ngc/rs274ngc_pre.i
-
-# target to preprocess a source file
-__/__/vendor/rs274ngc/rs274ngc_pre.cpp.i:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.i
-.PHONY : __/__/vendor/rs274ngc/rs274ngc_pre.cpp.i
-
-__/__/vendor/rs274ngc/rs274ngc_pre.s: __/__/vendor/rs274ngc/rs274ngc_pre.cpp.s
-.PHONY : __/__/vendor/rs274ngc/rs274ngc_pre.s
+__/__/vendor/scurve/scurve_engine/scurve_engine.s: __/__/vendor/scurve/scurve_engine/scurve_engine.cpp.s
+.PHONY : __/__/vendor/scurve/scurve_engine/scurve_engine.s
 
 # target to generate assembly for a file
-__/__/vendor/rs274ngc/rs274ngc_pre.cpp.s:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/rs274ngc/rs274ngc_pre.cpp.s
-.PHONY : __/__/vendor/rs274ngc/rs274ngc_pre.cpp.s
+__/__/vendor/scurve/scurve_engine/scurve_engine.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/scurve/scurve_engine/scurve_engine.cpp.s
+.PHONY : __/__/vendor/scurve/scurve_engine/scurve_engine.cpp.s
 
 __/__/vendor/std_functions/std_functions.o: __/__/vendor/std_functions/std_functions.cpp.o
 .PHONY : __/__/vendor/std_functions/std_functions.o
@@ -549,29 +501,53 @@ cnc_autogen/mocs_compilation.cpp.s:
 	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/mocs_compilation.cpp.s
 .PHONY : cnc_autogen/mocs_compilation.cpp.s
 
-form.o: form.cpp.o
-.PHONY : form.o
+form_dro.o: form_dro.cpp.o
+.PHONY : form_dro.o
 
 # target to build an object file
-form.cpp.o:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form.cpp.o
-.PHONY : form.cpp.o
+form_dro.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form_dro.cpp.o
+.PHONY : form_dro.cpp.o
 
-form.i: form.cpp.i
-.PHONY : form.i
+form_dro.i: form_dro.cpp.i
+.PHONY : form_dro.i
 
 # target to preprocess a source file
-form.cpp.i:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form.cpp.i
-.PHONY : form.cpp.i
+form_dro.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form_dro.cpp.i
+.PHONY : form_dro.cpp.i
 
-form.s: form.cpp.s
-.PHONY : form.s
+form_dro.s: form_dro.cpp.s
+.PHONY : form_dro.s
 
 # target to generate assembly for a file
-form.cpp.s:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form.cpp.s
-.PHONY : form.cpp.s
+form_dro.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form_dro.cpp.s
+.PHONY : form_dro.cpp.s
+
+form_settings.o: form_settings.cpp.o
+.PHONY : form_settings.o
+
+# target to build an object file
+form_settings.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form_settings.cpp.o
+.PHONY : form_settings.cpp.o
+
+form_settings.i: form_settings.cpp.i
+.PHONY : form_settings.i
+
+# target to preprocess a source file
+form_settings.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form_settings.cpp.i
+.PHONY : form_settings.cpp.i
+
+form_settings.s: form_settings.cpp.s
+.PHONY : form_settings.s
+
+# target to generate assembly for a file
+form_settings.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form_settings.cpp.s
+.PHONY : form_settings.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -644,9 +620,9 @@ help:
 	@echo "... QGCodeSyntaxHighlighter.o"
 	@echo "... QGCodeSyntaxHighlighter.i"
 	@echo "... QGCodeSyntaxHighlighter.s"
-	@echo "... __/__/src/hal/components/state_machine/state_machine_vector.o"
-	@echo "... __/__/src/hal/components/state_machine/state_machine_vector.i"
-	@echo "... __/__/src/hal/components/state_machine/state_machine_vector.s"
+	@echo "... __/__/src/hal/components/state_machine/state_machine_shm.o"
+	@echo "... __/__/src/hal/components/state_machine/state_machine_shm.i"
+	@echo "... __/__/src/hal/components/state_machine/state_machine_shm.s"
 	@echo "... __/__/vendor/gcode_parser/gcode_parser.o"
 	@echo "... __/__/vendor/gcode_parser/gcode_parser.i"
 	@echo "... __/__/vendor/gcode_parser/gcode_parser.s"
@@ -662,15 +638,9 @@ help:
 	@echo "... __/__/vendor/qt_functions/qt_functions.o"
 	@echo "... __/__/vendor/qt_functions/qt_functions.i"
 	@echo "... __/__/vendor/qt_functions/qt_functions.s"
-	@echo "... __/__/vendor/rs274ngc/canon.o"
-	@echo "... __/__/vendor/rs274ngc/canon.i"
-	@echo "... __/__/vendor/rs274ngc/canon.s"
-	@echo "... __/__/vendor/rs274ngc/rs274ngc_intf.o"
-	@echo "... __/__/vendor/rs274ngc/rs274ngc_intf.i"
-	@echo "... __/__/vendor/rs274ngc/rs274ngc_intf.s"
-	@echo "... __/__/vendor/rs274ngc/rs274ngc_pre.o"
-	@echo "... __/__/vendor/rs274ngc/rs274ngc_pre.i"
-	@echo "... __/__/vendor/rs274ngc/rs274ngc_pre.s"
+	@echo "... __/__/vendor/scurve/scurve_engine/scurve_engine.o"
+	@echo "... __/__/vendor/scurve/scurve_engine/scurve_engine.i"
+	@echo "... __/__/vendor/scurve/scurve_engine/scurve_engine.s"
 	@echo "... __/__/vendor/std_functions/std_functions.o"
 	@echo "... __/__/vendor/std_functions/std_functions.i"
 	@echo "... __/__/vendor/std_functions/std_functions.s"
@@ -680,9 +650,12 @@ help:
 	@echo "... cnc_autogen/mocs_compilation.o"
 	@echo "... cnc_autogen/mocs_compilation.i"
 	@echo "... cnc_autogen/mocs_compilation.s"
-	@echo "... form.o"
-	@echo "... form.i"
-	@echo "... form.s"
+	@echo "... form_dro.o"
+	@echo "... form_dro.i"
+	@echo "... form_dro.s"
+	@echo "... form_settings.o"
+	@echo "... form_settings.i"
+	@echo "... form_settings.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

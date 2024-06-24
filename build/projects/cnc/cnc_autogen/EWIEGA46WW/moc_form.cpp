@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Form_t {
-    QByteArrayData data[13];
-    char stringdata0[63];
+    QByteArrayData data[18];
+    char stringdata0[94];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -44,11 +44,17 @@ QT_MOC_LITERAL(8, 33, 4), // "dtgz"
 QT_MOC_LITERAL(9, 38, 3), // "vel"
 QT_MOC_LITERAL(10, 42, 6), // "homedx"
 QT_MOC_LITERAL(11, 49, 6), // "homedy"
-QT_MOC_LITERAL(12, 56, 6) // "homedz"
+QT_MOC_LITERAL(12, 56, 6), // "homedz"
+QT_MOC_LITERAL(13, 63, 7), // "double*"
+QT_MOC_LITERAL(14, 71, 3), // "dro"
+QT_MOC_LITERAL(15, 75, 7), // "dro_dtg"
+QT_MOC_LITERAL(16, 83, 4), // "int*"
+QT_MOC_LITERAL(17, 88, 5) // "homed"
 
     },
     "Form\0update_dro\0\0x\0y\0z\0dtgx\0dtgy\0dtgz\0"
-    "vel\0homedx\0homedy\0homedz"
+    "vel\0homedx\0homedy\0homedz\0double*\0dro\0"
+    "dro_dtg\0int*\0homed"
 };
 #undef QT_MOC_LITERAL
 
@@ -58,7 +64,7 @@ static const uint qt_meta_data_Form[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -66,10 +72,12 @@ static const uint qt_meta_data_Form[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,   10,   19,    2, 0x0a /* Public */,
+       1,   10,   24,    2, 0x0a /* Public */,
+       1,    4,   45,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Double, QMetaType::Double, QMetaType::Double, QMetaType::Double, QMetaType::Double, QMetaType::Double, QMetaType::Double, QMetaType::Bool, QMetaType::Bool, QMetaType::Bool,    3,    4,    5,    6,    7,    8,    9,   10,   11,   12,
+    QMetaType::Void, 0x80000000 | 13, 0x80000000 | 13, QMetaType::Double, 0x80000000 | 16,   14,   15,    9,   17,
 
        0        // eod
 };
@@ -81,6 +89,7 @@ void Form::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->update_dro((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4])),(*reinterpret_cast< double(*)>(_a[5])),(*reinterpret_cast< double(*)>(_a[6])),(*reinterpret_cast< double(*)>(_a[7])),(*reinterpret_cast< bool(*)>(_a[8])),(*reinterpret_cast< bool(*)>(_a[9])),(*reinterpret_cast< bool(*)>(_a[10]))); break;
+        case 1: _t->update_dro((*reinterpret_cast< double*(*)>(_a[1])),(*reinterpret_cast< double*(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< int*(*)>(_a[4]))); break;
         default: ;
         }
     }
@@ -115,13 +124,13 @@ int Form::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 2)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }

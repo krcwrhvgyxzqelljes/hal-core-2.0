@@ -2,5 +2,6 @@
 #include "EWIEGA46WW/moc_OcctQtViewer.cpp"
 #include "EWIEGA46WW/moc_QGCodeEditor.cpp"
 #include "EWIEGA46WW/moc_QGCodeSyntaxHighlighter.cpp"
-#include "EWIEGA46WW/moc_form.cpp"
+#include "EWIEGA46WW/moc_form_dro.cpp"
+#include "EWIEGA46WW/moc_form_settings.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"

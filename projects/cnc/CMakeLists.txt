@@ -29,7 +29,7 @@ include_directories(${SRC_DIR}/../../vendor/oce-upstream-V7_5_0beta/inc)
 include_directories(${SRC_DIR}/../../vendor/Clothoids/lib/include)
 include_directories(${SRC_DIR}/../../vendor/Clothoids/lib3rd/include)
 include_directories(${SRC_DIR}/../../vendor/gcode_parser)
-include_directories(${SRC_DIR}/../../vendor/rs274ngc)
+include_directories(${SRC_DIR}/../../vendor/scurve/scurve_engine)
 
 include_directories(${SRC_DIR}/../../src/hal/components/state_machine)
 
@@ -108,9 +108,15 @@ set(PROJECT_SOURCES
     ${SRC_DIR}/mainwindow.cpp
     ${SRC_DIR}/mainwindow.h
     ${SRC_DIR}/mainwindow.ui
-    ${SRC_DIR}/form.cpp
-    ${SRC_DIR}/form.h
-    ${SRC_DIR}/form.ui
+
+    ${SRC_DIR}/form_dro.cpp
+    ${SRC_DIR}/form_dro.h
+    ${SRC_DIR}/form_dro.ui
+
+    ${SRC_DIR}/form_settings.cpp
+    ${SRC_DIR}/form_settings.h
+    ${SRC_DIR}/form_settings.ui
+
     ${SRC_DIR}/OcctQtViewer.h
     ${SRC_DIR}/OcctQtViewer.cpp
     ${SRC_DIR}/icons.qrc
@@ -137,18 +143,14 @@ set(PROJECT_SOURCES
     ${SRC_DIR}/../../vendor/gcode_parser/gcode_parser.h
     ${SRC_DIR}/../../vendor/gcode_parser/gcode_parser.cpp
 
-    ${SRC_DIR}/../../src/hal/components/state_machine/state_machine_vector.h
-    ${SRC_DIR}/../../src/hal/components/state_machine/state_machine_vector.cpp
+    ${SRC_DIR}/../../vendor/scurve/scurve_engine/scurve_struct.h
+    ${SRC_DIR}/../../vendor/scurve/scurve_engine/scurve_engine.h
+    ${SRC_DIR}/../../vendor/scurve/scurve_engine/scurve_engine.cpp
 
-    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_intf.cpp
-    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_intf.h
-    ${SRC_DIR}/../../vendor/rs274ngc/canon.h
-    ${SRC_DIR}/../../vendor/rs274ngc/canon.cpp
-    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc.h
-    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_errors.h
-    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_pre.cpp
-    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_return.h
-    ${SRC_DIR}/../../vendor/rs274ngc/rs274ngc_data.h
+    ${SRC_DIR}/../../src/hal/components/state_machine/state_machine_shm.h
+    ${SRC_DIR}/../../src/hal/components/state_machine/state_machine_shm.cpp
+
+
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

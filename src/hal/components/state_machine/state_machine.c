@@ -52,9 +52,9 @@ typedef struct {
 } param_bit_data_t;
 
 struct state_machine_vector *ptr; // Pointer to vector c++ class.
-extern struct state_machine_vector* vector_init_ptr();
-extern void vector_detach(struct state_machine_vector *ptr);
-extern double vector_test_value(struct state_machine_vector *ptr);
+extern struct state_machine_vector* stm_init_ptr();
+extern void stm_detach(struct state_machine_vector *ptr);
+extern void stm_state(struct state_machine_vector *ptr);
 
 static int comp_idx; /* component ID */
 
@@ -76,20 +76,20 @@ int rtapi_app_main(void) {
         hal_ready(comp_idx);
     }
 
-    ptr=vector_init_ptr();
+    ptr=stm_init_ptr();
 
     return 0;
 }
 
 void rtapi_app_exit(void){
-    vector_detach(ptr);
+    stm_detach(ptr);
     hal_exit(comp_idx);
 }
 
 //! Perforn's every ms.
 static void the_function(){
 
-    rtapi_print_msg(RTAPI_MSG_ERR,"function call is active.. %f \n",vector_test_value(ptr));
+    stm_state(ptr); // Get the status from the gui.
 
     if(*enable->Pin==1){
 

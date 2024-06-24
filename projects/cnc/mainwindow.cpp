@@ -22,7 +22,7 @@ MainWindow::MainWindow(QWidget *parent)
     QGridLayout *layout=new QGridLayout(occ);
 
     //! Add the controls into the occ gridlayout..
-    layout->addWidget(form);
+    layout->addWidget(dro);
 
     ui->gridLayout_occ->addWidget(occ);
     occ->create_tp_cone();
@@ -40,14 +40,24 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
-    delete ui;
     hal->exit();
+    shm->detach_shared_memory();
+    delete ui;
 }
 
 void MainWindow::update(){
 
-    hal->update();
 
+
+
+
+    shm_data=shm->read_from_shared_memory();
+    dro->update_dro(shm_data.pos,
+                     shm_data.dtg,
+                     shm_data.curvel,
+                     shm_data.homed);
+
+    hal->update();
     //! To update tp moves.
     occ->redraw();
 }
@@ -130,9 +140,8 @@ void MainWindow::on_toolButton_open_pressed()
     occ->redraw();
 
     // Send data to hal state_machine.
-    shared_mem_data d;
-    d.svec=svec;
-    shm->write_to_shared_memory(d);
+    shm_data.svec=svec;
+    shm->write_to_shared_memory(shm_data);
     std::cout<<"writing shapes to shared memory."<<std::endl;
 }
 
@@ -282,12 +291,106 @@ void MainWindow::on_toolButton_to_lower_letters_pressed()
     ui->plainTextEdit_gcode->setPlainText(QString::fromStdString(string));
 }
 
-double value = 12345.0; // Example value to set
 void MainWindow::on_toolButton_test_pressed()
 {
-    shared_mem_data d;
-    d.dvalue=2223333333;
-    d.value=12;
-    shm->write_to_shared_memory(d);
+
 }
+
+void MainWindow::on_toolButton_jog_x_min_pressed()
+{
+    shm_data.jog[0]=-1;
+    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_jog_x_min_released()
+{
+    shm_data.jog[0]=0;
+    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_jog_x_plus_pressed()
+{
+    shm_data.jog[0]=1;
+    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_jog_x_plus_released()
+{
+    shm_data.jog[0]=0;
+    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_jog_y_min_pressed()
+{
+    shm_data.jog[1]=-1;
+    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_jog_y_min_released()
+{
+    shm_data.jog[1]=0;
+    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_jog_y_plus_pressed()
+{
+    shm_data.jog[1]=1;
+    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_jog_y_plus_released()
+{
+    shm_data.jog[1]=0;
+    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_jog_z_min_pressed()
+{
+    shm_data.jog[2]=-1;
+    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_jog_z_min_released()
+{
+    shm_data.jog[2]=0;
+    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_jog_z_plus_pressed()
+{
+    shm_data.jog[2]=1;
+    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_jog_z_plus_released()
+{
+    shm_data.jog[2]=0;
+    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_jog_step_toggled(bool checked)
+{
+    shm_data.jog_step=checked;
+    shm_data.jog_step_size=ui->doubleSpinBox_stepsize->value();
+}
+
+
+
+
+
+
+
+
 
