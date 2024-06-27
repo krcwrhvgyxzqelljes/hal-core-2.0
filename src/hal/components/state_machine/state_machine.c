@@ -52,9 +52,9 @@ typedef struct {
 } param_bit_data_t;
 
 struct state_machine_vector *ptr; // Pointer to vector c++ class.
-extern struct state_machine_vector* stm_init_ptr();
-extern void stm_detach(struct state_machine_vector *ptr);
-extern void stm_state(struct state_machine_vector *ptr);
+extern struct state_machine_vector* shm_init_ptr();
+extern void shm_detach(struct state_machine_vector *ptr);
+extern void shm_update(struct state_machine_vector *ptr);
 
 static int comp_idx; /* component ID */
 
@@ -76,20 +76,20 @@ int rtapi_app_main(void) {
         hal_ready(comp_idx);
     }
 
-    ptr=stm_init_ptr();
+    ptr=shm_init_ptr();
 
     return 0;
 }
 
 void rtapi_app_exit(void){
-    stm_detach(ptr);
+    shm_detach(ptr);
     hal_exit(comp_idx);
 }
 
 //! Perforn's every ms.
 static void the_function(){
 
-    stm_state(ptr); // Get the status from the gui.
+    shm_update(ptr); // Get the status from the gui.
 
     if(*enable->Pin==1){
 

@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[44];
-    char stringdata0[1332];
+    QByteArrayData data[32];
+    char stringdata0[933];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -63,19 +63,7 @@ QT_MOC_LITERAL(27, 760, 37), // "on_toolButton_remove_line_nrs..."
 QT_MOC_LITERAL(28, 798, 40), // "on_toolButton_to_capital_lett..."
 QT_MOC_LITERAL(29, 839, 38), // "on_toolButton_to_lower_letter..."
 QT_MOC_LITERAL(30, 878, 26), // "on_toolButton_test_pressed"
-QT_MOC_LITERAL(31, 905, 31), // "on_toolButton_jog_x_min_pressed"
-QT_MOC_LITERAL(32, 937, 32), // "on_toolButton_jog_x_plus_pressed"
-QT_MOC_LITERAL(33, 970, 31), // "on_toolButton_jog_y_min_pressed"
-QT_MOC_LITERAL(34, 1002, 32), // "on_toolButton_jog_y_plus_pressed"
-QT_MOC_LITERAL(35, 1035, 31), // "on_toolButton_jog_z_min_pressed"
-QT_MOC_LITERAL(36, 1067, 32), // "on_toolButton_jog_z_plus_pressed"
-QT_MOC_LITERAL(37, 1100, 32), // "on_toolButton_jog_x_min_released"
-QT_MOC_LITERAL(38, 1133, 33), // "on_toolButton_jog_x_plus_rele..."
-QT_MOC_LITERAL(39, 1167, 32), // "on_toolButton_jog_y_min_released"
-QT_MOC_LITERAL(40, 1200, 33), // "on_toolButton_jog_y_plus_rele..."
-QT_MOC_LITERAL(41, 1234, 32), // "on_toolButton_jog_z_min_released"
-QT_MOC_LITERAL(42, 1267, 33), // "on_toolButton_jog_z_plus_rele..."
-QT_MOC_LITERAL(43, 1301, 30) // "on_toolButton_jog_step_toggled"
+QT_MOC_LITERAL(31, 905, 27) // "on_toolButton_pause_toggled"
 
     },
     "MainWindow\0on_toolButton_fit_all_pressed\0"
@@ -106,19 +94,7 @@ QT_MOC_LITERAL(43, 1301, 30) // "on_toolButton_jog_step_toggled"
     "on_toolButton_to_capital_letters_pressed\0"
     "on_toolButton_to_lower_letters_pressed\0"
     "on_toolButton_test_pressed\0"
-    "on_toolButton_jog_x_min_pressed\0"
-    "on_toolButton_jog_x_plus_pressed\0"
-    "on_toolButton_jog_y_min_pressed\0"
-    "on_toolButton_jog_y_plus_pressed\0"
-    "on_toolButton_jog_z_min_pressed\0"
-    "on_toolButton_jog_z_plus_pressed\0"
-    "on_toolButton_jog_x_min_released\0"
-    "on_toolButton_jog_x_plus_released\0"
-    "on_toolButton_jog_y_min_released\0"
-    "on_toolButton_jog_y_plus_released\0"
-    "on_toolButton_jog_z_min_released\0"
-    "on_toolButton_jog_z_plus_released\0"
-    "on_toolButton_jog_step_toggled"
+    "on_toolButton_pause_toggled"
 };
 #undef QT_MOC_LITERAL
 
@@ -128,7 +104,7 @@ static const uint qt_meta_data_MainWindow[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      41,   14, // methods
+      29,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -136,47 +112,35 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,  219,    2, 0x08 /* Private */,
-       3,    0,  220,    2, 0x08 /* Private */,
-       4,    0,  221,    2, 0x08 /* Private */,
-       5,    0,  222,    2, 0x08 /* Private */,
-       6,    0,  223,    2, 0x08 /* Private */,
-       7,    0,  224,    2, 0x08 /* Private */,
-       8,    0,  225,    2, 0x08 /* Private */,
-       9,    0,  226,    2, 0x08 /* Private */,
-      10,    0,  227,    2, 0x08 /* Private */,
-      11,    0,  228,    2, 0x08 /* Private */,
-      12,    0,  229,    2, 0x08 /* Private */,
-      13,    0,  230,    2, 0x08 /* Private */,
-      14,    0,  231,    2, 0x08 /* Private */,
-      15,    1,  232,    2, 0x08 /* Private */,
-      17,    0,  235,    2, 0x08 /* Private */,
-      18,    0,  236,    2, 0x08 /* Private */,
-      19,    0,  237,    2, 0x08 /* Private */,
-      20,    1,  238,    2, 0x08 /* Private */,
-      21,    0,  241,    2, 0x08 /* Private */,
-      22,    0,  242,    2, 0x08 /* Private */,
-      23,    0,  243,    2, 0x08 /* Private */,
-      24,    0,  244,    2, 0x08 /* Private */,
-      25,    0,  245,    2, 0x08 /* Private */,
-      26,    0,  246,    2, 0x08 /* Private */,
-      27,    0,  247,    2, 0x08 /* Private */,
-      28,    0,  248,    2, 0x08 /* Private */,
-      29,    0,  249,    2, 0x08 /* Private */,
-      30,    0,  250,    2, 0x08 /* Private */,
-      31,    0,  251,    2, 0x08 /* Private */,
-      32,    0,  252,    2, 0x08 /* Private */,
-      33,    0,  253,    2, 0x08 /* Private */,
-      34,    0,  254,    2, 0x08 /* Private */,
-      35,    0,  255,    2, 0x08 /* Private */,
-      36,    0,  256,    2, 0x08 /* Private */,
-      37,    0,  257,    2, 0x08 /* Private */,
-      38,    0,  258,    2, 0x08 /* Private */,
-      39,    0,  259,    2, 0x08 /* Private */,
-      40,    0,  260,    2, 0x08 /* Private */,
-      41,    0,  261,    2, 0x08 /* Private */,
-      42,    0,  262,    2, 0x08 /* Private */,
-      43,    1,  263,    2, 0x08 /* Private */,
+       1,    0,  159,    2, 0x08 /* Private */,
+       3,    0,  160,    2, 0x08 /* Private */,
+       4,    0,  161,    2, 0x08 /* Private */,
+       5,    0,  162,    2, 0x08 /* Private */,
+       6,    0,  163,    2, 0x08 /* Private */,
+       7,    0,  164,    2, 0x08 /* Private */,
+       8,    0,  165,    2, 0x08 /* Private */,
+       9,    0,  166,    2, 0x08 /* Private */,
+      10,    0,  167,    2, 0x08 /* Private */,
+      11,    0,  168,    2, 0x08 /* Private */,
+      12,    0,  169,    2, 0x08 /* Private */,
+      13,    0,  170,    2, 0x08 /* Private */,
+      14,    0,  171,    2, 0x08 /* Private */,
+      15,    1,  172,    2, 0x08 /* Private */,
+      17,    0,  175,    2, 0x08 /* Private */,
+      18,    0,  176,    2, 0x08 /* Private */,
+      19,    0,  177,    2, 0x08 /* Private */,
+      20,    1,  178,    2, 0x08 /* Private */,
+      21,    0,  181,    2, 0x08 /* Private */,
+      22,    0,  182,    2, 0x08 /* Private */,
+      23,    0,  183,    2, 0x08 /* Private */,
+      24,    0,  184,    2, 0x08 /* Private */,
+      25,    0,  185,    2, 0x08 /* Private */,
+      26,    0,  186,    2, 0x08 /* Private */,
+      27,    0,  187,    2, 0x08 /* Private */,
+      28,    0,  188,    2, 0x08 /* Private */,
+      29,    0,  189,    2, 0x08 /* Private */,
+      30,    0,  190,    2, 0x08 /* Private */,
+      31,    1,  191,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -197,18 +161,6 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Bool,   16,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -258,19 +210,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 25: _t->on_toolButton_to_capital_letters_pressed(); break;
         case 26: _t->on_toolButton_to_lower_letters_pressed(); break;
         case 27: _t->on_toolButton_test_pressed(); break;
-        case 28: _t->on_toolButton_jog_x_min_pressed(); break;
-        case 29: _t->on_toolButton_jog_x_plus_pressed(); break;
-        case 30: _t->on_toolButton_jog_y_min_pressed(); break;
-        case 31: _t->on_toolButton_jog_y_plus_pressed(); break;
-        case 32: _t->on_toolButton_jog_z_min_pressed(); break;
-        case 33: _t->on_toolButton_jog_z_plus_pressed(); break;
-        case 34: _t->on_toolButton_jog_x_min_released(); break;
-        case 35: _t->on_toolButton_jog_x_plus_released(); break;
-        case 36: _t->on_toolButton_jog_y_min_released(); break;
-        case 37: _t->on_toolButton_jog_y_plus_released(); break;
-        case 38: _t->on_toolButton_jog_z_min_released(); break;
-        case 39: _t->on_toolButton_jog_z_plus_released(); break;
-        case 40: _t->on_toolButton_jog_step_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 28: _t->on_toolButton_pause_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -305,13 +245,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 41)
+        if (_id < 29)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 41;
+        _id -= 29;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 41)
+        if (_id < 29)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 41;
+        _id -= 29;
     }
     return _id;
 }

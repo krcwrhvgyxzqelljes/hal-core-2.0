@@ -3,5 +3,6 @@
 #include "EWIEGA46WW/moc_QGCodeEditor.cpp"
 #include "EWIEGA46WW/moc_QGCodeSyntaxHighlighter.cpp"
 #include "EWIEGA46WW/moc_form_dro.cpp"
+#include "EWIEGA46WW/moc_form_jog.cpp"
 #include "EWIEGA46WW/moc_form_settings.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"

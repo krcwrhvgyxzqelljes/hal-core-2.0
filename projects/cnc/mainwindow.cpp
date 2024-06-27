@@ -2,11 +2,7 @@
 #include "./ui_mainwindow.h"
 #include "string"
 
-#define DEBUG 0
-
-#include "BRepBuilderAPI_MakeEdge.hxx"
-
-int comp_id=0;
+extern void shm_update(struct state_machine_shm *ptr);
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -24,6 +20,8 @@ MainWindow::MainWindow(QWidget *parent)
     //! Add the controls into the occ gridlayout..
     layout->addWidget(dro);
 
+    ui->gridLayout_page_manual->addWidget(jog);
+
     ui->gridLayout_occ->addWidget(occ);
     occ->create_tp_cone();
 
@@ -35,7 +33,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //! This activates a screen update when robot is moving and screen needs to be updated automaticly.
     connect(timer, &QTimer::timeout, this, &MainWindow::update);
-    timer->start(50);
+    timer->start(INTERVAL_APP*1000);
 }
 
 MainWindow::~MainWindow()
@@ -47,18 +45,48 @@ MainWindow::~MainWindow()
 
 void MainWindow::update(){
 
-
-
-
-
     shm_data=shm->read_from_shared_memory();
-    dro->update_dro(shm_data.pos,
-                     shm_data.dtg,
-                     shm_data.curvel,
-                     shm_data.homed);
 
-    hal->update();
-    //! To update tp moves.
+
+    shm_data.scd[0].intval=0.001;
+    shm_data.scd[0].jermax=8000;
+    shm_data.scd[0].maxvel=175;
+    shm_data.scd[0].maxacc=1000;
+
+
+
+    if(ui->toolButton_online->isChecked()){
+        ui->toolButton_online->setText(" online");
+        shm_data.online_mode=ONLINE;
+
+        std::cout<<"gui mode realtime."<<std::endl;
+        dro->update_dro(shm_data.pos,
+                        shm_data.dtg,
+                        shm_data.homed,
+                        shm_data.curvel,
+                        shm_data.halruntime);
+
+        jog->update(shm_data.jog,
+                    shm_data.jog_speed_procent,
+                    shm_data.jog_step_enable,
+                    shm_data.jog_step_size);
+        hal->update();
+
+    } else {
+        ui->toolButton_online->setText(" offline");
+        shm_data.online_mode=OFFLINE;
+        std::cout<<"gui mode simulation."<<std::endl;
+    }
+
+    shm->write_to_shared_memory(shm_data);
+
+    occ->translate_tp_cone(shm_data.pos[0],
+            shm_data.pos[1],
+            shm_data.pos[2],
+            shm_data.pos[5],                // Euler Z radians.
+            shm_data.pos[4]+(-0.5*M_PI),    // Euler Y radians.
+            shm_data.pos[3]);               // Euler X radians.
+
     occ->redraw();
 }
 
@@ -127,6 +155,8 @@ void MainWindow::on_toolButton_open_pressed()
     QString gcode=QString::fromStdString(std_functions().read_file_to_string(file_name));
     editor->appendPlainText(gcode);
 
+    ui->label_current_file->setText(QString::fromStdString(file_name));
+
     std::vector<gcode_line> gvec;
     gcode_parser().tokenize(file_name,gvec,1);
 
@@ -137,11 +167,10 @@ void MainWindow::on_toolButton_open_pressed()
     for (const auto& i : svec) {
         occ->add_shapevec(i.aShape);
     }
-    occ->redraw();
 
     // Send data to hal state_machine.
-    shm_data.svec=svec;
-    shm->write_to_shared_memory(shm_data);
+    // shm_data.svec=svec;
+    // shm->write_to_shared_memory(shm_data);
     std::cout<<"writing shapes to shared memory."<<std::endl;
 }
 
@@ -189,6 +218,9 @@ void MainWindow::on_toolButton_manual_pressed()
     ui->toolButton_manual->setDown(1);
 
     ui->stackedWidget_mode_manual_auto_mdi->setCurrentIndex(0);
+
+    shm_data.state_mode=MANUAL;
+    shm->write_to_shared_memory(shm_data);
 }
 
 
@@ -202,6 +234,9 @@ void MainWindow::on_toolButton_auto_pressed()
     ui->toolButton_settings->setChecked(0);
 
     ui->stackedWidget_mode_manual_auto_mdi->setCurrentIndex(1);
+
+    shm_data.state_mode=AUTO;
+    shm->write_to_shared_memory(shm_data);
 }
 
 
@@ -215,6 +250,9 @@ void MainWindow::on_toolButton_mdi_pressed()
     ui->toolButton_settings->setChecked(0);
 
     ui->stackedWidget_mode_manual_auto_mdi->setCurrentIndex(2);
+
+    shm_data.state_mode=MDI;
+    shm->write_to_shared_memory(shm_data);
 }
 
 void MainWindow::on_toolButton_settings_toggled(bool checked)
@@ -236,12 +274,26 @@ void MainWindow::on_toolButton_run_pressed()
     }
     ui->toolButton_run->setDown(1);
     ui->toolButton_stop->setChecked(0);
+
+    shm_data.run_mode=RUN;
+    shm->write_to_shared_memory(shm_data);
+}
+
+void MainWindow::on_toolButton_pause_toggled(bool checked)
+{
+    if(checked){
+        shm_data.run_mode=PAUSE;
+        shm->write_to_shared_memory(shm_data);
+    }
 }
 
 void MainWindow::on_toolButton_stop_pressed()
 {
     ui->toolButton_run->setChecked(0);
     ui->toolButton_stop->setDown(1);
+
+    shm_data.run_mode=STOP;
+    shm->write_to_shared_memory(shm_data);
 }
 
 void MainWindow::on_toolButton_edit_pressed()
@@ -295,102 +347,6 @@ void MainWindow::on_toolButton_test_pressed()
 {
 
 }
-
-void MainWindow::on_toolButton_jog_x_min_pressed()
-{
-    shm_data.jog[0]=-1;
-    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
-    shm->write_to_shared_memory(shm_data);
-}
-
-void MainWindow::on_toolButton_jog_x_min_released()
-{
-    shm_data.jog[0]=0;
-    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
-    shm->write_to_shared_memory(shm_data);
-}
-
-void MainWindow::on_toolButton_jog_x_plus_pressed()
-{
-    shm_data.jog[0]=1;
-    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
-    shm->write_to_shared_memory(shm_data);
-}
-
-void MainWindow::on_toolButton_jog_x_plus_released()
-{
-    shm_data.jog[0]=0;
-    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
-    shm->write_to_shared_memory(shm_data);
-}
-
-void MainWindow::on_toolButton_jog_y_min_pressed()
-{
-    shm_data.jog[1]=-1;
-    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
-    shm->write_to_shared_memory(shm_data);
-}
-
-void MainWindow::on_toolButton_jog_y_min_released()
-{
-    shm_data.jog[1]=0;
-    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
-    shm->write_to_shared_memory(shm_data);
-}
-
-void MainWindow::on_toolButton_jog_y_plus_pressed()
-{
-    shm_data.jog[1]=1;
-    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
-    shm->write_to_shared_memory(shm_data);
-}
-
-void MainWindow::on_toolButton_jog_y_plus_released()
-{
-    shm_data.jog[1]=0;
-    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
-    shm->write_to_shared_memory(shm_data);
-}
-
-void MainWindow::on_toolButton_jog_z_min_pressed()
-{
-    shm_data.jog[2]=-1;
-    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
-    shm->write_to_shared_memory(shm_data);
-}
-
-void MainWindow::on_toolButton_jog_z_min_released()
-{
-    shm_data.jog[2]=0;
-    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
-    shm->write_to_shared_memory(shm_data);
-}
-
-void MainWindow::on_toolButton_jog_z_plus_pressed()
-{
-    shm_data.jog[2]=1;
-    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
-    shm->write_to_shared_memory(shm_data);
-}
-
-void MainWindow::on_toolButton_jog_z_plus_released()
-{
-    shm_data.jog[2]=0;
-    shm_data.jog_velocity=ui->horizontalSlider_jog_velocity->value();
-    shm->write_to_shared_memory(shm_data);
-}
-
-void MainWindow::on_toolButton_jog_step_toggled(bool checked)
-{
-    shm_data.jog_step=checked;
-    shm_data.jog_step_size=ui->doubleSpinBox_stepsize->value();
-}
-
-
-
-
-
-
 
 
 

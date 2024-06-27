@@ -6,16 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>434</width>
-    <height>347</height>
+    <width>453</width>
+    <height>397</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(42, 42, 42);
-color: rgb(255, 255, 255);</string>
+   <string notr="true">background-color: rgba(42, 42, 42,0);
+color: rgba(255, 255, 255,255);</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
    <item row="0" column="0">
@@ -523,6 +529,20 @@ color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>0.000</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Time</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="4">
+      <widget class="QLabel" name="label_dro_time">
+       <property name="text">
+        <string>0 </string>
        </property>
       </widget>
      </item>

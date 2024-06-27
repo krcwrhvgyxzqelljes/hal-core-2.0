@@ -23,13 +23,15 @@ include_directories(${SRC_DIR})
 include_directories(${SRC_DIR}/../../vendor/hal_functions)
 include_directories(${SRC_DIR}/../../vendor/qt_functions)
 include_directories(${SRC_DIR}/../../vendor/std_functions)
+include_directories(${SRC_DIR}/../../vendor/shmem_functions)
 include_directories(${SRC_DIR}/../../vendor/occ_draw)
 include_directories(${SRC_DIR}/../../vendor/icons)
-include_directories(${SRC_DIR}/../../vendor/oce-upstream-V7_5_0beta/inc)
+include_directories(${SRC_DIR}/../../vendor/oce-upstream-V7_5_0beta/build/include/opencascade)
 include_directories(${SRC_DIR}/../../vendor/Clothoids/lib/include)
 include_directories(${SRC_DIR}/../../vendor/Clothoids/lib3rd/include)
 include_directories(${SRC_DIR}/../../vendor/gcode_parser)
 include_directories(${SRC_DIR}/../../vendor/scurve/scurve_engine)
+include_directories(${SRC_DIR}/../../vendor/rs274ngc)
 
 include_directories(${SRC_DIR}/../../src/hal/components/state_machine)
 
@@ -117,6 +119,10 @@ set(PROJECT_SOURCES
     ${SRC_DIR}/form_settings.h
     ${SRC_DIR}/form_settings.ui
 
+    ${SRC_DIR}/form_jog.cpp
+    ${SRC_DIR}/form_jog.h
+    ${SRC_DIR}/form_jog.ui
+
     ${SRC_DIR}/OcctQtViewer.h
     ${SRC_DIR}/OcctQtViewer.cpp
     ${SRC_DIR}/icons.qrc
@@ -147,10 +153,8 @@ set(PROJECT_SOURCES
     ${SRC_DIR}/../../vendor/scurve/scurve_engine/scurve_engine.h
     ${SRC_DIR}/../../vendor/scurve/scurve_engine/scurve_engine.cpp
 
-    ${SRC_DIR}/../../src/hal/components/state_machine/state_machine_shm.h
-    ${SRC_DIR}/../../src/hal/components/state_machine/state_machine_shm.cpp
-
-
+    ${SRC_DIR}/../../vendor/shmem_functions/state_machine_shm.h
+    ${SRC_DIR}/../../vendor/shmem_functions/state_machine_shm.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -185,5 +189,8 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../bin)
 
 # Copy files during build.
+configure_file(${SRC_DIR}/../../vendor/rs274ngc/rs274ngc.var ${BUILD_DIR}/ COPYONLY)
+configure_file(${SRC_DIR}/../../vendor/rs274ngc/rs274ngc.tool_default ${BUILD_DIR}/ COPYONLY)
+
 configure_file(${SRC_DIR}/../../vendor/rs274ngc/rs274ngc.var ${BUILD_DIR}/../../../bin COPYONLY)
 configure_file(${SRC_DIR}/../../vendor/rs274ngc/rs274ngc.tool_default ${BUILD_DIR}/../../../bin COPYONLY)

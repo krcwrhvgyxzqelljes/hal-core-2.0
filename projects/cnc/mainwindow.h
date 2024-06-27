@@ -35,6 +35,7 @@
 
 // Opencascade occ widget overlay, ensure it's a created from qt->add_new->dialog_gui_class->widget.
 #include "form_dro.h"
+#include "form_jog.h"
 
 // Qt widget, gcode editor.
 #include "QGCodeEditor.h"
@@ -123,31 +124,7 @@ private slots:
 
     void on_toolButton_test_pressed();
 
-    void on_toolButton_jog_x_min_pressed();
-
-    void on_toolButton_jog_x_plus_pressed();
-
-    void on_toolButton_jog_y_min_pressed();
-
-    void on_toolButton_jog_y_plus_pressed();
-
-    void on_toolButton_jog_z_min_pressed();
-
-    void on_toolButton_jog_z_plus_pressed();
-
-    void on_toolButton_jog_x_min_released();
-
-    void on_toolButton_jog_x_plus_released();
-
-    void on_toolButton_jog_y_min_released();
-
-    void on_toolButton_jog_y_plus_released();
-
-    void on_toolButton_jog_z_min_released();
-
-    void on_toolButton_jog_z_plus_released();
-
-    void on_toolButton_jog_step_toggled(bool checked);
+    void on_toolButton_pause_toggled(bool checked);
 
 private:
     Ui::MainWindow *ui;
@@ -157,6 +134,7 @@ private:
     OcctQtViewer *occ;
 
     form_dro *dro = new form_dro();
+    form_jog *jog = new form_jog();
 
     hal_functions *hal = new hal_functions();
 

@@ -21,7 +21,8 @@ include_directories(${LIB_DIR})
 
 include_directories(${SRC_DIR}/../../../../vendor/gcode_parser)
 include_directories(${SRC_DIR}/../../../../vendor/std_functions)
-include_directories(${SRC_DIR}/../../../../vendor/oce-upstream-V7_5_0beta/inc)
+include_directories(${SRC_DIR}/../../../../vendor/shmem_functions)
+include_directories(${SRC_DIR}/../../../../vendor/oce-upstream-V7_5_0beta/build/include/opencascade)
 include_directories(${SRC_DIR}/../../../../vendor/scurve/scurve_engine)
 
 # Opencascade
@@ -61,8 +62,8 @@ set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} SHARED
     ${SRC_DIR}/state_machine.c
-    ${SRC_DIR}/state_machine_shm.h
-    ${SRC_DIR}/state_machine_shm.cpp
+    ${SRC_DIR}/../../../../vendor/shmem_functions/state_machine_shm.h
+    ${SRC_DIR}/../../../../vendor/shmem_functions/state_machine_shm.cpp
 
     ${SRC_DIR}/../../../../vendor/scurve/scurve_engine/scurve_struct.h
     ${SRC_DIR}/../../../../vendor/scurve/scurve_engine/scurve_reset.h

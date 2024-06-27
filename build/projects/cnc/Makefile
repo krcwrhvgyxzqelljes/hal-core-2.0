@@ -261,30 +261,6 @@ QGCodeSyntaxHighlighter.cpp.s:
 	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/QGCodeSyntaxHighlighter.cpp.s
 .PHONY : QGCodeSyntaxHighlighter.cpp.s
 
-__/__/src/hal/components/state_machine/state_machine_shm.o: __/__/src/hal/components/state_machine/state_machine_shm.cpp.o
-.PHONY : __/__/src/hal/components/state_machine/state_machine_shm.o
-
-# target to build an object file
-__/__/src/hal/components/state_machine/state_machine_shm.cpp.o:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_shm.cpp.o
-.PHONY : __/__/src/hal/components/state_machine/state_machine_shm.cpp.o
-
-__/__/src/hal/components/state_machine/state_machine_shm.i: __/__/src/hal/components/state_machine/state_machine_shm.cpp.i
-.PHONY : __/__/src/hal/components/state_machine/state_machine_shm.i
-
-# target to preprocess a source file
-__/__/src/hal/components/state_machine/state_machine_shm.cpp.i:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_shm.cpp.i
-.PHONY : __/__/src/hal/components/state_machine/state_machine_shm.cpp.i
-
-__/__/src/hal/components/state_machine/state_machine_shm.s: __/__/src/hal/components/state_machine/state_machine_shm.cpp.s
-.PHONY : __/__/src/hal/components/state_machine/state_machine_shm.s
-
-# target to generate assembly for a file
-__/__/src/hal/components/state_machine/state_machine_shm.cpp.s:
-	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/src/hal/components/state_machine/state_machine_shm.cpp.s
-.PHONY : __/__/src/hal/components/state_machine/state_machine_shm.cpp.s
-
 __/__/vendor/gcode_parser/gcode_parser.o: __/__/vendor/gcode_parser/gcode_parser.cpp.o
 .PHONY : __/__/vendor/gcode_parser/gcode_parser.o
 
@@ -429,6 +405,30 @@ __/__/vendor/scurve/scurve_engine/scurve_engine.cpp.s:
 	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/scurve/scurve_engine/scurve_engine.cpp.s
 .PHONY : __/__/vendor/scurve/scurve_engine/scurve_engine.cpp.s
 
+__/__/vendor/shmem_functions/state_machine_shm.o: __/__/vendor/shmem_functions/state_machine_shm.cpp.o
+.PHONY : __/__/vendor/shmem_functions/state_machine_shm.o
+
+# target to build an object file
+__/__/vendor/shmem_functions/state_machine_shm.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/shmem_functions/state_machine_shm.cpp.o
+.PHONY : __/__/vendor/shmem_functions/state_machine_shm.cpp.o
+
+__/__/vendor/shmem_functions/state_machine_shm.i: __/__/vendor/shmem_functions/state_machine_shm.cpp.i
+.PHONY : __/__/vendor/shmem_functions/state_machine_shm.i
+
+# target to preprocess a source file
+__/__/vendor/shmem_functions/state_machine_shm.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/shmem_functions/state_machine_shm.cpp.i
+.PHONY : __/__/vendor/shmem_functions/state_machine_shm.cpp.i
+
+__/__/vendor/shmem_functions/state_machine_shm.s: __/__/vendor/shmem_functions/state_machine_shm.cpp.s
+.PHONY : __/__/vendor/shmem_functions/state_machine_shm.s
+
+# target to generate assembly for a file
+__/__/vendor/shmem_functions/state_machine_shm.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/__/__/vendor/shmem_functions/state_machine_shm.cpp.s
+.PHONY : __/__/vendor/shmem_functions/state_machine_shm.cpp.s
+
 __/__/vendor/std_functions/std_functions.o: __/__/vendor/std_functions/std_functions.cpp.o
 .PHONY : __/__/vendor/std_functions/std_functions.o
 
@@ -525,6 +525,30 @@ form_dro.cpp.s:
 	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form_dro.cpp.s
 .PHONY : form_dro.cpp.s
 
+form_jog.o: form_jog.cpp.o
+.PHONY : form_jog.o
+
+# target to build an object file
+form_jog.cpp.o:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form_jog.cpp.o
+.PHONY : form_jog.cpp.o
+
+form_jog.i: form_jog.cpp.i
+.PHONY : form_jog.i
+
+# target to preprocess a source file
+form_jog.cpp.i:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form_jog.cpp.i
+.PHONY : form_jog.cpp.i
+
+form_jog.s: form_jog.cpp.s
+.PHONY : form_jog.s
+
+# target to generate assembly for a file
+form_jog.cpp.s:
+	cd /home/user/hal-core-2.0/build && $(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/form_jog.cpp.s
+.PHONY : form_jog.cpp.s
+
 form_settings.o: form_settings.cpp.o
 .PHONY : form_settings.o
 
@@ -620,9 +644,6 @@ help:
 	@echo "... QGCodeSyntaxHighlighter.o"
 	@echo "... QGCodeSyntaxHighlighter.i"
 	@echo "... QGCodeSyntaxHighlighter.s"
-	@echo "... __/__/src/hal/components/state_machine/state_machine_shm.o"
-	@echo "... __/__/src/hal/components/state_machine/state_machine_shm.i"
-	@echo "... __/__/src/hal/components/state_machine/state_machine_shm.s"
 	@echo "... __/__/vendor/gcode_parser/gcode_parser.o"
 	@echo "... __/__/vendor/gcode_parser/gcode_parser.i"
 	@echo "... __/__/vendor/gcode_parser/gcode_parser.s"
@@ -641,6 +662,9 @@ help:
 	@echo "... __/__/vendor/scurve/scurve_engine/scurve_engine.o"
 	@echo "... __/__/vendor/scurve/scurve_engine/scurve_engine.i"
 	@echo "... __/__/vendor/scurve/scurve_engine/scurve_engine.s"
+	@echo "... __/__/vendor/shmem_functions/state_machine_shm.o"
+	@echo "... __/__/vendor/shmem_functions/state_machine_shm.i"
+	@echo "... __/__/vendor/shmem_functions/state_machine_shm.s"
 	@echo "... __/__/vendor/std_functions/std_functions.o"
 	@echo "... __/__/vendor/std_functions/std_functions.i"
 	@echo "... __/__/vendor/std_functions/std_functions.s"
@@ -653,6 +677,9 @@ help:
 	@echo "... form_dro.o"
 	@echo "... form_dro.i"
 	@echo "... form_dro.s"
+	@echo "... form_jog.o"
+	@echo "... form_jog.i"
+	@echo "... form_jog.s"
 	@echo "... form_settings.o"
 	@echo "... form_settings.i"
 	@echo "... form_settings.s"

@@ -13,7 +13,7 @@ form_dro::~form_dro()
     delete ui;
 }
 
-void form_dro::update_dro(double *dro, double *dro_dtg, double vel, int *homed){
+void form_dro::update_dro(double *dro, double *dro_dtg, int *homed, double vel, double time){
 
     ui->label_dro_x->setText(QString::number(dro[0],'f',3));
     ui->label_dro_y->setText(QString::number(dro[1],'f',3));
@@ -40,6 +40,7 @@ void form_dro::update_dro(double *dro, double *dro_dtg, double vel, int *homed){
     ui->label_dro_dtg_w->setText(QString::number(dro_dtg[8],'f',3));
 
     ui->label_dro_vel->setText(QString::number(vel*60,'f',3));
+    ui->label_dro_time->setText(QString::number(time,'f',3));
 
     if(homed[0]){
         ui->label_dro_uh_x->setText(QString("H"));

@@ -150,6 +150,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/hal/components/state_machine/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/hal/components/ethercat/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/hal/components/hm2_eth/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "projects/cnc/rs274ngc.var"
+  "projects/cnc/rs274ngc.tool_default"
   "/home/user/hal-core-2.0/bin/rs274ngc.var"
   "/home/user/hal-core-2.0/bin/rs274ngc.tool_default"
   "projects/cnc/CMakeFiles/cnc_autogen.dir/AutogenInfo.json"

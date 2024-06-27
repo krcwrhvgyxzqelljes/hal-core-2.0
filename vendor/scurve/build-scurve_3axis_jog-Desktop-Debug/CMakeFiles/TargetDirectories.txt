@@ -1,0 +1,4 @@
+/home/user/hal-core-2.0/vendor/scurve/build-scurve_3axis_jog-Desktop-Debug/CMakeFiles/scurve_3axis_jog.dir
+/home/user/hal-core-2.0/vendor/scurve/build-scurve_3axis_jog-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/user/hal-core-2.0/vendor/scurve/build-scurve_3axis_jog-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/user/hal-core-2.0/vendor/scurve/build-scurve_3axis_jog-Desktop-Debug/CMakeFiles/scurve_3axis_jog_autogen.dir
