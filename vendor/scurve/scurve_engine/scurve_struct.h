@@ -52,6 +52,8 @@ struct scurve_data {
     double guipos;              // Guipos has no reverse pos.
     double guivel;
     double guiacc;
+    double maxpos;              // Limit for jogging +
+    double minpos;              // Limit for jogging -
     int finish;                 // Curve has no velocity.
 
     double incpos;              // Increment position for each cycle. Includes reverse motion.

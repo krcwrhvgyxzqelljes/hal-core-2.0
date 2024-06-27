@@ -36,6 +36,7 @@
 // Opencascade occ widget overlay, ensure it's a created from qt->add_new->dialog_gui_class->widget.
 #include "form_dro.h"
 #include "form_jog.h"
+#include "form_settings.h"
 
 // Qt widget, gcode editor.
 #include "QGCodeEditor.h"
@@ -135,6 +136,7 @@ private:
 
     form_dro *dro = new form_dro();
     form_jog *jog = new form_jog();
+    form_settings *settings = new form_settings();
 
     hal_functions *hal = new hal_functions();
 

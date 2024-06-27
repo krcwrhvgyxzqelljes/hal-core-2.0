@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
     layout->addWidget(dro);
 
     ui->gridLayout_page_manual->addWidget(jog);
+    ui->gridLayout_settings->addWidget(settings);
 
     ui->gridLayout_occ->addWidget(occ);
     occ->create_tp_cone();
@@ -33,7 +34,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //! This activates a screen update when robot is moving and screen needs to be updated automaticly.
     connect(timer, &QTimer::timeout, this, &MainWindow::update);
-    timer->start(INTERVAL_APP*1000);
+    timer->start(50);
 }
 
 MainWindow::~MainWindow()
@@ -47,19 +48,32 @@ void MainWindow::update(){
 
     shm_data=shm->read_from_shared_memory();
 
+    double maxvel[10];
+    double maxacc[10];
+    double maxjer[10];
+    double maxpos[10];
+    double minpos[10];
+    settings->read_settings(maxvel,maxacc,maxjer,maxpos,minpos);
 
-    shm_data.scd[0].intval=0.001;
-    shm_data.scd[0].jermax=8000;
-    shm_data.scd[0].maxvel=175;
-    shm_data.scd[0].maxacc=1000;
+    for(uint i=0; i<10; i++){
+        if(shm_data.state_mode==MANUAL){ // Apply jog procent speed.
+            shm_data.scd[i].maxvel=maxvel[i]*(shm_data.jog_speed_procent/100);
+        } else {
+            shm_data.scd[i].maxvel=maxvel[i];
+        }
 
-
+        shm_data.scd[i].maxacc=maxacc[i];
+        shm_data.scd[i].jermax=maxjer[i];
+        shm_data.scd[i].maxpos=maxpos[i];
+        shm_data.scd[i].minpos=minpos[i];
+        shm_data.scd[i].intval=0.001;
+    }
 
     if(ui->toolButton_online->isChecked()){
         ui->toolButton_online->setText(" online");
         shm_data.online_mode=ONLINE;
 
-        std::cout<<"gui mode realtime."<<std::endl;
+        // std::cout<<"gui mode realtime."<<std::endl;
         dro->update_dro(shm_data.pos,
                         shm_data.dtg,
                         shm_data.homed,
@@ -75,7 +89,7 @@ void MainWindow::update(){
     } else {
         ui->toolButton_online->setText(" offline");
         shm_data.online_mode=OFFLINE;
-        std::cout<<"gui mode simulation."<<std::endl;
+        // std::cout<<"gui mode simulation."<<std::endl;
     }
 
     shm->write_to_shared_memory(shm_data);
@@ -83,9 +97,9 @@ void MainWindow::update(){
     occ->translate_tp_cone(shm_data.pos[0],
             shm_data.pos[1],
             shm_data.pos[2],
-            shm_data.pos[5],                // Euler Z radians.
+            shm_data.pos[3],                // Euler Z radians.
             shm_data.pos[4]+(-0.5*M_PI),    // Euler Y radians.
-            shm_data.pos[3]);               // Euler X radians.
+            shm_data.pos[5]);               // Euler X radians.
 
     occ->redraw();
 }
@@ -347,6 +361,5 @@ void MainWindow::on_toolButton_test_pressed()
 {
 
 }
-
 
 

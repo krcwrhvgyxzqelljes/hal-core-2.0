@@ -4,6 +4,7 @@
   /home/user/hal-core-2.0/projects/cnc/QGCodeEditor.h \
   /home/user/hal-core-2.0/projects/cnc/form_dro.h \
   /home/user/hal-core-2.0/projects/cnc/form_jog.h \
+  /home/user/hal-core-2.0/projects/cnc/form_settings.h \
   /home/user/hal-core-2.0/src/hal/hal.h \
   /home/user/hal-core-2.0/src/rtapi/rtapi.h \
   /home/user/hal-core-2.0/src/rtapi/rtapi_bool.h \

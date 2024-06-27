@@ -13737,6 +13737,7 @@ projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/mocs_compilation.cpp.o: projects/cnc
   /home/user/hal-core-2.0/vendor/scurve/scurve_engine/scurve_struct.h \
   /home/user/hal-core-2.0/projects/cnc/form_dro.h \
   /home/user/hal-core-2.0/projects/cnc/form_jog.h \
+  /home/user/hal-core-2.0/projects/cnc/form_settings.h \
   /home/user/hal-core-2.0/projects/cnc/QGCodeEditor.h \
   /home/user/hal-core-2.0/vendor/hal_functions/hal_functions.h \
   /home/user/hal-core-2.0/src/hal/hal.h \
@@ -14829,10 +14830,6 @@ projects/cnc/CMakeFiles/cnc.dir/form_settings.cpp.o: /home/user/hal-core-2.0/pro
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qinputmethod.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qlocale.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qvariant.h \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QCheckBox \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qcheckbox.h \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractbutton.h \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qicon.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDialog \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QGridLayout \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qgridlayout.h \
@@ -14849,6 +14846,23 @@ projects/cnc/CMakeFiles/cnc.dir/form_settings.cpp.o: /home/user/hal-core-2.0/pro
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextformat.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qpen.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextoption.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QPlainTextEdit \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qplaintextedit.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtextedit.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextdocument.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qurl.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextlayout.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qevent.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qset.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qfile.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qfiledevice.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qvector2d.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtouchdevice.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qglyphrun.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qrawfont.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qfontdatabase.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSpacerItem \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlayoutitem.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QSpinBox \
@@ -14857,7 +14871,26 @@ projects/cnc/CMakeFiles/cnc.dir/form_settings.cpp.o: /home/user/hal-core-2.0/pro
   /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qvalidator.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qregularexpression.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QToolButton \
-  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtoolbutton.h
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtoolbutton.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qicon.h \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QSettings \
+  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qsettings.h \
+  /usr/include/c++/12/iostream \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/bits/istream.tcc
 
 projects/cnc/CMakeFiles/cnc.dir/main.cpp.o: /home/user/hal-core-2.0/projects/cnc/main.cpp \
   /usr/include/stdc-predef.h \
@@ -17087,6 +17120,7 @@ projects/cnc/CMakeFiles/cnc.dir/main.cpp.o: /home/user/hal-core-2.0/projects/cnc
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDialog \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qdialog.h \
   /home/user/hal-core-2.0/projects/cnc/form_jog.h \
+  /home/user/hal-core-2.0/projects/cnc/form_settings.h \
   /home/user/hal-core-2.0/projects/cnc/QGCodeEditor.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QObject \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qobject.h \
@@ -19370,6 +19404,7 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDialog \
   /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qdialog.h \
   /home/user/hal-core-2.0/projects/cnc/form_jog.h \
+  /home/user/hal-core-2.0/projects/cnc/form_settings.h \
   /home/user/hal-core-2.0/projects/cnc/QGCodeEditor.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QObject \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qobject.h \
@@ -19465,6 +19500,8 @@ projects/cnc/CMakeFiles/cnc.dir/mainwindow.cpp.o: /home/user/hal-core-2.0/projec
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QHBoxLayout:
 
 /home/user/hal-core-2.0/projects/cnc/main.cpp:
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtCore/QSettings:
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QLineEdit:
 
@@ -23530,8 +23567,6 @@ projects/cnc/cnc_autogen/EWIEGA46WW/moc_form_settings.cpp:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/build/include/opencascade/BVH_Builder.hxx:
 
-/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QCheckBox:
-
 /usr/include/c++/12/bits/sstream.tcc:
 
 /home/user/hal-core-2.0/vendor/oce-upstream-V7_5_0beta/build/include/opencascade/TopoDS_Vertex.lxx:
@@ -25017,8 +25052,6 @@ projects/cnc/cnc_autogen/EWIEGA46WW/moc_form_dro.cpp:
 /usr/include/eigen3/Eigen/src/Core/NumTraits.h:
 
 /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
-
-/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qcheckbox.h:
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
 

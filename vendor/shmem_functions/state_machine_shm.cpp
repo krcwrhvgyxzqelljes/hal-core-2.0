@@ -98,59 +98,74 @@ extern "C" void shm_detach(struct state_machine_shm *ptr){
     ptr->detach_shared_memory();
 }
 
+// Function to calculate the combined velocity for x,y,z axis.
+double combined_velocity(double vx, double vy, double vz) {
+    return std::sqrt(vx * vx + vy * vy + vz * vz);
+}
+
 extern "C" void shm_update(struct state_machine_shm *ptr){
 
     // Acquire lock to ensure exclusive access
     std::lock_guard<std::mutex> lock(mtx);
+
+    ptr->shm_ptr->halruntime+=0.001;
 
     if(ptr->shm_ptr->online_mode==ONLINE){
 
         //std::cout<<"hal online."<<std::endl;
         if(ptr->shm_ptr->state_mode==MANUAL){
 
-            std::cout<<"hal mode manual."<<std::endl;
+            for(uint id=0; id<10; id++){
 
-            ptr->shm_ptr->halruntime+=0.001;
-
-            // Check axis buttons.
-            if(ptr->shm_ptr->jog[0]==1){
-                std::cout<<"jog x+"<<std::endl;
-                scurve_engine().jog_position_master(ptr->shm_ptr->scd[0],
-                                                    1,
-                                                    0,
-                                                    0,
-                                                    INFINITY,1,0);
-            }
-            if(ptr->shm_ptr->jog[0]==0){
-                std::cout<<"jog x stop"<<std::endl;
-                if(ptr->shm_ptr->scd[0].guivel>=0){
-                    scurve_engine().jog_velocity(ptr->shm_ptr->scd[0],0,0,0,INFINITY);
-                } else {
-                    scurve_engine().jog_velocity(ptr->shm_ptr->scd[0],0,0,0,-INFINITY);
+                // Jog step trigger reset on button release.
+                if(ptr->shm_ptr->jog_step_trigger[id] && ptr->shm_ptr->jog[id]==0){
+                    ptr->shm_ptr->jog_step_trigger[id]=0;
                 }
+
+                // Apply the jog stepsize if jog step is active, respect machine limits.
+                if(ptr->shm_ptr->jog_step_enable && !ptr->shm_ptr->jog_step_trigger[id]){
+                    ptr->shm_ptr->maxpos[id]= fmin( ptr->shm_ptr->scd[id].maxpos, ptr->shm_ptr->scd[id].guipos+ptr->shm_ptr->jog_step_size );
+                    ptr->shm_ptr->minpos[id]= fmax( ptr->shm_ptr->scd[id].minpos, ptr->shm_ptr->scd[id].guipos-ptr->shm_ptr->jog_step_size );
+                    ptr->shm_ptr->jog_step_trigger[id]=1;
+                }
+
+                // Apply the machine limits to the jog.
+                if(!ptr->shm_ptr->jog_step_enable){
+                    ptr->shm_ptr->maxpos[id]=ptr->shm_ptr->scd[id].maxpos;
+                    ptr->shm_ptr->minpos[id]=ptr->shm_ptr->scd[id].minpos;
+                }
+
+                // Jog routine.
+                if(ptr->shm_ptr->jog[id]==1){
+                    scurve_engine().jog_position_master(ptr->shm_ptr->scd[id],1,0,0,ptr->shm_ptr->maxpos[id],1,0);
+                }
+                if(ptr->shm_ptr->jog[id]==0){
+                    if(ptr->shm_ptr->scd[0].guivel>=0){
+                        scurve_engine().jog_velocity(ptr->shm_ptr->scd[id],0,0,0,ptr->shm_ptr->maxpos[id]);
+                    } else {
+                        scurve_engine().jog_velocity(ptr->shm_ptr->scd[id],0,0,0,ptr->shm_ptr->minpos[id]);
+                    }
+                }
+                if(ptr->shm_ptr->jog[id]==-1){
+                    scurve_engine().jog_position_master(ptr->shm_ptr->scd[id],1,0,0,ptr->shm_ptr->minpos[id],0,1);
+                }
+                scurve_engine().jog_update(ptr->shm_ptr->scd[id]);
+                ptr->shm_ptr->pos[id]=ptr->shm_ptr->scd[id].guipos;
             }
-            if(ptr->shm_ptr->jog[0]==-1){
-                std::cout<<"jog x-"<<std::endl;
-                scurve_engine().jog_position_master(ptr->shm_ptr->scd[0],
-                                                    1,
-                                                   0,
-                                                    0,
-                                                    -INFINITY,0,1);
-            }
-            scurve_engine().jog_update(ptr->shm_ptr->scd[0]);
-            ptr->shm_ptr->pos[0]=ptr->shm_ptr->scd[0].guipos;
+
+            // Get the total velocity for xyz moves to display in the dro.
+            ptr->shm_ptr->curvel=combined_velocity(ptr->shm_ptr->scd[0].guivel,ptr->shm_ptr->scd[1].guivel,ptr->shm_ptr->scd[2].guivel);
         }
 
         if(ptr->shm_ptr->state_mode==AUTO){
-            std::cout<<"hal mode auto."<<std::endl;
+
+            std::cout<<"gcode vec size:"<<ptr->shm_ptr->svec.size()<<std::endl;
+
         }
         if(ptr->shm_ptr->state_mode==MDI){
-            std::cout<<"hal mode mdi."<<std::endl;
+
         }
-
-
     }
-
 }
 
 

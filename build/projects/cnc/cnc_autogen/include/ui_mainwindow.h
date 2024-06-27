@@ -82,6 +82,8 @@ public:
     QLabel *label_14;
     QLabel *label_current_file;
     QWidget *page_settings;
+    QGridLayout *gridLayout_14;
+    QGridLayout *gridLayout_settings;
     QStackedWidget *stackedWidget_mode_manual_auto_mdi;
     QWidget *page_manual;
     QGridLayout *gridLayout_10;
@@ -531,6 +533,13 @@ public:
         stackedWidget_main->addWidget(page_occ_gcode);
         page_settings = new QWidget();
         page_settings->setObjectName(QString::fromUtf8("page_settings"));
+        gridLayout_14 = new QGridLayout(page_settings);
+        gridLayout_14->setObjectName(QString::fromUtf8("gridLayout_14"));
+        gridLayout_settings = new QGridLayout();
+        gridLayout_settings->setObjectName(QString::fromUtf8("gridLayout_settings"));
+
+        gridLayout_14->addLayout(gridLayout_settings, 0, 0, 1, 1);
+
         stackedWidget_main->addWidget(page_settings);
         splitter_2->addWidget(stackedWidget_main);
         stackedWidget_mode_manual_auto_mdi = new QStackedWidget(splitter_2);

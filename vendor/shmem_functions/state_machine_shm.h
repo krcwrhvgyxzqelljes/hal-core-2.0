@@ -13,8 +13,6 @@
 
 // Define the key for shared memory
 #define SHM_KEY 1234  // Example key value
-#define INTERVAL_APP 0.050
-#define INTERVAL_HAL 0.001
 
 /*
 
@@ -55,9 +53,6 @@ struct shared_mem_data {
     cnc_online_mode online_mode;
     cnc_run_mode run_mode;
 
-    double maxvel[10];
-    double maxacc[10];
-    double maxjerk[10];
     double pos[10];
     double dtg[10];
     int homed[10];
@@ -65,6 +60,9 @@ struct shared_mem_data {
     double curvel=0;
 
     int jog[10]; // -1 is negative jog, 0 is jog stop, 1 is jog positive.
+    int jog_step_trigger[10];
+    double maxpos[10];
+    double minpos[10];
     double jog_speed_procent;
     double jog_step_size;
     double jog_velocity;

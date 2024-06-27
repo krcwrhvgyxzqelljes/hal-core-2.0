@@ -2206,6 +2206,7 @@ projects/cnc/CMakeFiles/cnc.dir/cnc_autogen/mocs_compilation.cpp.o: \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/scurve/scurve_engine/scurve_struct.h \
  /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/EWIEGA46WW/../../../../../projects/cnc/form_dro.h \
  /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/EWIEGA46WW/../../../../../projects/cnc/form_jog.h \
+ /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/EWIEGA46WW/../../../../../projects/cnc/form_settings.h \
  /home/user/hal-core-2.0/build/projects/cnc/cnc_autogen/EWIEGA46WW/../../../../../projects/cnc/QGCodeEditor.h \
  /home/user/hal-core-2.0/projects/cnc/../../vendor/hal_functions/hal_functions.h \
  /home/user/hal-core-2.0/src/hal/hal.h \

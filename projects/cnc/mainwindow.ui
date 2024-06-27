@@ -847,7 +847,13 @@ color: rgb(255, 255, 255);</string>
              </item>
             </layout>
            </widget>
-           <widget class="QWidget" name="page_settings"/>
+           <widget class="QWidget" name="page_settings">
+            <layout class="QGridLayout" name="gridLayout_14">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_settings"/>
+             </item>
+            </layout>
+           </widget>
           </widget>
           <widget class="QStackedWidget" name="stackedWidget_mode_manual_auto_mdi">
            <property name="sizePolicy">

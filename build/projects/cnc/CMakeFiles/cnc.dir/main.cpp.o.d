@@ -2154,6 +2154,7 @@ projects/cnc/CMakeFiles/cnc.dir/main.cpp.o: \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QDialog \
  /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qdialog.h \
  /home/user/hal-core-2.0/projects/cnc/form_jog.h \
+ /home/user/hal-core-2.0/projects/cnc/form_settings.h \
  /home/user/hal-core-2.0/projects/cnc/QGCodeEditor.h \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QObject \
  /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qobject.h \
