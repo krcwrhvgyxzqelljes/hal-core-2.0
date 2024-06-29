@@ -2,7 +2,9 @@
 #include "./ui_mainwindow.h"
 #include "string"
 
-extern void shm_update(struct state_machine_shm *ptr);
+// Todo tool offsets.
+// Jog to zero.
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -34,7 +36,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //! This activates a screen update when robot is moving and screen needs to be updated automaticly.
     connect(timer, &QTimer::timeout, this, &MainWindow::update);
-    timer->start(50);
+    timer->start(20);
 }
 
 MainWindow::~MainWindow()
@@ -81,6 +83,7 @@ void MainWindow::update(){
                         shm_data.halruntime);
 
         jog->update(shm_data.jog,
+                    shm_data.jog_to_zero,
                     shm_data.jog_speed_procent,
                     shm_data.jog_step_enable,
                     shm_data.jog_step_size);
@@ -100,6 +103,8 @@ void MainWindow::update(){
             shm_data.pos[3],                // Euler Z radians.
             shm_data.pos[4]+(-0.5*M_PI),    // Euler Y radians.
             shm_data.pos[5]);               // Euler X radians.
+
+    std::cout<<"pos x:"<<shm_data.pos[0]<<std::endl;
 
     occ->redraw();
 }

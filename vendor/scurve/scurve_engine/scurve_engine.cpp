@@ -245,13 +245,13 @@ void scurve_engine::jog_position_master(scurve_data &s, int enable, double endve
     }
 
     if(s.pd.btn_fwd && s.guipos>=s.tarpos){
-        scurve_engine().stop_curve_build(s);
+        scurve_engine().stop_curve_build(s); // Needed, also resets values for next move.
         s.finish=1;
         // std::cout<<"finished fwd."<<std::endl;
         s.rcode=4;
         return;
     }
-    if(s.pd.btn_rev && s.guipos<=s.tarpos){
+    if(s.pd.btn_rev && s.guipos<=s.tarpos){ // Needed, also resets values for next move.
         scurve_engine().stop_curve_build(s);
         s.finish=1;
         // std::cout<<"finished rev."<<std::endl;
@@ -282,6 +282,50 @@ void scurve_engine::jog_position_master(scurve_data &s, int enable, double endve
     s.rcode=-1;
 }
 
+int scurve_engine::jog_position_fwd(scurve_data &s, int enable, double tarpos){
+
+    s.tarpos=tarpos;
+    s.revers=0;
+
+    if(!enable){
+        s.pd.stopinit=0;
+    }
+
+    stop_lenght(s,s.pd.stopdist,s.pd.stoptime);
+    s.pd.overshoot=(s.guipos+s.pd.stopdist)-tarpos;
+    std::cout<<"fwd overshoot:"<<s.pd.overshoot<<std::endl;
+
+    if(s.pd.overshoot<0){
+        s.pd.stopinit=0;
+    }
+
+    if(s.guivel>=0 && s.pd.overshoot>0){
+        if(!s.pd.stopinit){
+            s.pd.cycles=s.pd.stoptime/s.intval;
+            s.pd.dist_remove_a_cycle=s.pd.overshoot/s.pd.cycles;
+            s.pd.stopinit=1;
+        }
+        scurve_engine().stop_curve_build(s);
+
+        if(s.pd.cycles>-1){ // Limit to cycles solves a bug.
+            s.guipos-=s.pd.dist_remove_a_cycle;
+            s.pd.cycles--;
+        }
+        return 0;
+    }
+
+    if(enable){
+        scurve_engine().forward_curve_build(s);
+    }
+    if(!enable){
+        //if(s.vr<s.endvel){ // If velocity is below the endvel, endvel is set to zero.
+        s.endvel=0;
+        //}
+        scurve_engine().stop_curve_build(s);
+    }
+    return 0;
+}
+
 int scurve_engine::jog_position_rev(scurve_data &s, int enable, double tarpos){
 
     s.tarpos=tarpos;
@@ -293,6 +337,7 @@ int scurve_engine::jog_position_rev(scurve_data &s, int enable, double tarpos){
 
     stop_lenght(s,s.pd.stopdist,s.pd.stoptime);
     s.pd.stopdist=-abs(s.pd.stopdist);
+    // std::cout<<"rev stopdist:"<<s.pd.stopdist<<std::endl;
 
     s.pd.overshoot=(s.guipos+s.pd.stopdist)-s.tarpos;
     // std::cout<<"rev overshoot:"<<s.pd.overshoot<<std::endl;
@@ -301,18 +346,19 @@ int scurve_engine::jog_position_rev(scurve_data &s, int enable, double tarpos){
         s.pd.stopinit=0;
     }
 
-    if(s.pd.overshoot>-1e-6 && s.pd.stopinit){
-        return 1;
-    }
-
     if(s.guivel<=0 && s.pd.overshoot<0){
         if(!s.pd.stopinit){
             s.pd.cycles=s.pd.stoptime/s.intval;
             s.pd.dist_remove_a_cycle=s.pd.overshoot/s.pd.cycles;
             s.pd.stopinit=1;
         }
+
         scurve_engine().stop_curve_build(s);
-        s.guipos+=s.pd.dist_remove_a_cycle;
+
+        if(s.pd.cycles>-1){ // Limit to cycles solves a bug.
+            s.guipos-=s.pd.dist_remove_a_cycle;
+            s.pd.cycles--;
+        }
         return 0;
     }
 
@@ -423,27 +469,27 @@ int scurve_engine::jog_position_fwd_endve(scurve_data &s, int enable, double tar
     s.pd.overshoot=(s.guipos+s.pd.stopdist)-tarpos;
     // std::cout<<"fwd overshoot:"<<s.pd.overshoot<<std::endl;
 
-   // if(s.pd.overshoot<0){
-   //     s.pd.stopinit=0;
-   // }
+    // if(s.pd.overshoot<0){
+    //     s.pd.stopinit=0;
+    // }
 
-   // if(s.pd.overshoot<1e-6 && s.pd.stopinit){
-   //     return 1;
-  //  }
+    // if(s.pd.overshoot<1e-6 && s.pd.stopinit){
+    //     return 1;
+    //  }
 
     if(enable){
         scurve_engine().forward_curve_build(s);
     }
 
     if(s.guivel>=0 && s.pd.overshoot>0){
-//        if(!s.pd.stopinit){
-//            s.pd.cycles=s.pd.stoptime/s.intval;
-//            s.pd.dist_remove_a_cycle=s.pd.overshoot/s.pd.cycles;
-//            s.pd.stopinit=1;
-//        }
+        //        if(!s.pd.stopinit){
+        //            s.pd.cycles=s.pd.stoptime/s.intval;
+        //            s.pd.dist_remove_a_cycle=s.pd.overshoot/s.pd.cycles;
+        //            s.pd.stopinit=1;
+        //        }
         scurve_engine().stop_curve_build(s);
-       // s.guipos-=s.pd.dist_remove_a_cycle;
-     //   return 0;
+        // s.guipos-=s.pd.dist_remove_a_cycle;
+        //   return 0;
     }
 
 
@@ -474,22 +520,22 @@ int scurve_engine::jog_position_rev_endve(scurve_data &s, int enable, double tar
     s.pd.overshoot=(s.guipos+s.pd.stopdist)-s.tarpos;
     // std::cout<<"rev overshoot:"<<s.pd.overshoot<<std::endl;
 
-//    if(s.pd.overshoot>0){
-//        s.pd.stopinit=0;
-//    }
+    //    if(s.pd.overshoot>0){
+    //        s.pd.stopinit=0;
+    //    }
 
-//    if(s.pd.overshoot>-1e-6 && s.pd.stopinit){
-//        return 1;
-//    }
+    //    if(s.pd.overshoot>-1e-6 && s.pd.stopinit){
+    //        return 1;
+    //    }
 
     if(s.guivel<=0 && s.pd.overshoot<0){
-       // if(!s.pd.stopinit){
+        // if(!s.pd.stopinit){
         //    s.pd.cycles=s.pd.stoptime/s.intval;
         //    s.pd.dist_remove_a_cycle=s.pd.overshoot/s.pd.cycles;
-       //     s.pd.stopinit=1;
-       // }
+        //     s.pd.stopinit=1;
+        // }
         scurve_engine().stop_curve_build(s);
-       // s.guipos+=s.pd.dist_remove_a_cycle;
+        // s.guipos+=s.pd.dist_remove_a_cycle;
         return 0;
     }
 
@@ -504,51 +550,6 @@ int scurve_engine::jog_position_rev_endve(scurve_data &s, int enable, double tar
     }
     if(s.guipos<=s.tarpos){
         return 1;
-    }
-    return 0;
-}
-
-
-int scurve_engine::jog_position_fwd(scurve_data &s, int enable, double tarpos){
-
-    s.tarpos=tarpos;
-    s.revers=0;
-
-    if(!enable){
-        s.pd.stopinit=0;
-    }
-
-    stop_lenght(s,s.pd.stopdist,s.pd.stoptime);
-    s.pd.overshoot=(s.guipos+s.pd.stopdist)-tarpos;
-    // std::cout<<"fwd overshoot:"<<s.pd.overshoot<<std::endl;
-
-    if(s.pd.overshoot<0){
-        s.pd.stopinit=0;
-    }
-
-    if(s.pd.overshoot<1e-6 && s.pd.stopinit){
-        return 1;
-    }
-
-    if(s.guivel>=0 && s.pd.overshoot>0){
-        if(!s.pd.stopinit){
-            s.pd.cycles=s.pd.stoptime/s.intval;
-            s.pd.dist_remove_a_cycle=s.pd.overshoot/s.pd.cycles;
-            s.pd.stopinit=1;
-        }
-        scurve_engine().stop_curve_build(s);
-        s.guipos-=s.pd.dist_remove_a_cycle;
-        return 0;
-    }
-
-    if(enable){
-        scurve_engine().forward_curve_build(s);
-    }
-    if(!enable){
-        //if(s.vr<s.endvel){ // If velocity is below the endvel, endvel is set to zero.
-        s.endvel=0;
-        //}
-        scurve_engine().stop_curve_build(s);
     }
     return 0;
 }

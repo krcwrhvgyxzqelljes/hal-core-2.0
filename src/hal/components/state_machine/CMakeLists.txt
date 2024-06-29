@@ -4,6 +4,8 @@ set(PROJECT "state_machine") # The name of the file excluding .c or .h
 set(RTLINK "halcore") # Link to halcore or for Lcnc use linuxcnchal
 project(${PROJECT} C ASM) # Asm is optional.
 
+set(CMAKE_CXX_STANDARD 20)
+
 # Set variables.
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
 set(RTAPI_DIR "${SRC_DIR}/../../../rtapi")

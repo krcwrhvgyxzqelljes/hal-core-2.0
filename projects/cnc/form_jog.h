@@ -16,6 +16,7 @@ public:
     ~form_jog();
 
     void update(int *jog_array,
+                int *jog_to_zero_array,
                 double &jog_speed_procent,
                 int &jog_step_enable,
                 double &jog_step_size);
@@ -99,6 +100,18 @@ private slots:
 
     void on_horizontalSlider_jog_velocity_procent_sliderMoved(int position);
 
+    void on_toolButton_jog_goto_zero_xyz_pressed();
+
+    void on_toolButton_jog_goto_zero_xyz_released();
+
+    void on_toolButton_jog_goto_zero_abc_pressed();
+
+    void on_toolButton_jog_goto_zero_abc_released();
+
+    void on_toolButton_jog_goto_zero_uvw_pressed();
+
+    void on_toolButton_jog_goto_zero_uvw_released();
+
 private:
     Ui::form_jog *ui;
 
@@ -106,6 +119,7 @@ private:
     double m_jog_speed_procent=0;
     int m_jog_step_enable=0;
     double m_jog_step_size=0;
+    int m_jog_to_zero[9]={0,0,0,0,0,0,0,0,0};
 
 };
 

@@ -18,9 +18,12 @@ form_jog::~form_jog()
     delete ui;
 }
 
-void form_jog::update(int *jog_array, double &jog_speed_procent, int &jog_step_enable, double &jog_step_size){
+void form_jog::update(int *jog_array, int *jog_to_zero_array, double &jog_speed_procent, int &jog_step_enable, double &jog_step_size){
     for(uint i=0; i<9; i++){
         jog_array[i]=m_jog[i];
+    }
+    for(uint i=0; i<9; i++){
+        jog_to_zero_array[i]=m_jog_to_zero[i];
     }
     jog_speed_procent=m_jog_speed_procent;
     jog_step_enable=m_jog_step_enable;
@@ -223,3 +226,47 @@ void form_jog::on_horizontalSlider_jog_velocity_procent_sliderMoved(int position
 {
     m_jog_speed_procent=position;
 }
+
+void form_jog::on_toolButton_jog_goto_zero_xyz_pressed()
+{
+    m_jog_to_zero[0]=1;
+    m_jog_to_zero[1]=1;
+    m_jog_to_zero[2]=1;
+}
+
+void form_jog::on_toolButton_jog_goto_zero_xyz_released()
+{
+    m_jog_to_zero[0]=0;
+    m_jog_to_zero[1]=0;
+    m_jog_to_zero[2]=0;
+}
+
+void form_jog::on_toolButton_jog_goto_zero_abc_pressed()
+{
+    m_jog_to_zero[3]=1;
+    m_jog_to_zero[4]=1;
+    m_jog_to_zero[5]=1;
+}
+
+void form_jog::on_toolButton_jog_goto_zero_abc_released()
+{
+    m_jog_to_zero[3]=0;
+    m_jog_to_zero[4]=0;
+    m_jog_to_zero[5]=0;
+}
+
+void form_jog::on_toolButton_jog_goto_zero_uvw_pressed()
+{
+    m_jog_to_zero[6]=1;
+    m_jog_to_zero[7]=1;
+    m_jog_to_zero[8]=1;
+}
+
+void form_jog::on_toolButton_jog_goto_zero_uvw_released()
+{
+    m_jog_to_zero[6]=0;
+    m_jog_to_zero[7]=0;
+    m_jog_to_zero[8]=0;
+}
+
+

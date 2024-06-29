@@ -1,0 +1,4 @@
+/home/user/hal-core-2.0/vendor/scurve/build-scurve_jog_plot_1-Qt_5_15_1_gcc_64_109739-Debug/CMakeFiles/scurve_jog_plot.dir
+/home/user/hal-core-2.0/vendor/scurve/build-scurve_jog_plot_1-Qt_5_15_1_gcc_64_109739-Debug/CMakeFiles/edit_cache.dir
+/home/user/hal-core-2.0/vendor/scurve/build-scurve_jog_plot_1-Qt_5_15_1_gcc_64_109739-Debug/CMakeFiles/rebuild_cache.dir
+/home/user/hal-core-2.0/vendor/scurve/build-scurve_jog_plot_1-Qt_5_15_1_gcc_64_109739-Debug/CMakeFiles/scurve_jog_plot_autogen.dir

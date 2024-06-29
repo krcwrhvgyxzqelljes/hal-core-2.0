@@ -103,70 +103,167 @@ double combined_velocity(double vx, double vy, double vz) {
     return std::sqrt(vx * vx + vy * vy + vz * vz);
 }
 
+scurve_data scde[10];
+
 extern "C" void shm_update(struct state_machine_shm *ptr){
 
     // Acquire lock to ensure exclusive access
     std::lock_guard<std::mutex> lock(mtx);
 
-    ptr->shm_ptr->halruntime+=0.001;
+    shared_mem_data &shm=*ptr->shm_ptr;
 
-    if(ptr->shm_ptr->online_mode==ONLINE){
+    shm.halruntime+=0.001;
+
+    if(shm.online_mode==ONLINE){
 
         //std::cout<<"hal online."<<std::endl;
-        if(ptr->shm_ptr->state_mode==MANUAL){
+        if(shm.state_mode==MANUAL){
 
             for(uint id=0; id<10; id++){
 
+                if(!shm.jog_step_enable){
+                    shm.maxpos[id]=shm.scd[id].maxpos;
+                    shm.minpos[id]=shm.scd[id].minpos;
+                }
+
                 // Jog step trigger reset on button release.
-                if(ptr->shm_ptr->jog_step_trigger[id] && ptr->shm_ptr->jog[id]==0){
-                    ptr->shm_ptr->jog_step_trigger[id]=0;
+                if(shm.jog_step_enable && shm.jog[id]==0){
+                    shm.jog_step_trigger[id]=0;
                 }
 
                 // Apply the jog stepsize if jog step is active, respect machine limits.
-                if(ptr->shm_ptr->jog_step_enable && !ptr->shm_ptr->jog_step_trigger[id]){
-                    ptr->shm_ptr->maxpos[id]= fmin( ptr->shm_ptr->scd[id].maxpos, ptr->shm_ptr->scd[id].guipos+ptr->shm_ptr->jog_step_size );
-                    ptr->shm_ptr->minpos[id]= fmax( ptr->shm_ptr->scd[id].minpos, ptr->shm_ptr->scd[id].guipos-ptr->shm_ptr->jog_step_size );
-                    ptr->shm_ptr->jog_step_trigger[id]=1;
+                if(shm.jog_step_enable && !shm.jog_step_trigger[id] && shm.jog[id]!=0){
+                    shm.maxpos[id]= fmin( shm.scd[id].maxpos, shm.scd[id].guipos+shm.jog_step_size );
+                    shm.minpos[id]= fmax( shm.scd[id].minpos, shm.scd[id].guipos-shm.jog_step_size );
+                    shm.jog_step_trigger[id]=1;
                 }
 
-                // Apply the machine limits to the jog.
-                if(!ptr->shm_ptr->jog_step_enable){
-                    ptr->shm_ptr->maxpos[id]=ptr->shm_ptr->scd[id].maxpos;
-                    ptr->shm_ptr->minpos[id]=ptr->shm_ptr->scd[id].minpos;
+                if(shm.jog_to_zero[id]){
+                    if(shm.scd[id].guipos>1e-6){
+                        shm.jog[id]=-1;
+                        shm.minpos[id]=0;
+                    } else
+                        if(shm.scd[id].guipos<1e-6){
+                            shm.jog[id]=1;
+                            shm.maxpos[id]=0;
+                        } else {
+                            shm.jog[id]=0; // Do nothing.
+                            shm.minpos[id]=-INFINITY;
+                            shm.maxpos[id]=INFINITY;
+                        }
                 }
 
                 // Jog routine.
-                if(ptr->shm_ptr->jog[id]==1){
-                    scurve_engine().jog_position_master(ptr->shm_ptr->scd[id],1,0,0,ptr->shm_ptr->maxpos[id],1,0);
+                if(shm.jog[id]==1){
+                    scurve_engine::jog_position_master(shm.scd[id],1,0,0,shm.maxpos[id],1,0);
+                    //scurve_engine::jog_update(shm.scd[id]);
+                    //shm.pos[id]=shm.scd[id].guipos;
                 }
-                if(ptr->shm_ptr->jog[id]==0){
-                    if(ptr->shm_ptr->scd[0].guivel>=0){
-                        scurve_engine().jog_velocity(ptr->shm_ptr->scd[id],0,0,0,ptr->shm_ptr->maxpos[id]);
-                    } else {
-                        scurve_engine().jog_velocity(ptr->shm_ptr->scd[id],0,0,0,ptr->shm_ptr->minpos[id]);
+                if(shm.jog[id]==-1){
+                    scurve_engine::jog_position_master(shm.scd[id],1,0,0,shm.minpos[id],0,1);
+                   // scurve_engine::jog_update(shm.scd[id]);
+                   // shm.pos[id]=shm.scd[id].guipos;
+                }
+                if(shm.jog[id]==0){
+                    if(shm.scd[id].guivel>0){
+                        scurve_engine::jog_position_master(shm.scd[id],0,0,0,shm.maxpos[id],1,0);
+                     //   scurve_engine::jog_update(shm.scd[id]);
+                     //   shm.pos[id]=shm.scd[id].guipos;
                     }
+                    if(shm.scd[id].guivel<0){
+                        scurve_engine::jog_position_master(shm.scd[id],0,0,0,shm.minpos[id],0,1);
+                      //  scurve_engine::jog_update(shm.scd[id]);
+                     //   shm.pos[id]=shm.scd[id].guipos;
+                    }
+
                 }
-                if(ptr->shm_ptr->jog[id]==-1){
-                    scurve_engine().jog_position_master(ptr->shm_ptr->scd[id],1,0,0,ptr->shm_ptr->minpos[id],0,1);
-                }
-                scurve_engine().jog_update(ptr->shm_ptr->scd[id]);
-                ptr->shm_ptr->pos[id]=ptr->shm_ptr->scd[id].guipos;
+                scurve_engine::jog_update(shm.scd[id]);
+                shm.pos[id]=shm.scd[id].guipos;
+
             }
-
-            // Get the total velocity for xyz moves to display in the dro.
-            ptr->shm_ptr->curvel=combined_velocity(ptr->shm_ptr->scd[0].guivel,ptr->shm_ptr->scd[1].guivel,ptr->shm_ptr->scd[2].guivel);
         }
 
-        if(ptr->shm_ptr->state_mode==AUTO){
+        // Get the total velocity for xyz moves to display in the dro.
+        shm.curvel=combined_velocity(shm.scd[0].guivel,shm.scd[1].guivel,shm.scd[2].guivel);
 
-            std::cout<<"gcode vec size:"<<ptr->shm_ptr->svec.size()<<std::endl;
+        if(shm.state_mode==AUTO){
+
+            std::cout<<"gcode vec size:"<<shm.svec.size()<<std::endl;
 
         }
-        if(ptr->shm_ptr->state_mode==MDI){
+        if(shm.state_mode==MDI){
 
         }
     }
+
 }
+
+//extern "C" void shm_update(struct state_machine_shm *ptr){
+
+//    // Acquire lock to ensure exclusive access
+//    std::lock_guard<std::mutex> lock(mtx);
+
+//    shared_mem_data &shm=*ptr->shm_ptr;
+
+//    shm.halruntime+=0.001;
+
+//    if(shm.online_mode==ONLINE){
+
+//        //std::cout<<"hal online."<<std::endl;
+//        if(shm.state_mode==MANUAL){
+
+//            for(uint id=0; id<10; id++){
+
+//                // Jog step trigger reset on button release.
+//                if(shm.jog_step_trigger[id] && shm.jog[id]==0){
+//                    shm.jog_step_trigger[id]=0;
+//                }
+
+//                // Apply the jog stepsize if jog step is active, respect machine limits.
+//                if(shm.jog_step_enable && !shm.jog_step_trigger[id]){
+//                    shm.maxpos[id]= fmin( shm.scd[id].maxpos, shm.scd[id].guipos+shm.jog_step_size );
+//                    shm.minpos[id]= fmax( shm.scd[id].minpos, shm.scd[id].guipos-shm.jog_step_size );
+//                    shm.jog_step_trigger[id]=1;
+//                }
+
+//                // Apply the machine limits to the jog.
+//                if(!shm.jog_step_enable){
+//                    shm.maxpos[id]=shm.scd[id].maxpos;
+//                    shm.minpos[id]=shm.scd[id].minpos;
+//                }
+
+//                // Jog routine.
+//                if(shm.jog[id]==1){
+//                    scurve_engine().jog_position_master(shm.scd[id],1,0,0,shm.maxpos[id],1,0);
+//                }
+//                if(shm.jog[id]==0){
+//                    if(shm.scd[0].guivel>=0){
+//                        scurve_engine().jog_velocity(shm.scd[id],0,0,0,shm.maxpos[id]);
+//                    } else {
+//                        scurve_engine().jog_velocity(shm.scd[id],0,0,0,shm.minpos[id]);
+//                    }
+//                }
+//                if(shm.jog[id]==-1){
+//                    scurve_engine().jog_position_master(shm.scd[id],1,0,0,shm.minpos[id],0,1);
+//                }
+//                scurve_engine().jog_update(shm.scd[id]);
+//                shm.pos[id]=shm.scd[id].guipos;
+//            }
+
+//            // Get the total velocity for xyz moves to display in the dro.
+//            shm.curvel=combined_velocity(shm.scd[0].guivel,shm.scd[1].guivel,shm.scd[2].guivel);
+//        }
+
+//        if(shm.state_mode==AUTO){
+
+//            std::cout<<"gcode vec size:"<<shm.svec.size()<<std::endl;
+
+//        }
+//        if(shm.state_mode==MDI){
+
+//        }
+//    }
+//}
 
 
 
