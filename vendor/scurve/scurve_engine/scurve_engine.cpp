@@ -260,7 +260,7 @@ void scurve_engine::jog_position_master(scurve_data &s, int enable, double endve
     }
 
     // Jog direction.
-    if(s.guipos<s.tarpos ){
+    if(s.guipos<s.tarpos-1e-6){ // Added micro tollerance to solve bug.
         int r=jog_position_fwd(s,enable,tarpos);
         if(r==1){
             s.finish=1;
@@ -269,7 +269,7 @@ void scurve_engine::jog_position_master(scurve_data &s, int enable, double endve
         s.rcode=6;
         return;
     }
-    if(s.guipos>s.tarpos ){
+    if(s.guipos>s.tarpos+1e-6){
         int r=jog_position_rev(s,enable,tarpos);
         if(r==1){
             s.finish=1;
@@ -278,6 +278,7 @@ void scurve_engine::jog_position_master(scurve_data &s, int enable, double endve
         s.rcode=7;
         return;
     }
+    s.finish=1;
 
     s.rcode=-1;
 }
@@ -293,7 +294,6 @@ int scurve_engine::jog_position_fwd(scurve_data &s, int enable, double tarpos){
 
     stop_lenght(s,s.pd.stopdist,s.pd.stoptime);
     s.pd.overshoot=(s.guipos+s.pd.stopdist)-tarpos;
-    std::cout<<"fwd overshoot:"<<s.pd.overshoot<<std::endl;
 
     if(s.pd.overshoot<0){
         s.pd.stopinit=0;
@@ -559,6 +559,37 @@ void scurve_engine::stop_lenght(scurve_data &s, double &lenght, double &time){
     stop_curve_build(data);
     lenght=stot_period(data.c0)+stot_period(data.c1)+stot_period(data.c2)+stot_period(data.c3);
     time=ttot_period(data.c0)+ttot_period(data.c1)+ttot_period(data.c2)+ttot_period(data.c3);
+}
+
+// Added for simplicity.
+int scurve_engine::jog(scurve_data &s, double tarpos){
+    s.tarpos=tarpos;
+    if(s.guipos<s.tarpos){
+        jog_position_master(s,1,0,0,s.tarpos,1,0);
+    }
+    if(s.guipos>s.tarpos){
+        jog_position_master(s,1,0,0,s.tarpos,0,1);
+    }
+    jog_update(s);
+
+    if(s.finish){
+        return 1;
+    }
+    return 0;
+}
+int scurve_engine::jog_stop(scurve_data &s){
+    if(s.guivel>0){
+        jog_position_master(s,0,0,0,INFINITY,1,0);
+    }
+    if(s.guivel<0){
+        jog_position_master(s,0,0,0,-INFINITY,0,1);
+    }
+    jog_update(s);
+
+    if(s.guivel==0){
+        return 1;
+    }
+    return 0;
 }
 
 //! Stop scurve algoritme.

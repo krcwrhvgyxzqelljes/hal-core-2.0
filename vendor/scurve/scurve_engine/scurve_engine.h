@@ -61,6 +61,10 @@ public:
     static void zero_period(scurve_period &p);
     static void stop_lenght(scurve_data &s, double &lenght, double &time);
 
+    // Added for simplicity.
+    static int jog(scurve_data &s, double tarpos);
+    static int jog_stop(scurve_data &s);
+
 private:
 
     static void t1_t2_t3_build(double jermax,

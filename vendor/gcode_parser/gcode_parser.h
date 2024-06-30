@@ -42,13 +42,14 @@ typedef gp_Pnt gp_Abc;
 typedef gp_Pnt gp_Uvw;
 
 struct shape {
-    int g_id;                   // Line, arc, rapic, general.
+    int g_id=0;                 // Line, arc, rapic, general.
     int e_id;                   // G9 identifyer for line, arc, clothoid, etc.
-    gp_Pnt p0,pw,p1;            // Start, way, end point.
+    gp_Pnt p0={0,0,0},pw,p1;    // Start, way, end point.
     gp_Pnt pc,pn;               // Center, Point on normal axis.
     std::vector<gp_Pnt> pwvec;  // Vector of waypoints for splines.
     double radius;
-    double lenght;
+    double lenght;              // Lenght of this shape.
+    double lenght_end;          // Trajtectory end lenght of this shape in the vector.
     double theta0, theta1;
     double curva0, curva1;
     double turns;               // Spiral, helix nr of turns. Input integer.

@@ -150,7 +150,6 @@ void gcode_parser::tokens_to_shapes(const std::vector<gcode_line> &gvec, std::ve
         if(svec.back().g_id==0 || svec.back().g_id==1){
             svec.back().p0=p;
             svec.back().p1={g.x,g.y,g.z};
-            svec.back().lenght=svec.back().p0.Distance(svec.back().p1);
 
             svec.back().abc={g.a,g.b,g.c};
             svec.back().uvw={g.u,g.v,g.w};
@@ -164,8 +163,9 @@ void gcode_parser::tokens_to_shapes(const std::vector<gcode_line> &gvec, std::ve
 
         if(svec.back().g_id==0 || svec.back().g_id==1){ // Draw rapid or line feed.
             svec.back().p0=p;
-            svec.back().p1={g.x,g.y,g.z};
+            svec.back().p1={g.x,g.y,g.z};  
             svec.back().aShape=draw_primitives::draw_3d_gcode_line(svec.back().p0, svec.back().p1, svec.back().g_id, svec.back().pw);
+            svec.back().lenght=svec.back().p0.Distance(svec.back().p1);
         }
 
         // Arc, circle or helix.
@@ -176,6 +176,8 @@ void gcode_parser::tokens_to_shapes(const std::vector<gcode_line> &gvec, std::ve
             svec.back().g2_continuity=g.l; // Set helix G2 continuity model.
             svec.back().aShape=draw_primitives::draw_3d_gcode_arc_circle_helix(svec.back().p0, svec.back().p1, plane, svec.back().g_id, g.i, g.j, g.k,
                                                                                svec.back().turns, svec.back().g2_continuity, svec.back().pw);
+            // Todo calculate helix lenght.
+            svec.back().lenght=draw_primitives::get_3d_arc_lenght(svec.back().p0,svec.back().pw,svec.back().p1);
         }
         p=svec.back().p1;
     }

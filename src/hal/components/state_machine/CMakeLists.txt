@@ -26,6 +26,10 @@ include_directories(${SRC_DIR}/../../../../vendor/std_functions)
 include_directories(${SRC_DIR}/../../../../vendor/shmem_functions)
 include_directories(${SRC_DIR}/../../../../vendor/oce-upstream-V7_5_0beta/build/include/opencascade)
 include_directories(${SRC_DIR}/../../../../vendor/scurve/scurve_engine)
+include_directories(${SRC_DIR}/../../../../vendor/occ_draw)
+include_directories(${SRC_DIR}/../../../../vendor/gcode_parser)
+# include_directories(${SRC_DIR}/../../../../vendor/qt_functions)
+include_directories(${SRC_DIR}/../../../../vendor/std_functions)
 
 # Opencascade
 find_package (OpenCASCADE REQUIRED)
@@ -72,6 +76,16 @@ ADD_LIBRARY(${PROJECT} SHARED
     ${SRC_DIR}/../../../../vendor/scurve/scurve_engine/scurve_engine.h
     ${SRC_DIR}/../../../../vendor/scurve/scurve_engine/scurve_engine.cpp
     ${SRC_DIR}/../../../../vendor/scurve/scurve_engine/scurve_segment.h
+
+    ${SRC_DIR}/../../../../vendor/occ_draw/draw_primitives.h
+    ${SRC_DIR}/../../../../vendor/occ_draw/draw_primitives.cpp
+    ${SRC_DIR}/../../../../vendor/gcode_parser/gcode_parser.h
+    ${SRC_DIR}/../../../../vendor/gcode_parser/gcode_parser.cpp
+
+    # ${SRC_DIR}/../../../../vendor/qt_functions/qt_functions.h
+    # ${SRC_DIR}/../../../../vendor/qt_functions/qt_functions.cpp
+    ${SRC_DIR}/../../../../vendor/std_functions/std_functions.h
+    ${SRC_DIR}/../../../../vendor/std_functions/std_functions.cpp
 )
 
 # Compile link with libhalcore.so or linuxcnchal.so

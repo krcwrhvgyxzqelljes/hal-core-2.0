@@ -103,168 +103,169 @@ double combined_velocity(double vx, double vy, double vz) {
     return std::sqrt(vx * vx + vy * vy + vz * vz);
 }
 
-scurve_data scde[10];
+inline void handle_jog(shared_mem_data &shm){
+
+    for(uint id=0; id<10; id++){
+
+        if(!shm.jog_step_enable){
+            shm.maxpos[id]=shm.scd[id].maxpos;
+            shm.minpos[id]=shm.scd[id].minpos;
+        }
+
+        // Jog step trigger reset on button release.
+        if(shm.jog_step_enable && shm.jog[id]==0){
+            shm.jog_step_trigger[id]=0;
+        }
+
+        // Apply the jog stepsize if jog step is active, respect machine limits.
+        if(shm.jog_step_enable && !shm.jog_step_trigger[id] && shm.jog[id]!=0){
+            shm.maxpos[id]= fmin( shm.scd[id].maxpos, shm.scd[id].guipos+shm.jog_step_size );
+            shm.minpos[id]= fmax( shm.scd[id].minpos, shm.scd[id].guipos-shm.jog_step_size );
+            shm.jog_step_trigger[id]=1;
+        }
+
+        if(shm.jog_to_zero[id]){
+            shm.jog[id]=1;      // Set to a state.
+            shm.maxpos[id]=0;   // Target pos.
+        }
+
+        // Jog routine.
+        if(shm.jog[id]==1){
+            scurve_engine::jog(shm.scd[id],shm.maxpos[id]); // New scurve jog function.
+        }
+        if(shm.jog[id]==-1){
+            scurve_engine::jog(shm.scd[id],shm.minpos[id]);
+        }
+        if(shm.jog[id]==0){
+            scurve_engine::jog_stop(shm.scd[id]);
+        }
+        shm.pos[id]=shm.scd[id].guipos;
+    }
+    // Get the total velocity for xyz moves to display in the dro.
+    shm.curvel=combined_velocity(shm.scd[0].guivel,shm.scd[1].guivel,shm.scd[2].guivel);
+}
+
+inline void handle_mdi(shared_mem_data &shm){
+
+}
+
+std::vector<shape> svec;    // Gcode file shapes.
+scurve_data sctp;           // Scurve trajectory planner.
+double svec_nr=0;           // Current gcode line in the vector.
+
+inline void handle_auto(shared_mem_data &shm){
+
+    //  std::cout<<"auto mode"<<std::endl;
+
+    if(shm.gui_has_gcode && !shm.hal_has_gcode){ // Check if we have gcode.
+        svec.clear();
+        std::string file_name(shm.file_name);
+        std::vector<gcode_line> gvec;
+        gcode_parser().tokenize(file_name,gvec,0);
+        gcode_parser().tokens_to_shapes(gvec, svec);
+
+        // Insert rapids from current pos to program startpos.
+        shape s0;
+        s0.g_id=0;
+        s0.p0={shm.scd[0].guipos, shm.scd[1].guipos, shm.scd[2].guipos};
+        s0.p1={shm.scd[0].guipos, shm.scd[1].guipos, svec[0].p0.Z()+5};
+        s0.lenght=s0.p0.Distance(s0.p1);
+
+        shape s1;
+        s1.g_id=0;
+        s1.p0=s0.p1;
+        s1.p1={svec[0].p0.X(),svec[0].p0.Y(),svec[0].p0.Z()+5};
+         s1.lenght=s1.p0.Distance(s1.p1);
+
+        shape s2;
+        s2.g_id=0;
+        s2.p0=s1.p1;
+        s2.p1=svec[0].p0;
+        s2.lenght=s2.p0.Distance(s2.p1);
+
+        // Insert the shapes at the front of svec
+        svec.insert(svec.begin(), s2); // Insert s3 at the front
+        svec.insert(svec.begin(), s1); // Insert s1 at the front
+        svec.insert(svec.begin(), s0); // Insert s0 at the front
+
+        // Calculate trajectory lenghts for the vector.
+        svec[0].lenght_end=0;
+        double stot;
+        for(uint i=0; i<svec.size(); i++){
+             stot+=svec[i].lenght;
+             svec[i].lenght_end=stot;
+             std::cout<<"svec i:"<<i<<" lenght end:"<<stot<<std::endl;
+        }
+
+        svec_nr=0;
+        shm.hal_has_gcode=1;
+
+        std::cout<<"-- gcode ready --"<<std::endl<<std::endl;
+    }
+
+
+    if(shm.run_mode==RUN && svec.size()>0){
+
+        // For the trajectory speed i now take the lowest of x, y axis.
+        sctp.maxvel=10; //fmin(shm.scd[0].maxvel,shm.scd[1].maxvel);
+        sctp.maxacc=5; //fmin(shm.scd[0].maxacc,shm.scd[1].maxacc);
+        sctp.jermax=5; //fmin(shm.scd[0].jermax,shm.scd[1].jermax);
+        sctp.minpos=0;
+        sctp.maxpos=svec.back().lenght_end;
+        sctp.intval=0.001;
+
+        if(svec[svec_nr].lenght==0 && svec_nr<svec.size()){
+            svec_nr++;
+        }
+
+        scurve_engine::jog(sctp,svec[svec_nr].lenght_end);
+        std::cout<<"pos:"<<sctp.guipos<<std::endl;
+        std::cout<<"nr:"<<svec_nr<<std::endl;
+        std::cout<<"finished:"<<sctp.finish<<std::endl;
+
+        if(sctp.finish && svec_nr<svec.size()){
+            svec_nr++;
+        }
+
+        //
+
+
+    }
+
+
+    if(shm.run_mode==PAUSE && svec.size()>0){
+        scurve_engine::jog_stop(sctp);
+        //  std::cout<<"pause"<<std::endl;
+    }
+    if(shm.run_mode==STOP && svec.size()>0){
+        scurve_engine::jog_stop(sctp);
+        //  std::cout<<"stop"<<std::endl;
+    }
+}
 
 extern "C" void shm_update(struct state_machine_shm *ptr){
 
     // Acquire lock to ensure exclusive access
     std::lock_guard<std::mutex> lock(mtx);
 
-    shared_mem_data &shm=*ptr->shm_ptr;
+    shared_mem_data &shm=*ptr->shm_ptr; // Use shorter notation.
 
     shm.halruntime+=0.001;
 
     if(shm.online_mode==ONLINE){
-
         //std::cout<<"hal online."<<std::endl;
         if(shm.state_mode==MANUAL){
-
-            for(uint id=0; id<10; id++){
-
-                if(!shm.jog_step_enable){
-                    shm.maxpos[id]=shm.scd[id].maxpos;
-                    shm.minpos[id]=shm.scd[id].minpos;
-                }
-
-                // Jog step trigger reset on button release.
-                if(shm.jog_step_enable && shm.jog[id]==0){
-                    shm.jog_step_trigger[id]=0;
-                }
-
-                // Apply the jog stepsize if jog step is active, respect machine limits.
-                if(shm.jog_step_enable && !shm.jog_step_trigger[id] && shm.jog[id]!=0){
-                    shm.maxpos[id]= fmin( shm.scd[id].maxpos, shm.scd[id].guipos+shm.jog_step_size );
-                    shm.minpos[id]= fmax( shm.scd[id].minpos, shm.scd[id].guipos-shm.jog_step_size );
-                    shm.jog_step_trigger[id]=1;
-                }
-
-                if(shm.jog_to_zero[id]){
-                    if(shm.scd[id].guipos>1e-6){
-                        shm.jog[id]=-1;
-                        shm.minpos[id]=0;
-                    } else
-                        if(shm.scd[id].guipos<1e-6){
-                            shm.jog[id]=1;
-                            shm.maxpos[id]=0;
-                        } else {
-                            shm.jog[id]=0; // Do nothing.
-                            shm.minpos[id]=-INFINITY;
-                            shm.maxpos[id]=INFINITY;
-                        }
-                }
-
-                // Jog routine.
-                if(shm.jog[id]==1){
-                    scurve_engine::jog_position_master(shm.scd[id],1,0,0,shm.maxpos[id],1,0);
-                    //scurve_engine::jog_update(shm.scd[id]);
-                    //shm.pos[id]=shm.scd[id].guipos;
-                }
-                if(shm.jog[id]==-1){
-                    scurve_engine::jog_position_master(shm.scd[id],1,0,0,shm.minpos[id],0,1);
-                   // scurve_engine::jog_update(shm.scd[id]);
-                   // shm.pos[id]=shm.scd[id].guipos;
-                }
-                if(shm.jog[id]==0){
-                    if(shm.scd[id].guivel>0){
-                        scurve_engine::jog_position_master(shm.scd[id],0,0,0,shm.maxpos[id],1,0);
-                     //   scurve_engine::jog_update(shm.scd[id]);
-                     //   shm.pos[id]=shm.scd[id].guipos;
-                    }
-                    if(shm.scd[id].guivel<0){
-                        scurve_engine::jog_position_master(shm.scd[id],0,0,0,shm.minpos[id],0,1);
-                      //  scurve_engine::jog_update(shm.scd[id]);
-                     //   shm.pos[id]=shm.scd[id].guipos;
-                    }
-
-                }
-                scurve_engine::jog_update(shm.scd[id]);
-                shm.pos[id]=shm.scd[id].guipos;
-
-            }
+            handle_jog(shm);
         }
-
-        // Get the total velocity for xyz moves to display in the dro.
-        shm.curvel=combined_velocity(shm.scd[0].guivel,shm.scd[1].guivel,shm.scd[2].guivel);
-
         if(shm.state_mode==AUTO){
-
-            std::cout<<"gcode vec size:"<<shm.svec.size()<<std::endl;
-
+            handle_auto(shm);
         }
         if(shm.state_mode==MDI){
-
+            handle_mdi(shm);
         }
     }
 
 }
-
-//extern "C" void shm_update(struct state_machine_shm *ptr){
-
-//    // Acquire lock to ensure exclusive access
-//    std::lock_guard<std::mutex> lock(mtx);
-
-//    shared_mem_data &shm=*ptr->shm_ptr;
-
-//    shm.halruntime+=0.001;
-
-//    if(shm.online_mode==ONLINE){
-
-//        //std::cout<<"hal online."<<std::endl;
-//        if(shm.state_mode==MANUAL){
-
-//            for(uint id=0; id<10; id++){
-
-//                // Jog step trigger reset on button release.
-//                if(shm.jog_step_trigger[id] && shm.jog[id]==0){
-//                    shm.jog_step_trigger[id]=0;
-//                }
-
-//                // Apply the jog stepsize if jog step is active, respect machine limits.
-//                if(shm.jog_step_enable && !shm.jog_step_trigger[id]){
-//                    shm.maxpos[id]= fmin( shm.scd[id].maxpos, shm.scd[id].guipos+shm.jog_step_size );
-//                    shm.minpos[id]= fmax( shm.scd[id].minpos, shm.scd[id].guipos-shm.jog_step_size );
-//                    shm.jog_step_trigger[id]=1;
-//                }
-
-//                // Apply the machine limits to the jog.
-//                if(!shm.jog_step_enable){
-//                    shm.maxpos[id]=shm.scd[id].maxpos;
-//                    shm.minpos[id]=shm.scd[id].minpos;
-//                }
-
-//                // Jog routine.
-//                if(shm.jog[id]==1){
-//                    scurve_engine().jog_position_master(shm.scd[id],1,0,0,shm.maxpos[id],1,0);
-//                }
-//                if(shm.jog[id]==0){
-//                    if(shm.scd[0].guivel>=0){
-//                        scurve_engine().jog_velocity(shm.scd[id],0,0,0,shm.maxpos[id]);
-//                    } else {
-//                        scurve_engine().jog_velocity(shm.scd[id],0,0,0,shm.minpos[id]);
-//                    }
-//                }
-//                if(shm.jog[id]==-1){
-//                    scurve_engine().jog_position_master(shm.scd[id],1,0,0,shm.minpos[id],0,1);
-//                }
-//                scurve_engine().jog_update(shm.scd[id]);
-//                shm.pos[id]=shm.scd[id].guipos;
-//            }
-
-//            // Get the total velocity for xyz moves to display in the dro.
-//            shm.curvel=combined_velocity(shm.scd[0].guivel,shm.scd[1].guivel,shm.scd[2].guivel);
-//        }
-
-//        if(shm.state_mode==AUTO){
-
-//            std::cout<<"gcode vec size:"<<shm.svec.size()<<std::endl;
-
-//        }
-//        if(shm.state_mode==MDI){
-
-//        }
-//    }
-//}
-
 
 
 

@@ -5,7 +5,6 @@
 // Todo tool offsets.
 // Jog to zero.
 
-
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -104,8 +103,6 @@ void MainWindow::update(){
             shm_data.pos[4]+(-0.5*M_PI),    // Euler Y radians.
             shm_data.pos[5]);               // Euler X radians.
 
-    std::cout<<"pos x:"<<shm_data.pos[0]<<std::endl;
-
     occ->redraw();
 }
 
@@ -159,11 +156,6 @@ void MainWindow::on_toolButton_zoom_plus_pressed()
     occ->zoom_plus();
 }
 
-void MainWindow::on_toolButton_ortho_pressed()
-{
-    occ->set_orthographic();
-}
-
 void MainWindow::on_toolButton_open_pressed()
 {
     occ->clear_shapevec();
@@ -171,26 +163,32 @@ void MainWindow::on_toolButton_open_pressed()
 
     std::string file_name=qt_functions().open_file_dialog_get_filename(this);
 
-    QString gcode=QString::fromStdString(std_functions().read_file_to_string(file_name));
-    editor->appendPlainText(gcode);
+    if(file_name.size()>0){
+        QString gcode=QString::fromStdString(std_functions().read_file_to_string(file_name));
+        editor->appendPlainText(gcode);
 
-    ui->label_current_file->setText(QString::fromStdString(file_name));
+        ui->label_current_file->setText(QString::fromStdString(file_name));
 
-    std::vector<gcode_line> gvec;
-    gcode_parser().tokenize(file_name,gvec,1);
+        std::vector<gcode_line> gvec;
+        gcode_parser().tokenize(file_name,gvec,1);
 
-    ui->label_current_file->setText(QString::fromStdString(file_name));
+        ui->label_current_file->setText(QString::fromStdString(file_name));
 
-    std::vector<shape> svec;
-    gcode_parser().tokens_to_shapes(gvec,svec);
-    for (const auto& i : svec) {
-        occ->add_shapevec(i.aShape);
+        std::vector<shape> svec;
+        gcode_parser().tokens_to_shapes(gvec, svec);
+        for (const auto& i : svec) {
+            occ->add_shapevec(i.aShape);
+        }
+        svec.clear();
+
+        // Send data to hal state_machine.
+        shm_data=shm->read_from_shared_memory();
+        shm_data.gui_has_gcode=1;
+        shm_data.hal_has_gcode=0;
+        // Copy the contents of the std::string to the char array
+        std::strncpy(shm_data.file_name, file_name.c_str(), sizeof( shm_data.file_name) - 1);
+        shm->write_to_shared_memory(shm_data);
     }
-
-    // Send data to hal state_machine.
-    // shm_data.svec=svec;
-    // shm->write_to_shared_memory(shm_data);
-    std::cout<<"writing shapes to shared memory."<<std::endl;
 }
 
 void MainWindow::on_toolButton_reload_pressed()
@@ -214,7 +212,15 @@ void MainWindow::on_toolButton_reload_pressed()
         for (const auto& i : svec) {
             occ->add_shapevec(i.aShape);
         }
-        occ->redraw();
+        svec.clear();
+
+        // Send data to hal state_machine.
+        shm_data=shm->read_from_shared_memory();
+        shm_data.gui_has_gcode=1;
+        shm_data.hal_has_gcode=0;
+        // Copy the contents of the std::string to the char array
+        std::strncpy(shm_data.file_name, file_name.c_str(), sizeof( shm_data.file_name) - 1);
+        shm->write_to_shared_memory(shm_data);
     }
 }
 

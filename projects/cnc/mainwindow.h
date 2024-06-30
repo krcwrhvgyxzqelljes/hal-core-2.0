@@ -89,8 +89,6 @@ private slots:
 
     void on_toolButton_zoom_plus_pressed();
 
-    void on_toolButton_ortho_pressed();
-
     void on_toolButton_open_pressed();
 
     void on_toolButton_reload_pressed();

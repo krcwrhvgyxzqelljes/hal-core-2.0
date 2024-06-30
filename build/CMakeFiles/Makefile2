@@ -351,7 +351,7 @@ src/rtapi/clean: src/rtapi/CMakeFiles/rtapi_app.dir/clean
 src/hal/halcore/CMakeFiles/halcore.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/hal/halcore/CMakeFiles/halcore.dir/build.make src/hal/halcore/CMakeFiles/halcore.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/hal/halcore/CMakeFiles/halcore.dir/build.make src/hal/halcore/CMakeFiles/halcore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=32,33,34,35,36,37 "Built target halcore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=31,32,33,34,35,36 "Built target halcore"
 .PHONY : src/hal/halcore/CMakeFiles/halcore.dir/all
 
 # Build rule for subdir invocation for target.
@@ -377,7 +377,7 @@ src/hal/halcore/CMakeFiles/halcore.dir/clean:
 src/module_helper/CMakeFiles/module_helper.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/module_helper/CMakeFiles/module_helper.dir/build.make src/module_helper/CMakeFiles/module_helper.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/module_helper/CMakeFiles/module_helper.dir/build.make src/module_helper/CMakeFiles/module_helper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=82,83 "Built target module_helper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=80,81 "Built target module_helper"
 .PHONY : src/module_helper/CMakeFiles/module_helper.dir/all
 
 # Build rule for subdir invocation for target.
@@ -403,7 +403,7 @@ src/module_helper/CMakeFiles/module_helper.dir/clean:
 src/hal/halcmd/CMakeFiles/halcmd.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/hal/halcmd/CMakeFiles/halcmd.dir/build.make src/hal/halcmd/CMakeFiles/halcmd.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/hal/halcmd/CMakeFiles/halcmd.dir/build.make src/hal/halcmd/CMakeFiles/halcmd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=25,26,27,28,29,30,31 "Built target halcmd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=24,25,26,27,28,29,30 "Built target halcmd"
 .PHONY : src/hal/halcmd/CMakeFiles/halcmd.dir/all
 
 # Build rule for subdir invocation for target.
@@ -429,7 +429,7 @@ src/hal/halcmd/CMakeFiles/halcmd.dir/clean:
 src/hal/hallib/CMakeFiles/hal_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/hal/hallib/CMakeFiles/hal_lib.dir/build.make src/hal/hallib/CMakeFiles/hal_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/hal/hallib/CMakeFiles/hal_lib.dir/build.make src/hal/hallib/CMakeFiles/hal_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=21,22 "Built target hal_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=20,21 "Built target hal_lib"
 .PHONY : src/hal/hallib/CMakeFiles/hal_lib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -455,12 +455,12 @@ src/hal/hallib/CMakeFiles/hal_lib.dir/clean:
 src/rtapi/CMakeFiles/rtapi_app.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/rtapi/CMakeFiles/rtapi_app.dir/build.make src/rtapi/CMakeFiles/rtapi_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/rtapi/CMakeFiles/rtapi_app.dir/build.make src/rtapi/CMakeFiles/rtapi_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=86,87,88,89,90 "Built target rtapi_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=84,85,86,87 "Built target rtapi_app"
 .PHONY : src/rtapi/CMakeFiles/rtapi_app.dir/all
 
 # Build rule for subdir invocation for target.
 src/rtapi/CMakeFiles/rtapi_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/hal-core-2.0/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/hal-core-2.0/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rtapi/CMakeFiles/rtapi_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/hal-core-2.0/build/CMakeFiles 0
 .PHONY : src/rtapi/CMakeFiles/rtapi_app.dir/rule
@@ -481,7 +481,7 @@ src/rtapi/CMakeFiles/rtapi_app.dir/clean:
 src/hal/components/parport/CMakeFiles/hal_parport.dir/all: src/hal/halcore/CMakeFiles/halcore.dir/all
 	$(MAKE) $(MAKESILENT) -f src/hal/components/parport/CMakeFiles/hal_parport.dir/build.make src/hal/components/parport/CMakeFiles/hal_parport.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/hal/components/parport/CMakeFiles/hal_parport.dir/build.make src/hal/components/parport/CMakeFiles/hal_parport.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=23,24 "Built target hal_parport"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=22,23 "Built target hal_parport"
 .PHONY : src/hal/components/parport/CMakeFiles/hal_parport.dir/all
 
 # Build rule for subdir invocation for target.
@@ -585,7 +585,7 @@ src/hal/components/threads/CMakeFiles/threads.dir/clean:
 src/hal/components/hostmot2/CMakeFiles/hostmot2.dir/all: src/hal/halcore/CMakeFiles/halcore.dir/all
 	$(MAKE) $(MAKESILENT) -f src/hal/components/hostmot2/CMakeFiles/hostmot2.dir/build.make src/hal/components/hostmot2/CMakeFiles/hostmot2.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/hal/components/hostmot2/CMakeFiles/hostmot2.dir/build.make src/hal/components/hostmot2/CMakeFiles/hostmot2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=40,41 "Built target hostmot2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=39,40 "Built target hostmot2"
 .PHONY : src/hal/components/hostmot2/CMakeFiles/hostmot2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -611,7 +611,7 @@ src/hal/components/hostmot2/CMakeFiles/hostmot2.dir/clean:
 src/hal/components/motion/CMakeFiles/motion.dir/all: src/hal/halcore/CMakeFiles/halcore.dir/all
 	$(MAKE) $(MAKESILENT) -f src/hal/components/motion/CMakeFiles/motion.dir/build.make src/hal/components/motion/CMakeFiles/motion.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/hal/components/motion/CMakeFiles/motion.dir/build.make src/hal/components/motion/CMakeFiles/motion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=84,85 "Built target motion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=82,83 "Built target motion"
 .PHONY : src/hal/components/motion/CMakeFiles/motion.dir/all
 
 # Build rule for subdir invocation for target.
@@ -637,12 +637,12 @@ src/hal/components/motion/CMakeFiles/motion.dir/clean:
 src/hal/components/state_machine/CMakeFiles/state_machine.dir/all: src/hal/halcore/CMakeFiles/halcore.dir/all
 	$(MAKE) $(MAKESILENT) -f src/hal/components/state_machine/CMakeFiles/state_machine.dir/build.make src/hal/components/state_machine/CMakeFiles/state_machine.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/hal/components/state_machine/CMakeFiles/state_machine.dir/build.make src/hal/components/state_machine/CMakeFiles/state_machine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=91,92,93,94 "Built target state_machine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=88,89,90,91,92,93,94 "Built target state_machine"
 .PHONY : src/hal/components/state_machine/CMakeFiles/state_machine.dir/all
 
 # Build rule for subdir invocation for target.
 src/hal/components/state_machine/CMakeFiles/state_machine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/hal-core-2.0/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/hal-core-2.0/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/hal/components/state_machine/CMakeFiles/state_machine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/hal-core-2.0/build/CMakeFiles 0
 .PHONY : src/hal/components/state_machine/CMakeFiles/state_machine.dir/rule
@@ -663,12 +663,12 @@ src/hal/components/state_machine/CMakeFiles/state_machine.dir/clean:
 src/hal/components/ethercat/CMakeFiles/lcec.dir/all: src/hal/halcore/CMakeFiles/halcore.dir/all
 	$(MAKE) $(MAKESILENT) -f src/hal/components/ethercat/CMakeFiles/lcec.dir/build.make src/hal/components/ethercat/CMakeFiles/lcec.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/hal/components/ethercat/CMakeFiles/lcec.dir/build.make src/hal/components/ethercat/CMakeFiles/lcec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77 "Built target lcec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75 "Built target lcec"
 .PHONY : src/hal/components/ethercat/CMakeFiles/lcec.dir/all
 
 # Build rule for subdir invocation for target.
 src/hal/components/ethercat/CMakeFiles/lcec.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/hal-core-2.0/build/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/hal-core-2.0/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/hal/components/ethercat/CMakeFiles/lcec.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/hal-core-2.0/build/CMakeFiles 0
 .PHONY : src/hal/components/ethercat/CMakeFiles/lcec.dir/rule
@@ -689,7 +689,7 @@ src/hal/components/ethercat/CMakeFiles/lcec.dir/clean:
 src/hal/components/ethercat/CMakeFiles/lcec_conf.dir/all: src/hal/halcore/CMakeFiles/halcore.dir/all
 	$(MAKE) $(MAKESILENT) -f src/hal/components/ethercat/CMakeFiles/lcec_conf.dir/build.make src/hal/components/ethercat/CMakeFiles/lcec_conf.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/hal/components/ethercat/CMakeFiles/lcec_conf.dir/build.make src/hal/components/ethercat/CMakeFiles/lcec_conf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=78,79,80,81 "Built target lcec_conf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=76,77,78,79 "Built target lcec_conf"
 .PHONY : src/hal/components/ethercat/CMakeFiles/lcec_conf.dir/all
 
 # Build rule for subdir invocation for target.
@@ -715,7 +715,7 @@ src/hal/components/ethercat/CMakeFiles/lcec_conf.dir/clean:
 src/hal/components/hm2_eth/CMakeFiles/hm2_eth.dir/all: src/hal/halcore/CMakeFiles/halcore.dir/all
 	$(MAKE) $(MAKESILENT) -f src/hal/components/hm2_eth/CMakeFiles/hm2_eth.dir/build.make src/hal/components/hm2_eth/CMakeFiles/hm2_eth.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/hal/components/hm2_eth/CMakeFiles/hm2_eth.dir/build.make src/hal/components/hm2_eth/CMakeFiles/hm2_eth.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=38,39 "Built target hm2_eth"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=37,38 "Built target hm2_eth"
 .PHONY : src/hal/components/hm2_eth/CMakeFiles/hm2_eth.dir/all
 
 # Build rule for subdir invocation for target.
@@ -741,12 +741,12 @@ src/hal/components/hm2_eth/CMakeFiles/hm2_eth.dir/clean:
 projects/cnc/CMakeFiles/cnc.dir/all: projects/cnc/CMakeFiles/cnc_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/depend
 	$(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc.dir/build.make projects/cnc/CMakeFiles/cnc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target cnc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target cnc"
 .PHONY : projects/cnc/CMakeFiles/cnc.dir/all
 
 # Build rule for subdir invocation for target.
 projects/cnc/CMakeFiles/cnc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/hal-core-2.0/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/hal-core-2.0/build/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projects/cnc/CMakeFiles/cnc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/hal-core-2.0/build/CMakeFiles 0
 .PHONY : projects/cnc/CMakeFiles/cnc.dir/rule
@@ -767,7 +767,7 @@ projects/cnc/CMakeFiles/cnc.dir/clean:
 projects/cnc/CMakeFiles/cnc_autogen.dir/all:
 	$(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc_autogen.dir/build.make projects/cnc/CMakeFiles/cnc_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f projects/cnc/CMakeFiles/cnc_autogen.dir/build.make projects/cnc/CMakeFiles/cnc_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=20 "Built target cnc_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/hal-core-2.0/build/CMakeFiles --progress-num=19 "Built target cnc_autogen"
 .PHONY : projects/cnc/CMakeFiles/cnc_autogen.dir/all
 
 # Build rule for subdir invocation for target.

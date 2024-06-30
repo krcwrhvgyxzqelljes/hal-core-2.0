@@ -59,7 +59,7 @@ struct shared_mem_data {
 
     double curvel=0;
 
-    int jog[10]; // -1 is negative jog, 0 is jog stop, 1 is jog positive.
+    int jog[10];                // -1 is negative jog, 0 is jog stop, 1 is jog positive.
     int jog_to_zero[10];
     int jog_step_trigger[10];
     double maxpos[10];
@@ -69,10 +69,12 @@ struct shared_mem_data {
     double jog_velocity;
     int jog_step_enable;
 
-    std::vector<shape> svec;
+    char file_name[256];
+    int gui_has_gcode=0;
+    int hal_has_gcode=0;
 
     // For each scurve axis we store the data in here.
-     scurve_data scd[10];
+    scurve_data scd[10];        // Jog xyz abc uvw.
 };
 
 class state_machine_shm
